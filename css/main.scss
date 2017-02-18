@@ -1,0 +1,89 @@
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_variables.scss";
+@import "_megamenu.scss";
+
+.button {
+  width: 320px;
+  font-family: "mohavebold", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  color: $white-color;
+  background-color: $gray-color;
+  margin-bottom: 5px;
+  padding: 5px 0;
+  &:hover {
+    text-decoration: none;
+    color: $white-color;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.btn-primary-cta {
+  @extend .button;
+  padding: 15px 0;
+  background: $red-color;
+  border-bottom: solid 2px $dark-red-color;
+}
+
+.btn-secondary-cta {
+  @extend .button;
+  padding: 7px 0;
+  background: $blue-color;
+  border-bottom: solid 2px $dark-blue-color;
+  .descript-text {
+    display: block;
+    font: 12px ralewayregular, sans-serif;
+  }
+}
+
+
+.btn-advert {
+  @extend .button;
+  background: $red-color;
+}
+
+.btn-interface {
+  @extend .button;
+  background-color: $blue-color;
+}
+
+.btn-interface-secondary {
+  @extend .button;
+  width: 220px;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+
+.h1-home-page {
+  font-family: MohaveBold, sans-serif;
+  font-size: 29px;
+  color: $blue-text-color;
+}
+
+.h1-subpage {
+  font-family: MohaveBold, sans-serif;
+  font-size: 29px;
+  color: $black-text-color;
+}
+
+h2 {
+  font-family: MohaveBold, sans-serif;
+  font-size: 25px;
+  color: $light-black-text-color;
+}
+
+h3 {
+  font-family: MohaveBold, sans-serif;
+  font-size: 16px;
+  color: $light-black-text-color;
+}
+
+
+
+

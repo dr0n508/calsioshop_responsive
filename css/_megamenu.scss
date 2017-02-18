@@ -1,0 +1,42 @@
+.main-item {
+  font-family: MohaveBold, sans-serif;
+  font-size: 17px;
+  color: #054180 !important;
+}
+
+.list-group-item {
+  //border: none;
+  border-radius: 0 !important;
+}
+
+.list-group-2-level .list-group-item {
+  @media only screen and (max-width: 768px) {
+    padding: 10px 15px 10px 35px;
+  }
+
+}
+
+.list-group-2-level .list-group-3-level .list-group-item {
+  @media only screen and (max-width: 768px) {
+    padding: 10px 15px 10px 55px;
+  }
+}
+
+a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
+  font-weight: 600;
+  background-color: #f3f3f3;
+}
+
+#menu-1-level {
+  //position: absolute;
+}
+
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 1200px) {
+}
