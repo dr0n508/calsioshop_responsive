@@ -1,6 +1,7 @@
 @import "_reset.scss";
 @import "_fonts.scss";
 @import "_variables.scss";
+@import "_buttons.scss";
 @import "_megamenu.scss";
 
 
@@ -10,64 +11,6 @@
   -webkit-transition: all .15s;
   -o-transition: all .15s;
   transition: all .15s;
-}
-
-
-
-.button {
-  width: 320px;
-  font-family: "mohavebold", sans-serif;
-  font-size: 16px;
-  text-align: center;
-  display: block;
-  color: $white-color;
-  background-color: $gray-color;
-  margin-bottom: 5px;
-  padding: 5px 0;
-  &:hover {
-    text-decoration: none;
-    color: $white-color;
-  }
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-  }
-}
-
-.btn-primary-cta {
-  @extend .button;
-  padding: 15px 0;
-  background: $red-color;
-  border-bottom: solid 2px $dark-red-color;
-}
-
-.btn-secondary-cta {
-  @extend .button;
-  padding: 7px 0;
-  background: $blue-color;
-  border-bottom: solid 2px $dark-blue-color;
-  .descript-text {
-    display: block;
-    font: 12px ralewayregular, sans-serif;
-  }
-}
-
-
-.btn-advert {
-  @extend .button;
-  background: $red-color;
-}
-
-.btn-interface {
-  @extend .button;
-  background-color: $blue-color;
-}
-
-.btn-interface-secondary {
-  @extend .button;
-  width: 220px;
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-  }
 }
 
 
@@ -182,7 +125,111 @@ h3 {
   }
 
 }
-/*******************/
+/*****special offer**************/
+
+.special-offer {
+  .for-your-team {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .sell {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#adbec6+0,c6d5dc+50,eaf1f7+100 */
+    background: rgb(173, 190, 198);
+    background: -moz-linear-gradient(45deg, rgba(173, 190, 198, 1) 0%, rgba(198, 213, 220, 1) 50%, rgba(234, 241, 247, 1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(173, 190, 198, 1) 0%, rgba(198, 213, 220, 1) 50%, rgba(234, 241, 247, 1) 100%);
+    background: linear-gradient(45deg, rgba(173, 190, 198, 1) 0%, rgba(198, 213, 220, 1) 50%, rgba(234, 241, 247, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#adbec6', endColorstr='#eaf1f7',GradientType=1 );
+    &:after {
+      position: absolute;
+      content: "%";
+      font-family: 'ralewaybold', sans-serif;
+      font-size: 250px;
+      color: #cddae0;
+      right: 20px;
+      top: 50%;
+      margin-top: -175px;
+      z-index: 0;
+    }
+  }
+  .for-your-team {
+    background: url("../images/for-you-team.jpg") 50% 50% no-repeat;
+    background-size: cover;
+    h2, p {
+      color: white;
+    }
+  }
+  .sell, .for-your-team {
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    h2 {
+      font-size: 29px;
+      z-index: 99;
+      position: relative;
+    }
+    p {
+      font-family: ralewaybold, sans-serif;
+      position: relative;
+      z-index: 99;
+      margin: 10px 0;
+    }
+    .btn-advert {
+      position: relative;
+      font-size: 20px;
+      z-index: 99;
+    }
+  }
+}
+
+
+/****articles-blog****/
+.articles-blog {
+  padding: 20px 0;
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  p {
+    color: $footer-color;
+    line-height: 24px;
+  }
+  .read-more {
+    text-decoration: underline;
+    color: $link-color;
+  }
+  .article p {
+     margin-bottom: 10px;
+  }
+  .blog {
+    article {
+      overflow: hidden;
+      border-top: solid 1px #e6e6e6;
+      padding: 10px 0;
+      h4 {
+        font-family: ralewaybold, sans-serif;
+        font-size: 14px;
+        color: $blue-color;
+      }
+    }
+    h3 {
+      padding-bottom: 10px;
+    }
+    .img-wrapper {
+      padding-right: 0;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+  }
+}
+
+/***********************/
+
+
+
 
 
 
