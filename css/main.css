@@ -129,21 +129,21 @@ h3 {
 /****header**/
 .header-top {
   overflow: hidden;
-  padding: 10px 0; }
-  .header-top .logo {
-    float: left; }
-  .header-top .sign-in {
-    float: right; }
-    .header-top .sign-in li {
-      display: inline-block; }
-      .header-top .sign-in li a {
-        font-family: MohaveBold, sans-serif;
-        font-size: 17px; }
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .header-top .header-top-menu {
+    display: flex;
+    align-items: center; }
+  .header-top .sign-in li {
+    display: inline-block; }
+    .header-top .sign-in li a {
+      font-family: MohaveBold, sans-serif;
+      font-size: 17px; }
   .header-top .language-site {
-    float: right;
     margin-left: 20px; }
   .header-top .basket {
-    float: right;
     margin-left: 80px; }
     .header-top .basket a {
       color: #054182; }
