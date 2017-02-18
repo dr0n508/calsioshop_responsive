@@ -42,7 +42,7 @@ h3 {
 
 
 /****header**/
-.header-top {
+.header-top{
   overflow: hidden;
   padding: 10px 0;
   display: flex;
@@ -68,6 +68,49 @@ h3 {
     .number-goods-in-basket {
       font-family: MohaveBold, sans-serif;
       font-size: 17px;
+    }
+  }
+}
+
+.benefit-bar {
+  background: #054182;
+  a {
+    float: left;
+    text-align: center;
+    padding: 5px 50px;
+    position: relative;
+    text-decoration: none;
+    span {
+      font-family: "mohavesemibold", sans-serif;
+      font-size: 16px;
+      color: white;
+    }
+  }
+  a:first-child {
+    background: #000066;
+    padding-left: 0;
+  }
+  a:last-child {
+    background: #054182;
+    padding-right: 0;
+    float: right;
+  }
+  a:nth-child(2) {
+    //padding: 0 20px;
+    background: #054182;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    transform: skew(-30deg);
+    margin-left: -10px;
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+    span {
+      -webkit-transform: skew(30deg);
+      -moz-transform: skew(30deg);
+      -o-transform: skew(30deg);
+      transform: skew(30deg);
+      display: inline-block;
     }
   }
 }
@@ -305,6 +348,7 @@ h3 {
 .navbar-default {
   border-radius: 0;
   border: none;
+  margin-bottom: 0;
 }
 
 .navbar-default .navbar-nav>li>a {
