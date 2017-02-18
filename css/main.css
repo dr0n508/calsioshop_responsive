@@ -127,6 +127,30 @@ h3 {
   color: #222222; }
 
 /****home page****/
+/***********main-offer************/
+.main-offer {
+  background: url("../images/bg-for-main-offer.png") 40% 50% no-repeat;
+  padding: 20px 0; }
+  .main-offer .h1-home-page {
+    font-size: 48px; }
+    .main-offer .h1-home-page span {
+      color: #054182;
+      font-family: inherit; }
+  .main-offer h2 {
+    font-family: ralewayregular, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000066;
+    font-weight: 600;
+    letter-spacing: .7px;
+    margin-bottom: 10px; }
+  .main-offer ul {
+    padding: 5px 5px 5px 20px; }
+    .main-offer ul li {
+      list-style-image: url("../images/ico-list-style.png");
+      letter-spacing: 1px;
+      font-size: 16px; }
+
 /**slider***/
 .bx-wrapper .bx-viewport {
   box-shadow: none;
