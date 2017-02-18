@@ -86,4 +86,40 @@ h3 {
 
 
 
+/****home page****/
+
+/**slider***/
+.bx-wrapper .bx-viewport {
+  box-shadow: none;
+  border: none;
+  left: 0;
+}
+.bx-wrapper .bx-controls-direction {
+  a {
+    width: 14px;
+    height: 22px;
+    margin-top: -11px;
+    &:hover {
+      background-position: 0 0;
+    }
+  }
+  .bx-next {
+    background: url("../images/arrow-right.png") 50% 50% no-repeat;
+    right: 20px;
+  }
+  .bx-prev {
+    background: url("../images/arrow-left.png") 50% 50% no-repeat;
+    left: 20px;
+  }
+}
+
+
+
+
+
+
+/*******************/
+
+
+
 
