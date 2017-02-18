@@ -126,6 +126,31 @@ h3 {
   font-size: 16px;
   color: #222222; }
 
+/****header**/
+.header-top {
+  overflow: hidden;
+  padding: 10px 0; }
+  .header-top .logo {
+    float: left; }
+  .header-top .sign-in {
+    float: right; }
+    .header-top .sign-in li {
+      display: inline-block; }
+      .header-top .sign-in li a {
+        font-family: MohaveBold, sans-serif;
+        font-size: 17px; }
+  .header-top .language-site {
+    float: right;
+    margin-left: 20px; }
+  .header-top .basket {
+    float: right;
+    margin-left: 80px; }
+    .header-top .basket a {
+      color: #054182; }
+    .header-top .basket .number-goods-in-basket {
+      font-family: MohaveBold, sans-serif;
+      font-size: 17px; }
+
 /****home page****/
 /***********main-offer************/
 .main-offer {
@@ -294,6 +319,23 @@ h3 {
 
 /***********************/
 /*****mega-menu****/
+.navbar-default {
+  border-radius: 0;
+  border: none; }
+
+.navbar-default .navbar-nav > li > a {
+  font-family: MohaveBold, sans-serif;
+  font-size: 17px;
+  color: #054182; }
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+  color: #da2620;
+  background-color: transparent; }
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  text-decoration: underline;
+  color: #da2620; }
+
 .desktop-menu .navbar-nav > li > .dropdown-menu {
   background-color: #f3f3f3; }
 .desktop-menu .navbar-default .navbar-nav > li > a {
@@ -307,7 +349,8 @@ h3 {
   -webkit-box-shadow: none; }
 .desktop-menu .mega-dropdown-menu > li > ul {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 20px; }
 .desktop-menu .mega-dropdown-menu > li > ul > li {
   list-style: none; }
 .desktop-menu .mega-dropdown-menu > li > ul > li > a {
@@ -316,7 +359,7 @@ h3 {
   clear: both;
   font-weight: normal;
   line-height: 1.428571429;
-  color: #999;
+  color: #00366e;
   white-space: normal; }
 .desktop-menu .mega-dropdown-menu > li ul > li > a:hover,
 .desktop-menu .mega-dropdown-menu > li ul > li > a:focus {
@@ -324,8 +367,17 @@ h3 {
   color: #444;
   background-color: #f5f5f5; }
 .desktop-menu .mega-dropdown-menu .dropdown-header {
-  color: #428bca;
-  font-size: 18px;
-  font-weight: bold; }
+  color: #054182;
+  font-family: MohaveBold, sans-serif;
+  font-size: 16px; }
+
+.list-offer-mega-menu li {
+  background-color: white;
+  margin-bottom: 15px;
+  padding: 10px 0; }
+.list-offer-mega-menu .wrap-img img {
+  width: 100px;
+  height: auto;
+  float: right; }
 
 /*# sourceMappingURL=main.css.map */
