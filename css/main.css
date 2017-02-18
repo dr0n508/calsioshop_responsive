@@ -80,26 +80,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     .btn-interface-secondary {
       width: 100%; } }
 
-.main-item {
-  font-family: MohaveBold, sans-serif;
-  font-size: 17px;
-  color: #054180 !important; }
-
-.list-group-item {
-  border-radius: 0 !important; }
-
-@media only screen and (max-width: 768px) {
-  .list-group-2-level .list-group-item {
-    padding: 10px 15px 10px 35px; } }
-
-@media only screen and (max-width: 768px) {
-  .list-group-2-level .list-group-3-level .list-group-item {
-    padding: 10px 15px 10px 55px; } }
-
-a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
-  font-weight: 600;
-  background-color: #f3f3f3; }
-
 .transition, .category:after, .category .btn-advert {
   -moz-transition: all .15s;
   -webkit-transition: all .15s;
@@ -131,7 +111,6 @@ h3 {
   margin: 9px 0;
   float: right; }
   .form-search .search {
-    border: solid 1px white;
     background-color: white;
     padding: 5px 10px; }
     .form-search .search .input-search {
