@@ -42,6 +42,30 @@ h3 {
 
 
 /****header**/
+
+.form-search {
+  margin: 9px 0;
+  float: right;
+
+  .search {
+    border: solid 1px white;
+    background-color: white;
+    padding: 5px 10px;
+    .input-search {
+      border: none;
+      outline: none;
+      background-color: white;
+      width: 300px;
+    }
+    .btn-search {
+      float: right;
+      font-size: 18px;
+      text-decoration: none;
+      color: #054182;
+    }
+  }
+}
+
 .header-top{
   overflow: hidden;
   padding: 10px 0;
@@ -344,6 +368,11 @@ h3 {
 
 
 /*****mega-menu****/
+
+.navbar-default .navbar-collapse {
+  position: relative;
+}
+
 
 .navbar-default {
   border-radius: 0;
