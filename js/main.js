@@ -2,9 +2,11 @@ $(document).ready(function () {
 
     /****slider home page******/
     $('.home-page-slider').bxSlider({
-        infiniteLoop: false,
+        infiniteLoop: true,
         hideControlOnEnd: true,
-        pager: false
+        pager: false,
+        auto: true,
+        pause: 3000
     });
     /******/
 

@@ -927,24 +927,24 @@
 
     <!--end-desktop-menu-->
 
-        <div class="benefit-bar clearfix">
-            <div class="container">
-                <div class="row">
-                    <a href="#">
-                        <span>Consegna in 48h</span>
-                    </a>
-                    <a href="#">
-                        <span>Contrassegno</span>
-                    </a>
-                    <a href="#">
-                        <span>spedizioni italia 6,90</span>
-                    </a>
-                    <a href="#">
-                        <span>Chiedi All' Esperto  031.874261</span>
-                    </a>
-                </div>
+    <div class="benefit-bar clearfix ">
+        <div class="container">
+            <div class="row">
+                <a href="#">
+                    <span>Consegna in 48h</span>
+                </a>
+                <a href="#">
+                    <span>Contrassegno</span>
+                </a>
+                <a href="#" class="hidden-xs">
+                    <span>spedizioni italia 6,90</span>
+                </a>
+                <a href="#" class="hidden-xs">
+                    <span>Chiedi All' Esperto  031.874261</span>
+                </a>
             </div>
         </div>
+    </div>
 
 </header>
 
@@ -953,13 +953,11 @@
 
 
 
-<section class="main-offer">
+<section class="main-offer desktop hidden-xs">
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
                 <h1 class="h1-home-page"> Prodotti esclusivi,<br> Personalizzazioni Uniche. <br> <span>Dal 1985</span></h1>
-
-
             </div>
             <div class="col-sm-6">
                 <h2> CalcioShop.it è il sito di riferimento per oltre 200.000+ calciatori </h2>
@@ -990,6 +988,27 @@
                     <img src="images/slides/home-slide-01.jpg" alt="welcome slide"/>
                     <a href="#" class="btn-advert">ACQUISTA Ora</a>
                 </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="main-offer mobile visible-xs">
+    <div class="container">
+        <div class="row">
+            <h1>
+                Prodotti esclusivi,<br>
+                Personalizzazioni <br>
+                Uniche. Dal 1985 <br>
+            </h1>
+            <h2>
+                CalcioShop.it è il sito di riferimento
+                per oltre 200.000+ calciatori
+            </h2>
+            <ul>
+                <li>Personalizzazioni professionali</li>
+                <li>Prodotti in esclusiva per il mercato italiano</li>
+                <li>Oltre 10.000+ prodotti per il calcio a prezzi scontati</li>
+                <li>Due negozi a Milano nord e Bergamo</li>
             </ul>
         </div>
     </div>
@@ -1052,6 +1071,36 @@
         </div>
     </div>
 </section>
+
+<section class="filter mobile visible-xs">
+    <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
+        <div class="panel panel-default">
+            <div id="headingOne" role="tab" class="panel-heading">
+                <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Vedi Tutto<span class="fa fa-chevron-down"></span></a></h4>
+            </div>
+            <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse in">
+                <div class="panel-body">Acquista per club:</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div id="headingTwo" role="tab" class="panel-heading">
+                <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed">Club Italiani<span class="fa fa-chevron-down"></span></a></h4>
+            </div>
+            <div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" class="panel-collapse collapse">
+                <div class="panel-body">Acquista per club:</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div id="headingThree" role="tab" class="panel-heading">
+                <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">Club Stranieri<span class="fa fa-chevron-down"></span></a></h4>
+            </div>
+            <div id="collapseThree" role="tabpanel" aria-labelledby="headingThree" class="panel-collapse collapse">
+                <div class="panel-body">Acquista per club:</div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="special-offer">
     <div class="container">
         <div class="row">
@@ -1071,7 +1120,7 @@
     </div>
 </section>
 
-<section class="articles-blog">
+<section class="articles-blog hidden-xs">
     <div class="container">
         <div class="row">
             <div class="col-sm-6 article">
@@ -1119,7 +1168,7 @@
 <section class="subscribe">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 p0">
+            <div class="col-md-4 title-subscribe">
                 <h2>Ricevere uno sconto di €5</h2>
             </div>
             <div class="col-md-4">
@@ -1128,7 +1177,7 @@
                     etantissimi sconti e promozioni dedicate a te
                 </p>
             </div>
-            <div class="col-md-4 p0">
+            <div class="col-md-4 wrap-form">
                 <form action="#" class="clearfix">
                     <input type="email" placeholder="Inserisci la tua mail"><a class="btn-advert" href="#">Iscriviti</a>
                 </form>

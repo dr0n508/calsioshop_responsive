@@ -51,7 +51,9 @@ h3 {
 .form-search-desktop {
   margin: 9px 0;
   float: right;
-
+  @media only screen and (max-width: 992px) {
+    width: 100%;
+  }
   .search {
     //border: solid 1px white;
     background-color: white;
@@ -61,6 +63,12 @@ h3 {
       outline: none;
       background-color: white;
       width: 300px;
+      @media only screen and (max-width: 1200px) {
+        width: inherit;
+      }
+      @media only screen and (max-width: 992px) {
+        width: 90%;
+      }
     }
     .btn-search {
       float: right;
@@ -109,12 +117,10 @@ h3 {
   background: -webkit-linear-gradient(left,  #000066 0%,#000066 20%,#054182 20%,#054182 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right,  #000066 0%,#000066 20%,#054182 20%,#054182 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000066', endColorstr='#054182',GradientType=1 ); /* IE6-9 */
-
-
   a {
     float: left;
     text-align: center;
-    padding: 5px 50px;
+    padding: 5px 40px;
     position: relative;
     text-decoration: none;
     span {
@@ -122,10 +128,16 @@ h3 {
       font-size: 16px;
       color: white;
     }
+    @media only screen and (max-width: 970px) {
+      padding: 5px 30px;
+    }
   }
   a:first-child {
     background: #000066;
     padding-left: 0;
+    @media only screen and (max-width: 768px) {
+      width: 55%;
+    }
   }
   a:last-child {
     background: #054182;
@@ -149,6 +161,10 @@ h3 {
       transform: skew(30deg);
       display: inline-block;
     }
+    @media only screen and (max-width: 768px) {
+      width: 45%;
+      border-right: none;
+    }
   }
 }
 
@@ -163,8 +179,17 @@ h3 {
 
 /***********main-offer************/
 .main-offer {
-  background: url("../images/bg-for-main-offer.png") 40% 50% no-repeat;
+  background: url("../images/bg-for-main-offer.png") 37% 50% no-repeat;
   padding: 20px 0;
+  @media only screen and (max-width: 1200px) {
+    background-position: 30% 50%;
+  }
+  @media only screen and (max-width: 1200px) {
+    background-position: 30% 50%;
+  }
+  @media only screen and (max-width: 992px) {
+    background-position: 15% 50%;
+  }
   .h1-home-page {
     font-size: 48px;
     span {
@@ -188,10 +213,43 @@ h3 {
       list-style-image: url("../images/ico-list-style.png");
       letter-spacing: 1px;
       font-size: 16px;
+      @media only screen and (max-width: 768px) {
+        font-size: 14px;
+        letter-spacing: .5px;
+      }
     }
   }
+}
+
+.main-offer.mobile {
+  padding: 0;
+  background: #f3f3f3;
+  ul {
+    padding: 5px 5px 5px 30px;
+  }
+  h1 {
+    font-family: "mohavebold", sans-serif;
+    font-size: 29px;
+    color: #000066;
+    background: white;
+    padding: 10px;
+    line-height: 32px;
+  }
+  h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    //font-weight: 400;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: solid 1px white;
+    color: #000066;
+  }
+
 
 }
+
+
+
 
 /**slider***/
 .bx-wrapper .bx-viewport {
@@ -225,12 +283,21 @@ h3 {
     position: absolute;
     right: 70px;
     bottom: 50px;
+    @media only screen and (max-width: 768px) {
+      font-size: 14px;
+      width: auto;
+      right: 10px;
+      bottom: 10px;
+    }
   }
 }
 
 /****categories****/
 .categories {
   padding: 20px 0;
+  @media only screen and (max-width: 768px) {
+    padding: 0;
+  }
 }
 .category {
   padding-left: 0;
@@ -277,6 +344,63 @@ h3 {
   }
 
 }
+
+
+/*******/
+.filter.mobile {
+  .panel-group .panel {
+    margin: 0 !important;
+    border-radius: 0!important;
+    border: 0!important;
+  }
+  .panel-group {
+    margin: 0;
+  }
+  .panel-heading {
+    padding: 0;
+    border: none;
+    border-bottom: solid 1px white;
+  }
+  .panel-body {
+    padding: 10px;
+    border-top: none !important;
+    border-bottom: solid 1px white !important;
+    background: #f5f5f5;
+    p {
+      padding-bottom: 20px;
+    }
+  }
+  h4 {
+    margin: 0;
+    text-align: center;
+    border: none;
+    a {
+      font-family: "mohavebold", sans-serif;
+      font-size: 16px;
+      color: #054182;
+      padding: 10px 0;
+      display: block;
+      border: none !important;
+      span {
+        float: right;
+        margin-right: 10px;
+      }
+    }
+    a[aria-expanded="true"] {
+      background: #cbd5e0;
+    }
+    //    @include rotate-arrow
+  }
+  .panel-collapse {
+    background: #f3f3f3;
+  }
+}
+
+
+
+
+
+
 /*****special offer**************/
 
 .special-offer {
@@ -384,6 +508,13 @@ h3 {
 .subscribe {
   background: #090a0c;
   padding: 20px 0;
+  .title-subscribe, .wrap-form  {
+    padding-left: 0;
+    padding-right: 0;
+    @media only screen and (max-width: 992px) {
+      padding: 5px 15px !important;
+    }
+  }
   h2 {
     font-family: "mohavebold", sans-serif;
     font-size: 30px;
