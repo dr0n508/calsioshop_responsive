@@ -46,14 +46,7 @@
     }
   }
 
-
-
-  //.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  //  background-color: #eeeeee;
-  //}
-
   .navbar-toggle {
-    display: block !important;
     float: left;
     min-height: 40px;
     border: none;
@@ -120,12 +113,13 @@
     }
   }
 
-  .navbar-nav .dropdown a {
+  .main-item {
     font-family: "mohavebold", sans-serif;
     font-size: 16px;
   }
 
-  .navbar-nav a.list-group-item, .navbar-nav button.list-group-item {
+  .navbar-nav a.list-group-item,
+  .navbar-nav button.list-group-item {
     color: #00366e;
   }
 
@@ -136,6 +130,9 @@
   .footer-main-menu {
     background: #dfdfdf;
     border-bottom: 1px solid #ffffff;
+    &:after, &:before {
+      display: none;
+    }
   }
 
   .navbar-default {
@@ -147,7 +144,6 @@
   }
 
   .navbar-nav {
-    float: none!important;
     margin: 0 -10px;
     li {
       border-bottom: solid 1px #ddd;
@@ -224,7 +220,6 @@
       }
     }
   }
-
   .basket-button.active {
     background: #da2620;
     .ico-basket-white {
@@ -250,8 +245,10 @@
   padding: 10px 15px 10px 55px;
 }
 
-
-a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
+a.list-group-item:focus,
+a.list-group-item:hover,
+button.list-group-item:focus,
+button.list-group-item:hover {
   font-weight: 600;
 }
 
