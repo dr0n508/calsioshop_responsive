@@ -447,6 +447,7 @@ h3 {
   float: right; }
 
 .wrap-social-footer-bar {
+  border-bottom: solid 1px #090a0c;
   background-color: #191c21;
   padding: 20px 0; }
   .wrap-social-footer-bar .social-footer-bar {
@@ -467,5 +468,9 @@ h3 {
     .wrap-social-footer-bar .social-links .blog img {
       width: 120px;
       height: auto; }
+
+.footer-menu {
+  padding: 20px 0 50px;
+  background-color: #191c21; }
 
 /*# sourceMappingURL=main.css.map */
