@@ -87,6 +87,12 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   overflow: hidden; }
   .mobile-menu .navbar-header .logo {
     line-height: 35px; }
+.mobile-menu .nav > li > a {
+  padding: 10px 20px; }
+  .mobile-menu .nav > li > a span {
+    float: right;
+    font-size: 16px;
+    margin-right: 5px; }
 .mobile-menu .navbar-toggle {
   display: block !important;
   float: left;
@@ -356,18 +362,18 @@ h3 {
   color: #222222; }
 
 /****header**/
-.form-search {
+.form-search-desktop {
   margin: 9px 0;
   float: right; }
-  .form-search .search {
+  .form-search-desktop .search {
     background-color: white;
     padding: 5px 10px; }
-    .form-search .search .input-search {
+    .form-search-desktop .search .input-search {
       border: none;
       outline: none;
       background-color: white;
       width: 300px; }
-    .form-search .search .btn-search {
+    .form-search-desktop .search .btn-search {
       float: right;
       font-size: 18px;
       text-decoration: none;
