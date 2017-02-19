@@ -469,8 +469,38 @@ h3 {
       width: 120px;
       height: auto; }
 
-.footer-menu {
+.footer-menu-section {
   padding: 20px 0 50px;
   background-color: #191c21; }
+  .footer-menu-section .img-payment {
+    margin-top: 20px;
+    padding-left: 15px; }
+  .footer-menu-section .title-footer {
+    font-family: MohaveBold, sans-serif;
+    font-size: 17px;
+    color: #d7d7d7;
+    margin-bottom: 10px; }
+  .footer-menu-section .footer-menu a {
+    color: #fafafa;
+    margin-bottom: 5px;
+    display: inline-block; }
+  .footer-menu-section .contacts-info {
+    color: #fafafa; }
+    .footer-menu-section .contacts-info span {
+      font-family: ralewaybold, sans-serif; }
+    .footer-menu-section .contacts-info i {
+      width: 20px; }
+    .footer-menu-section .contacts-info a {
+      color: #fafafa; }
+  .footer-menu-section .footer-info {
+    padding-left: 100px;
+    color: #828589; }
+    .footer-menu-section .footer-info .logo-white {
+      margin-bottom: 20px; }
+    .footer-menu-section .footer-info span {
+      color: #fafafa;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */

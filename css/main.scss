@@ -540,9 +540,54 @@ h3 {
   }
 }
 
-.footer-menu {
+.footer-menu-section {
   padding: 20px 0 50px;
   background-color: $footer-color;
+  .img-payment {
+    margin-top: 20px;
+    padding-left: 15px;
+  }
+  .title-footer {
+    font-family: MohaveBold, sans-serif;
+    font-size: 17px;
+    color: #d7d7d7;
+    margin-bottom: 10px;
+  }
+  .footer-menu {
+    a {
+      color: #fafafa;
+      margin-bottom: 5px;
+      display: inline-block;
+    }
+  }
+  .contacts-info {
+    color: #fafafa;
+    span {
+      font-family: ralewaybold, sans-serif;
+    }
+    i {
+      width: 20px;
+    }
+    a {
+      color: #fafafa;
+    }
+    li {
+      
+    }
+  }
+  .footer-info {
+    padding-left: 100px;
+    .logo-white {
+      margin-bottom: 20px;
+    }
+    color: #828589;
+    span {
+      color: #fafafa;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      display: inline-block;
+    }
+  }
 }
 
 
