@@ -153,7 +153,17 @@ h3 {
       font-size: 17px; }
 
 .benefit-bar {
-  background: #054182; }
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000066+0,000066+29,054182+29,054182+100 */
+  background: #000066;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #000066 0%, #000066 20%, #054182 20%, #054182 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #000066 0%, #000066 20%, #054182 20%, #054182 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #000066 0%, #000066 20%, #054182 20%, #054182 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000066', endColorstr='#054182',GradientType=1 );
+  /* IE6-9 */ }
   .benefit-bar a {
     float: left;
     text-align: center;
@@ -493,7 +503,7 @@ h3 {
     .footer-menu-section .contacts-info a {
       color: #fafafa; }
   .footer-menu-section .footer-info {
-    padding-left: 100px;
+    padding-left: 85px;
     color: #828589; }
     .footer-menu-section .footer-info .logo-white {
       margin-bottom: 20px; }
