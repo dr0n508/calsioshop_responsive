@@ -487,7 +487,7 @@ h3 {
 
   .mega-dropdown-menu {
     padding: 20px 0px;
-    //width: 100%;
+    //width: 85%;
     left: 20px;
     box-shadow: none;
     -webkit-box-shadow: none;
@@ -504,6 +504,7 @@ h3 {
   }
 
   .mega-dropdown-menu > li > ul > li > a {
+    min-width: 150px;
     display: block;
     padding: 3px 20px;
     clear: both;
@@ -521,10 +522,22 @@ h3 {
   }
 
   .mega-dropdown-menu .dropdown-header {
-    color: #054182;
-    font-family: MohaveBold, sans-serif;
-    font-size: 16px;
-    //font-weight: bold;
+    a {
+      padding: 0;
+      color: #054182;
+      font-family: MohaveBold, sans-serif;
+      font-size: 16px;
+      //font-weight: bold;
+    }
+
+
+  }
+  .mega-dropdown-menu .dropdown-header.main {
+    a {
+      font-size: 20px;
+      border-bottom: solid 1px #054182;
+    }
+
   }
 }
 
