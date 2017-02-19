@@ -429,9 +429,37 @@ h3 {
   font-family: MohaveBold, sans-serif;
   font-size: 17px;
   color: #054182;
+  position: relative;
+  &:after, &:before {
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 10px;
+    right: 0;
+    top: 50%;
+    margin-top: -10px;
+  }
+  &:after {
+    content: "\f078";
+  }
+  &:before {
+    content: "\f077";
+    display: none;
+  }
 }
 
+.navbar-default .navbar-nav>li>a[aria-expanded="true"]{
+  &:after {
+    display: none;
+  }
+  &:before {
+    display: block;
+  }
+}
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: $red-color;
+  background-color: transparent;
+}
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
   color: $red-color;
