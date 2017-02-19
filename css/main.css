@@ -442,7 +442,7 @@ h3 {
   position: static !important; }
 .desktop-menu .mega-dropdown-menu {
   padding: 20px 0px;
-  width: 100%;
+  left: 20px;
   box-shadow: none;
   -webkit-box-shadow: none; }
 .desktop-menu .mega-dropdown-menu > li > ul {
