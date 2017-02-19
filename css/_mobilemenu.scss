@@ -1,11 +1,11 @@
 .mobile-menu {
-  .navbar-default .navbar-nav>li>a {
-    color: #054182;
-  }
-
-  .outlet-menu {
-    color: #da2620 !important;
-  }
+  //.navbar-default .navbar-nav>li>a {
+  //  color: #054182;
+  //}
+  //
+  //.outlet-menu {
+  //  color: #da2620 !important;
+  //}
 
   .navbar-header {
     float: none;
@@ -17,24 +17,20 @@
     }
   }
 
-  .nav>li>a {
-    padding: 10px 20px;
-    span {
-      float: right;
-      font-size: 16px;
-      margin-right: 5px;
-    }
-  }
+  //.nav>li>a {
+  //  padding: 10px 20px;
+  //  span {
+  //    float: right;
+  //    font-size: 16px;
+  //    margin-right: 5px;
+  //  }
+  //}
 
-  .nav li {
-    //  @include rotate-arrow;
-    //  float: none;
 
-  }
 
-  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #eeeeee;
-  }
+  //.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  //  background-color: #eeeeee;
+  //}
 
   .navbar-toggle {
     display: block !important;

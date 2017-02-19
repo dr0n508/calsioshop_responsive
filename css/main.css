@@ -80,10 +80,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     .btn-interface-secondary {
       width: 100%; } }
 
-.mobile-menu .navbar-default .navbar-nav > li > a {
-  color: #054182; }
-.mobile-menu .outlet-menu {
-  color: #da2620 !important; }
 .mobile-menu .navbar-header {
   float: none;
   background: white;
@@ -91,14 +87,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   overflow: hidden; }
   .mobile-menu .navbar-header .logo {
     line-height: 35px; }
-.mobile-menu .nav > li > a {
-  padding: 10px 20px; }
-  .mobile-menu .nav > li > a span {
-    float: right;
-    font-size: 16px;
-    margin-right: 5px; }
-.mobile-menu .navbar-default .navbar-toggle:hover, .mobile-menu .navbar-default .navbar-toggle:focus {
-  background-color: #eeeeee; }
 .mobile-menu .navbar-toggle {
   display: block !important;
   float: left;
