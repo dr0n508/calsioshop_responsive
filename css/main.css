@@ -274,7 +274,8 @@ h3 {
   .category .btn-advert {
     position: absolute;
     width: 60%;
-    top: 45%;
+    top: 50%;
+    margin-top: -16px;
     left: 20%;
     color: #054180;
     background: white;
