@@ -22,12 +22,25 @@ $(document).ready(function () {
         $list.css("height", height);
     }
 
-    $('.select2-size').select2({
-        minimumResultsForSearch: Infinity,
-        placeholder: "Seleziona una taglia"
+
+
+
+    function formatState (state) {
+        if (!state.id) { return state.text; }
+        var $state = $(
+            '<span><img src="images/flags/' + state.element.value.toLowerCase() + '.png" class="img-flag" /> ' + state.text + '</span>'
+        );
+        return $state;
+    };
+
+    $(".select2-size").select2({
+        templateResult: formatState
+    }).on("change", function(e) {
+
+
+
+
     });
-
-
 
 
 });
