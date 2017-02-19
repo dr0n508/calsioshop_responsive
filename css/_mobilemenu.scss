@@ -1,11 +1,4 @@
 .mobile-menu {
-  //.navbar-default .navbar-nav>li>a {
-  //  color: #054182;
-  //}
-  //
-  //.outlet-menu {
-  //  color: #da2620 !important;
-  //}
 
   .navbar-header {
     float: none;
@@ -23,6 +16,33 @@
       float: right;
       font-size: 16px;
       margin-right: 5px;
+    }
+  }
+
+  .list-group-item[data-toggle="collapse"]{
+    &:after, &:before {
+      position: absolute;
+      font-family: FontAwesome;
+      font-size: 14px;
+      right: 10px;
+      top: 50%;
+      margin-top: -10px;
+    }
+    &:after {
+      content: "\f054";
+    }
+    &:before {
+
+      content: "\f078";
+      display: none;
+    }
+  }
+  .list-group-item[aria-expanded="true"]{
+    &:after {
+      display: none;
+    }
+    &:before {
+      display: block;
     }
   }
 

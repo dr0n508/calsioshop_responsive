@@ -93,6 +93,22 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     float: right;
     font-size: 16px;
     margin-right: 5px; }
+.mobile-menu .list-group-item[data-toggle="collapse"]:after, .mobile-menu .list-group-item[data-toggle="collapse"]:before {
+  position: absolute;
+  font-family: FontAwesome;
+  font-size: 14px;
+  right: 10px;
+  top: 50%;
+  margin-top: -10px; }
+.mobile-menu .list-group-item[data-toggle="collapse"]:after {
+  content: "\f054"; }
+.mobile-menu .list-group-item[data-toggle="collapse"]:before {
+  content: "\f078";
+  display: none; }
+.mobile-menu .list-group-item[aria-expanded="true"]:after {
+  display: none; }
+.mobile-menu .list-group-item[aria-expanded="true"]:before {
+  display: block; }
 .mobile-menu .navbar-toggle {
   display: block !important;
   float: left;
