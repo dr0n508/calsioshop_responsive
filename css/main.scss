@@ -570,11 +570,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    li {
-      i {
-        color: #828589;
-      }
-    }
+
     .blog-intro {
       padding: 10px 30px;
       font-family: MohaveBold, sans-serif;
@@ -583,10 +579,61 @@ h3 {
       border-left: solid 1px #828589;;
     }
     .blog {
-      img {
-        width: 120px;
-        height: auto;
+      width: 123px;
+      height: 62px;
+      display: block;
+      background: url("../images/social-footer-sprite.png") no-repeat scroll;
+      background-position: -386px -0;
+      &:hover {
+        background-position: -386px -64px;
       }
+    }
+  }
+  .faceboot-link a, .youtube-link a, .twitter-link a, .instagram-link a, .google-plus-link a, .pinterest-link a {
+    width: 62px;
+    height: 62px;
+    display: block;
+  }
+  .faceboot-link a {
+    background: url("../images/social-footer-sprite.png") no-repeat scroll;
+    background-position: 0 0;
+    &:hover {
+      background-position: 0 -64px;
+    }
+  }
+  .youtube-link a {
+    background: url("../images/social-footer-sprite.png") no-repeat scroll;
+    background-position: -60px 0;
+    &:hover {
+      background-position: -60px -64px;
+    }
+  }
+  .twitter-link a {
+    background: url("../images/social-footer-sprite.png") no-repeat scroll;
+    background-position: -114px 0;
+    &:hover {
+      background-position: -114px -64px;
+    }
+  }
+  .instagram-link a {
+    background: url("../images/social-footer-sprite.png") no-repeat scroll;
+    background-position: -167px 0;
+    &:hover {
+      background-position: -167px -64px;
+    }
+  }
+  .google-plus-link a {
+    background: url("../images/social-footer-sprite.png") no-repeat scroll;
+    background-position: -225px 0;
+    &:hover {
+      background-position: -225px -64px;
+    }
+  }
+  .pinterest-link a {
+    background: url("../images/social-footer-sprite.png") no-repeat scroll;
+    background-position: -273px 0;
+    &:hover {
+      background-position: -273px -64px;
     }
   }
 }
