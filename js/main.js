@@ -36,6 +36,8 @@ $(document).ready(function () {
     };
 
     $(".select2-size").select2({
+        minimumResultsForSearch: -1,
+        templateSelection: formatState,
         templateResult: formatState
     }).on("change", function(e) {
 

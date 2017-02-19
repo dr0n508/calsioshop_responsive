@@ -4,6 +4,7 @@
 @import "_buttons.scss";
 @import "_mobilemenu.scss";
 @import "_megamenu.scss";
+@import "_customize.scss";
 
 
 
@@ -98,7 +99,16 @@ h3 {
       }
     }
   }
-  .language-site {margin-left: 20px; }
+  .language-site {
+    margin-left: 20px;
+    margin-bottom: 3px;
+    select {
+      width: 100px;
+    }
+    .select2-selection {
+      border: none;
+    }
+  }
   .basket {
     margin-left: 80px;
     a {color: #054182; }

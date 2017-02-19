@@ -353,6 +353,10 @@ button.list-group-item:hover {
   height: auto;
   float: right; }
 
+.select2-dropdown {
+  border: none !important;
+  background: #d7d7d7; }
+
 .transition, .category:after, .category .btn-advert {
   -moz-transition: all .15s;
   -webkit-transition: all .15s;
@@ -425,7 +429,12 @@ h3 {
       font-family: MohaveBold, sans-serif;
       font-size: 17px; }
   .header-top .language-site {
-    margin-left: 20px; }
+    margin-left: 20px;
+    margin-bottom: 3px; }
+    .header-top .language-site select {
+      width: 100px; }
+    .header-top .language-site .select2-selection {
+      border: none; }
   .header-top .basket {
     margin-left: 80px; }
     .header-top .basket a {
