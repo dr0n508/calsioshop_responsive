@@ -13,6 +13,10 @@
   transition: all .15s;
 }
 
+.p0 {
+  padding-left: 0;
+  padding-right: 0;
+}
 
 .h1-home-page {
   font-family: MohaveBold, sans-serif;
@@ -368,7 +372,7 @@ h3 {
 
 /***************subscribe************* */
 .subscribe {
-  background: #191c21;
+  background: #090a0c;
   padding: 20px 0;
   h2 {
     font-family: "mohavebold", sans-serif;
@@ -498,6 +502,39 @@ h3 {
       width: 100px;
       height: auto;
       float: right;
+    }
+  }
+}
+
+
+.wrap-social-footer-bar {
+  .social-footer-bar{
+    display: flex;
+    align-items: center;
+  }
+  background-color: $footer-color;
+  padding: 20px 0;
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li {
+      i {
+        color: #828589;
+      }
+    }
+    .blog-intro {
+      padding: 10px 30px;
+      font-family: MohaveBold, sans-serif;
+      font-size: 17px;
+      color: #828589;
+      border-left: solid 1px #828589;;
+    }
+    .blog {
+      img {
+        width: 120px;
+        height: auto;
+      }
     }
   }
 }

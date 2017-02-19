@@ -86,6 +86,10 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   -o-transition: all .15s;
   transition: all .15s; }
 
+.p0 {
+  padding-left: 0;
+  padding-right: 0; }
+
 .h1-home-page {
   font-family: MohaveBold, sans-serif;
   font-size: 29px;
@@ -352,7 +356,7 @@ h3 {
 /***********************/
 /***************subscribe************* */
 .subscribe {
-  background: #191c21;
+  background: #090a0c;
   padding: 20px 0; }
   .subscribe h2 {
     font-family: "mohavebold", sans-serif;
@@ -441,5 +445,27 @@ h3 {
   width: 100px;
   height: auto;
   float: right; }
+
+.wrap-social-footer-bar {
+  background-color: #191c21;
+  padding: 20px 0; }
+  .wrap-social-footer-bar .social-footer-bar {
+    display: flex;
+    align-items: center; }
+  .wrap-social-footer-bar .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .wrap-social-footer-bar .social-links li i {
+      color: #828589; }
+    .wrap-social-footer-bar .social-links .blog-intro {
+      padding: 10px 30px;
+      font-family: MohaveBold, sans-serif;
+      font-size: 17px;
+      color: #828589;
+      border-left: solid 1px #828589; }
+    .wrap-social-footer-bar .social-links .blog img {
+      width: 120px;
+      height: auto; }
 
 /*# sourceMappingURL=main.css.map */
