@@ -519,6 +519,9 @@ h3 {
     font-family: "mohavebold", sans-serif;
     font-size: 30px;
     color: white;
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+    }
   }
   .text-section {
     font-family: "ralewayregular", sans-serif;
@@ -650,15 +653,12 @@ h3 {
     span {
       font-family: ralewaybold, sans-serif;
     }
-    i {
-      width: 20px;
+    i { width: 20px;}
+    a { color: #fafafa;}
+    @media only screen and (max-width: 992px) {
+      margin-top: 10px;
     }
-    a {
-      color: #fafafa;
-    }
-    li {
-      
-    }
+
   }
   .footer-info {
     padding-left: 85px;
