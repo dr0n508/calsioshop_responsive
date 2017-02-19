@@ -23,853 +23,962 @@
 <body>
 
 <header>
-        <nav class="navbar navbar-default visible-xs mobile-menu">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!--<a class="navbar-brand" href="#">Brand</a>-->
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
-
-                        <li class="dropdown">
-                            <a href="#menu-1-level" id="ddd" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">
-                                Menu 1st level
+    <!--mobile-menu-->
+    <nav class="navbar navbar-default mobile-menu visible-xs">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display-->
+            <div class="navbar-header">
+                <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="ico-hamburger fa fa-bars fa-lg"></span><span class="ico-remove fa fa-times fa-lg"></span>
+                    <p class="name-btm">Menu</p>
+                </button>
+                <button class="basket-button active"><span class="wrap-button-basket"><img src="images/ico-basket.png" alt="basket" class="ico-basket"><img src="images/ico-basket-white.png" alt="basket" class="ico-basket-white"><span class="number-goods">0</span></span></button><a href="#" class="logo"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling-->
+            <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                <form class="form-search">
+                    <div class="search">
+                        <input type="search" name="q" placeholder="Cerca" class="input-search"><a href="#" class="btn-search fa fa-search"></a>
+                    </div>
+                </form>
+                <div class="nav navbar-nav">
+                    <div id="main-menu">
+                        <div class="list-group panel">
+                            <a href="#shoes-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">
+                                SCARPE
                                 <span class="fa fa-chevron-right"></span>
                                 <span class="fa fa-chevron-down"></span>
                             </a>
 
-                            <div class="collapse" id="menu-1-level">
-                                <a href="#menu-2-level" class="list-group-item" data-toggle="collapse" data-parent="#menu-2-level">Menu 2nd level
+                            <div class="collapse" id="shoes-menu">
+
+                                <a href="#sub-shoes" class="list-group-item" data-toggle="collapse" data-parent="#sub-shoes">Sub-Item
                                     <span class="fa fa-chevron-right"></span>
                                     <span class="fa fa-chevron-down"></span>
                                 </a>
-                                <div class="collapse list-group-2-level" id="menu-2-level">
-                                    <a href="#menu-3-level" class="list-group-item" data-toggle="collapse" data-parent="#menu-3-level">Menu 3nd level
+
+
+                                <div class="collapse list-group-submenu" id="sub-shoes">
+                                    <a href="#SubSubShoes" class="list-group-item" data-toggle="collapse" data-parent="#SubSubShoes">Sub-Sub-Item1
                                         <span class="fa fa-chevron-right"></span>
                                         <span class="fa fa-chevron-down"></span>
                                     </a>
-
-                                    <div class="collapse list-group-2-level list-group-3-level" id="menu-3-level">
-                                        <a href="#" class="list-group-item" data-parent="#menu-3-level">Menu 4nd level</a>
-                                        <a href="#" class="list-group-item" data-parent="#menu-3-level">Menu 4nd level</a>
-                                        <a href="#" class="list-group-item" data-parent="#menu-3-level">Menu 4nd level</a>
+                                    <div class="collapse list-group-submenu list-group-subsubmenu" id="SubSubShoes">
+                                        <a href="#" class="list-group-item" data-parent="#SubSubShoes">Sub-Sub-Sub-Item1</a>
+                                        <a href="#" class="list-group-item" data-parent="#SubSubShoes">Sub-Sub-Sub-Item2</a>
+                                        <a href="#" class="list-group-item" data-parent="#SubSubShoes">Sub-Sub-Sub-Item3</a>
                                     </div>
+
+                                    <a href="#SubSubShoes2" class="list-group-item" data-toggle="collapse" data-parent="#SubSubShoes">
+                                        Sub-Sub-Item2
+                                        <span class="fa fa-chevron-right"></span>
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <div class="collapse list-group-submenu list-group-subsubmenu" id="SubSubShoes2">
+                                        <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub-Sub-Sub-Item1</a>
+                                        <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub-Sub-Sub-Item2</a>
+                                        <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub-Sub-Sub-Item3</a>
+                                    </div>
+                                    <a href="#" class="list-group-item" data-parent="#sub-shoes">Sub-Sub-Item</a>
+
+
                                 </div>
 
+                                <a href="#" class="list-group-item">Sub-Item</a>
 
                             </div>
 
-                        </li>
+                            <a href="#clothing-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">
+                                ABBIGLIAMENTO
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-down"></span>
+                            </a>
+
+                            <div class="collapse" id="clothing-menu">
+                                <a href="" class="list-group-item">Subitem 1</a>
+                                <a href="" class="list-group-item">Subitem 2</a>
+                                <a href="" class="list-group-item">Subitem 3</a>
+                            </div>
+
+                            <a href="#equipment-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">
+                                ATTREZZATURE
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-down"></span>
+                            </a>
+
+                            <div class="collapse" id="equipment-menu">
+                                <a href="" class="list-group-item">Subitem 1</a>
+                                <a href="" class="list-group-item">Subitem 2</a>
+                                <a href="" class="list-group-item">Subitem 3</a>
+                            </div>
+
+                            <a href="#goalkeeper-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">
+                                PORTIERE
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-down"></span>
+                            </a>
+
+                            <div class="collapse" id="goalkeeper-menu">
+                                <a href="" class="list-group-item">Subitem 1</a>
+                                <a href="" class="list-group-item">Subitem 2</a>
+                                <a href="" class="list-group-item">Subitem 3</a>
+                            </div>
+
+                            <a href="#urban-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">
+                                URBAN
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-down"></span>
+                            </a>
+
+                            <div class="collapse" id="urban-menu">
+                                <a href="" class="list-group-item">Subitem 1</a>
+                                <a href="" class="list-group-item">Subitem 2</a>
+                                <a href="" class="list-group-item">Subitem 3</a>
+                            </div>
+
+                            <a href="#outlet-menu" class="list-group-item main-item outlet-red" data-toggle="collapse" data-parent="#main-menu">
+                                OUTLET
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-down"></span>
+                            </a>
+
+                            <div class="collapse" id="outlet-menu">
+                                <a href="" class="list-group-item">Subitem 1</a>
+                                <a href="" class="list-group-item">Subitem 2</a>
+                                <a href="" class="list-group-item">Subitem 3</a>
+                            </div>
+
+                            <a href="#topBrand-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">
+                                MARCHI TOP
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-down"></span>
+                            </a>
+
+                            <div class="collapse" id="topBrand-menu">
+                                <a href="" class="list-group-item">Subitem 1</a>
+                                <a href="" class="list-group-item">Subitem 2</a>
+                                <a href="" class="list-group-item">Subitem 3</a>
+                            </div>
+
+                            <a href="#news-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">
+                                NOVITA'
+                                <span class="fa fa-chevron-right"></span>
+                                <span class="fa fa-chevron-down"></span>
+                            </a>
+
+                            <div class="collapse" id="news-menu">
+                                <a href="" class="list-group-item">Subitem 1</a>
+                                <a href="" class="list-group-item">Subitem 2</a>
+                                <a href="" class="list-group-item">Subitem 3</a>
+                            </div>
 
 
-
-
-                        <li><a href="#">Link</a></li>
-
-                    </ul>
-                    <form class="navbar-form navbar-right">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-            <div class="container">
-                <div class="row">
-                    <div class="header-top">
-                    <a href="#">
-                        <img src="images/logo.png" class="logo" alt="Calsioshop">
-                    </a>
-                    <div class="header-top-menu">
-                        <ul class="sign-in">
-                            <li><a href="#">Login /</a></li>
-                            <li><a href="#">Registrari</a></li>
-                        </ul>
-                        <div class="language-site">
-                            <form action="#">
-                                <select class="select2-size" name="language-site" id="language-site">
-                                    <option value="English">English</option>
-                                    <option value="Italienne">Italienne</option>
-                                    <option value="Francese">Francese</option>
-                                </select>
-                            </form>
-                        </div>
-                        <div class="basket">
-                            <a href="#">
-                                <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-                                <span class="number-goods-in-basket">0</span>
+                            <a href="#" class="list-group-item footer-main-menu" data-toggle="collapse" data-parent="#main-menu">
+                                Login/ Registrati
+                            </a>
+                            <a href="#" class="list-group-item footer-main-menu" data-toggle="collapse" data-parent="#main-menu">
+                                Assistenza
+                            </a>
+                            <a href="#" class="list-group-item footer-main-menu" data-toggle="collapse" data-parent="#main-menu">
+                                Pagamenti
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- /.navbar-collapse-->
         </div>
-        <nav class="navbar navbar-default hidden-xs desktop-menu">
-            <div class="container">
-                <div class="row">
-                    <div class="collapse navbar-collapse js-navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown mega-dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">SCARPE
-                                </a>
+        <!-- /.container-fluid-->
+    </nav>
+    <!--end-mobile-menu-->
 
-                                <ul class="dropdown-menu mega-dropdown-menu row">
-                                    <li class="col-sm-2">
-                                        <ul>
-                                            <li class="dropdown-header main"><a href="#">CALCIO</a></li>
-                                            <li class="dropdown-header"><a href="#">TERRENO</a></li>
-                                            <li><a href="#">Terreni duri</a></li>
-                                            <li><a href="#">Terreni morbidi</a></li>
-                                            <li><a href="#">Terreni artificiali</a></li>
-                                            <li><a href="#">da preparazione</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="#">MARCA</a></li>
-                                            <li><a href="#">Nike</a></li>
-                                            <li><a href="#">adidas</a></li>
-                                            <li><a href="#">Puma</a></li>
-                                            <li><a href="#">Asics</a></li>
-                                            <li><a href="#">Diadora</a></li>
-                                            <li><a href="#">Gems</a></li>
-                                            <li><a href="#">Lotto</a></li>
-                                            <li><a href="#">Mizuno</a></li>
-                                            <li><a href="#">Pantofola d'oro</a></li>
-                                            <li><a href="#">Umbro</a></li>
-                                            <li><a href="#">New Balance</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-sm-2">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="#">MARCA</a></li>
-                                            <li><a href="#">Nike</a></li>
-                                            <li><a href="#">adidas</a></li>
-                                            <li><a href="#">Puma</a></li>
-                                            <li><a href="#">Asics</a></li>
-                                            <li><a href="#">Diadora</a></li>
-                                            <li><a href="#">Gems</a></li>
-                                            <li><a href="#">Lotto</a></li>
-                                            <li><a href="#">Mizuno</a></li>
-                                            <li><a href="#">Pantofola d'oro</a></li>
-                                            <li><a href="#">Umbro</a></li>
-                                            <li><a href="#">New Balance</a></li>
-                                        </ul>
-
-                                    </li>
-                                    <li class="col-sm-2">
-                                        <ul>
-                                            <li class="dropdown-header main"><a href="#">CALCETTO</a></li>
-                                            <li class="dropdown-header"><a href="#">TERRENO</a></li>
-                                            <li><a href="#">Indoor</a></li>
-                                            <li><a href="#">Outdoor</a></li>
-                                            <li><a href="#">Street</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li class="dropdown-header"><a href="#">COLLEZIONE</a></li>
-                                            <li><a href="#">Nike</a></li>
-                                            <li><a href="#">adidas</a></li>
-                                            <li><a href="#">Puma</a></li>
-                                            <li><a href="#">Asics</a></li>
-                                            <li><a href="#">Diadora</a></li>
-                                            <li><a href="#">Gems</a></li>
-                                            <li><a href="#">Lotto</a></li>
-                                            <li><a href="#">Mizuno</a></li>
-                                            <li><a href="#">Pantofola d'oro</a></li>
-                                            <li><a href="#">Umbro</a></li>
-                                            <li><a href="#">New Balance</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-sm-2">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="#">MARCA</a></li>
-                                            <li><a href="#">Nike</a></li>
-                                            <li><a href="#">adidas</a></li>
-                                            <li><a href="#">Puma</a></li>
-                                            <li><a href="#">Asics</a></li>
-                                            <li><a href="#">Diadora</a></li>
-                                            <li><a href="#">Gems</a></li>
-                                            <li><a href="#">Lotto</a></li>
-                                            <li><a href="#">Mizuno</a></li>
-                                            <li><a href="#">Pantofola d'oro</a></li>
-                                            <li><a href="#">Umbro</a></li>
-                                            <li><a href="#">New Balance</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header main"><a href="#">Urban</a></li>
-                                            <li class="dropdown-header"><a href="#">MARCA</a></li>
-                                            <li><a href="#">Nike</a></li>
-                                            <li><a href="#">adidas</a></li>
-                                            <li><a href="#">Puma</a></li>
-                                            <li><a href="#">Asics</a></li>
-                                            <li><a href="#">Diadora</a></li>
-                                            <li><a href="#">Gems</a></li>
-                                            <li><a href="#">Lotto</a></li>
-                                            <li><a href="#">Mizuno</a></li>
-                                            <li><a href="#">Pantofola d'oro</a></li>
-                                            <li><a href="#">Umbro</a></li>
-                                            <li><a href="#">New Balance</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown mega-dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABBIGLIAMENTO</a>
-
-                                <ul class="dropdown-menu mega-dropdown-menu row">
-                                    <li class="col-md-2 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">GARA</a></li>
-                                            <li><a href="#">Completi Calcio</a></li>
-                                            <li><a href="#">Calzettoni</a></li>
-                                            <li><a href="#">Maglie calcio</a></li>
-                                            <li><a href="#">Pantaloncini</a></li>
-                                            <li><a href="#">Box</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ALLEnamento</a></li>
-                                            <li><a href="#">Training Pro</a></li>
-                                            <li><a href="#">Pettorine-casacche</a></li>
-                                            <li><a href="#">Tute</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                            <li><a href="#">Giacche antipioggia</a></li>
-                                            <li><a href="#">Giacconi invernali</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">INTIMO TECNICO</a></li>
-                                            <li><a href="#">Smanicato</a></li>
-                                            <li><a href="#">Manica corta</a></li>
-                                            <li><a href="#">Manica lunga</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                        </ul>
-
-
-
-                                    </li>
-                                    <li class="col-md-2 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">TEAM ITALIANI</a></li>
-                                            <li><a href="#">Serie A</a></li>
-                                            <li><a href="#">Serie B</a></li>
-                                            <li><a href="#">Nazionale Italiana</a></li>
-                                            <li><a href="#">Maglie Storiche</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">TEAM INTERNAZIONALI</a></li>
-                                            <li><a href="#">Premiere League</a></li>
-                                            <li><a href="#">Bundesliga</a></li>
-                                            <li><a href="#">Ligue 1</a></li>
-                                            <li><a href="#">Portuguese liga</a></li>
-                                            <li><a href="#">Eredivisie</a></li>
-                                            <li><a href="#">SPL</a></li>
-                                            <li><a href="#">Sud America</a></li>
-                                            <li><a href="#">Nazionali straniere</a></li>
-                                            <li><a href="#">Maglie Storiche</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-md-2 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">TEmpo libero</a></li>
-                                            <li><a href="#">Polo</a></li>
-                                            <li><a href="#">T-Shirt</a></li>
-                                            <li><a href="#">T-Shirt Personalizzabili</a></li>
-                                            <li><a href="#">Felpe</a></li>
-                                            <li><a href="#">Tute</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                            <li><a href="#">Cappellini</a></li>
-                                            <li><a href="#">Ciabatte</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ARTICOLI INVERNALI</a></li>
-                                            <li><a href="#">Cappellini</a></li>
-                                            <li><a href="#">Guanti</a></li>
-                                            <li><a href="#">Scaldacollo</a></li>
-                                            <li><a href="#">Scaldì</a></li>
-                                            <li><a href="#">Sciarpe</a></li>
-
-                                        </ul>
-
-                                    </li>
-                                    <li class="col-md-2 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ARBITRO</a></li>
-                                            <li><a href="#">Kit gara</a></li>
-                                            <li><a href="#">Accessori</a></li>
-                                            <li><a href="#">Completi</a></li>
-                                            <li><a href="#">Scarpe</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-md-4 col-sm-12">
-                                        <ul class="list-offer-mega-menu">
-                                            <li>
-                                                <div class="row">
-                                                    <a href="#">
-                                                        <span class="col-md-6 wrap-img">
-                                                            <img src="images/offer-mega-menu.png" alt="offer-mega-menu">
-                                                        </span>
-                                                        <span class="col-md-6">
-                                                            <p>mod. Mississipi</p>
-                                                            <p>16.00</p>
-                                                            <p>11.90</p>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="row">
-                                                    <a href="#">
-                                                        <span class="col-md-6">
-                                                            img
-                                                        </span>
-                                                        <span class="col-md-6">
-                                                            <p>mod. Mississipi</p>
-                                                            <p>16.00</p>
-                                                            <p>11.90</p>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="row">
-                                                    <a href="#">
-                                                        <span class="col-md-6">
-                                                            img
-                                                        </span>
-                                                        <span class="col-md-6">
-                                                            <p>mod. Mississipi</p>
-                                                            <p>16.00</p>
-                                                            <p>11.90</p>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                            </li>
-                            <li class="dropdown mega-dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">ATTREZZATURE</a>
-
-                                <ul class="dropdown-menu mega-dropdown-menu row">
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">GARA</a></li>
-                                            <li><a href="#">Completi Calcio</a></li>
-                                            <li><a href="#">Calzettoni</a></li>
-                                            <li><a href="#">Maglie calcio</a></li>
-                                            <li><a href="#">Pantaloncini</a></li>
-                                            <li><a href="#">Box</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ALLEnamento</a></li>
-                                            <li><a href="#">Training Pro</a></li>
-                                            <li><a href="#">Pettorine-casacche</a></li>
-                                            <li><a href="#">Tute</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                            <li><a href="#">Giacche antipioggia</a></li>
-                                            <li><a href="#">Giacconi invernali</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">INTIMO TECNICO</a></li>
-                                            <li><a href="#">Smanicato</a></li>
-                                            <li><a href="#">Manica corta</a></li>
-                                            <li><a href="#">Manica lunga</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                        </ul>
-
-
-
-                                    </li>
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">TEAM ITALIANI</a></li>
-                                            <li><a href="#">Serie A</a></li>
-                                            <li><a href="#">Serie B</a></li>
-                                            <li><a href="#">Nazionale Italiana</a></li>
-                                            <li><a href="#">Maglie Storiche</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">TEAM INTERNAZIONALI</a></li>
-                                            <li><a href="#">Premiere League</a></li>
-                                            <li><a href="#">Bundesliga</a></li>
-                                            <li><a href="#">Ligue 1</a></li>
-                                            <li><a href="#">Portuguese liga</a></li>
-                                            <li><a href="#">Eredivisie</a></li>
-                                            <li><a href="#">SPL</a></li>
-                                            <li><a href="#">Sud America</a></li>
-                                            <li><a href="#">Nazionali straniere</a></li>
-                                            <li><a href="#">Maglie Storiche</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">TEmpo libero</a></li>
-                                            <li><a href="#">Polo</a></li>
-                                            <li><a href="#">T-Shirt</a></li>
-                                            <li><a href="#">T-Shirt Personalizzabili</a></li>
-                                            <li><a href="#">Felpe</a></li>
-                                            <li><a href="#">Tute</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                            <li><a href="#">Cappellini</a></li>
-                                            <li><a href="#">Ciabatte</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ARTICOLI INVERNALI</a></li>
-                                            <li><a href="#">Cappellini</a></li>
-                                            <li><a href="#">Guanti</a></li>
-                                            <li><a href="#">Scaldacollo</a></li>
-                                            <li><a href="#">Scaldì</a></li>
-                                            <li><a href="#">Sciarpe</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ARBITRO</a></li>
-                                            <li><a href="#">Kit gara</a></li>
-                                            <li><a href="#">Accessori</a></li>
-                                            <li><a href="#">Completi</a></li>
-                                            <li><a href="#">Scarpe</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown mega-dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">PORTIERE</a>
-                                <ul class="dropdown-menu mega-dropdown-menu row">
-                                    <li class="col-md-4 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">GARA</a></li>
-                                            <li><a href="#">Completi Calcio</a></li>
-                                            <li><a href="#">Calzettoni</a></li>
-                                            <li><a href="#">Maglie calcio</a></li>
-                                            <li><a href="#">Pantaloncini</a></li>
-                                            <li><a href="#">Box</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ALLEnamento</a></li>
-                                            <li><a href="#">Training Pro</a></li>
-                                            <li><a href="#">Pettorine-casacche</a></li>
-                                            <li><a href="#">Tute</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                            <li><a href="#">Giacche antipioggia</a></li>
-                                            <li><a href="#">Giacconi invernali</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">INTIMO TECNICO</a></li>
-                                            <li><a href="#">Smanicato</a></li>
-                                            <li><a href="#">Manica corta</a></li>
-                                            <li><a href="#">Manica lunga</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                        </ul>
-
-
-
-                                    </li>
-                                    <li class="col-md-4 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">TEAM ITALIANI</a></li>
-                                            <li><a href="#">Serie A</a></li>
-                                            <li><a href="#">Serie B</a></li>
-                                            <li><a href="#">Nazionale Italiana</a></li>
-                                            <li><a href="#">Maglie Storiche</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">TEAM INTERNAZIONALI</a></li>
-                                            <li><a href="#">Premiere League</a></li>
-                                            <li><a href="#">Bundesliga</a></li>
-                                            <li><a href="#">Ligue 1</a></li>
-                                            <li><a href="#">Portuguese liga</a></li>
-                                            <li><a href="#">Eredivisie</a></li>
-                                            <li><a href="#">SPL</a></li>
-                                            <li><a href="#">Sud America</a></li>
-                                            <li><a href="#">Nazionali straniere</a></li>
-                                            <li><a href="#">Maglie Storiche</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-md-4 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">TEmpo libero</a></li>
-                                            <li><a href="#">Polo</a></li>
-                                            <li><a href="#">T-Shirt</a></li>
-                                            <li><a href="#">T-Shirt Personalizzabili</a></li>
-                                            <li><a href="#">Felpe</a></li>
-                                            <li><a href="#">Tute</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                            <li><a href="#">Cappellini</a></li>
-                                            <li><a href="#">Ciabatte</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ARTICOLI INVERNALI</a></li>
-                                            <li><a href="#">Cappellini</a></li>
-                                            <li><a href="#">Guanti</a></li>
-                                            <li><a href="#">Scaldacollo</a></li>
-                                            <li><a href="#">Scaldì</a></li>
-                                            <li><a href="#">Sciarpe</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown mega-dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">URBAN</a>
-                                <ul class="dropdown-menu mega-dropdown-menu row">
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">GARA</a></li>
-                                            <li><a href="#">Completi Calcio</a></li>
-                                            <li><a href="#">Calzettoni</a></li>
-                                            <li><a href="#">Maglie calcio</a></li>
-                                            <li><a href="#">Pantaloncini</a></li>
-                                            <li><a href="#">Box</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ALLEnamento</a></li>
-                                            <li><a href="#">Training Pro</a></li>
-                                            <li><a href="#">Pettorine-casacche</a></li>
-                                            <li><a href="#">Tute</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                            <li><a href="#">Giacche antipioggia</a></li>
-                                            <li><a href="#">Giacconi invernali</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">INTIMO TECNICO</a></li>
-                                            <li><a href="#">Smanicato</a></li>
-                                            <li><a href="#">Manica corta</a></li>
-                                            <li><a href="#">Manica lunga</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                        </ul>
-
-
-
-                                    </li>
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">TEAM ITALIANI</a></li>
-                                            <li><a href="#">Serie A</a></li>
-                                            <li><a href="#">Serie B</a></li>
-                                            <li><a href="#">Nazionale Italiana</a></li>
-                                            <li><a href="#">Maglie Storiche</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">TEAM INTERNAZIONALI</a></li>
-                                            <li><a href="#">Premiere League</a></li>
-                                            <li><a href="#">Bundesliga</a></li>
-                                            <li><a href="#">Ligue 1</a></li>
-                                            <li><a href="#">Portuguese liga</a></li>
-                                            <li><a href="#">Eredivisie</a></li>
-                                            <li><a href="#">SPL</a></li>
-                                            <li><a href="#">Sud America</a></li>
-                                            <li><a href="#">Nazionali straniere</a></li>
-                                            <li><a href="#">Maglie Storiche</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">TEmpo libero</a></li>
-                                            <li><a href="#">Polo</a></li>
-                                            <li><a href="#">T-Shirt</a></li>
-                                            <li><a href="#">T-Shirt Personalizzabili</a></li>
-                                            <li><a href="#">Felpe</a></li>
-                                            <li><a href="#">Tute</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                            <li><a href="#">Cappellini</a></li>
-                                            <li><a href="#">Ciabatte</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ARTICOLI INVERNALI</a></li>
-                                            <li><a href="#">Cappellini</a></li>
-                                            <li><a href="#">Guanti</a></li>
-                                            <li><a href="#">Scaldacollo</a></li>
-                                            <li><a href="#">Scaldì</a></li>
-                                            <li><a href="#">Sciarpe</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ARBITRO</a></li>
-                                            <li><a href="#">Kit gara</a></li>
-                                            <li><a href="#">Accessori</a></li>
-                                            <li><a href="#">Completi</a></li>
-                                            <li><a href="#">Scarpe</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown mega-dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">OUTLET</a>
-
-                                <ul class="dropdown-menu mega-dropdown-menu row">
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">GARA</a></li>
-                                            <li><a href="#">Completi Calcio</a></li>
-                                            <li><a href="#">Calzettoni</a></li>
-                                            <li><a href="#">Maglie calcio</a></li>
-                                            <li><a href="#">Pantaloncini</a></li>
-                                            <li><a href="#">Box</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ALLEnamento</a></li>
-                                            <li><a href="#">Training Pro</a></li>
-                                            <li><a href="#">Pettorine-casacche</a></li>
-                                            <li><a href="#">Tute</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                            <li><a href="#">Giacche antipioggia</a></li>
-                                            <li><a href="#">Giacconi invernali</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">INTIMO TECNICO</a></li>
-                                            <li><a href="#">Smanicato</a></li>
-                                            <li><a href="#">Manica corta</a></li>
-                                            <li><a href="#">Manica lunga</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                        </ul>
-
-
-
-                                    </li>
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">TEAM ITALIANI</a></li>
-                                            <li><a href="#">Serie A</a></li>
-                                            <li><a href="#">Serie B</a></li>
-                                            <li><a href="#">Nazionale Italiana</a></li>
-                                            <li><a href="#">Maglie Storiche</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">TEmpo libero</a></li>
-                                            <li><a href="#">Polo</a></li>
-                                            <li><a href="#">T-Shirt</a></li>
-                                            <li><a href="#">T-Shirt Personalizzabili</a></li>
-                                            <li><a href="#">Felpe</a></li>
-                                            <li><a href="#">Tute</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                            <li><a href="#">Cappellini</a></li>
-                                            <li><a href="#">Ciabatte</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ARTICOLI INVERNALI</a></li>
-                                            <li><a href="#">Cappellini</a></li>
-                                            <li><a href="#">Guanti</a></li>
-                                            <li><a href="#">Scaldacollo</a></li>
-                                            <li><a href="#">Scaldì</a></li>
-                                            <li><a href="#">Sciarpe</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ARBITRO</a></li>
-                                            <li><a href="#">Kit gara</a></li>
-                                            <li><a href="#">Accessori</a></li>
-                                            <li><a href="#">Completi</a></li>
-                                            <li><a href="#">Scarpe</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                            </li>
-                            <li class="dropdown mega-dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">MARCHI TOP</a>
-
-                                <ul class="dropdown-menu mega-dropdown-menu row">
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">GARA</a></li>
-                                            <li><a href="#">Completi Calcio</a></li>
-                                            <li><a href="#">Calzettoni</a></li>
-                                            <li><a href="#">Maglie calcio</a></li>
-                                            <li><a href="#">Pantaloncini</a></li>
-                                            <li><a href="#">Box</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ALLEnamento</a></li>
-                                            <li><a href="#">Training Pro</a></li>
-                                            <li><a href="#">Pettorine-casacche</a></li>
-                                            <li><a href="#">Tute</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                            <li><a href="#">Giacche antipioggia</a></li>
-                                            <li><a href="#">Giacconi invernali</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">INTIMO TECNICO</a></li>
-                                            <li><a href="#">Smanicato</a></li>
-                                            <li><a href="#">Manica corta</a></li>
-                                            <li><a href="#">Manica lunga</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                        </ul>
-
-
-
-                                    </li>
-                                    <li class="col-md-3 col-sm-3">
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">TEAM INTERNAZIONALI</a></li>
-                                            <li><a href="#">Premiere League</a></li>
-                                            <li><a href="#">Bundesliga</a></li>
-                                            <li><a href="#">Ligue 1</a></li>
-                                            <li><a href="#">Portuguese liga</a></li>
-                                            <li><a href="#">Eredivisie</a></li>
-                                            <li><a href="#">SPL</a></li>
-                                            <li><a href="#">Sud America</a></li>
-                                            <li><a href="#">Nazionali straniere</a></li>
-                                            <li><a href="#">Maglie Storiche</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">TEmpo libero</a></li>
-                                            <li><a href="#">Polo</a></li>
-                                            <li><a href="#">T-Shirt</a></li>
-                                            <li><a href="#">T-Shirt Personalizzabili</a></li>
-                                            <li><a href="#">Felpe</a></li>
-                                            <li><a href="#">Tute</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                            <li><a href="#">Cappellini</a></li>
-                                            <li><a href="#">Ciabatte</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ARTICOLI INVERNALI</a></li>
-                                            <li><a href="#">Cappellini</a></li>
-                                            <li><a href="#">Guanti</a></li>
-                                            <li><a href="#">Scaldacollo</a></li>
-                                            <li><a href="#">Scaldì</a></li>
-                                            <li><a href="#">Sciarpe</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ARBITRO</a></li>
-                                            <li><a href="#">Kit gara</a></li>
-                                            <li><a href="#">Accessori</a></li>
-                                            <li><a href="#">Completi</a></li>
-                                            <li><a href="#">Scarpe</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown mega-dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">NOVITA'</span></a>
-                                <ul class="dropdown-menu mega-dropdown-menu row">
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">GARA</a></li>
-                                            <li><a href="#">Completi Calcio</a></li>
-                                            <li><a href="#">Calzettoni</a></li>
-                                            <li><a href="#">Maglie calcio</a></li>
-                                            <li><a href="#">Pantaloncini</a></li>
-                                            <li><a href="#">Box</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ALLEnamento</a></li>
-                                            <li><a href="#">Training Pro</a></li>
-                                            <li><a href="#">Pettorine-casacche</a></li>
-                                            <li><a href="#">Tute</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                            <li><a href="#">Giacche antipioggia</a></li>
-                                            <li><a href="#">Giacconi invernali</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">INTIMO TECNICO</a></li>
-                                            <li><a href="#">Smanicato</a></li>
-                                            <li><a href="#">Manica corta</a></li>
-                                            <li><a href="#">Manica lunga</a></li>
-                                            <li><a href="#">Pantaloni</a></li>
-                                        </ul>
-
-
-
-                                    </li>
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">TEAM ITALIANI</a></li>
-                                            <li><a href="#">Serie A</a></li>
-                                            <li><a href="#">Serie B</a></li>
-                                            <li><a href="#">Nazionale Italiana</a></li>
-                                            <li><a href="#">Maglie Storiche</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">TEAM INTERNAZIONALI</a></li>
-                                            <li><a href="#">Premiere League</a></li>
-                                            <li><a href="#">Bundesliga</a></li>
-                                            <li><a href="#">Ligue 1</a></li>
-                                            <li><a href="#">Portuguese liga</a></li>
-                                            <li><a href="#">Eredivisie</a></li>
-                                            <li><a href="#">SPL</a></li>
-                                            <li><a href="#">Sud America</a></li>
-                                            <li><a href="#">Nazionali straniere</a></li>
-                                            <li><a href="#">Maglie Storiche</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ARTICOLI INVERNALI</a></li>
-                                            <li><a href="#">Cappellini</a></li>
-                                            <li><a href="#">Guanti</a></li>
-                                            <li><a href="#">Scaldacollo</a></li>
-                                            <li><a href="#">Scaldì</a></li>
-                                            <li><a href="#">Sciarpe</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="col-md-3 col-sm-3">
-                                        <ul>
-                                            <li class="dropdown-header"><a href="">ARBITRO</a></li>
-                                            <li><a href="#">Kit gara</a></li>
-                                            <li><a href="#">Accessori</a></li>
-                                            <li><a href="#">Completi</a></li>
-                                            <li><a href="#">Scarpe</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <form class="form-search">
-                            <div class="search">
-                                <input type="search" name="q" placeholder="Cerca" class="input-search"><a href="#" class="btn-search fa fa-search"></a>
-                            </div>
+    <div class="container hidden-xs">
+        <div class="row">
+            <div class="header-top">
+                <a href="#">
+                    <img src="images/logo.png" class="logo" alt="Calsioshop">
+                </a>
+                <div class="header-top-menu">
+                    <ul class="sign-in">
+                        <li><a href="#">Login /</a></li>
+                        <li><a href="#">Registrari</a></li>
+                    </ul>
+                    <div class="language-site">
+                        <form action="#">
+                            <select class="select2-size" name="language-site" id="language-site">
+                                <option value="English">English</option>
+                                <option value="Italienne">Italienne</option>
+                                <option value="Francese">Francese</option>
+                            </select>
                         </form>
-
                     </div>
-
-                <!-- /.nav-collapse -->
+                    <div class="basket">
+                        <a href="#">
+                            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                            <span class="number-goods-in-basket">0</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
+    </div>
+
+    <!--desktop-menu-->
+    <nav class="navbar navbar-default hidden-xs desktop-menu">
+        <div class="container">
+            <div class="row">
+                <div class="collapse navbar-collapse js-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown mega-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">SCARPE
+                            </a>
+
+                            <ul class="dropdown-menu mega-dropdown-menu row">
+                                <li class="col-sm-2">
+                                    <ul>
+                                        <li class="dropdown-header main"><a href="#">CALCIO</a></li>
+                                        <li class="dropdown-header"><a href="#">TERRENO</a></li>
+                                        <li><a href="#">Terreni duri</a></li>
+                                        <li><a href="#">Terreni morbidi</a></li>
+                                        <li><a href="#">Terreni artificiali</a></li>
+                                        <li><a href="#">da preparazione</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="#">MARCA</a></li>
+                                        <li><a href="#">Nike</a></li>
+                                        <li><a href="#">adidas</a></li>
+                                        <li><a href="#">Puma</a></li>
+                                        <li><a href="#">Asics</a></li>
+                                        <li><a href="#">Diadora</a></li>
+                                        <li><a href="#">Gems</a></li>
+                                        <li><a href="#">Lotto</a></li>
+                                        <li><a href="#">Mizuno</a></li>
+                                        <li><a href="#">Pantofola d'oro</a></li>
+                                        <li><a href="#">Umbro</a></li>
+                                        <li><a href="#">New Balance</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-sm-2">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="#">MARCA</a></li>
+                                        <li><a href="#">Nike</a></li>
+                                        <li><a href="#">adidas</a></li>
+                                        <li><a href="#">Puma</a></li>
+                                        <li><a href="#">Asics</a></li>
+                                        <li><a href="#">Diadora</a></li>
+                                        <li><a href="#">Gems</a></li>
+                                        <li><a href="#">Lotto</a></li>
+                                        <li><a href="#">Mizuno</a></li>
+                                        <li><a href="#">Pantofola d'oro</a></li>
+                                        <li><a href="#">Umbro</a></li>
+                                        <li><a href="#">New Balance</a></li>
+                                    </ul>
+
+                                </li>
+                                <li class="col-sm-2">
+                                    <ul>
+                                        <li class="dropdown-header main"><a href="#">CALCETTO</a></li>
+                                        <li class="dropdown-header"><a href="#">TERRENO</a></li>
+                                        <li><a href="#">Indoor</a></li>
+                                        <li><a href="#">Outdoor</a></li>
+                                        <li><a href="#">Street</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="dropdown-header"><a href="#">COLLEZIONE</a></li>
+                                        <li><a href="#">Nike</a></li>
+                                        <li><a href="#">adidas</a></li>
+                                        <li><a href="#">Puma</a></li>
+                                        <li><a href="#">Asics</a></li>
+                                        <li><a href="#">Diadora</a></li>
+                                        <li><a href="#">Gems</a></li>
+                                        <li><a href="#">Lotto</a></li>
+                                        <li><a href="#">Mizuno</a></li>
+                                        <li><a href="#">Pantofola d'oro</a></li>
+                                        <li><a href="#">Umbro</a></li>
+                                        <li><a href="#">New Balance</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-sm-2">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="#">MARCA</a></li>
+                                        <li><a href="#">Nike</a></li>
+                                        <li><a href="#">adidas</a></li>
+                                        <li><a href="#">Puma</a></li>
+                                        <li><a href="#">Asics</a></li>
+                                        <li><a href="#">Diadora</a></li>
+                                        <li><a href="#">Gems</a></li>
+                                        <li><a href="#">Lotto</a></li>
+                                        <li><a href="#">Mizuno</a></li>
+                                        <li><a href="#">Pantofola d'oro</a></li>
+                                        <li><a href="#">Umbro</a></li>
+                                        <li><a href="#">New Balance</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header main"><a href="#">Urban</a></li>
+                                        <li class="dropdown-header"><a href="#">MARCA</a></li>
+                                        <li><a href="#">Nike</a></li>
+                                        <li><a href="#">adidas</a></li>
+                                        <li><a href="#">Puma</a></li>
+                                        <li><a href="#">Asics</a></li>
+                                        <li><a href="#">Diadora</a></li>
+                                        <li><a href="#">Gems</a></li>
+                                        <li><a href="#">Lotto</a></li>
+                                        <li><a href="#">Mizuno</a></li>
+                                        <li><a href="#">Pantofola d'oro</a></li>
+                                        <li><a href="#">Umbro</a></li>
+                                        <li><a href="#">New Balance</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown mega-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABBIGLIAMENTO</a>
+
+                            <ul class="dropdown-menu mega-dropdown-menu row">
+                                <li class="col-md-2 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">GARA</a></li>
+                                        <li><a href="#">Completi Calcio</a></li>
+                                        <li><a href="#">Calzettoni</a></li>
+                                        <li><a href="#">Maglie calcio</a></li>
+                                        <li><a href="#">Pantaloncini</a></li>
+                                        <li><a href="#">Box</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ALLEnamento</a></li>
+                                        <li><a href="#">Training Pro</a></li>
+                                        <li><a href="#">Pettorine-casacche</a></li>
+                                        <li><a href="#">Tute</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                        <li><a href="#">Giacche antipioggia</a></li>
+                                        <li><a href="#">Giacconi invernali</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">INTIMO TECNICO</a></li>
+                                        <li><a href="#">Smanicato</a></li>
+                                        <li><a href="#">Manica corta</a></li>
+                                        <li><a href="#">Manica lunga</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="col-md-2 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">TEAM ITALIANI</a></li>
+                                        <li><a href="#">Serie A</a></li>
+                                        <li><a href="#">Serie B</a></li>
+                                        <li><a href="#">Nazionale Italiana</a></li>
+                                        <li><a href="#">Maglie Storiche</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">TEAM INTERNAZIONALI</a></li>
+                                        <li><a href="#">Premiere League</a></li>
+                                        <li><a href="#">Bundesliga</a></li>
+                                        <li><a href="#">Ligue 1</a></li>
+                                        <li><a href="#">Portuguese liga</a></li>
+                                        <li><a href="#">Eredivisie</a></li>
+                                        <li><a href="#">SPL</a></li>
+                                        <li><a href="#">Sud America</a></li>
+                                        <li><a href="#">Nazionali straniere</a></li>
+                                        <li><a href="#">Maglie Storiche</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-2 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">TEmpo libero</a></li>
+                                        <li><a href="#">Polo</a></li>
+                                        <li><a href="#">T-Shirt</a></li>
+                                        <li><a href="#">T-Shirt Personalizzabili</a></li>
+                                        <li><a href="#">Felpe</a></li>
+                                        <li><a href="#">Tute</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                        <li><a href="#">Cappellini</a></li>
+                                        <li><a href="#">Ciabatte</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ARTICOLI INVERNALI</a></li>
+                                        <li><a href="#">Cappellini</a></li>
+                                        <li><a href="#">Guanti</a></li>
+                                        <li><a href="#">Scaldacollo</a></li>
+                                        <li><a href="#">Scaldì</a></li>
+                                        <li><a href="#">Sciarpe</a></li>
+
+                                    </ul>
+
+                                </li>
+                                <li class="col-md-2 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ARBITRO</a></li>
+                                        <li><a href="#">Kit gara</a></li>
+                                        <li><a href="#">Accessori</a></li>
+                                        <li><a href="#">Completi</a></li>
+                                        <li><a href="#">Scarpe</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-4 col-sm-12">
+                                    <ul class="list-offer-mega-menu">
+                                        <li>
+                                            <div class="row">
+                                                <a href="#">
+                                                    <span class="col-md-6 wrap-img">
+                                                        <img src="images/offer-mega-menu.png" alt="offer-mega-menu">
+                                                    </span>
+                                                    <span class="col-md-6">
+                                                        <p>mod. Mississipi</p>
+                                                        <p>16.00</p>
+                                                        <p>11.90</p>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <a href="#">
+                                                    <span class="col-md-6">
+                                                        img
+                                                    </span>
+                                                    <span class="col-md-6">
+                                                        <p>mod. Mississipi</p>
+                                                        <p>16.00</p>
+                                                        <p>11.90</p>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <a href="#">
+                                                    <span class="col-md-6">
+                                                        img
+                                                    </span>
+                                                    <span class="col-md-6">
+                                                        <p>mod. Mississipi</p>
+                                                        <p>16.00</p>
+                                                        <p>11.90</p>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="dropdown mega-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">ATTREZZATURE</a>
+
+                            <ul class="dropdown-menu mega-dropdown-menu row">
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">GARA</a></li>
+                                        <li><a href="#">Completi Calcio</a></li>
+                                        <li><a href="#">Calzettoni</a></li>
+                                        <li><a href="#">Maglie calcio</a></li>
+                                        <li><a href="#">Pantaloncini</a></li>
+                                        <li><a href="#">Box</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ALLEnamento</a></li>
+                                        <li><a href="#">Training Pro</a></li>
+                                        <li><a href="#">Pettorine-casacche</a></li>
+                                        <li><a href="#">Tute</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                        <li><a href="#">Giacche antipioggia</a></li>
+                                        <li><a href="#">Giacconi invernali</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">INTIMO TECNICO</a></li>
+                                        <li><a href="#">Smanicato</a></li>
+                                        <li><a href="#">Manica corta</a></li>
+                                        <li><a href="#">Manica lunga</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">TEAM ITALIANI</a></li>
+                                        <li><a href="#">Serie A</a></li>
+                                        <li><a href="#">Serie B</a></li>
+                                        <li><a href="#">Nazionale Italiana</a></li>
+                                        <li><a href="#">Maglie Storiche</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">TEAM INTERNAZIONALI</a></li>
+                                        <li><a href="#">Premiere League</a></li>
+                                        <li><a href="#">Bundesliga</a></li>
+                                        <li><a href="#">Ligue 1</a></li>
+                                        <li><a href="#">Portuguese liga</a></li>
+                                        <li><a href="#">Eredivisie</a></li>
+                                        <li><a href="#">SPL</a></li>
+                                        <li><a href="#">Sud America</a></li>
+                                        <li><a href="#">Nazionali straniere</a></li>
+                                        <li><a href="#">Maglie Storiche</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">TEmpo libero</a></li>
+                                        <li><a href="#">Polo</a></li>
+                                        <li><a href="#">T-Shirt</a></li>
+                                        <li><a href="#">T-Shirt Personalizzabili</a></li>
+                                        <li><a href="#">Felpe</a></li>
+                                        <li><a href="#">Tute</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                        <li><a href="#">Cappellini</a></li>
+                                        <li><a href="#">Ciabatte</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ARTICOLI INVERNALI</a></li>
+                                        <li><a href="#">Cappellini</a></li>
+                                        <li><a href="#">Guanti</a></li>
+                                        <li><a href="#">Scaldacollo</a></li>
+                                        <li><a href="#">Scaldì</a></li>
+                                        <li><a href="#">Sciarpe</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ARBITRO</a></li>
+                                        <li><a href="#">Kit gara</a></li>
+                                        <li><a href="#">Accessori</a></li>
+                                        <li><a href="#">Completi</a></li>
+                                        <li><a href="#">Scarpe</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown mega-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">PORTIERE</a>
+                            <ul class="dropdown-menu mega-dropdown-menu row">
+                                <li class="col-md-4 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">GARA</a></li>
+                                        <li><a href="#">Completi Calcio</a></li>
+                                        <li><a href="#">Calzettoni</a></li>
+                                        <li><a href="#">Maglie calcio</a></li>
+                                        <li><a href="#">Pantaloncini</a></li>
+                                        <li><a href="#">Box</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ALLEnamento</a></li>
+                                        <li><a href="#">Training Pro</a></li>
+                                        <li><a href="#">Pettorine-casacche</a></li>
+                                        <li><a href="#">Tute</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                        <li><a href="#">Giacche antipioggia</a></li>
+                                        <li><a href="#">Giacconi invernali</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">INTIMO TECNICO</a></li>
+                                        <li><a href="#">Smanicato</a></li>
+                                        <li><a href="#">Manica corta</a></li>
+                                        <li><a href="#">Manica lunga</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="col-md-4 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">TEAM ITALIANI</a></li>
+                                        <li><a href="#">Serie A</a></li>
+                                        <li><a href="#">Serie B</a></li>
+                                        <li><a href="#">Nazionale Italiana</a></li>
+                                        <li><a href="#">Maglie Storiche</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">TEAM INTERNAZIONALI</a></li>
+                                        <li><a href="#">Premiere League</a></li>
+                                        <li><a href="#">Bundesliga</a></li>
+                                        <li><a href="#">Ligue 1</a></li>
+                                        <li><a href="#">Portuguese liga</a></li>
+                                        <li><a href="#">Eredivisie</a></li>
+                                        <li><a href="#">SPL</a></li>
+                                        <li><a href="#">Sud America</a></li>
+                                        <li><a href="#">Nazionali straniere</a></li>
+                                        <li><a href="#">Maglie Storiche</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-4 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">TEmpo libero</a></li>
+                                        <li><a href="#">Polo</a></li>
+                                        <li><a href="#">T-Shirt</a></li>
+                                        <li><a href="#">T-Shirt Personalizzabili</a></li>
+                                        <li><a href="#">Felpe</a></li>
+                                        <li><a href="#">Tute</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                        <li><a href="#">Cappellini</a></li>
+                                        <li><a href="#">Ciabatte</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ARTICOLI INVERNALI</a></li>
+                                        <li><a href="#">Cappellini</a></li>
+                                        <li><a href="#">Guanti</a></li>
+                                        <li><a href="#">Scaldacollo</a></li>
+                                        <li><a href="#">Scaldì</a></li>
+                                        <li><a href="#">Sciarpe</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown mega-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">URBAN</a>
+                            <ul class="dropdown-menu mega-dropdown-menu row">
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">GARA</a></li>
+                                        <li><a href="#">Completi Calcio</a></li>
+                                        <li><a href="#">Calzettoni</a></li>
+                                        <li><a href="#">Maglie calcio</a></li>
+                                        <li><a href="#">Pantaloncini</a></li>
+                                        <li><a href="#">Box</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ALLEnamento</a></li>
+                                        <li><a href="#">Training Pro</a></li>
+                                        <li><a href="#">Pettorine-casacche</a></li>
+                                        <li><a href="#">Tute</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                        <li><a href="#">Giacche antipioggia</a></li>
+                                        <li><a href="#">Giacconi invernali</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">INTIMO TECNICO</a></li>
+                                        <li><a href="#">Smanicato</a></li>
+                                        <li><a href="#">Manica corta</a></li>
+                                        <li><a href="#">Manica lunga</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">TEAM ITALIANI</a></li>
+                                        <li><a href="#">Serie A</a></li>
+                                        <li><a href="#">Serie B</a></li>
+                                        <li><a href="#">Nazionale Italiana</a></li>
+                                        <li><a href="#">Maglie Storiche</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">TEAM INTERNAZIONALI</a></li>
+                                        <li><a href="#">Premiere League</a></li>
+                                        <li><a href="#">Bundesliga</a></li>
+                                        <li><a href="#">Ligue 1</a></li>
+                                        <li><a href="#">Portuguese liga</a></li>
+                                        <li><a href="#">Eredivisie</a></li>
+                                        <li><a href="#">SPL</a></li>
+                                        <li><a href="#">Sud America</a></li>
+                                        <li><a href="#">Nazionali straniere</a></li>
+                                        <li><a href="#">Maglie Storiche</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">TEmpo libero</a></li>
+                                        <li><a href="#">Polo</a></li>
+                                        <li><a href="#">T-Shirt</a></li>
+                                        <li><a href="#">T-Shirt Personalizzabili</a></li>
+                                        <li><a href="#">Felpe</a></li>
+                                        <li><a href="#">Tute</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                        <li><a href="#">Cappellini</a></li>
+                                        <li><a href="#">Ciabatte</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ARTICOLI INVERNALI</a></li>
+                                        <li><a href="#">Cappellini</a></li>
+                                        <li><a href="#">Guanti</a></li>
+                                        <li><a href="#">Scaldacollo</a></li>
+                                        <li><a href="#">Scaldì</a></li>
+                                        <li><a href="#">Sciarpe</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ARBITRO</a></li>
+                                        <li><a href="#">Kit gara</a></li>
+                                        <li><a href="#">Accessori</a></li>
+                                        <li><a href="#">Completi</a></li>
+                                        <li><a href="#">Scarpe</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown mega-dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">OUTLET</a>
+
+                            <ul class="dropdown-menu mega-dropdown-menu row">
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">GARA</a></li>
+                                        <li><a href="#">Completi Calcio</a></li>
+                                        <li><a href="#">Calzettoni</a></li>
+                                        <li><a href="#">Maglie calcio</a></li>
+                                        <li><a href="#">Pantaloncini</a></li>
+                                        <li><a href="#">Box</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ALLEnamento</a></li>
+                                        <li><a href="#">Training Pro</a></li>
+                                        <li><a href="#">Pettorine-casacche</a></li>
+                                        <li><a href="#">Tute</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                        <li><a href="#">Giacche antipioggia</a></li>
+                                        <li><a href="#">Giacconi invernali</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">INTIMO TECNICO</a></li>
+                                        <li><a href="#">Smanicato</a></li>
+                                        <li><a href="#">Manica corta</a></li>
+                                        <li><a href="#">Manica lunga</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">TEAM ITALIANI</a></li>
+                                        <li><a href="#">Serie A</a></li>
+                                        <li><a href="#">Serie B</a></li>
+                                        <li><a href="#">Nazionale Italiana</a></li>
+                                        <li><a href="#">Maglie Storiche</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">TEmpo libero</a></li>
+                                        <li><a href="#">Polo</a></li>
+                                        <li><a href="#">T-Shirt</a></li>
+                                        <li><a href="#">T-Shirt Personalizzabili</a></li>
+                                        <li><a href="#">Felpe</a></li>
+                                        <li><a href="#">Tute</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                        <li><a href="#">Cappellini</a></li>
+                                        <li><a href="#">Ciabatte</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ARTICOLI INVERNALI</a></li>
+                                        <li><a href="#">Cappellini</a></li>
+                                        <li><a href="#">Guanti</a></li>
+                                        <li><a href="#">Scaldacollo</a></li>
+                                        <li><a href="#">Scaldì</a></li>
+                                        <li><a href="#">Sciarpe</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ARBITRO</a></li>
+                                        <li><a href="#">Kit gara</a></li>
+                                        <li><a href="#">Accessori</a></li>
+                                        <li><a href="#">Completi</a></li>
+                                        <li><a href="#">Scarpe</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="dropdown mega-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">MARCHI TOP</a>
+
+                            <ul class="dropdown-menu mega-dropdown-menu row">
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">GARA</a></li>
+                                        <li><a href="#">Completi Calcio</a></li>
+                                        <li><a href="#">Calzettoni</a></li>
+                                        <li><a href="#">Maglie calcio</a></li>
+                                        <li><a href="#">Pantaloncini</a></li>
+                                        <li><a href="#">Box</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ALLEnamento</a></li>
+                                        <li><a href="#">Training Pro</a></li>
+                                        <li><a href="#">Pettorine-casacche</a></li>
+                                        <li><a href="#">Tute</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                        <li><a href="#">Giacche antipioggia</a></li>
+                                        <li><a href="#">Giacconi invernali</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">INTIMO TECNICO</a></li>
+                                        <li><a href="#">Smanicato</a></li>
+                                        <li><a href="#">Manica corta</a></li>
+                                        <li><a href="#">Manica lunga</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="col-md-3 col-sm-3">
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">TEAM INTERNAZIONALI</a></li>
+                                        <li><a href="#">Premiere League</a></li>
+                                        <li><a href="#">Bundesliga</a></li>
+                                        <li><a href="#">Ligue 1</a></li>
+                                        <li><a href="#">Portuguese liga</a></li>
+                                        <li><a href="#">Eredivisie</a></li>
+                                        <li><a href="#">SPL</a></li>
+                                        <li><a href="#">Sud America</a></li>
+                                        <li><a href="#">Nazionali straniere</a></li>
+                                        <li><a href="#">Maglie Storiche</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">TEmpo libero</a></li>
+                                        <li><a href="#">Polo</a></li>
+                                        <li><a href="#">T-Shirt</a></li>
+                                        <li><a href="#">T-Shirt Personalizzabili</a></li>
+                                        <li><a href="#">Felpe</a></li>
+                                        <li><a href="#">Tute</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                        <li><a href="#">Cappellini</a></li>
+                                        <li><a href="#">Ciabatte</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ARTICOLI INVERNALI</a></li>
+                                        <li><a href="#">Cappellini</a></li>
+                                        <li><a href="#">Guanti</a></li>
+                                        <li><a href="#">Scaldacollo</a></li>
+                                        <li><a href="#">Scaldì</a></li>
+                                        <li><a href="#">Sciarpe</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ARBITRO</a></li>
+                                        <li><a href="#">Kit gara</a></li>
+                                        <li><a href="#">Accessori</a></li>
+                                        <li><a href="#">Completi</a></li>
+                                        <li><a href="#">Scarpe</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown mega-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">NOVITA'</span></a>
+                            <ul class="dropdown-menu mega-dropdown-menu row">
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">GARA</a></li>
+                                        <li><a href="#">Completi Calcio</a></li>
+                                        <li><a href="#">Calzettoni</a></li>
+                                        <li><a href="#">Maglie calcio</a></li>
+                                        <li><a href="#">Pantaloncini</a></li>
+                                        <li><a href="#">Box</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ALLEnamento</a></li>
+                                        <li><a href="#">Training Pro</a></li>
+                                        <li><a href="#">Pettorine-casacche</a></li>
+                                        <li><a href="#">Tute</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                        <li><a href="#">Giacche antipioggia</a></li>
+                                        <li><a href="#">Giacconi invernali</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">INTIMO TECNICO</a></li>
+                                        <li><a href="#">Smanicato</a></li>
+                                        <li><a href="#">Manica corta</a></li>
+                                        <li><a href="#">Manica lunga</a></li>
+                                        <li><a href="#">Pantaloni</a></li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">TEAM ITALIANI</a></li>
+                                        <li><a href="#">Serie A</a></li>
+                                        <li><a href="#">Serie B</a></li>
+                                        <li><a href="#">Nazionale Italiana</a></li>
+                                        <li><a href="#">Maglie Storiche</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">TEAM INTERNAZIONALI</a></li>
+                                        <li><a href="#">Premiere League</a></li>
+                                        <li><a href="#">Bundesliga</a></li>
+                                        <li><a href="#">Ligue 1</a></li>
+                                        <li><a href="#">Portuguese liga</a></li>
+                                        <li><a href="#">Eredivisie</a></li>
+                                        <li><a href="#">SPL</a></li>
+                                        <li><a href="#">Sud America</a></li>
+                                        <li><a href="#">Nazionali straniere</a></li>
+                                        <li><a href="#">Maglie Storiche</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ARTICOLI INVERNALI</a></li>
+                                        <li><a href="#">Cappellini</a></li>
+                                        <li><a href="#">Guanti</a></li>
+                                        <li><a href="#">Scaldacollo</a></li>
+                                        <li><a href="#">Scaldì</a></li>
+                                        <li><a href="#">Sciarpe</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-md-3 col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header"><a href="">ARBITRO</a></li>
+                                        <li><a href="#">Kit gara</a></li>
+                                        <li><a href="#">Accessori</a></li>
+                                        <li><a href="#">Completi</a></li>
+                                        <li><a href="#">Scarpe</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="form-search">
+                        <div class="search">
+                            <input type="search" name="q" placeholder="Cerca" class="input-search"><a href="#" class="btn-search fa fa-search"></a>
+                        </div>
+                    </form>
+
+                </div>
+
+            <!-- /.nav-collapse -->
+            </div>
+        </div>
+    </nav>
+    <!--end-desktop-menu-->
+
         <div class="benefit-bar clearfix">
             <div class="container">
                 <div class="row">
@@ -888,8 +997,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    </div>
+
 </header>
 
 
