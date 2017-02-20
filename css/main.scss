@@ -340,7 +340,8 @@ h3 {
     position: absolute;
     width: 60%;
     top: 50%;
-    margin-top: -16px;
+    transform: translateY(-50%);
+    //margin-top: -16px;
     left: 20%;
     color: $blue-color;
     background: white;
