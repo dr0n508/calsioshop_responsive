@@ -52,6 +52,7 @@
     text-decoration: underline;
   }
   .navbar-nav>li>.dropdown-menu {
+    z-index: 999999;
     background-color: #f3f3f3;
   }
 
@@ -110,13 +111,89 @@
   li {
     background-color: white;
     margin-bottom: 15px;
-    padding: 10px 0;
-  }
-  .wrap-img {
-    img {
-      width: 100px;
-      height: auto;
-      float: right;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .img-sale {
+      align-self: center;
+      width: 50%;
+    }
+    .text-offer {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Titillium Web', sans-serif;
+      color: #737373;
+      .model {
+        font: inherit;
+        span { text-transform: uppercase; }
+      }
+      .old-price {
+        font: inherit;
+        text-decoration: line-through;
+      }
+      .new-price {
+        font: inherit;
+        font-size: 30px;
+        color: #18900a;
+        line-height: 20px;
+
+      }
     }
   }
 }
+
+
+
+//
+//.list-offer-mega-menu {
+//  li {
+//    background-color: white;
+//    margin-bottom: 15px;
+//    padding: 10px;
+//    overflow: hidden;
+//    display: flex;
+//    //justify-content: center;
+//    //align-items: center;
+//    position: relative;
+//    .img-sale {
+//      align-self: center;
+//      float: left;
+//      width: 50%;
+//      height: auto;
+//    }
+//    .text-offer {
+//      position: relative;
+//      z-index: 7;
+//      width: 50%;
+//      float: right;
+//      text-align: center;
+//      //display: flex;
+//      //flex-direction: column;
+//      //justify-content: space-between;
+//      align-items: center;
+//      font-family: 'Titillium Web', sans-serif;
+//      color: #737373;
+//      .model {
+//        font: inherit;
+//        span {
+//          text-transform: uppercase;
+//        }
+//      }
+//      .old-price {
+//        font: inherit;
+//        text-decoration: line-through;
+//      }
+//      .new-price {
+//        font: inherit;
+//        font-size: 30px;
+//        color: #18900a;
+//        //line-height: 15px;
+//
+//      }
+//    }
+//  }
+//}

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&subset=latin-ext");
 div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, input, textarea, address {
   padding: 0;
   margin: 0;
@@ -306,6 +307,7 @@ button.list-group-item:hover {
   background-color: transparent;
   text-decoration: underline; }
 .desktop-menu .navbar-nav > li > .dropdown-menu {
+  z-index: 999999;
   background-color: #f3f3f3; }
 .desktop-menu .dropdown.mega-dropdown:first-child .dropdown-toggle {
   padding-left: 0; }
@@ -347,11 +349,33 @@ button.list-group-item:hover {
 .list-offer-mega-menu li {
   background-color: white;
   margin-bottom: 15px;
-  padding: 10px 0; }
-.list-offer-mega-menu .wrap-img img {
-  width: 100px;
-  height: auto;
-  float: right; }
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .list-offer-mega-menu li .img-sale {
+    align-self: center;
+    width: 50%; }
+  .list-offer-mega-menu li .text-offer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+    color: #737373; }
+    .list-offer-mega-menu li .text-offer .model {
+      font: inherit; }
+      .list-offer-mega-menu li .text-offer .model span {
+        text-transform: uppercase; }
+    .list-offer-mega-menu li .text-offer .old-price {
+      font: inherit;
+      text-decoration: line-through; }
+    .list-offer-mega-menu li .text-offer .new-price {
+      font: inherit;
+      font-size: 30px;
+      color: #18900a;
+      line-height: 20px; }
 
 .select2-dropdown {
   border: none !important;
