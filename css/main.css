@@ -992,7 +992,7 @@ h3 {
         display: inline-block;
         margin-left: 10px; }
 
-/***************/
+/*********for mobile******/
 .panel-heading .panel-title a {
   position: relative; }
   .panel-heading .panel-title a:after, .panel-heading .panel-title a:before {
