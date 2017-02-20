@@ -22,7 +22,6 @@
     li a {
       width: 50px;
     }
-
   }
   .copyright {
     padding: 10px 5px;
@@ -34,55 +33,36 @@
   }
 }
 
-.bottom-nav {
-  font-family: "ralewaybold", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  h4 {
+.bottom-nav-mobile {
+  .title-bottom-nav {
     background: #494b4f;
     border-bottom: solid 1px #191c21;
     position: relative;
+    color: #d7d7d7;
     a {
-      padding: 10px;
       font-weight: 600;
-      font-size: 14px;
+      padding: 10px;
       color: #d7d7d7;
+      background: #494b4f;
       text-decoration: none;
       display: block;
-      span {
-        float: right;
-        color: #011328;
-      }
     }
   }
-  .login-button a {
-    background: #494b4f;
-    color: #d7d7d7;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    border-bottom: solid 1px #191c21;
-  }
   .languages {
-    background: #494b4f;
-    border-bottom: solid 1px #191c21;
-    overflow: hidden;
     padding: 10px;
     p {
       display: inline-block;
-      font-family: "ralewaybold", sans-serif;
       font-weight: 600;
-      font-size: 14px;
-      color: #d7d7d7;
-      text-decoration: none;
     }
-    .flags {
+    .flags-list {
       display: inline-block;
       float: right;
-      margin: 0;
       li {
         display: inline-block;
         margin-left: 10px;
+        a {
+          display: inline;
+        }
       }
     }
   }

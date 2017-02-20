@@ -440,50 +440,31 @@ button.list-group-item:hover {
       color: #828589;
       font-size: 13px; }
 
-.bottom-nav {
-  font-family: "ralewaybold", sans-serif;
-  font-weight: 600;
-  font-size: 14px; }
-  .bottom-nav h4 {
-    background: #494b4f;
-    border-bottom: solid 1px #191c21;
-    position: relative; }
-    .bottom-nav h4 a {
-      padding: 10px;
-      font-weight: 600;
-      font-size: 14px;
-      color: #d7d7d7;
-      text-decoration: none;
-      display: block; }
-      .bottom-nav h4 a span {
-        float: right;
-        color: #011328; }
-  .bottom-nav .login-button a {
-    background: #494b4f;
-    color: #d7d7d7;
-    display: block;
+.bottom-nav-mobile .title-bottom-nav {
+  background: #494b4f;
+  border-bottom: solid 1px #191c21;
+  position: relative;
+  color: #d7d7d7; }
+  .bottom-nav-mobile .title-bottom-nav a {
+    font-weight: 600;
     padding: 10px;
-    text-decoration: none;
-    border-bottom: solid 1px #191c21; }
-  .bottom-nav .languages {
+    color: #d7d7d7;
     background: #494b4f;
-    border-bottom: solid 1px #191c21;
-    overflow: hidden;
-    padding: 10px; }
-    .bottom-nav .languages p {
+    text-decoration: none;
+    display: block; }
+.bottom-nav-mobile .languages {
+  padding: 10px; }
+  .bottom-nav-mobile .languages p {
+    display: inline-block;
+    font-weight: 600; }
+  .bottom-nav-mobile .languages .flags-list {
+    display: inline-block;
+    float: right; }
+    .bottom-nav-mobile .languages .flags-list li {
       display: inline-block;
-      font-family: "ralewaybold", sans-serif;
-      font-weight: 600;
-      font-size: 14px;
-      color: #d7d7d7;
-      text-decoration: none; }
-    .bottom-nav .languages .flags {
-      display: inline-block;
-      float: right;
-      margin: 0; }
-      .bottom-nav .languages .flags li {
-        display: inline-block;
-        margin-left: 10px; }
+      margin-left: 10px; }
+      .bottom-nav-mobile .languages .flags-list li a {
+        display: inline; }
 
 .transition, .category:after, .category .btn-advert {
   -moz-transition: all .15s;
