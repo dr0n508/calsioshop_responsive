@@ -2,12 +2,16 @@
 @import "_fonts.scss";
 @import "_variables.scss";
 @import "_buttons.scss";
-@import "_mobilemenu.scss";
+//@import "_mobilemenu.scss";
 @import "_megamenu.scss";
 @import "_customize.scss";
 
+
+@import "_header-desktop.scss";
+@import "_header-mobile.scss";
 @import "_sliders.scss";
 @import "_footer-mobile.scss";
+@import "_footer-desktop.scss";
 
 
 
@@ -53,139 +57,7 @@ h3 {
 
 /****header**/
 
-.form-search-desktop {
-  margin: 9px 0;
-  float: right;
-  @media only screen and (max-width: 992px) {
-    width: 100%;
-  }
-  .search {
-    //border: solid 1px white;
-    background-color: white;
-    padding: 5px 10px;
-    .input-search {
-      border: none;
-      outline: none;
-      background-color: white;
-      width: 300px;
-      @media only screen and (max-width: 1200px) {
-        width: inherit;
-      }
-      @media only screen and (max-width: 992px) {
-        width: 90%;
-      }
-    }
-    .btn-search {
-      float: right;
-      font-size: 18px;
-      text-decoration: none;
-      color: #054182;
-    }
-  }
-}
 
-.header-top{
-  overflow: hidden;
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  .header-top-menu {
-    display: flex;
-    align-items: center;
-  }
-  .sign-in {
-    li {
-      display: inline-block;
-      a {
-        font-family: MohaveBold, sans-serif;
-        font-size: 17px;
-      }
-    }
-  }
-  .language-site {
-    margin-left: 10px;
-    margin-bottom: 3px;
-    select {
-      width: 50px;
-    }
-    .select2-selection {
-      border: none;
-    }
-  }
-  .basket {
-    margin-left: 80px;
-    a {color: #054182; }
-    .number-goods-in-basket {
-      font-family: MohaveBold, sans-serif;
-      font-size: 17px;
-    }
-  }
-  .basket.active {
-    a {
-      color: $red-color;}
-  }
-
-}
-
-.benefit-bar {
-  //background: #054182;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000066+0,000066+29,054182+29,054182+100 */
-  background: #000066; /* Old browsers */
-  background: -moz-linear-gradient(left,  #000066 0%, #000066 20%, #054182 20%, #054182 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left,  #000066 0%,#000066 20%,#054182 20%,#054182 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right,  #000066 0%,#000066 20%,#054182 20%,#054182 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000066', endColorstr='#054182',GradientType=1 ); /* IE6-9 */
-  a {
-    float: left;
-    text-align: center;
-    padding: 5px 40px;
-    position: relative;
-    text-decoration: none;
-    span {
-      font-family: "mohavesemibold", sans-serif;
-      font-size: 16px;
-      color: white;
-    }
-    @media only screen and (max-width: 970px) {
-      padding: 5px 30px;
-    }
-  }
-  a:first-child {
-    background: #000066;
-    padding-left: 0;
-    @media only screen and (max-width: 768px) {
-      width: 55%;
-    }
-  }
-  a:last-child {
-    background: #054182;
-    padding-right: 0;
-    float: right;
-  }
-  a:nth-child(2) {
-    //padding: 0 20px;
-    background: #054182;
-    -webkit-transform: skew(-30deg);
-    -moz-transform: skew(-30deg);
-    -o-transform: skew(-30deg);
-    transform: skew(-30deg);
-    margin-left: -10px;
-    border-left: solid 1px white;
-    border-right: solid 1px white;
-    span {
-      -webkit-transform: skew(30deg);
-      -moz-transform: skew(30deg);
-      -o-transform: skew(30deg);
-      transform: skew(30deg);
-      display: inline-block;
-    }
-    @media only screen and (max-width: 768px) {
-      width: 45%;
-      border-right: none;
-    }
-  }
-}
 
 
 
@@ -251,7 +123,6 @@ h3 {
   h2 {
     font-size: 15px;
     text-transform: uppercase;
-    //font-weight: 400;
     text-align: center;
     padding: 10px 0;
     border-bottom: solid 1px white;
@@ -298,7 +169,6 @@ h3 {
     width: 60%;
     top: 50%;
     transform: translateY(-50%);
-    //margin-top: -16px;
     left: 20%;
     color: $blue-color;
     background: white;
@@ -359,15 +229,9 @@ h3 {
     border: none;
     a {
       font-family: "mohavebold", sans-serif;
-      font-size: 16px;
       color: #054182;
       padding: 10px 0;
       display: block;
-      border: none !important;
-      span {
-        float: right;
-        margin-right: 10px;
-      }
     }
     a[aria-expanded="true"] {
       background: #cbd5e0;
@@ -483,7 +347,7 @@ h3 {
 }
 
 
-/***************subscribe************* */
+/***************subscribe**sale***********/
 .subscribe-sale {
   background: #090a0c;
   padding: 20px 0;
@@ -527,145 +391,10 @@ h3 {
 }
 
 
-.wrap-social-footer-bar {
-  border-bottom: solid 1px #090a0c;
-  .social-footer-bar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @media only screen and (max-width: 768px) {
-      justify-content: center;
-    }
-  }
-  background-color: $footer-color;
-  padding: 20px 0;
-  .social-links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .blog-intro {
-      padding: 10px 30px;
-      font-family: MohaveBold, sans-serif;
-      font-size: 17px;
-      color: #828589;
-      border-left: solid 1px #828589;;
-    }
-    .blog {
-      width: 123px;
-      height: 62px;
-      display: block;
-      background: url("../images/social-footer-sprite.png") no-repeat scroll;
-      background-position: -386px -0;
-      &:hover {
-        background-position: -386px -64px;
-      }
-    }
-  }
-}
-
-.facebook-link a, .youtube-link a, .twitter-link a, .instagram-link a, .google-plus-link a, .pinterest-link a {
-  width: 60px;
-  height: 62px;
-  display: block;
-}
-.facebook-link a {
-  background: url("../images/social-footer-sprite.png") no-repeat scroll;
-  background-position: 0 0;
-  &:hover {
-    background-position: 0 -64px;
-  }
-}
-.youtube-link a {
-  background: url("../images/social-footer-sprite.png") no-repeat scroll;
-  background-position: -60px 0;
-  &:hover {
-    background-position: -60px -64px;
-  }
-}
-.twitter-link a {
-  background: url("../images/social-footer-sprite.png") no-repeat scroll;
-  background-position: -114px 0;
-  &:hover {
-    background-position: -114px -64px;
-  }
-}
-.instagram-link a {
-  background: url("../images/social-footer-sprite.png") no-repeat scroll;
-  background-position: -167px 0;
-  &:hover {
-    background-position: -167px -64px;
-  }
-}
-.google-plus-link a {
-  background: url("../images/social-footer-sprite.png") no-repeat scroll;
-  background-position: -225px 0;
-  &:hover {
-    background-position: -225px -64px;
-  }
-}
-.pinterest-link a {
-  background: url("../images/social-footer-sprite.png") no-repeat scroll;
-  background-position: -273px 0;
-  &:hover {
-    background-position: -273px -64px;
-  }
-}
-
-.footer-menu-section {
-  padding: 20px 0 50px;
-  background-color: $footer-color;
-  .img-payment {
-    margin-top: 20px;
-    padding-left: 15px;
-  }
-  .title-footer {
-    font-family: MohaveBold, sans-serif;
-    font-size: 17px;
-    color: #d7d7d7;
-    margin-bottom: 10px;
-  }
-  .footer-menu {
-    a {
-      color: #fafafa;
-      margin-bottom: 5px;
-      display: inline-block;
-    }
-  }
-  .contacts-info {
-    color: #fafafa;
-    span {
-      font-family: ralewaybold, sans-serif;
-    }
-    i { width: 20px;}
-    a { color: #fafafa;}
-    @media only screen and (max-width: 992px) {
-      margin-top: 10px;
-    }
-
-  }
-  .footer-info {
-    padding-left: 85px;
-    .logo-white {
-      margin-bottom: 20px;
-    }
-    color: #828589;
-    span {
-      color: #fafafa;
-      text-transform: uppercase;
-      margin-bottom: 5px;
-      display: inline-block;
-    }
-  }
-}
-
-
-/********/
 
 
 
 
-/***************bottom-nav******mobile******** */
 
 
 
