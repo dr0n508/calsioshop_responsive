@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     /****slider home page******/
-    $('.home-page-slider').bxSlider({
+    $('#home-page-slider').bxSlider({
         infiniteLoop: true,
         hideControlOnEnd: true,
         pager: false,
