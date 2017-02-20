@@ -145,3 +145,33 @@
     }
   }
 }
+
+.form-search-desktop {
+  margin: 9px 0;
+  float: right;
+  @media only screen and (max-width: 992px) {
+    width: 100%;
+  }
+  .search {
+    background-color: white;
+    padding: 5px 10px;
+    .input-search {
+      border: none;
+      outline: none;
+      background-color: white;
+      width: 300px;
+      @media only screen and (max-width: 1200px) {
+        width: inherit;
+      }
+      @media only screen and (max-width: 992px) {
+        width: 90%;
+      }
+    }
+    .btn-search {
+      float: right;
+      font-size: 18px;
+      text-decoration: none;
+      color: #054182;
+    }
+  }
+}
