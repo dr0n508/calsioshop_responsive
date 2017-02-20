@@ -810,6 +810,11 @@ h3 {
     color: #054180;
     background: white;
     z-index: 7; }
+    @media only screen and (max-width: 500px) {
+      .category .btn-advert {
+        width: 80%;
+        left: 10%;
+        padding: 5px; } }
     .category .btn-advert:hover {
       color: white;
       background-color: #da2620; }
