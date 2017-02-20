@@ -1,17 +1,18 @@
 .desktop-menu {
-  .navbar-default .navbar-collapse {
-    position: relative;
-  }
+
   .navbar-default {
     border-radius: 0;
     border: none;
     margin-bottom: 0;
   }
+  .navbar-default .navbar-collapse {
+    position: relative;
+  }
   .navbar-default .navbar-nav>li>a {
+    position: relative;
     font-family: MohaveBold, sans-serif;
     font-size: 17px;
     color: #054182;
-    position: relative;
     &:after, &:before {
       position: absolute;
       font-family: FontAwesome;
@@ -36,31 +37,22 @@
       display: block;
     }
   }
-  .navbar-default .navbar-nav>.active>a,
-  .navbar-default .navbar-nav>.active>a:focus,
-  .navbar-default .navbar-nav>.active>a:hover {
+  .navbar-default .navbar-nav>.active>a  {
     color: $red-color;
     background-color: transparent;
   }
-
   .navbar-default .navbar-nav>.open>a,
   .navbar-default .navbar-nav>.open>a:focus,
-  .navbar-default .navbar-nav>.open>a:hover {
+  .navbar-default .navbar-nav>.open>a:hover,
+  .navbar-default .navbar-nav>li>a:hover{
     color: $red-color;
     background-color: transparent;
-  }
-
-  .navbar-default .navbar-nav>li>a:focus,
-  .navbar-default .navbar-nav>li>a:hover {
     text-decoration: underline;
-    color: $red-color;
   }
   .navbar-nav>li>.dropdown-menu {
     background-color: #f3f3f3;
   }
-  .navbar-default .navbar-nav>li>a {
-    font-weight: bold;
-  }
+
   .mega-dropdown {
     position: static !important;
   }
@@ -76,9 +68,6 @@
     margin: 0;
     margin-bottom: 20px;
   }
-  .mega-dropdown-menu > li > ul > li {
-    list-style: none;
-  }
   .mega-dropdown-menu > li > ul > li > a {
     min-width: 150px;
     display: block;
@@ -91,25 +80,23 @@
   }
   .mega-dropdown-menu > li ul > li > a:hover,
   .mega-dropdown-menu > li ul > li > a:focus {
+    color: $red-color;
     text-decoration: none;
-    color: #444;
-    background-color: #f5f5f5;
   }
   .mega-dropdown-menu .dropdown-header {
     a {
       padding: 0;
-      color: #054182;
       font-family: MohaveBold, sans-serif;
       font-size: 16px;
-      //font-weight: bold;
+      color: #054182;
     }
   }
   .mega-dropdown-menu .dropdown-header.main {
     a {
+      display: inline-block;
       font-size: 20px;
       border-bottom: solid 1px #054182;
       margin-bottom: 10px;
-      display: inline-block;
     }
   }
 }
