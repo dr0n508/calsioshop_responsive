@@ -8,7 +8,9 @@ $(document).ready(function () {
         auto: true,
         pause: 3000
     });
-    /******/
+
+
+    /****SameHeight*categories******/
 
     maintainSameHeight($('[data-same-height="category"]'));
     function maintainSameHeight($list) {
@@ -22,6 +24,7 @@ $(document).ready(function () {
         $list.css("height", height);
     }
 
+    /****drop-down-languages******/
     function formatState (state) {
         if (!state.id) { return state.text; }
         var $state = $(
@@ -34,8 +37,5 @@ $(document).ready(function () {
         minimumResultsForSearch: -1,
         templateSelection: formatState,
         templateResult: formatState
-    }).on("change", function(e) {
-
-
     });
 });

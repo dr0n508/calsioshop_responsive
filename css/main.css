@@ -81,6 +81,96 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     .btn-interface-secondary {
       width: 100%; } }
 
+.select2-dropdown {
+  border: none !important;
+  background: #d7d7d7; }
+
+.header-top {
+  overflow: hidden;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .header-top .header-top-menu {
+    display: flex;
+    align-items: center; }
+  .header-top .sign-in li {
+    display: inline-block; }
+    .header-top .sign-in li a {
+      font-family: MohaveBold, sans-serif;
+      font-size: 17px; }
+  .header-top .language-site {
+    margin-left: 10px;
+    margin-bottom: 3px; }
+    .header-top .language-site select {
+      width: 50px; }
+    .header-top .language-site .select2-selection {
+      border: none; }
+  .header-top .basket {
+    margin-left: 80px; }
+    .header-top .basket a {
+      color: #054182; }
+    .header-top .basket .number-goods-in-basket {
+      font-family: MohaveBold, sans-serif;
+      font-size: 17px; }
+  .header-top .basket.active a {
+    color: #da2620; }
+
+.benefit-bar {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000066+0,000066+29,054182+29,054182+100 */
+  background: #000066;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #000066 0%, #000066 20%, #054182 20%, #054182 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #000066 0%, #000066 20%, #054182 20%, #054182 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #000066 0%, #000066 20%, #054182 20%, #054182 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000066', endColorstr='#054182',GradientType=1 );
+  /* IE6-9 */ }
+  .benefit-bar a {
+    float: left;
+    text-align: center;
+    padding: 5px 40px;
+    position: relative;
+    text-decoration: none; }
+    .benefit-bar a span {
+      font-family: "mohavesemibold", sans-serif;
+      font-size: 16px;
+      color: white; }
+    @media only screen and (max-width: 970px) {
+      .benefit-bar a {
+        padding: 5px 30px; } }
+  .benefit-bar a:first-child {
+    background: #000066;
+    padding-left: 0; }
+    @media only screen and (max-width: 768px) {
+      .benefit-bar a:first-child {
+        width: 55%; } }
+  .benefit-bar a:last-child {
+    background: #054182;
+    padding-right: 0;
+    float: right; }
+  .benefit-bar a:nth-child(2) {
+    background: #054182;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    transform: skew(-30deg);
+    margin-left: -10px;
+    border-left: solid 1px white;
+    border-right: solid 1px white; }
+    .benefit-bar a:nth-child(2) span {
+      -webkit-transform: skew(30deg);
+      -moz-transform: skew(30deg);
+      -o-transform: skew(30deg);
+      transform: skew(30deg);
+      display: inline-block; }
+    @media only screen and (max-width: 768px) {
+      .benefit-bar a:nth-child(2) {
+        width: 45%;
+        border-right: none; } }
+
 .desktop-menu .navbar-default {
   border-radius: 0;
   border: none;
@@ -218,96 +308,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       font-size: 18px;
       text-decoration: none;
       color: #054182; }
-
-.select2-dropdown {
-  border: none !important;
-  background: #d7d7d7; }
-
-.header-top {
-  overflow: hidden;
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-  .header-top .header-top-menu {
-    display: flex;
-    align-items: center; }
-  .header-top .sign-in li {
-    display: inline-block; }
-    .header-top .sign-in li a {
-      font-family: MohaveBold, sans-serif;
-      font-size: 17px; }
-  .header-top .language-site {
-    margin-left: 10px;
-    margin-bottom: 3px; }
-    .header-top .language-site select {
-      width: 50px; }
-    .header-top .language-site .select2-selection {
-      border: none; }
-  .header-top .basket {
-    margin-left: 80px; }
-    .header-top .basket a {
-      color: #054182; }
-    .header-top .basket .number-goods-in-basket {
-      font-family: MohaveBold, sans-serif;
-      font-size: 17px; }
-  .header-top .basket.active a {
-    color: #da2620; }
-
-.benefit-bar {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000066+0,000066+29,054182+29,054182+100 */
-  background: #000066;
-  /* Old browsers */
-  background: -moz-linear-gradient(left, #000066 0%, #000066 20%, #054182 20%, #054182 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #000066 0%, #000066 20%, #054182 20%, #054182 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #000066 0%, #000066 20%, #054182 20%, #054182 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000066', endColorstr='#054182',GradientType=1 );
-  /* IE6-9 */ }
-  .benefit-bar a {
-    float: left;
-    text-align: center;
-    padding: 5px 40px;
-    position: relative;
-    text-decoration: none; }
-    .benefit-bar a span {
-      font-family: "mohavesemibold", sans-serif;
-      font-size: 16px;
-      color: white; }
-    @media only screen and (max-width: 970px) {
-      .benefit-bar a {
-        padding: 5px 30px; } }
-  .benefit-bar a:first-child {
-    background: #000066;
-    padding-left: 0; }
-    @media only screen and (max-width: 768px) {
-      .benefit-bar a:first-child {
-        width: 55%; } }
-  .benefit-bar a:last-child {
-    background: #054182;
-    padding-right: 0;
-    float: right; }
-  .benefit-bar a:nth-child(2) {
-    background: #054182;
-    -webkit-transform: skew(-30deg);
-    -moz-transform: skew(-30deg);
-    -o-transform: skew(-30deg);
-    transform: skew(-30deg);
-    margin-left: -10px;
-    border-left: solid 1px white;
-    border-right: solid 1px white; }
-    .benefit-bar a:nth-child(2) span {
-      -webkit-transform: skew(30deg);
-      -moz-transform: skew(30deg);
-      -o-transform: skew(30deg);
-      transform: skew(30deg);
-      display: inline-block; }
-    @media only screen and (max-width: 768px) {
-      .benefit-bar a:nth-child(2) {
-        width: 45%;
-        border-right: none; } }
 
 .mobile-menu .navbar {
   margin-bottom: 0;
@@ -526,58 +526,6 @@ button.list-group-item:hover {
       bottom: 10px; } }
 
 /*****end home page slider*****/
-.footer-mobile {
-  background: #191c21; }
-  .footer-mobile .contacts {
-    padding: 10px 5px;
-    border-bottom: solid 1px black;
-    text-align: center; }
-    .footer-mobile .contacts p {
-      color: white;
-      display: inline-block;
-      margin-right: 5px; }
-      .footer-mobile .contacts p span {
-        font-weight: 600; }
-      .footer-mobile .contacts p img {
-        margin-right: 5px; }
-  .footer-mobile .social-links {
-    display: flex;
-    justify-content: center; }
-    .footer-mobile .social-links li a {
-      width: 50px; }
-  .footer-mobile .copyright {
-    padding: 10px 5px;
-    text-align: center; }
-    .footer-mobile .copyright p {
-      color: #828589;
-      font-size: 13px; }
-
-.bottom-nav-mobile .title-bottom-nav {
-  background: #494b4f;
-  border-bottom: solid 1px #191c21;
-  position: relative;
-  color: #d7d7d7; }
-  .bottom-nav-mobile .title-bottom-nav a {
-    font-weight: 600;
-    padding: 10px;
-    color: #d7d7d7;
-    background: #494b4f;
-    text-decoration: none;
-    display: block; }
-.bottom-nav-mobile .languages {
-  padding: 10px; }
-  .bottom-nav-mobile .languages p {
-    display: inline-block;
-    font-weight: 600; }
-  .bottom-nav-mobile .languages .flags-list {
-    display: inline-block;
-    float: right; }
-    .bottom-nav-mobile .languages .flags-list li {
-      display: inline-block;
-      margin-left: 10px; }
-      .bottom-nav-mobile .languages .flags-list li a {
-        display: inline; }
-
 .wrap-social-footer-bar {
   border-bottom: solid 1px #090a0c;
   background-color: #191c21;
@@ -687,6 +635,58 @@ button.list-group-item:hover {
       margin-bottom: 5px;
       display: inline-block; }
 
+.footer-mobile {
+  background: #191c21; }
+  .footer-mobile .contacts {
+    padding: 10px 5px;
+    border-bottom: solid 1px black;
+    text-align: center; }
+    .footer-mobile .contacts p {
+      color: white;
+      display: inline-block;
+      margin-right: 5px; }
+      .footer-mobile .contacts p span {
+        font-weight: 600; }
+      .footer-mobile .contacts p img {
+        margin-right: 5px; }
+  .footer-mobile .social-links {
+    display: flex;
+    justify-content: center; }
+    .footer-mobile .social-links li a {
+      width: 50px; }
+  .footer-mobile .copyright {
+    padding: 10px 5px;
+    text-align: center; }
+    .footer-mobile .copyright p {
+      color: #828589;
+      font-size: 13px; }
+
+.bottom-nav-mobile .title-bottom-nav {
+  background: #494b4f;
+  border-bottom: solid 1px #191c21;
+  position: relative;
+  color: #d7d7d7; }
+  .bottom-nav-mobile .title-bottom-nav a {
+    font-weight: 600;
+    padding: 10px;
+    color: #d7d7d7;
+    background: #494b4f;
+    text-decoration: none;
+    display: block; }
+.bottom-nav-mobile .languages {
+  padding: 10px; }
+  .bottom-nav-mobile .languages p {
+    display: inline-block;
+    font-weight: 600; }
+  .bottom-nav-mobile .languages .flags-list {
+    display: inline-block;
+    float: right; }
+    .bottom-nav-mobile .languages .flags-list li {
+      display: inline-block;
+      margin-left: 10px; }
+      .bottom-nav-mobile .languages .flags-list li a {
+        display: inline; }
+
 .transition, .category:after, .category .btn-advert {
   -moz-transition: all .15s;
   -webkit-transition: all .15s;
@@ -717,8 +717,7 @@ h3 {
   font-size: 16px;
   color: #222222; }
 
-/****header**/
-/***********main-offer************/
+/*******************************main-offer*************************************/
 .main-offer {
   background: url("../images/bg-for-main-offer.png") 37% 50% no-repeat;
   padding: 20px 0; }
@@ -755,6 +754,7 @@ h3 {
           font-size: 14px;
           letter-spacing: .5px; } }
 
+/*****************************main-offer-mobile*******************************/
 .main-offer.visible-xs {
   padding: 0;
   background: #f3f3f3; }
@@ -775,7 +775,7 @@ h3 {
     border-bottom: solid 1px white;
     color: #000066; }
 
-/****categories****/
+/*****************************categories*******************************/
 .categories {
   padding: 20px 0; }
   @media only screen and (max-width: 768px) {
@@ -835,7 +835,7 @@ h3 {
   .visible-xs .panel-body p {
     padding-bottom: 20px; }
 
-/*******/
+/*****************************categories*******************************/
 .filter.visible-xs .panel-heading {
   border-bottom: solid 1px white !important; }
 .filter.visible-xs .panel-body {
@@ -854,7 +854,7 @@ h3 {
 .filter.visible-xs .panel-collapse {
   background: #f3f3f3; }
 
-/*****special offer**************/
+/*****************************special-offer******************************/
 .special-offer .for-your-team {
   padding-right: 0;
   padding-left: 0; }
@@ -898,7 +898,7 @@ h3 {
     font-size: 20px;
     z-index: 99; }
 
-/****articles-blog****/
+/*****************************articles-blog******************************/
 .articles-blog {
   padding: 20px 0; }
   .articles-blog h3 {
@@ -928,7 +928,7 @@ h3 {
       width: 100%;
       height: auto; }
 
-/***************subscribe**sale***********/
+/*****************************subscribe**sale*******************************/
 .subscribe-sale {
   background: #090a0c;
   padding: 20px 0; }
