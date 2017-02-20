@@ -413,7 +413,78 @@ button.list-group-item:hover {
       right: 10px;
       bottom: 10px; } }
 
-/*****rnd home page slider*****/
+/*****end home page slider*****/
+.footer-mobile {
+  background: #191c21; }
+  .footer-mobile .contacts {
+    padding: 10px 5px;
+    border-bottom: solid 1px black;
+    text-align: center; }
+    .footer-mobile .contacts p {
+      color: white;
+      display: inline-block;
+      margin-right: 5px; }
+      .footer-mobile .contacts p span {
+        font-weight: 600; }
+      .footer-mobile .contacts p img {
+        margin-right: 5px; }
+  .footer-mobile .social-links {
+    display: flex;
+    justify-content: center; }
+    .footer-mobile .social-links li a {
+      width: 50px; }
+  .footer-mobile .copyright {
+    padding: 10px 5px;
+    text-align: center; }
+    .footer-mobile .copyright p {
+      color: #828589;
+      font-size: 13px; }
+
+.bottom-nav {
+  font-family: "ralewaybold", sans-serif;
+  font-weight: 600;
+  font-size: 14px; }
+  .bottom-nav h4 {
+    background: #494b4f;
+    border-bottom: solid 1px #191c21;
+    position: relative; }
+    .bottom-nav h4 a {
+      padding: 10px;
+      font-weight: 600;
+      font-size: 14px;
+      color: #d7d7d7;
+      text-decoration: none;
+      display: block; }
+      .bottom-nav h4 a span {
+        float: right;
+        color: #011328; }
+  .bottom-nav .login-button a {
+    background: #494b4f;
+    color: #d7d7d7;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: solid 1px #191c21; }
+  .bottom-nav .languages {
+    background: #494b4f;
+    border-bottom: solid 1px #191c21;
+    overflow: hidden;
+    padding: 10px; }
+    .bottom-nav .languages p {
+      display: inline-block;
+      font-family: "ralewaybold", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      color: #d7d7d7;
+      text-decoration: none; }
+    .bottom-nav .languages .flags {
+      display: inline-block;
+      float: right;
+      margin: 0; }
+      .bottom-nav .languages .flags li {
+        display: inline-block;
+        margin-left: 10px; }
+
 .transition, .category:after, .category .btn-advert {
   -moz-transition: all .15s;
   -webkit-transition: all .15s;
@@ -675,27 +746,27 @@ h3 {
     padding-bottom: 20px; }
 
 /*******/
-.filter.mobile .panel-heading {
+.filter.visible-xs .panel-heading {
   border-bottom: solid 1px white !important; }
-.filter.mobile .panel-body {
+.filter.visible-xs .panel-body {
   border-bottom: solid 1px white !important; }
-.filter.mobile h4 {
+.filter.visible-xs h4 {
   margin: 0;
   text-align: center;
   border: none; }
-  .filter.mobile h4 a {
+  .filter.visible-xs h4 a {
     font-family: "mohavebold", sans-serif;
     font-size: 16px;
     color: #054182;
     padding: 10px 0;
     display: block;
     border: none !important; }
-    .filter.mobile h4 a span {
+    .filter.visible-xs h4 a span {
       float: right;
       margin-right: 10px; }
-  .filter.mobile h4 a[aria-expanded="true"] {
+  .filter.visible-xs h4 a[aria-expanded="true"] {
     background: #cbd5e0; }
-.filter.mobile .panel-collapse {
+.filter.visible-xs .panel-collapse {
   background: #f3f3f3; }
 
 /*****special offer**************/
@@ -703,7 +774,6 @@ h3 {
   padding-right: 0;
   padding-left: 0; }
 .special-offer .sell {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#adbec6+0,c6d5dc+50,eaf1f7+100 */
   background: #adbec6;
   background: -moz-linear-gradient(45deg, #adbec6 0%, #c6d5dc 50%, #eaf1f7 100%);
   background: -webkit-linear-gradient(45deg, #adbec6 0%, #c6d5dc 50%, #eaf1f7 100%);
@@ -773,37 +843,36 @@ h3 {
       width: 100%;
       height: auto; }
 
-/***********************/
 /***************subscribe************* */
-.subscribe {
+.subscribe-sale {
   background: #090a0c;
   padding: 20px 0; }
-  .subscribe .title-subscribe, .subscribe .wrap-form {
+  .subscribe-sale .title-subscribe, .subscribe-sale .wrap-form {
     padding-left: 0;
     padding-right: 0; }
     @media only screen and (max-width: 992px) {
-      .subscribe .title-subscribe, .subscribe .wrap-form {
+      .subscribe-sale .title-subscribe, .subscribe-sale .wrap-form {
         padding: 5px 15px !important; } }
-  .subscribe h2 {
+  .subscribe-sale h2 {
     font-family: "mohavebold", sans-serif;
     font-size: 30px;
     color: white; }
     @media only screen and (max-width: 768px) {
-      .subscribe h2 {
+      .subscribe-sale h2 {
         text-align: center; } }
-  .subscribe .text-section {
+  .subscribe-sale .text-section {
     font-family: "ralewayregular", sans-serif;
     color: #fafafa;
     font-weight: 400;
     line-height: 16px; }
-  .subscribe form input {
+  .subscribe-sale form input {
     outline: none;
     border: none;
     background: #d7d7d7;
     padding: 7px 13px;
     float: left;
     width: 60%; }
-  .subscribe form .btn-advert {
+  .subscribe-sale form .btn-advert {
     width: 38%;
     float: right;
     padding: 6px 20px;
@@ -918,78 +987,7 @@ h3 {
       display: inline-block; }
 
 /********/
-.footer-mobile {
-  background: #191c21; }
-  .footer-mobile .contacts {
-    padding: 10px 5px;
-    border-bottom: solid 1px black;
-    text-align: center; }
-    .footer-mobile .contacts p {
-      color: white;
-      display: inline-block;
-      margin-right: 5px; }
-      .footer-mobile .contacts p span {
-        font-weight: 600; }
-      .footer-mobile .contacts p img {
-        margin-right: 5px; }
-  .footer-mobile .social-links {
-    display: flex;
-    justify-content: center; }
-    .footer-mobile .social-links li a {
-      width: 50px; }
-  .footer-mobile .copyright {
-    padding: 10px 5px;
-    text-align: center; }
-    .footer-mobile .copyright p {
-      color: #828589;
-      font-size: 13px; }
-
 /***************bottom-nav******mobile******** */
-.bottom-nav {
-  font-family: "ralewaybold", sans-serif;
-  font-weight: 600;
-  font-size: 14px; }
-  .bottom-nav h4 {
-    background: #494b4f;
-    border-bottom: solid 1px #191c21;
-    position: relative; }
-    .bottom-nav h4 a {
-      padding: 10px;
-      font-weight: 600;
-      font-size: 14px;
-      color: #d7d7d7;
-      text-decoration: none;
-      display: block; }
-      .bottom-nav h4 a span {
-        float: right;
-        color: #011328; }
-  .bottom-nav .login-button a {
-    background: #494b4f;
-    color: #d7d7d7;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    border-bottom: solid 1px #191c21; }
-  .bottom-nav .languages {
-    background: #494b4f;
-    border-bottom: solid 1px #191c21;
-    overflow: hidden;
-    padding: 10px; }
-    .bottom-nav .languages p {
-      display: inline-block;
-      font-family: "ralewaybold", sans-serif;
-      font-weight: 600;
-      font-size: 14px;
-      color: #d7d7d7;
-      text-decoration: none; }
-    .bottom-nav .languages .flags {
-      display: inline-block;
-      float: right;
-      margin: 0; }
-      .bottom-nav .languages .flags li {
-        display: inline-block;
-        margin-left: 10px; }
-
 /*********for mobile******/
 .panel-heading .panel-title a {
   position: relative; }

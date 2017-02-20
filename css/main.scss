@@ -7,6 +7,8 @@
 @import "_customize.scss";
 
 @import "_sliders.scss";
+@import "_footer-mobile.scss";
+
 
 
 
@@ -344,7 +346,7 @@ h3 {
 
 
 /*******/
-.filter.mobile {
+.filter.visible-xs {
   .panel-heading {
     border-bottom: solid 1px white !important;
   }
@@ -370,7 +372,6 @@ h3 {
     a[aria-expanded="true"] {
       background: #cbd5e0;
     }
-    //    @include rotate-arrow
   }
   .panel-collapse {
     background: #f3f3f3;
@@ -390,7 +391,6 @@ h3 {
     padding-left: 0;
   }
   .sell {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#adbec6+0,c6d5dc+50,eaf1f7+100 */
     background: rgb(173, 190, 198);
     background: -moz-linear-gradient(45deg, rgba(173, 190, 198, 1) 0%, rgba(198, 213, 220, 1) 50%, rgba(234, 241, 247, 1) 100%);
     background: -webkit-linear-gradient(45deg, rgba(173, 190, 198, 1) 0%, rgba(198, 213, 220, 1) 50%, rgba(234, 241, 247, 1) 100%);
@@ -479,14 +479,12 @@ h3 {
         height: auto;
       }
     }
-
   }
 }
 
-/***********************/
 
 /***************subscribe************* */
-.subscribe {
+.subscribe-sale {
   background: #090a0c;
   padding: 20px 0;
   .title-subscribe, .wrap-form  {
@@ -664,115 +662,11 @@ h3 {
 
 /********/
 
-.footer-mobile {
-  background: #191c21;
-  .contacts {
-    padding: 10px 5px;
-    border-bottom: solid 1px black;
-    text-align: center;
-    p {
-      color: white;
-      display: inline-block;
-      margin-right: 5px;
-      span {
-        font-weight: 600;
-      }
-      img {
-        margin-right: 5px;
-      }
-    }
-  }
-  .social-links {
-    display: flex;
-    justify-content: center;
-    li a {
-      width: 50px;
-    }
 
-  }
-  .copyright {
-    padding: 10px 5px;
-    text-align: center;
-    p {
-      color: #828589;
-      font-size: 13px;
-    }
-  }
-}
 
 
 /***************bottom-nav******mobile******** */
-.bottom-nav {
-  font-family: "ralewaybold", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  h4 {
-    background: #494b4f;
-    border-bottom: solid 1px #191c21;
-    position: relative;
-    a {
-      padding: 10px;
-      font-weight: 600;
-      font-size: 14px;
-      color: #d7d7d7;
-      text-decoration: none;
-      display: block;
-      span {
-        float: right;
-        color: #011328;
-      }
-      //&:after, &:before {
-      //  position: absolute;
-      //  font-family: FontAwesome;
-      //  font-size: 16px;
-      //  right: 10px;
-      //  top: 50%;
-      //  margin-top: -10px;
-      //  color: #031427;
-      //}
-      //&:after {content: "\f078";}
-      //&:before {
-      //  content: "\f077";
-      //  display: none;
-      //}
-    }
-    //a[aria-expanded='true'] {
-    //  &:after {display: none;}
-    //  &:before {display: block;}
-    //}
-  }
-  .login-button a {
-    background: #494b4f;
-    color: #d7d7d7;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    border-bottom: solid 1px #191c21;
-  }
-  .languages {
-    background: #494b4f;
-    border-bottom: solid 1px #191c21;
-    overflow: hidden;
-    padding: 10px;
-    p {
-      display: inline-block;
-      font-family: "ralewaybold", sans-serif;
-      font-weight: 600;
-      font-size: 14px;
-      color: #d7d7d7;
-      text-decoration: none;
-    }
-    .flags {
-      display: inline-block;
-      float: right;
-      margin: 0;
-      li {
-        display: inline-block;
-        margin-left: 10px;
-      }
-    }
-  }
-}
+
 
 
 
