@@ -953,7 +953,8 @@ h3 {
   font-size: 14px; }
   .bottom-nav h4 {
     background: #494b4f;
-    border-bottom: solid 1px #191c21; }
+    border-bottom: solid 1px #191c21;
+    position: relative; }
     .bottom-nav h4 a {
       padding: 10px;
       font-weight: 600;
@@ -964,6 +965,23 @@ h3 {
       .bottom-nav h4 a span {
         float: right;
         color: #011328; }
+      .bottom-nav h4 a:after, .bottom-nav h4 a:before {
+        position: absolute;
+        font-family: FontAwesome;
+        font-size: 16px;
+        right: 10px;
+        top: 50%;
+        margin-top: -10px;
+        color: #031427; }
+      .bottom-nav h4 a:after {
+        content: "\f078"; }
+      .bottom-nav h4 a:before {
+        content: "\f077";
+        display: none; }
+    .bottom-nav h4 a[aria-expanded='true']:after {
+      display: none; }
+    .bottom-nav h4 a[aria-expanded='true']:before {
+      display: block; }
   .bottom-nav .login-button a {
     background: #494b4f;
     color: #d7d7d7;

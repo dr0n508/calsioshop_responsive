@@ -754,6 +754,7 @@ h3 {
   h4 {
     background: #494b4f;
     border-bottom: solid 1px #191c21;
+    position: relative;
     a {
       padding: 10px;
       font-weight: 600;
@@ -765,9 +766,25 @@ h3 {
         float: right;
         color: #011328;
       }
+      &:after, &:before {
+        position: absolute;
+        font-family: FontAwesome;
+        font-size: 16px;
+        right: 10px;
+        top: 50%;
+        margin-top: -10px;
+        color: #031427;
+      }
+      &:after {content: "\f078";}
+      &:before {
+        content: "\f077";
+        display: none;
+      }
     }
-    //    @include rotate-arrow
-
+    a[aria-expanded='true'] {
+      &:after {display: none;}
+      &:before {display: block;}
+    }
   }
   .login-button a {
     background: #494b4f;
