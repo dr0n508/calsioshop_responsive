@@ -13,19 +13,14 @@ $(document).ready(function () {
     maintainSameHeight($('[data-same-height="category"]'));
     function maintainSameHeight($list) {
         var height = 0;
-
         $list.each(function () {
             var $this = $(this);
             if ($this.outerHeight() > height) {
                 height = $this.outerHeight();
             }
         });
-
         $list.css("height", height);
     }
-
-
-
 
     function formatState (state) {
         if (!state.id) { return state.text; }
@@ -42,9 +37,5 @@ $(document).ready(function () {
     }).on("change", function(e) {
 
 
-
-
     });
-
-
 });

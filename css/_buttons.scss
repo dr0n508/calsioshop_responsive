@@ -2,7 +2,6 @@
   font-family: "mohavebold", sans-serif;
   font-size: 16px;
   text-align: center;
-  //display: block;
   color: $white-color;
   background-color: $gray-color;
   padding: 5px 20px;
@@ -33,7 +32,6 @@
     font: 12px ralewayregular, sans-serif;
   }
 }
-
 
 .btn-advert {
   @extend .button;
