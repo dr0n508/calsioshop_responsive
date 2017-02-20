@@ -965,23 +965,6 @@ h3 {
       .bottom-nav h4 a span {
         float: right;
         color: #011328; }
-      .bottom-nav h4 a:after, .bottom-nav h4 a:before {
-        position: absolute;
-        font-family: FontAwesome;
-        font-size: 16px;
-        right: 10px;
-        top: 50%;
-        margin-top: -10px;
-        color: #031427; }
-      .bottom-nav h4 a:after {
-        content: "\f078"; }
-      .bottom-nav h4 a:before {
-        content: "\f077";
-        display: none; }
-    .bottom-nav h4 a[aria-expanded='true']:after {
-      display: none; }
-    .bottom-nav h4 a[aria-expanded='true']:before {
-      display: block; }
   .bottom-nav .login-button a {
     background: #494b4f;
     color: #d7d7d7;
@@ -1008,5 +991,26 @@ h3 {
       .bottom-nav .languages .flags li {
         display: inline-block;
         margin-left: 10px; }
+
+/***************/
+.panel-heading .panel-title a {
+  position: relative; }
+  .panel-heading .panel-title a:after, .panel-heading .panel-title a:before {
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 16px;
+    right: 10px;
+    top: 50%;
+    margin-top: -10px;
+    color: #031427; }
+  .panel-heading .panel-title a:after {
+    content: "\f078"; }
+  .panel-heading .panel-title a:before {
+    content: "\f077";
+    display: none; }
+.panel-heading .panel-title a[aria-expanded='true']:after {
+  display: none; }
+.panel-heading .panel-title a[aria-expanded='true']:before {
+  display: block; }
 
 /*# sourceMappingURL=main.css.map */

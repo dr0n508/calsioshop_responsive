@@ -766,25 +766,25 @@ h3 {
         float: right;
         color: #011328;
       }
-      &:after, &:before {
-        position: absolute;
-        font-family: FontAwesome;
-        font-size: 16px;
-        right: 10px;
-        top: 50%;
-        margin-top: -10px;
-        color: #031427;
-      }
-      &:after {content: "\f078";}
-      &:before {
-        content: "\f077";
-        display: none;
-      }
+      //&:after, &:before {
+      //  position: absolute;
+      //  font-family: FontAwesome;
+      //  font-size: 16px;
+      //  right: 10px;
+      //  top: 50%;
+      //  margin-top: -10px;
+      //  color: #031427;
+      //}
+      //&:after {content: "\f078";}
+      //&:before {
+      //  content: "\f077";
+      //  display: none;
+      //}
     }
-    a[aria-expanded='true'] {
-      &:after {display: none;}
-      &:before {display: block;}
-    }
+    //a[aria-expanded='true'] {
+    //  &:after {display: none;}
+    //  &:before {display: block;}
+    //}
   }
   .login-button a {
     background: #494b4f;
@@ -818,3 +818,37 @@ h3 {
     }
   }
 }
+
+
+
+
+/***************/
+
+.panel-heading {
+  .panel-title {
+    a {
+      position: relative;
+      &:after, &:before {
+        position: absolute;
+        font-family: FontAwesome;
+        font-size: 16px;
+        right: 10px;
+        top: 50%;
+        margin-top: -10px;
+        color: #031427;
+      }
+      &:after {content: "\f078";}
+      &:before {
+        content: "\f077";
+        display: none;
+      }
+    }
+    a[aria-expanded='true'] {
+      &:after {display: none;}
+      &:before {display: block;}
+    }
+  }
+}
+
+
+
