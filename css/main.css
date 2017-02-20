@@ -47,14 +47,11 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   text-align: center;
   color: white;
   background-color: #9f9f9f;
-  padding: 5px 20px;
+  padding: 5px 15px;
   margin: 5px 0; }
   .button:hover, .btn-primary-cta:hover, .btn-secondary-cta:hover, .btn-advert:hover, .btn-interface:hover, .btn-interface-secondary:hover {
     text-decoration: none;
     color: white; }
-  @media only screen and (max-width: 768px) {
-    .button, .btn-primary-cta, .btn-secondary-cta, .btn-advert, .btn-interface, .btn-interface-secondary {
-      width: 100%; } }
 
 .btn-primary-cta {
   padding: 15px 0;
@@ -803,17 +800,14 @@ h3 {
     opacity: 0; }
   .category .btn-advert {
     position: absolute;
-    width: 60%;
     top: 50%;
-    transform: translateY(-50%);
-    left: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #054180;
     background: white;
     z-index: 7; }
     @media only screen and (max-width: 500px) {
       .category .btn-advert {
-        width: 80%;
-        left: 10%;
         padding: 5px; } }
     .category .btn-advert:hover {
       color: white;
