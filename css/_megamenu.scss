@@ -7,6 +7,8 @@
   }
   .navbar-default .navbar-collapse {
     position: relative;
+    padding-left: 0;
+    padding-right: 0;
   }
   .navbar-default .navbar-nav>li>a {
     position: relative;
@@ -53,6 +55,9 @@
     background-color: #f3f3f3;
   }
 
+  .dropdown.mega-dropdown:first-child .dropdown-toggle {
+    padding-left: 0;
+  }
   .mega-dropdown {
     position: static !important;
   }

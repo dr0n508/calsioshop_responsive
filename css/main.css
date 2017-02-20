@@ -271,7 +271,9 @@ button.list-group-item:hover {
   border: none;
   margin-bottom: 0; }
 .desktop-menu .navbar-default .navbar-collapse {
-  position: relative; }
+  position: relative;
+  padding-left: 0;
+  padding-right: 0; }
 .desktop-menu .navbar-default .navbar-nav > li > a {
   position: relative;
   font-family: MohaveBold, sans-serif;
@@ -305,6 +307,8 @@ button.list-group-item:hover {
   text-decoration: underline; }
 .desktop-menu .navbar-nav > li > .dropdown-menu {
   background-color: #f3f3f3; }
+.desktop-menu .dropdown.mega-dropdown:first-child .dropdown-toggle {
+  padding-left: 0; }
 .desktop-menu .mega-dropdown {
   position: static !important; }
 .desktop-menu .mega-dropdown-menu {
@@ -425,7 +429,7 @@ h3 {
       font-family: MohaveBold, sans-serif;
       font-size: 17px; }
   .header-top .language-site {
-    margin-left: 20px;
+    margin-left: 10px;
     margin-bottom: 3px; }
     .header-top .language-site select {
       width: 50px; }
@@ -438,6 +442,8 @@ h3 {
     .header-top .basket .number-goods-in-basket {
       font-family: MohaveBold, sans-serif;
       font-size: 17px; }
+  .header-top .basket.active a {
+    color: #da2620; }
 
 .benefit-bar {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000066+0,000066+29,054182+29,054182+100 */
