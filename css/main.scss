@@ -416,3 +416,101 @@ h3 {
     }
   }
 }
+
+
+.bread-crumb {
+  //background: #f3f3f3;
+  padding: 5px 10px;
+  ul li {
+    display: inline-block;
+    &:last-child a { color: #808080; }
+    a {
+      //font-size: 12px;
+      //padding: 0;
+      display: inline-block;
+    }
+    .fa {
+      margin-left: 5px;
+    }
+  }
+}
+
+.list-filtered-goods {
+  .goods-information {
+    padding-bottom: 10px;
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 10px;
+      border: solid 1px transparent;
+      text-align: center;
+      &:hover {
+        border: solid 1px #e4e4e4;
+        box-shadow: 0 0 10px #e4e4e4;
+        .name-goods {
+          text-decoration: underline;
+        }
+      }
+      .img-wrapper {
+        text-align: center;
+        position: relative;
+        img {
+          width: 100%;
+          height: auto;
+        }
+        .new-ico, .free-delivery-ico {
+          position: absolute;
+          border-radius: 50%;
+          font-family: MohaveBold, sans-serif;
+          width: 28px;
+          height: 28px;
+          color: $white-color;
+          top: 5px;
+          right: 5px;
+        }
+        .new-ico {
+          background-color: #ff0054;
+          padding: 6px 0;
+          font-size: 12px;
+        }
+        .free-delivery-ico {
+          padding: 2px 0;
+          font-size: 10px;
+          background-color: #22ce9b;
+          line-height: 10px;
+          .fa {
+            font-size: 14px;
+          }
+        }
+      }
+      .name-goods {
+        font-size: 14px;
+        color: #054182;
+        font-family: "ralewaybold", sans-serif;
+        padding-top: 5px;
+      }
+      .price-goods {
+        padding: 5px 0;
+        .old-price {
+          color: gray;
+          font-family: "MohaveBoldItalic", sans-serif;
+          font-size: 14px;
+          margin-right: 10px;
+          text-decoration: line-through;
+        }
+        .current-price {
+          color: red;
+          font-family: "mohavebold", sans-serif;
+          font-size: 16px;
+        }
+      }
+      .size-goods {
+        color: #5a5a5a;
+        font-size: 12px !important;
+        min-height: 51px;
+        .sizes-list li { display: inline-block;
+        }
+      }
+    }
+  }
+}

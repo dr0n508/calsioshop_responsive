@@ -1003,4 +1003,78 @@ h3 {
 .panel-heading .panel-title a[aria-expanded='true']:before {
   display: block; }
 
+.bread-crumb {
+  padding: 5px 10px; }
+  .bread-crumb ul li {
+    display: inline-block; }
+    .bread-crumb ul li:last-child a {
+      color: #808080; }
+    .bread-crumb ul li a {
+      display: inline-block; }
+    .bread-crumb ul li .fa {
+      margin-left: 5px; }
+
+.list-filtered-goods .goods-information {
+  padding-bottom: 10px; }
+  .list-filtered-goods .goods-information a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    border: solid 1px transparent;
+    text-align: center; }
+    .list-filtered-goods .goods-information a:hover {
+      border: solid 1px #e4e4e4;
+      box-shadow: 0 0 10px #e4e4e4; }
+      .list-filtered-goods .goods-information a:hover .name-goods {
+        text-decoration: underline; }
+    .list-filtered-goods .goods-information a .img-wrapper {
+      text-align: center;
+      position: relative; }
+      .list-filtered-goods .goods-information a .img-wrapper img {
+        width: 100%;
+        height: auto; }
+      .list-filtered-goods .goods-information a .img-wrapper .new-ico, .list-filtered-goods .goods-information a .img-wrapper .free-delivery-ico {
+        position: absolute;
+        border-radius: 50%;
+        font-family: MohaveBold, sans-serif;
+        width: 28px;
+        height: 28px;
+        color: white;
+        top: 5px;
+        right: 5px; }
+      .list-filtered-goods .goods-information a .img-wrapper .new-ico {
+        background-color: #ff0054;
+        padding: 6px 0;
+        font-size: 12px; }
+      .list-filtered-goods .goods-information a .img-wrapper .free-delivery-ico {
+        padding: 2px 0;
+        font-size: 10px;
+        background-color: #22ce9b;
+        line-height: 10px; }
+        .list-filtered-goods .goods-information a .img-wrapper .free-delivery-ico .fa {
+          font-size: 14px; }
+    .list-filtered-goods .goods-information a .name-goods {
+      font-size: 14px;
+      color: #054182;
+      font-family: "ralewaybold", sans-serif;
+      padding-top: 5px; }
+    .list-filtered-goods .goods-information a .price-goods {
+      padding: 5px 0; }
+      .list-filtered-goods .goods-information a .price-goods .old-price {
+        color: gray;
+        font-family: "MohaveBoldItalic", sans-serif;
+        font-size: 14px;
+        margin-right: 10px;
+        text-decoration: line-through; }
+      .list-filtered-goods .goods-information a .price-goods .current-price {
+        color: red;
+        font-family: "mohavebold", sans-serif;
+        font-size: 16px; }
+    .list-filtered-goods .goods-information a .size-goods {
+      color: #5a5a5a;
+      font-size: 12px !important;
+      min-height: 51px; }
+      .list-filtered-goods .goods-information a .size-goods .sizes-list li {
+        display: inline-block; }
+
 /*# sourceMappingURL=main.css.map */

@@ -24,6 +24,21 @@ $(document).ready(function () {
         $list.css("height", height);
     }
 
+    /****SameHeight*categories******/
+
+    maintainSameHeight($('.goods-information a'));
+    function maintainSameHeight($list) {
+        var height = 0;
+        $list.each(function () {
+            var $this = $(this);
+            if ($this.outerHeight() > height) {
+                height = $this.outerHeight();
+            }
+        });
+        $list.css("height", height);
+    }
+
+
     /****drop-down-languages******/
     function formatState (state) {
         if (!state.id) { return state.text; }
