@@ -1004,7 +1004,7 @@ h3 {
   display: block; }
 
 .bread-crumb {
-  padding: 5px 10px; }
+  padding: 10px 0; }
   .bread-crumb ul li {
     display: inline-block; }
     .bread-crumb ul li:last-child a {
