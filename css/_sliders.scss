@@ -1,0 +1,44 @@
+/*****home page slider*****/
+
+
+.home-page-slider {
+  .bx-wrapper .bx-viewport {
+    box-shadow: none;
+    border: none;
+    left: 0;
+  }
+  .bx-wrapper .bx-controls-direction {
+    a {
+      width: 14px;
+      height: 22px;
+      margin-top: -11px;
+      &:hover {
+        background-position: 0 0;
+      }
+    }
+    .bx-next {
+      background: url("../images/arrow-right.png") 50% 50% no-repeat;
+      right: 20px;
+    }
+    .bx-prev {
+      background: url("../images/arrow-left.png") 50% 50% no-repeat;
+      left: 20px;
+    }
+  }
+  .btn-advert {
+    font-size: 20px;
+    width: 230px;
+    position: absolute;
+    right: 70px;
+    bottom: 50px;
+    @media only screen and (max-width: 768px) {
+      font-size: 14px;
+      width: auto;
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+}
+
+/*****end home page slider*****/
+

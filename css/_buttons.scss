@@ -2,17 +2,16 @@
   font-family: "mohavebold", sans-serif;
   font-size: 16px;
   text-align: center;
-  //display: block;
   color: $white-color;
   background-color: $gray-color;
-  padding: 5px 20px;
+  padding: 5px 15px;
   margin: 5px 0;
   &:hover {
     text-decoration: none;
     color: $white-color;
   }
   @media only screen and (max-width: 768px) {
-    width: 100%;
+    //width: 100%;
   }
 }
 
@@ -33,7 +32,6 @@
     font: 12px ralewayregular, sans-serif;
   }
 }
-
 
 .btn-advert {
   @extend .button;

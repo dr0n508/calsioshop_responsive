@@ -32,7 +32,7 @@
                 <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="ico-hamburger fa fa-bars fa-lg"></span><span class="ico-remove fa fa-times fa-lg"></span>
                     <p class="name-btm">Menu</p>
                 </button>
-                <button class="basket-button active"><span class="wrap-button-basket"><img src="images/ico-basket.png" alt="basket" class="ico-basket"><img src="images/ico-basket-white.png" alt="basket" class="ico-basket-white"><span class="number-goods">0</span></span></button><a href="#" class="logo"><img src="images/logo.png" alt="logo"></a>
+                <button class="basket-button active"><span class="wrap-button-basket"><img src="images/ico-basket.png" alt="basket" class="ico-basket"><img src="images/ico-basket-white.png" alt="basket" class="ico-basket-white"><span class="number-goods">0</span></span></button><a href="#" class="logo"><img src="images/logo_mobile.png" alt="logo"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling-->
             <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
@@ -150,16 +150,16 @@
                     <div class="language-site">
                         <form action="#">
                             <select class="select2-size" name="language-site" id="language-site">
-                                <option value="English">English</option>
-                                <option value="Italienne">Italienne</option>
-                                <option value="Francese">Francese</option>
+                                <option value="English"></option>
+                                <option value="Italienne"></option>
+                                <option value="Francese"></option>
                             </select>
                         </form>
                     </div>
-                    <div class="basket">
+                    <div class="basket active">
                         <a href="#">
                             <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
-                            <span class="number-goods-in-basket">0</span>
+                            <span class="number-goods-in-basket">1</span>
                         </a>
                     </div>
                 </div>
@@ -368,48 +368,33 @@
                                             <li><a href="#">Scarpe</a></li>
                                         </ul>
                                     </li>
-                                    <li class="col-md-4 col-sm-12">
-                                        <ul class="list-offer-mega-menu">
-                                            <li>
-                                                <div class="row">
-                                                    <a href="#">
-                                                    <span class="col-md-6 wrap-img">
-                                                        <img src="images/offer-mega-menu.png" alt="offer-mega-menu">
-                                                    </span>
-                                                        <span class="col-md-6">
-                                                        <p>mod. Mississipi</p>
-                                                        <p>16.00</p>
-                                                        <p>11.90</p>
-                                                    </span>
-                                                    </a>
+                                    <li class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-0 col-sm-12">
+                                        <ul class="list-offer-mega-menu row">
+                                            <li class="col-md-12 col-sm-4">
+                                                <img class="img-sale" src="images/offer-mega-menu.png" alt="offer-mega-menu">
+                                                <div class="text-offer">
+                                                    <img src="images/logo-nike.png" alt="logo nike">
+                                                    <p class="model">mod. <span>Mississipi</span></p>
+                                                    <p class="old-price">€ 16.00</p>
+                                                    <p class="new-price">€ 11.90</p>
                                                 </div>
                                             </li>
-                                            <li>
-                                                <div class="row">
-                                                    <a href="#">
-                                                    <span class="col-md-6">
-                                                        img
-                                                    </span>
-                                                        <span class="col-md-6">
-                                                        <p>mod. Mississipi</p>
-                                                        <p>16.00</p>
-                                                        <p>11.90</p>
-                                                    </span>
-                                                    </a>
+                                            <li class="col-md-12 col-sm-4">
+                                                <img class="img-sale" src="images/offer-mega-menu.png" alt="offer-mega-menu">
+                                                <div class="text-offer">
+                                                    <img src="images/logo-nike.png" alt="logo nike">
+                                                    <p class="model">mod. <span>Mississipi</span></p>
+                                                    <p class="old-price">€ 16.00</p>
+                                                    <p class="new-price">€ 11.90</p>
                                                 </div>
                                             </li>
-                                            <li>
-                                                <div class="row">
-                                                    <a href="#">
-                                                    <span class="col-md-6">
-                                                        img
-                                                    </span>
-                                                        <span class="col-md-6">
-                                                        <p>mod. Mississipi</p>
-                                                        <p>16.00</p>
-                                                        <p>11.90</p>
-                                                    </span>
-                                                    </a>
+                                            <li class="col-md-12 col-sm-4">
+                                                <img class="img-sale" src="images/offer-mega-menu.png" alt="offer-mega-menu">
+                                                <div class="text-offer">
+                                                    <img src="images/logo-nike.png" alt="logo nike">
+                                                    <p class="model">mod. <span>Mississipi</span></p>
+                                                    <p class="old-price">€ 16.00</p>
+                                                    <p class="new-price">€ 11.90</p>
                                                 </div>
                                             </li>
                                         </ul>
@@ -911,7 +896,7 @@
                                 </ul>
                             </li>
                         </ul>
-                        <form class="form-search-desktop">
+                        <form class="form-search-desktop hidden-sm">
                             <div class="search">
                                 <input type="search" name="q" placeholder="Cerca" class="input-search"><a href="#" class="btn-search fa fa-search"></a>
                             </div>
@@ -945,13 +930,7 @@
             </div>
         </div>
     </div>
-
 </header>
-
-
-
-
-
 
 <section class="main-offer desktop hidden-xs">
     <div class="container">
@@ -972,10 +951,10 @@
     </div>
 </section>
 
-<section>
+<section class="home-page-slider">
     <div class="container">
         <div class="row">
-            <ul class="home-page-slider">
+            <ul id="home-page-slider">
                 <li>
                     <img src="images/slides/home-slide-01.jpg" alt="welcome slide"/>
                     <a href="#" class="btn-advert">ACQUISTA Ora</a>
@@ -992,7 +971,8 @@
         </div>
     </div>
 </section>
-<section class="main-offer mobile visible-xs">
+
+<section class="main-offer visible-xs">
     <div class="container">
         <div class="row">
             <h1>
@@ -1019,52 +999,76 @@
         <div class="row">
             <ul class="list-categories">
                 <li class="col-md-3 col-sm-4 col-xs-6 category" data-same-height="category">
-                    <img src="images/categories/scarpe-calcio.jpg" alt="categories">
-                    <a class="btn-advert" href="#">Scarpe Calcio</a>
+                    <a href="#" class="link-category">
+                        <img src="images/categories/scarpe-calcio.jpg" alt="categories">
+                        <button class="btn-advert" href="#">Scarpe Calcio</button>
+                    </a>
                 </li>
                 <li class="col-md-3 col-sm-4 col-xs-6 category" data-same-height="category">
-                    <img src="images/categories/scarpe-calcetto.jpg" alt="categories">
-                    <a class="btn-advert" href="#">Scarpe Calcetto</a>
+                    <a href="#" class="link-category">
+                        <img src="images/categories/scarpe-calcetto.jpg" alt="categories">
+                        <button class="btn-advert" href="#">Scarpe Calcetto</button>
+                    </a>
                 </li>
                 <li class="col-md-3 col-sm-4 col-xs-6 category" data-same-height="category">
-                    <img src="images/categories/completi-calcio.jpg" alt="categories">
-                    <a class="btn-advert" href="#">Completi Calcio</a>
+                    <a href="#" class="link-category">
+                        <img src="images/categories/completi-calcio.jpg" alt="categories">
+                        <button class="btn-advert" href="#">Completi Calcio</button>
+                    </a>
                 </li>
                 <li class="col-md-3 col-sm-4 col-xs-6 category" data-same-height="category">
-                    <img src="images/categories/portiere.jpg" alt="categories">
-                    <a class="btn-advert" href="#">Portiere</a>
+                    <a href="#" class="link-category">
+                        <img src="images/categories/portiere.jpg" alt="categories">
+                        <button class="btn-advert" href="#">Portiere</button>
+                    </a>
                 </li>
                 <li class="col-md-3 col-sm-4 col-xs-6 category" data-same-height="category">
-                    <img src="images/categories/palloni.jpg" alt="categories">
-                    <a class="btn-advert" href="#">Palloni</a>
+                    <a href="#" class="link-category">
+                        <img src="images/categories/palloni.jpg" alt="categories">
+                        <button class="btn-advert" href="#">Palloni</button>
+                    </a>
                 </li>
                 <li class="col-md-3 col-sm-4 col-xs-6 category" data-same-height="category">
-                    <img src="images/categories/intimo-tecnico.jpg" alt="categories">
-                    <a class="btn-advert" href="#">Intimo Tecnico</a>
+                    <a href="#" class="link-category">
+                        <img src="images/categories/intimo-tecnico.jpg" alt="categories">
+                        <button class="btn-advert" href="#">Intimo Tecnico</button>
+                    </a>
                 </li>
                 <li class="col-md-3 col-sm-4 col-xs-6 category" data-same-height="category">
-                    <img src="images/categories/allenamento.jpg" alt="categories">
-                    <a class="btn-advert" href="#">Allenamento</a>
+                    <a href="#" class="link-category">
+                        <img src="images/categories/allenamento.jpg" alt="categories">
+                        <button class="btn-advert" href="#">Allenamento</button>
+                    </a>
                 </li>
                 <li class="col-md-3 col-sm-4 col-xs-6 category" data-same-height="category">
-                    <img src="images/categories/training-pro.jpg" alt="categories">
-                    <a class="btn-advert" href="#">Training Pro</a>
+                    <a href="#" class="link-category">
+                        <img src="images/categories/training-pro.jpg" alt="categories">
+                        <button class="btn-advert" href="#">Training Pro</button>
+                    </a>
                 </li>
                 <li class="col-md-3 col-sm-4 col-xs-6 category" data-same-height="category">
-                    <img src="images/categories/club-italiani.jpg" alt="categories">
-                    <a class="btn-advert" href="#">Club Italiani</a>
+                    <a href="#" class="link-category">
+                        <img src="images/categories/club-italiani.jpg" alt="categories">
+                        <button class="btn-advert" href="#">Club Italiani</button>
+                    </a>
                 </li>
                 <li class="col-md-3 col-sm-4 col-xs-6 category" data-same-height="category">
-                    <img src="images/categories/club-stranieri.jpg" alt="categories">
-                    <a class="btn-advert" href="#">Club Stranieri</a>
+                    <a href="#" class="link-category">
+                        <img src="images/categories/club-stranieri.jpg" alt="categories">
+                        <button class="btn-advert" href="#">Club Stranieri</button>
+                    </a>
                 </li>
                 <li class="col-md-3 col-sm-4 col-xs-6 category" data-same-height="category">
-                    <img src="images/categories/prastinchi.jpg" alt="categories">
-                    <a class="btn-advert" href="#">Prastinchi</a>
+                    <a href="#" class="link-category">
+                        <img src="images/categories/prastinchi.jpg" alt="categories">
+                        <button class="btn-advert" href="#">Prastinchi</button>
+                    </a>
                 </li>
                 <li class="col-md-3 col-sm-4 col-xs-6 category" data-same-height="category">
-                    <img src="images/categories/urban.jpg" alt="categories">
-                    <a class="btn-advert" href="#">Urban</a>
+                    <a href="#" class="link-category">
+                        <img src="images/categories/urban.jpg" alt="categories">
+                        <button class="btn-advert" href="#">Urban</button>
+                    </a>
                 </li>
 
             </ul>
@@ -1072,11 +1076,11 @@
     </div>
 </section>
 
-<section class="filter mobile visible-xs">
+<section class="filter visible-xs">
     <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
         <div class="panel panel-default">
             <div id="headingOne" role="tab" class="panel-heading">
-                <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Vedi Tutto<span class="fa fa-chevron-down"></span></a></h4>
+                <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Vedi Tutto</a></h4>
             </div>
             <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse in">
                 <div class="panel-body">Acquista per club:</div>
@@ -1084,7 +1088,7 @@
         </div>
         <div class="panel panel-default">
             <div id="headingTwo" role="tab" class="panel-heading">
-                <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed">Club Italiani<span class="fa fa-chevron-down"></span></a></h4>
+                <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed">Club Italiani</a></h4>
             </div>
             <div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" class="panel-collapse collapse">
                 <div class="panel-body">Acquista per club:</div>
@@ -1092,7 +1096,7 @@
         </div>
         <div class="panel panel-default">
             <div id="headingThree" role="tab" class="panel-heading">
-                <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">Club Stranieri<span class="fa fa-chevron-down"></span></a></h4>
+                <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">Club Stranieri</a></h4>
             </div>
             <div id="collapseThree" role="tabpanel" aria-labelledby="headingThree" class="panel-collapse collapse">
                 <div class="panel-body">Acquista per club:</div>
@@ -1157,15 +1161,12 @@
                         </div>
                     </article>
                 </div>
-
-
-
             </div>
         </div>
     </div>
 </section>
 
-<section class="subscribe">
+<section class="subscribe-sale">
     <div class="container">
         <div class="row">
             <div class="col-md-4 title-subscribe">
@@ -1193,7 +1194,7 @@
                 <div class="social-footer-bar">
                     <img src="images/trust-pilog-logo.jpg" alt="trust-pilot">
                     <ul class="social-links hidden-xs">
-                        <li class="faceboot-link"><a href="#"></a></li>
+                        <li class="facebook-link"><a href="#"></a></li>
                         <li class="youtube-link"><a href="#"></a></li>
                         <li class="twitter-link"><a href="#"></a></li>
                         <li class="instagram-link"><a href="#"></a></li>
@@ -1256,12 +1257,41 @@
     </div>
 
     <section class="footer-mobile visible-xs">
+        <section class="bottom-nav-mobile">
+            <div class="title-bottom-nav"><a href="#">Login / Registrati</a></div>
+            <div id="accordion2" role="tablist" aria-multiselectable="true" class="panel-group">
+                <div class="panel panel-default">
+                    <div id="headingTwo1" role="tab" class="panel-heading">
+                        <h4 class="panel-title title-bottom-nav"><a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo2" class="collapsed">Assistenza</a></h4>
+                    </div>
+                    <div id="collapseTwo1" role="tabpanel" aria-labelledby="headingTwo1" class="panel-collapse collapse">
+                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ullam?</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div id="headingTwo2" role="tab" class="panel-heading">
+                        <h4 class="panel-title title-bottom-nav"><a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2" class="collapsed">Pagamenti</a></h4>
+                    </div>
+                    <div id="collapseTwo2" role="tabpanel" aria-labelledby="headingTwo2" class="panel-collapse collapse">
+                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ullam?</div>
+                    </div>
+                </div>
+            </div>
+            <div class="languages title-bottom-nav">
+                <p>Lingua</p>
+                <ul class="flags-list">
+                    <li><a href="#"><img src="images/flags/english.png" alt="flag1"></a></li>
+                    <li><a href="#"><img src="images/flags/Francese.png" alt="flag1"></a></li>
+                    <li><a href="#"><img src="images/flags/Italienne.png" alt="flag1"></a></li>
+                </ul>
+            </div>
+        </section>
         <div class="contacts">
             <p><i class="fa fa-envelope" aria-hidden="true"></i>E-mail</p>
             <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i>Chiedi All' Esperto<span> 031.874261</span></p>
         </div>
-        <ul class="social-links hidden-xs">
-            <li class="faceboot-link"><a href="#"></a></li>
+        <ul class="social-links">
+            <li class="facebook-link"><a href="#"></a></li>
             <li class="youtube-link"><a href="#"></a></li>
             <li class="twitter-link"><a href="#"></a></li>
             <li class="instagram-link"><a href="#"></a></li>
@@ -1272,7 +1302,6 @@
             <p>Free Time Management Group SLR © 2005 - 2016</p>
         </div>
     </section>
-
 </footer>
 
 
