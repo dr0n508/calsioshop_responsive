@@ -979,7 +979,7 @@
 
 
                                                 </div>
-                                                <div id="collapse-marca" role="tabpanel" aria-labelledby="heading-marca" class="panel-collapse collapse collapse-marca">
+                                                <div id="collapse-marca" role="tabpanel" aria-labelledby="heading-marca" class="panel-collapse collapse in collapse-marca">
                                                     <div class="panel-body">
                                                         <input class="checkbox22" value="Asics" id="Asics" type="checkbox"/>
                                                         <label for="Asics"><span>Asics (44)</span></label>
@@ -1005,7 +1005,7 @@
                                                         <!--insert here selected items from filter-->
                                                     </ul>
                                                 </div>
-                                                <div id="collapse-taglia" role="tabpanel" aria-labelledby="heading-taglia" class="panel-collapse collapse">
+                                                <div id="collapse-taglia" role="tabpanel" aria-labelledby="heading-taglia" class="panel-collapse collapse in">
                                                     <div class="panel-body">
 
                                                         <input class="checkbox22" id="27" value="27" type="checkbox"/>
@@ -1014,16 +1014,40 @@
                                                         <input class="checkbox22" id="28" value="28" type="checkbox"/>
                                                         <label for="28"><span>28</span></label>
 
+                                                        <input class="checkbox22" id="29" value="29" type="checkbox"/>
+                                                        <label for="29"><span>29</span></label>
+
                                                         <input class="checkbox22" id="30" value="30" type="checkbox"/>
                                                         <label for="30"><span>30</span></label>
 
                                                         <input class="checkbox22" id="31" value="31" type="checkbox"/>
                                                         <label for="31"><span>31</span></label>
 
-                                                        <input class="checkbox22" id="49" value="49" type="checkbox"/>
-                                                        <label for="49"><span>49</span></label>
+                                                        <input class="checkbox22" id="32"  value="32" type="checkbox"/>
+                                                        <label for="32"><span>32</span></label>
 
-                                                        <input class="checkbox22" id="40"  value="40" type="checkbox"/>
+                                                        <input class="checkbox22" id="33" value="33" type="checkbox"/>
+                                                        <label for="33"><span>33</span></label>
+
+                                                        <input class="checkbox22" id="34" value="34" type="checkbox"/>
+                                                        <label for="34"><span>34</span></label>
+
+                                                        <input class="checkbox22" id="35" value="35" type="checkbox"/>
+                                                        <label for="35"><span>35</span></label>
+
+                                                        <input class="checkbox22" id="36" value="36" type="checkbox"/>
+                                                        <label for="36"><span>36</span></label>
+
+                                                        <input class="checkbox22" id="37" value="37" type="checkbox"/>
+                                                        <label for="37"><span>37</span></label>
+
+                                                        <input class="checkbox22" id="38" value="38" type="checkbox"/>
+                                                        <label for="38"><span>38</span></label>
+
+                                                        <input class="checkbox22" id="39" value="39" type="checkbox"/>
+                                                        <label for="39"><span>39</span></label>
+
+                                                        <input class="checkbox22" id="40" value="40" type="checkbox"/>
                                                         <label for="40"><span>40</span></label>
 
                                                         <input class="checkbox22" id="41" value="41" type="checkbox"/>
@@ -1060,7 +1084,7 @@
                                                 <div id="heading-edizione" role="tab" class="panel-heading">
                                                     <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#filterAccordion" href="#collapse-edizione" aria-expanded="false" aria-controls="collapse-edizione" class="collapsed">edizione<span class="fa fa-plus"></span></a></h4>
                                                 </div>
-                                                <div id="collapse-edizione" role="tabpanel" aria-labelledby="heading-edizione" class="panel-collapse collapse">
+                                                <div id="collapse-edizione" role="tabpanel" aria-labelledby="heading-edizione" class="panel-collapse collapse in">
                                                     <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ullam?</div>
                                                 </div>
                                             </div>
@@ -1068,7 +1092,7 @@
                                                 <div id="heading-collezione" role="tab" class="panel-heading">
                                                     <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#filterAccordion" href="#collapse-collezione" aria-expanded="false" aria-controls="collapse-collezione" class="collapsed">collezione<span class="fa fa-plus"></span></a></h4>
                                                 </div>
-                                                <div id="collapse-collezione" role="tabpanel" aria-labelledby="heading-collezione" class="panel-collapse collapse">
+                                                <div id="collapse-collezione" role="tabpanel" aria-labelledby="heading-collezione" class="panel-collapse collapse in">
                                                     <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ullam?</div>
                                                 </div>
                                             </div>
@@ -1076,7 +1100,7 @@
                                                 <div id="heading-prezo" role="tab" class="panel-heading">
                                                     <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#filterAccordion" href="#collapse-prezo" aria-expanded="false" aria-controls="collapse-prezo" class="collapsed">prezo<span class="fa fa-plus"></span></a></h4>
                                                 </div>
-                                                <div id="collapse-prezo" role="tabpanel" aria-labelledby="heading-prezo" class="panel-collapse collapse">
+                                                <div id="collapse-prezo" role="tabpanel" aria-labelledby="heading-prezo" class="panel-collapse collapse in">
                                                     <div class="panel-body">
                                                         <!--price-slider-->
                                                         <div class="wrap-slider">
@@ -1435,6 +1459,13 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+
+<!-- jQuery UI -->
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
