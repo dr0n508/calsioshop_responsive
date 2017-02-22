@@ -11,7 +11,7 @@
       float: left;
       span {
         display: block;
-        background: #dcdcdc;
+        background: #f5f5f5;
         margin-right: 10px;
         margin-bottom: 10px;
         padding: 10px 0;
@@ -36,7 +36,7 @@
 /******price-slider*/
 
 .wrap-slider {
-  padding: 20px 0;
+  padding: 20px 25px 20px 20px;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
@@ -69,6 +69,7 @@
 
 .slider-range {
   margin: 30px 0;
+  padding-bottom: 1px;
   label {
     width: 50%;
     float: left;
@@ -87,7 +88,7 @@
       &:before {
         content: "\20AC";
         position: absolute;
-        top: 5p;
+        top: 5px;
         left: 10px;
       }
     }
@@ -97,10 +98,13 @@
 
 .custom-checkbox {
   position: relative;
-  margin: 8px 0;
+  //margin: 15px 0;
+  padding: 10px 5px;
+  border-bottom: solid 1px #e6e6e6;
   label {
     //font-size: 12px !important;
     margin-left: 30px;
+    position: relative;
   }
   input[type=checkbox] {
     display: none;
@@ -112,7 +116,7 @@
     height: 20px;
     margin-right: 10px;
     position: absolute;
-    left: 0;
+    left: -28px;
     bottom: 1px;
     border: solid 1px #dddddd;
     background: #ffffff;

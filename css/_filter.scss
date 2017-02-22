@@ -1,9 +1,16 @@
 .filter-category-boots {
+  .panel-body {
+    padding: 0;
+    border-top: solid 1px #f3f3f3 !important;
+    .custom-checkbox {
+      //padding: 5px;
+    }
+  }
   .panel-heading {
     .panel-title {
       a {
-        &:after {content: "\f067";}
-        &:before {content: "\f068";}
+        &:after {content: "\f067"; color: #054182;}
+        &:before {content: "\f068"; color: #054182;}
       }
       a[aria-expanded='false'] {
         &:after {display: block;}
@@ -17,17 +24,31 @@
   }
 }
 
-
 .filter {
+  .panel-group .panel {
+    border: none;
+  }
+  color: #00366e;
   .panel.panel-default {
     margin-top: 0;
     border-radius: 0;
     border-top: none;
     &:first-child {
-      border-top: solid 1px #ddd;
+      border-top: solid 1px #f3f3f3;
     }
-
-
+  }
+  .categories-body {
+    padding: 0;
+    li {
+      a {
+        display: block;
+        padding: 10px 5px;
+        border-bottom: solid 1px #e6e6e6;
+        text-decoration: none;
+        color: #00366e;
+        text-transform: uppercase;
+      }
+    }
   }
   .panel-heading {
     //border-bottom: solid 1px #ffffff;
