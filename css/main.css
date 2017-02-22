@@ -1080,6 +1080,7 @@ h3 {
     color: #054180; }
   .articles-blog p {
     color: #191c21;
+    margin-bottom: 10px;
     line-height: 24px; }
   .articles-blog .read-more {
     text-decoration: underline;
