@@ -33,8 +33,6 @@
   }
 }
 
-
-/*****price-slider****/
 /******price-slider*/
 
 .wrap-slider {
@@ -93,5 +91,38 @@
         left: 10px;
       }
     }
+  }
+}
+
+
+.custom-checkbox {
+  position: relative;
+  margin: 8px 0;
+  label {
+    //font-size: 12px !important;
+    margin-left: 30px;
+  }
+  input[type=checkbox] {
+    display: none;
+  }
+  label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border: solid 1px #dddddd;
+    background: #ffffff;
+  }
+  input[type=checkbox]:checked + label:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #054182;
+    text-align: center;
+    line-height: 16px;
   }
 }

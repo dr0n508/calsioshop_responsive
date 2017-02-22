@@ -714,7 +714,6 @@ button.list-group-item:hover {
     color: #ffffff;
     background: #054180; }
 
-/*****price-slider****/
 /******price-slider*/
 .wrap-slider {
   padding: 20px 0; }
@@ -762,6 +761,32 @@ button.list-group-item:hover {
         position: absolute;
         top: 5p;
         left: 10px; }
+
+.custom-checkbox {
+  position: relative;
+  margin: 8px 0; }
+  .custom-checkbox label {
+    margin-left: 30px; }
+  .custom-checkbox input[type=checkbox] {
+    display: none; }
+  .custom-checkbox label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border: solid 1px #dddddd;
+    background: #ffffff; }
+  .custom-checkbox input[type=checkbox]:checked + label:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #054182;
+    text-align: center;
+    line-height: 16px; }
 
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
@@ -1151,7 +1176,8 @@ h3 {
       .list-filtered-goods .goods-information a .size-goods {
         color: #5a5a5a;
         font-size: 12px !important;
-        min-height: 51px; }
+        min-height: 51px;
+        padding-bottom: 5px; }
         .list-filtered-goods .goods-information a .size-goods .sizes-list li {
           display: inline-block; }
 
