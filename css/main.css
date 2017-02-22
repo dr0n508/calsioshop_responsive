@@ -688,6 +688,34 @@ button.list-group-item:hover {
       .bottom-nav-mobile .languages .flags-list li a {
         display: inline; }
 
+.filter-category-boots .panel-heading .panel-title a:after {
+  content: "\f067"; }
+.filter-category-boots .panel-heading .panel-title a:before {
+  content: "\f068"; }
+.filter-category-boots .panel-heading .panel-title a[aria-expanded='false']:after {
+  display: block; }
+.filter-category-boots .panel-heading .panel-title a[aria-expanded='false']:before {
+  display: none; }
+.filter-category-boots .panel-heading .panel-title a[aria-expanded='true']:after {
+  display: none; }
+.filter-category-boots .panel-heading .panel-title a[aria-expanded='true']:before {
+  display: block; }
+
+.filter .panel.panel-default {
+  margin-top: 0;
+  border-radius: 0;
+  border-top: none; }
+  .filter .panel.panel-default:first-child {
+    border-top: solid 1px #ddd; }
+.filter .panel-heading {
+  padding: 10px; }
+  .filter .panel-heading h4 a {
+    font-family: "mohavebold", sans-serif;
+    display: block;
+    color: #054182;
+    text-decoration: none; }
+
+/************************filter*****************/
 /****custom-checkbox-size***/
 #collapse-taglia .panel-body {
   overflow: hidden;
@@ -1084,6 +1112,7 @@ h3 {
 
 /*********for mobile******/
 .panel-heading .panel-title a {
+  display: block;
   position: relative; }
   .panel-heading .panel-title a:after, .panel-heading .panel-title a:before {
     position: absolute;

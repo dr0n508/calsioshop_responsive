@@ -397,6 +397,7 @@ h3 {
 .panel-heading {
   .panel-title {
     a {
+      display: block;
       position: relative;
       &:after, &:before {
         position: absolute;
