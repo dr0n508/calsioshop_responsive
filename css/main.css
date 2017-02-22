@@ -1170,6 +1170,14 @@ h3 {
       display: inline-block; }
     .bread-crumb ul li .fa {
       margin-left: 5px; }
+  @media only screen and (max-width: 768px) {
+    .bread-crumb {
+      margin-right: -15px;
+      margin-left: -15px;
+      background: #f3f3f3;
+      padding: 5px 10px; }
+      .bread-crumb ul li a {
+        font-size: 12px; } }
 
 .list-filtered-goods {
   border-bottom: 1px solid #e4e4e4;
