@@ -454,6 +454,36 @@ h3 {
 
 }
 
+
+.welcome-screen {
+  background: url("../images/category_boots/bg-welcome.png") no-repeat right -100%;
+  padding: 0 10px 10px;
+  border-bottom: solid 1px #e6e6e6;
+  margin-left: -15px;
+  margin-right: -15px;
+  //h1 {
+  //  font-size: 29px;
+  //  font-family: "mohavebold", sans-serif;
+  //  padding: 10px 0;
+  //}
+  .sub-title {
+    font-family: "ralewayregular", sans-serif;
+    margin-bottom: 20px;
+  }
+  .filter-settings {
+    font-size: 12px;
+    a {
+      color: #5a5a5a;
+      display: inline-block;
+      margin-left: 10px;
+      .fa {
+        margin-right: 5px;
+        color: #2862a2;
+      }
+    }
+  }
+}
+
 .list-filtered-goods {
   border-bottom: 1px solid #e4e4e4;
   border-top: 1px solid #e4e4e4;
