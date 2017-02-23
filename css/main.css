@@ -733,30 +733,56 @@ button.list-group-item:hover {
       color: #054182;
       text-decoration: none; }
 
-/************************filter*****************/
+/*****mobile***/
+.header-filter {
+  background: #ffffff;
+  padding: 10px; }
+
+.number-of-filters {
+  float: left; }
+
+.btn-reset, .btn-apply {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  float: right;
+  background: #9f9f9f;
+  color: #ffffff;
+  font-family: "mohavebold", sans-serif;
+  font-size: 16px; }
+
+.btn-apply {
+  float: right;
+  color: #ffffff;
+  font-family: "mohavebold", sans-serif; }
+
+.btn-apply {
+  background: #054180; }
+
 /****custom-checkbox-size***/
-#collapse-taglia .panel-body {
+#collapse-taglia .panel-body, #collapse-taglia-mobile .panel-body {
   overflow: hidden;
   padding: 10px 0 10px 10px;
   position: relative; }
-  #collapse-taglia .panel-body label {
+  #collapse-taglia .panel-body label, #collapse-taglia-mobile .panel-body label {
     width: 20%;
     text-align: center;
     float: left; }
-    #collapse-taglia .panel-body label span {
+    #collapse-taglia .panel-body label span, #collapse-taglia-mobile .panel-body label span {
       display: block;
       background: #f5f5f5;
       margin-right: 10px;
       margin-bottom: 10px;
       padding: 10px 0; }
-  #collapse-taglia .panel-body .checkbox22:not(checked) {
+  #collapse-taglia .panel-body .checkbox22:not(checked), #collapse-taglia-mobile .panel-body .checkbox22:not(checked) {
     position: absolute;
     opacity: 0;
     top: 50%;
     left: 50%; }
-  #collapse-taglia .panel-body .checkbox22:not(checked) + label {
+  #collapse-taglia .panel-body .checkbox22:not(checked) + label, #collapse-taglia-mobile .panel-body .checkbox22:not(checked) + label {
     color: #808080; }
-  #collapse-taglia .panel-body .checkbox22:checked + label span {
+  #collapse-taglia .panel-body .checkbox22:checked + label span, #collapse-taglia-mobile .panel-body .checkbox22:checked + label span {
     color: #ffffff;
     background: #054180; }
 

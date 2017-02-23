@@ -54,7 +54,7 @@ $(document).ready(function () {
         templateResult: formatState
     });
 
-
+    /*****desktop*slider-price******/
 
     /**
      * jQuery UI slider widget
@@ -98,4 +98,50 @@ $(document).ready(function () {
         }
         $("#slider").slider("values",1,value2);
     });
+
+    /*****mobile*slider-price******/
+
+    /**
+     * jQuery UI slider widget
+     * Drag a handle to select a numeric value.
+     */
+    $("#slider-mobile").slider({
+        min: 0,
+        max: 1000,
+        values: [0, 1000],
+        range: true,
+        stop: function(event, ui) {
+            $("input#minCost-mobile").val($("#slider-mobile").slider("values",0));
+            $("input#maxCost-mobile").val($("#slider-mobile").slider("values",1));
+        },
+        slide: function(event, ui){
+            $("input#minCost-mobile").val($("#slider-mobile").slider("values",0));
+            $("input#maxCost-mobile").val($("#slider-mobile").slider("values",1));
+        }
+    });
+
+    $("input#minCost-mobile").change(function(){
+        var value1=$("input#minCost-mobile").val();
+        var value2=$("input#maxCost-mobile").val();
+
+        if(parseInt(value1) > parseInt(value2)){
+            value1 = value2;
+            $("input#minCost-mobile").val(value1);
+        }
+        $("#slider-mobile").slider("values",0,value1);
+    });
+
+    $("input#maxCost-mobile").change(function(){
+        var value1=$("input#minCost-mobile").val();
+        var value2=$("input#maxCost-mobile").val();
+
+        if (value2 > 1000) { value2 = 1000; $("input#maxCost-mobile").val(1000)}
+
+        if(parseInt(value1) > parseInt(value2)){
+            value2 = value1;
+            $("input#maxCost-mobile").val(value2);
+        }
+        $("#slider-mobile").slider("values",1,value2);
+    });
+
 });
