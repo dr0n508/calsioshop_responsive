@@ -591,6 +591,10 @@ h3 {
     color: #1e1e1e;
     font-family: ralewaybold, sans-serif;
   }
+  @media only screen and (max-width: 768px) {
+    float: none;
+    text-align: center;
+  }
 }
 
 .order-filter {
