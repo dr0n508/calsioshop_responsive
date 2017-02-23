@@ -78,7 +78,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 .btn-interface {
   background-color: #054180;
   text-decoration: none; }
-  .btn-interface:visited {
+  .btn-interface:visited, .btn-interface:hover, .btn-interface:active, .btn-interface:focus {
     color: white;
     text-decoration: none; }
 

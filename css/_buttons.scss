@@ -43,7 +43,7 @@
   @extend .button;
   background-color: $blue-color;
   text-decoration: none;
-  &:visited {
+  &:visited, &:hover, &:active, &:focus {
     color: $white-color;
     text-decoration: none;
   }
