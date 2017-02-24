@@ -405,6 +405,10 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     background: #f3f3f3; }
   .mobile-menu .navbar-nav li:first-child {
     border-top: solid 1px white; }
+.mobile-menu .navbar-nav a.list-group-item.footer-main-menu {
+  font-family: ralewayregular, sans-serif;
+  font-size: 14px;
+  background-color: #e0e0e0; }
 .mobile-menu .list-group-item[data-toggle="collapse"]:after, .mobile-menu .list-group-item[data-toggle="collapse"]:before {
   position: absolute;
   font-family: FontAwesome;
@@ -673,6 +677,7 @@ button.list-group-item:hover {
   position: relative;
   color: #d7d7d7; }
   .bottom-nav-mobile .title-bottom-nav a {
+    font-size: 14px;
     font-weight: 600;
     padding: 10px;
     color: #d7d7d7;
