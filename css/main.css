@@ -669,7 +669,41 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   #myModal .modal-dialog, #myModal2 .modal-dialog {
     margin: 0; }
 
-/****custom-checkbox-size***/
+/****custom-checkbox-size-color***/
+.checkbox-color label span {
+  display: block;
+  height: 42px;
+  width: 42px;
+  border: solid 3px transparent; }
+.checkbox-color input[type=checkbox] {
+  display: none; }
+.checkbox-color label[for="color-white"] span {
+  background: #ffffff; }
+.checkbox-color label[for="color-black"] span {
+  background: #000000; }
+.checkbox-color label[for="color-grey"] span {
+  background: #c0c0c0; }
+.checkbox-color label[for="color-yellow"] span {
+  background: #fffc00; }
+.checkbox-color label[for="color-orange"] span {
+  background: #ff6501; }
+.checkbox-color label[for="color-blue"] span {
+  background: #53ccff; }
+.checkbox-color label[for="color-darkblue"] span {
+  background: #104caf; }
+.checkbox-color label[for="color-dark"] span {
+  background: #05102c; }
+.checkbox-color label[for="color-purple"] span {
+  background: #661620; }
+.checkbox-color label[for="color-red"] span {
+  background: #ea0001; }
+.checkbox-color label[for="color-green"] span {
+  background: #25b53a; }
+.checkbox-color label[for="color-brown"] span {
+  background: #d5b25e; }
+.checkbox-color .checkbox22:checked + label span {
+  border: solid 3px #808080; }
+
 #collapse-taglia .body-accordion, #collapse-taglia-mobile .body-accordion {
   overflow: hidden;
   padding: 10px 0 10px 10px;
@@ -695,47 +729,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   #collapse-taglia .body-accordion .checkbox22:checked + label span, #collapse-taglia-mobile .body-accordion .checkbox22:checked + label span {
     color: #ffffff;
     background: #054180; }
-
-/****custom-color-checbox******/
-.select-color-pers {
-  padding: 10px 0 10px 10px; }
-  .select-color-pers label {
-    padding: 0 10px 10px 0; }
-    .select-color-pers label span {
-      display: block;
-      height: 42px;
-      border: solid 1px #ddd; }
-  .select-color-pers label[for="color-white"] span {
-    background: #ffffff; }
-  .select-color-pers label[for="color-black"] span {
-    background: #000000; }
-  .select-color-pers label[for="color-grey"] span {
-    background: #c0c0c0; }
-  .select-color-pers label[for="color-yellow"] span {
-    background: #fffc00; }
-  .select-color-pers label[for="color-orange"] span {
-    background: #ff6501; }
-  .select-color-pers label[for="color-blue"] span {
-    background: #53ccff; }
-  .select-color-pers label[for="color-darkblue"] span {
-    background: #104caf; }
-  .select-color-pers label[for="color-dark"] span {
-    background: #05102c; }
-  .select-color-pers label[for="color-purple"] span {
-    background: #661620; }
-  .select-color-pers label[for="color-red"] span {
-    background: #ea0001; }
-  .select-color-pers label[for="color-green"] span {
-    background: #25b53a; }
-  .select-color-pers label[for="color-brown"] span {
-    background: #d5b25e; }
-  .select-color-pers .checkbox22:not(checked) {
-    position: absolute;
-    opacity: 0;
-    top: 50%;
-    left: 50%; }
-  .select-color-pers .checkbox22:checked + label span {
-    border: solid 3px #808080; }
 
 /******price-slider*/
 .wrap-slider {
