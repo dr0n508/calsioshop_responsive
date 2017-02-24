@@ -1729,6 +1729,8 @@
 
 <div class="modal-body">
 <section class="filter-category-boots filter">
+
+
     <form action="#">
         <div class="header-filter clearfix visible-xs">
             <p class="number-of-filters">Filtra (0)</p>
@@ -1737,12 +1739,14 @@
         </div>
 
         <div id="filterAccordion-mobile" role="tablist" aria-multiselectable="true" class="panel-group">
-            <div class="panel panel-default">
-                <div id="heading-categorie-mobile" role="tab" class="panel-heading">
-                    <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#filterAccordion-mobile" href="#collapse-categorie-mobile" aria-expanded="true" aria-controls="collapse-categorie-mobile" class="collapsed">categorie</a></h4>
+            <div class="accordion">
+                <div role="tab" id="headingCategorie-mobile">
+                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseCategorie-mobile" aria-expanded="true" aria-controls="collapseCategorie-mobile">
+                        categorie
+                    </a>
                 </div>
-                <div id="collapse-categorie-mobile" role="tabpanel" aria-labelledby="heading-categorie-mobile" class="panel-collapse collapse">
-                    <div class="panel-body categories-body">
+                <div id="collapseCategorie-mobile" class="collapse in" role="tabpanel" aria-labelledby="headingCategorie-mobile">
+                    <div class="body-accordion">
                         <ul>
                             <li><a href="#">SCARPE CALCIO</a></li>
                             <li><a href="#">SCARPE CALCETTO</a></li>
@@ -1752,21 +1756,17 @@
                 </div>
             </div>
 
-            <div class="panel panel-default">
-                <div id="heading-marca-mobile" role="tab" class="panel-heading">
-                    <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#filterAccordion-mobile" href="#collapse-marca-mobile" aria-expanded="true" aria-controls="collapse-marca" class="collapsed">
-                            Marca
-                        </a>
-                    </h4>
-
-                    <ul data-selected-items>
-                        <!--insert here selected items from filter-->
-                    </ul>
-
+            <div class="accordion">
+                <div role="tab" id="headingMarca-mobile">
+                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMarca-mobile" aria-expanded="true" aria-controls="collapseMarca-mobile">
+                        Marca
+                        <ul data-selected-items>
+                            <!--insert here selected items from filter-->
+                        </ul>
+                    </a>
                 </div>
-                <div id="collapse-marca-mobile" role="tabpanel" aria-labelledby="heading-marca-mobile" class="panel-collapse collapse collapse-marca">
-                    <div class="panel-body">
+                <div id="collapseMarca-mobile" class="collapse in" role="tabpanel" aria-labelledby="headingMarca-mobile">
+                    <div class="body-accordion">
                         <div class="custom-checkbox">
                             <input id="Asics-mobile" type="checkbox"/>
                             <label for="Asics-mobile">Asics (44)</label>
@@ -1807,20 +1807,14 @@
                 </div>
             </div>
 
-            <div class="panel panel-default">
-                <div id="heading-taglia-mobile" role="tab" class="panel-heading">
-                    <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#filterAccordion-mobile" href="#collapse-taglia-mobile" aria-expanded="true" aria-controls="collapse-taglia-mobile" class="collapsed">
-                            Taglia
-                        </a>
-                    </h4>
-                    <ul data-selected-items>
-                        <!--insert here selected items from filter-->
-                    </ul>
+            <div class="accordion">
+                <div role="tab" id="heading-taglia-mobile">
+                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-taglia-mobile" aria-expanded="true" aria-controls="collapse-taglia-mobile">
+                        Taglia
+                    </a>
                 </div>
-                <div id="collapse-taglia-mobile" role="tabpanel" aria-labelledby="heading-taglia-mobile" class="panel-collapse collapse">
-                    <div class="panel-body">
-
+                <div id="collapse-taglia-mobile" class="collapse in" role="tabpanel" aria-labelledby="heading-taglia-mobile">
+                    <div class="body-accordion">
                         <input class="checkbox22" id="27-mobile" value="27" type="checkbox"/>
                         <label for="27-mobile"><span>27</span></label>
 
@@ -1893,12 +1887,14 @@
                 </div>
             </div>
 
-            <div class="panel panel-default">
-                <div id="heading-collezione-mobile" role="tab" class="panel-heading">
-                    <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#filterAccordion-mobile" href="#collapse-collezione-mobile" aria-expanded="true" aria-controls="collapse-collezione-mobile" class="collapsed">collezione</a></h4>
+            <div class="accordion">
+                <div role="tab" id="heading-collezione-mobile">
+                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-collezione-mobile" aria-expanded="true" aria-controls="collapse-collezione-mobile">
+                        collezione
+                    </a>
                 </div>
-                <div id="collapse-collezione-mobile" role="tabpanel" aria-labelledby="heading-collezione-mobile" class="panel-collapse collapse">
-                    <div class="panel-body">
+                <div id="collapse-collezione-mobile" class="collapse in" role="tabpanel" aria-labelledby="heading-collezione-mobile">
+                    <div class="body-accordion">
                         <div class="custom-checkbox">
                             <input id="Magista-mobile" type="checkbox"/>
                             <label for="Magista-mobile">Magista (44)</label>
@@ -1915,12 +1911,14 @@
                 </div>
             </div>
 
-            <div class="panel panel-default">
-                <div id="heading-edizione-mobile" role="tab" class="panel-heading">
-                    <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#filterAccordion-mobile" href="#collapse-edizione-mobile" aria-expanded="true" aria-controls="collapse-edizione-mobile" class="collapsed">edizione</a></h4>
+            <div class="accordion">
+                <div role="tab" id="heading-edizione-mobile">
+                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-edizione-mobile" aria-expanded="true" aria-controls="collapse-edizione-mobile">
+                        edizione
+                    </a>
                 </div>
-                <div id="collapse-edizione-mobile" role="tabpanel" aria-labelledby="heading-edizione-mobile" class="panel-collapse collapse">
-                    <div class="panel-body">
+                <div id="collapse-edizione-mobile" class="collapse in" role="tabpanel" aria-labelledby="heading-edizione-mobile">
+                    <div class="body-accordion">
                         <div class="custom-checkbox">
                             <input id="Limited-Edition-mobile" type="checkbox"/>
                             <label for="Limited-Edition-mobile">Limited Edition (44)</label>
@@ -1933,16 +1931,19 @@
                             <input id="Adidas-BW-mobile" type="checkbox"/>
                             <label for="Adidas-BW-mobile">Adidas Black & White (44)</label>
                         </div>
+
                     </div>
                 </div>
             </div>
 
-            <div class="panel panel-default">
-                <div id="heading-prezo-mobile" role="tab" class="panel-heading">
-                    <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#filterAccordion-mobile" href="#collapse-prezo-mobile" aria-expanded="true" aria-controls="collapse-prezo-mobile" class="collapsed">prezo</a></h4>
+            <div class="accordion">
+                <div role="tab" id="heading-prezo-mobile">
+                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-prezo-mobile" aria-expanded="true" aria-controls="collapse-prezo-mobile">
+                        prezo
+                    </a>
                 </div>
-                <div id="collapse-prezo-mobile" role="tabpanel" aria-labelledby="heading-prezo-mobile" class="panel-collapse collapse">
-                    <div class="panel-body">
+                <div id="collapse-prezo-mobile" class="collapse in" role="tabpanel" aria-labelledby="heading-prezo-mobile">
+                    <div class="body-accordion">
                         <!--price-slider-->
                         <div class="wrap-slider">
                             <div id="slider-mobile"></div>
@@ -1960,10 +1961,11 @@
                                 </label>
                             </div>
                         </div>
+
                     </div>
                 </div>
-            </div>
-        </div>
+
+
         <div class="header-filter clearfix visible-xs">
             <p class="number-of-filters">Filtra (0)</p>
             <button type="submit" class="btn-apply">Applica</button>
