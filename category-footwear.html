@@ -977,43 +977,43 @@
                             <!--<div class="modal-body">-->
                                 <section class="filter-category-boots filter hidden-xs">
                                     <form action="#">
-                                        <div class="header-filter clearfix visible-xs">
-                                            <p class="number-of-filters">Filtra (0)</p>
-                                            <button type="submit" class="btn-apply">Applica</button>
-                                            <button type="reset" data-filter-reset class="btn-reset">Reset</button>
-                                        </div>
+
+
+                                        <!--<div class="header-filter clearfix visible-xs">-->
+                                            <!--<p class="number-of-filters">Filtra (0)</p>-->
+                                            <!--<button type="submit" class="btn-apply">Applica</button>-->
+                                            <!--<button type="reset" data-filter-reset class="btn-reset">Reset</button>-->
+                                        <!--</div>-->
 
                                         <div id="filterAccordion" role="tablist" aria-multiselectable="true" class="panel-group">
-                                            <div class="panel panel-default">
-                                                <div id="heading-categorie" role="tab" class="panel-heading">
-                                                    <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#filterAccordion" href="#collapse-categorie" aria-expanded="true" aria-controls="collapse-categorie" class="collapsed">categorie</a></h4>
+                                            <div class="accordion">
+                                                <div role="tab" id="headingCategorie">
+                                                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseCategorie" aria-expanded="true" aria-controls="collapseCategorie">
+                                                        categorie
+                                                    </a>
                                                 </div>
-                                                <div id="collapse-categorie" role="tabpanel" aria-labelledby="heading-categorie" class="panel-collapse collapse in">
-                                                    <div class="panel-body categories-body">
-                                                       <ul>
-                                                           <li><a href="#">SCARPE CALCIO</a></li>
-                                                           <li><a href="#">SCARPE CALCETTO</a></li>
-                                                           <li><a href="#">SCARPE URBAN</a></li>
-                                                       </ul>
+                                                <div id="collapseCategorie" class="collapse in" role="tabpanel" aria-labelledby="headingCategorie">
+                                                    <div class="body-accordion">
+                                                        <ul>
+                                                            <li><a href="#">SCARPE CALCIO</a></li>
+                                                            <li><a href="#">SCARPE CALCETTO</a></li>
+                                                            <li><a href="#">SCARPE URBAN</a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div class="panel panel-default">
-                                                <div id="heading-marca" role="tab" class="panel-heading">
-                                                    <h4 class="panel-title">
-                                                        <a role="button" data-toggle="collapse" data-parent="#filterAccordion" href="#collapse-marca" aria-expanded="true" aria-controls="collapse-marca" class="collapsed">
-                                                            Marca
-                                                        </a>
-                                                    </h4>
-
-                                                    <ul data-selected-items>
-                                                        <!--insert here selected items from filter-->
-                                                    </ul>
-
+                                            <div class="accordion">
+                                                <div role="tab" id="headingMarca">
+                                                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMarca" aria-expanded="true" aria-controls="collapseMarca">
+                                                        Marca
+                                                        <ul data-selected-items>
+                                                            <!--insert here selected items from filter-->
+                                                        </ul>
+                                                    </a>
                                                 </div>
-                                                <div id="collapse-marca" role="tabpanel" aria-labelledby="heading-marca" class="panel-collapse collapse in collapse-marca">
-                                                    <div class="panel-body">
+                                                <div id="collapseMarca" class="collapse in" role="tabpanel" aria-labelledby="headingMarca">
+                                                    <div class="body-accordion">
                                                         <div class="custom-checkbox">
                                                             <input id="Asics" type="checkbox"/>
                                                             <label for="Asics">Asics (44)</label>
@@ -1054,20 +1054,17 @@
                                                 </div>
                                             </div>
 
-                                            <div class="panel panel-default">
-                                                <div id="heading-taglia" role="tab" class="panel-heading">
-                                                    <h4 class="panel-title">
-                                                        <a role="button" data-toggle="collapse" data-parent="#filterAccordion" href="#collapse-taglia" aria-expanded="true" aria-controls="collapse-taglia" class="collapsed">
-                                                            Taglia
-                                                        </a>
-                                                    </h4>
-                                                    <ul data-selected-items>
-                                                        <!--insert here selected items from filter-->
-                                                    </ul>
-                                                </div>
-                                                <div id="collapse-taglia" role="tabpanel" aria-labelledby="heading-taglia" class="panel-collapse collapse in">
-                                                    <div class="panel-body">
 
+
+
+                                            <div class="accordion">
+                                                <div role="tab" id="heading-taglia">
+                                                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-taglia" aria-expanded="true" aria-controls="collapse-taglia">
+                                                        Taglia
+                                                    </a>
+                                                </div>
+                                                <div id="collapse-taglia" class="collapse in" role="tabpanel" aria-labelledby="heading-taglia">
+                                                    <div class="body-accordion">
                                                         <input class="checkbox22" id="27" value="27" type="checkbox"/>
                                                         <label for="27"><span>27</span></label>
 
@@ -1140,12 +1137,14 @@
                                                 </div>
                                             </div>
 
-                                            <div class="panel panel-default">
-                                                <div id="heading-collezione" role="tab" class="panel-heading">
-                                                    <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#filterAccordion" href="#collapse-collezione" aria-expanded="true" aria-controls="collapse-collezione" class="collapsed">collezione</a></h4>
+                                            <div class="accordion">
+                                                <div role="tab" id="heading-collezione">
+                                                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-collezione" aria-expanded="true" aria-controls="collapse-collezione">
+                                                        collezione
+                                                    </a>
                                                 </div>
-                                                <div id="collapse-collezione" role="tabpanel" aria-labelledby="heading-collezione" class="panel-collapse collapse in">
-                                                    <div class="panel-body">
+                                                <div id="collapse-collezione" class="collapse in" role="tabpanel" aria-labelledby="heading-collezione">
+                                                    <div class="body-accordion">
                                                         <div class="custom-checkbox">
                                                             <input id="Magista" type="checkbox"/>
                                                             <label for="Magista">Magista (44)</label>
@@ -1162,12 +1161,14 @@
                                                 </div>
                                             </div>
 
-                                            <div class="panel panel-default">
-                                                <div id="heading-edizione" role="tab" class="panel-heading">
-                                                    <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#filterAccordion" href="#collapse-edizione" aria-expanded="true" aria-controls="collapse-edizione" class="collapsed">edizione</a></h4>
+                                            <div class="accordion">
+                                                <div role="tab" id="heading-edizione">
+                                                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-edizione" aria-expanded="true" aria-controls="collapse-edizione">
+                                                        edizione
+                                                    </a>
                                                 </div>
-                                                <div id="collapse-edizione" role="tabpanel" aria-labelledby="heading-edizione" class="panel-collapse collapse in">
-                                                    <div class="panel-body">
+                                                <div id="collapse-edizione" class="collapse in" role="tabpanel" aria-labelledby="heading-edizione">
+                                                    <div class="body-accordion">
                                                         <div class="custom-checkbox">
                                                             <input id="Limited-Edition" type="checkbox"/>
                                                             <label for="Limited-Edition">Limited Edition (44)</label>
@@ -1180,16 +1181,19 @@
                                                             <input id="Adidas-BW" type="checkbox"/>
                                                             <label for="Adidas-BW">Adidas Black & White (44)</label>
                                                         </div>
+
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div class="panel panel-default">
-                                                <div id="heading-prezo" role="tab" class="panel-heading">
-                                                    <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#filterAccordion" href="#collapse-prezo" aria-expanded="true" aria-controls="collapse-prezo" class="collapsed">prezo</a></h4>
+                                            <div class="accordion">
+                                                <div role="tab" id="heading-prezo">
+                                                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-prezo" aria-expanded="true" aria-controls="collapse-prezo">
+                                                        prezo
+                                                    </a>
                                                 </div>
-                                                <div id="collapse-prezo" role="tabpanel" aria-labelledby="heading-prezo" class="panel-collapse collapse in">
-                                                    <div class="panel-body">
+                                                <div id="collapse-prezo" class="collapse in" role="tabpanel" aria-labelledby="heading-prezo">
+                                                    <div class="body-accordion">
                                                         <!--price-slider-->
                                                         <div class="wrap-slider">
                                                             <div id="slider"></div>
@@ -1207,9 +1211,16 @@
                                                                 </label>
                                                             </div>
                                                         </div>
+
                                                     </div>
                                                 </div>
                                             </div>
+
+
+
+
+
+                                           
                                         </div>
                                         <div class="articles-blog">
                                             <h3>SCARPE CALCIO</h3>
