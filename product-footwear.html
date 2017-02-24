@@ -26,113 +26,112 @@
     <!--mobile-menu-->
     <div class="mobile-menu visible-xs">
         <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display-->
-            <div class="navbar-header">
-                <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="ico-hamburger fa fa-bars fa-lg"></span><span class="ico-remove fa fa-times fa-lg"></span>
-                    <p class="name-btm">Menu</p>
-                </button>
-                <button class="basket-button active"><span class="wrap-button-basket"><img src="images/ico-basket.png" alt="basket" class="ico-basket"><img src="images/ico-basket-white.png" alt="basket" class="ico-basket-white"><span class="number-goods">0</span></span></button><a href="#" class="logo"><img src="images/logo_mobile.png" alt="logo"></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling-->
-            <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
-                <form class="form-search">
-                    <div class="search">
-                        <input type="search" name="q" placeholder="Cerca" class="input-search"><a href="#" class="btn-search fa fa-search"></a>
-                    </div>
-                </form>
-                <div class="nav navbar-nav">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display-->
+                <div class="navbar-header">
+                    <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="ico-hamburger fa fa-bars fa-lg"></span><span class="ico-remove fa fa-times fa-lg"></span>
+                        <p class="name-btm">Menu</p>
+                    </button>
+                    <button class="basket-button active"><span class="wrap-button-basket"><img src="images/ico-basket.png" alt="basket" class="ico-basket"><img src="images/ico-basket-white.png" alt="basket" class="ico-basket-white"><span class="number-goods">0</span></span></button><a href="#" class="logo"><img src="images/logo_mobile.png" alt="logo"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling-->
+                <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                    <form class="form-search">
+                        <div class="search">
+                            <input type="search" name="q" placeholder="Cerca" class="input-search"><a href="#" class="btn-search fa fa-search"></a>
+                        </div>
+                    </form>
                     <div id="main-menu">
-                        <div class="list-group panel">
-                            <a href="#shoes-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">
+                        <div class="accordion">
+                            <a href="#shoes-menu" class="title-accordion icon-arrows" data-toggle="collapse" data-parent="#main-menu">
                                 SCARPE
                             </a>
 
                             <div class="collapse" id="shoes-menu">
-                                <a href="#sub-shoes" class="list-group-item" data-toggle="collapse" data-parent="#sub-shoes">Sub-Item</a>
+                                <a href="#sub-shoes" class="menu-item icon-arrows" data-toggle="collapse" data-parent="#sub-shoes">Sub-Item</a>
+
                                 <div class="collapse list-group-submenu" id="sub-shoes">
-                                    <a href="#SubSubShoes" class="list-group-item" data-toggle="collapse" data-parent="#SubSubShoes">Sub-Sub-Item1</a>
+                                    <a href="#SubSubShoes" class="menu-item icon-arrows" data-toggle="collapse" data-parent="#SubSubShoes">Sub-Sub-Item1</a>
                                     <div class="collapse list-group-submenu list-group-subsubmenu" id="SubSubShoes">
-                                        <a href="#" class="list-group-item" data-parent="#SubSubShoes">Sub-Sub-Sub-Item1</a>
-                                        <a href="#" class="list-group-item" data-parent="#SubSubShoes">Sub-Sub-Sub-Item2</a>
-                                        <a href="#" class="list-group-item" data-parent="#SubSubShoes">Sub-Sub-Sub-Item3</a>
+                                        <a href="#" class="menu-item" data-parent="#SubSubShoes">Sub-Sub-Sub-Item1</a>
+                                        <a href="#" class="menu-item" data-parent="#SubSubShoes">Sub-Sub-Sub-Item2</a>
+                                        <a href="#" class="menu-item" data-parent="#SubSubShoes">Sub-Sub-Sub-Item3</a>
                                     </div>
 
-                                    <a href="#SubSubShoes2" class="list-group-item" data-toggle="collapse" data-parent="#SubSubShoes">Sub-Sub-Item2</a>
+                                    <a href="#SubSubShoes2" class="menu-item icon-arrows" data-toggle="collapse" data-parent="#SubSubShoes">Sub-Sub-Item2</a>
                                     <div class="collapse list-group-submenu list-group-subsubmenu" id="SubSubShoes2">
-                                        <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub-Sub-Sub-Item1</a>
-                                        <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub-Sub-Sub-Item2</a>
-                                        <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub-Sub-Sub-Item3</a>
+                                        <a href="#" class="menu-item" data-parent="#SubSubMenu1">Sub-Sub-Sub-Item1</a>
+                                        <a href="#" class="menu-item" data-parent="#SubSubMenu1">Sub-Sub-Sub-Item2</a>
+                                        <a href="#" class="menu-item" data-parent="#SubSubMenu1">Sub-Sub-Sub-Item3</a>
                                     </div>
-                                    <a href="#" class="list-group-item" data-parent="#sub-shoes">Sub-Sub-Item</a>
+                                    <a href="#" class="menu-item" data-parent="#sub-shoes">Sub-Sub-Item</a>
                                 </div>
 
-                                <a href="#" class="list-group-item">Sub-Item</a>
+                                <a href="#" class="menu-item">Sub-Item</a>
                             </div>
 
-                            <a href="#clothing-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">ABBIGLIAMENTO</a>
+                            <a href="#clothing-menu" class="title-accordion icon-arrows menu-item main-item" data-toggle="collapse" data-parent="#main-menu">ABBIGLIAMENTO</a>
 
                             <div class="collapse" id="clothing-menu">
-                                <a href="" class="list-group-item">Subitem 1</a>
-                                <a href="" class="list-group-item">Subitem 2</a>
-                                <a href="" class="list-group-item">Subitem 3</a>
+                                <a href="" class="menu-item">Subitem 1</a>
+                                <a href="" class="menu-item">Subitem 2</a>
+                                <a href="" class="menu-item">Subitem 3</a>
                             </div>
 
-                            <a href="#equipment-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">ATTREZZATURE</a>
+                            <a href="#equipment-menu" class="title-accordion icon-arrows menu-item main-item" data-toggle="collapse" data-parent="#main-menu">ATTREZZATURE</a>
 
                             <div class="collapse" id="equipment-menu">
-                                <a href="" class="list-group-item">Subitem 1</a>
-                                <a href="" class="list-group-item">Subitem 2</a>
-                                <a href="" class="list-group-item">Subitem 3</a>
+                                <a href="" class="menu-item">Subitem 1</a>
+                                <a href="" class="menu-item">Subitem 2</a>
+                                <a href="" class="menu-item">Subitem 3</a>
                             </div>
 
-                            <a href="#goalkeeper-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">PORTIERE</a>
+                            <a href="#goalkeeper-menu" class="title-accordion icon-arrows menu-item main-item" data-toggle="collapse" data-parent="#main-menu">PORTIERE</a>
                             <div class="collapse" id="goalkeeper-menu">
-                                <a href="" class="list-group-item">Subitem 1</a>
-                                <a href="" class="list-group-item">Subitem 2</a>
-                                <a href="" class="list-group-item">Subitem 3</a>
+                                <a href="" class="menu-item">Subitem 1</a>
+                                <a href="" class="menu-item">Subitem 2</a>
+                                <a href="" class="menu-item">Subitem 3</a>
                             </div>
-                            <a href="#urban-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">URBAN</a>
+                            <a href="#urban-menu" class="title-accordion icon-arrows menu-item main-item" data-toggle="collapse" data-parent="#main-menu">URBAN</a>
                             <div class="collapse" id="urban-menu">
-                                <a href="" class="list-group-item">Subitem 1</a>
-                                <a href="" class="list-group-item">Subitem 2</a>
-                                <a href="" class="list-group-item">Subitem 3</a>
+                                <a href="" class="menu-item">Subitem 1</a>
+                                <a href="" class="menu-item">Subitem 2</a>
+                                <a href="" class="menu-item">Subitem 3</a>
                             </div>
 
-                            <a href="#outlet-menu" class="list-group-item main-item outlet-red" data-toggle="collapse" data-parent="#main-menu">OUTLET</a>
+                            <a href="#outlet-menu" class="title-accordion icon-arrows menu-item main-item outlet-red" data-toggle="collapse" data-parent="#main-menu">OUTLET</a>
                             <div class="collapse" id="outlet-menu">
-                                <a href="" class="list-group-item">Subitem 1</a>
-                                <a href="" class="list-group-item">Subitem 2</a>
-                                <a href="" class="list-group-item">Subitem 3</a>
+                                <a href="" class="menu-item">Subitem 1</a>
+                                <a href="" class="menu-item">Subitem 2</a>
+                                <a href="" class="menu-item">Subitem 3</a>
                             </div>
 
-                            <a href="#topBrand-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">MARCHI TOP</a>
+                            <a href="#topBrand-menu" class="title-accordion icon-arrows menu-item main-item" data-toggle="collapse" data-parent="#main-menu">MARCHI TOP</a>
 
                             <div class="collapse" id="topBrand-menu">
-                                <a href="" class="list-group-item">Subitem 1</a>
-                                <a href="" class="list-group-item">Subitem 2</a>
-                                <a href="" class="list-group-item">Subitem 3</a>
+                                <a href="" class="menu-item">Subitem 1</a>
+                                <a href="" class="menu-item">Subitem 2</a>
+                                <a href="" class="menu-item">Subitem 3</a>
                             </div>
 
-                            <a href="#news-menu" class="list-group-item main-item" data-toggle="collapse" data-parent="#main-menu">NOVITA'</a>
+                            <a href="#news-menu" class="title-accordion icon-arrows menu-item main-item" data-toggle="collapse" data-parent="#main-menu">NOVITA'</a>
 
                             <div class="collapse" id="news-menu">
-                                <a href="" class="list-group-item">Subitem 1</a>
-                                <a href="" class="list-group-item">Subitem 2</a>
-                                <a href="" class="list-group-item">Subitem 3</a>
+                                <a href="" class="menu-item">Subitem 1</a>
+                                <a href="" class="menu-item">Subitem 2</a>
+                                <a href="" class="menu-item">Subitem 3</a>
                             </div>
 
-                            <a href="#" class="list-group-item footer-main-menu" data-toggle="collapse">Login/ Registrati</a>
-                            <a href="#" class="list-group-item footer-main-menu" data-toggle="collapse">Assistenza</a>
-                            <a href="#" class="list-group-item footer-main-menu" data-toggle="collapse">Pagamenti</a>
+                            <a href="#" class="menu-item footer-main-menu" data-toggle="collapse">Login/ Registrati</a>
+                            <a href="#" class="menu-item footer-main-menu" data-toggle="collapse">Assistenza</a>
+                            <a href="#" class="menu-item footer-main-menu" data-toggle="collapse">Pagamenti</a>
                         </div>
                     </div>
                 </div>
+                <!-- /.navbar-collapse-->
             </div>
-            <!-- /.navbar-collapse-->
-        </div>
-        <!-- /.container-fluid-->
-    </nav>
+            <!-- /.container-fluid-->
+        </nav>
     </div>
     <!--end-mobile-menu-->
 
@@ -1200,12 +1199,12 @@
                 <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 footer-info hidden-xs hidden-sm">
                     <img class="logo-white" src="images/calcioshop-bianco.png" alt="calcioshop">
                     <p><span>FREE TIME MANAGEMENT GROUP SRL</span><br>
-                    © 2005 - 2016, tutti i diritti riservati <br>
-                    Sede legale: <br>
-                    Via G. Donizetti 30 - 20122 Milano - Italia <br>
-                    Sede operativa: <br>
-                    Via 1 Maggio 16 - 23890 Barzago (LC) - Italia <br>
-                    Tel. 031.874261
+                        © 2005 - 2016, tutti i diritti riservati <br>
+                        Sede legale: <br>
+                        Via G. Donizetti 30 - 20122 Milano - Italia <br>
+                        Sede operativa: <br>
+                        Via 1 Maggio 16 - 23890 Barzago (LC) - Italia <br>
+                        Tel. 031.874261
                     </p>
                 </div>
             </div>
@@ -1214,32 +1213,48 @@
 
     <section class="footer-mobile visible-xs">
         <section class="bottom-nav-mobile">
-            <div class="title-bottom-nav"><a href="#">Login / Registrati</a></div>
-            <div id="accordion2" role="tablist" aria-multiselectable="true" class="panel-group">
-                <div class="panel panel-default">
-                    <div id="headingTwo1" role="tab" class="panel-heading">
-                        <h4 class="panel-title title-bottom-nav"><a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo2" class="collapsed">Assistenza</a></h4>
-                    </div>
-                    <div id="collapseTwo1" role="tabpanel" aria-labelledby="headingTwo1" class="panel-collapse collapse">
-                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ullam?</div>
-                    </div>
+            <div class="accordion inverse">
+                <div role="tab">
+                    <a href="#" class="title-accordion link">
+                        Login / Registrati
+                    </a>
                 </div>
-                <div class="panel panel-default">
-                    <div id="headingTwo2" role="tab" class="panel-heading">
-                        <h4 class="panel-title title-bottom-nav"><a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2" class="collapsed">Pagamenti</a></h4>
-                    </div>
-                    <div id="collapseTwo2" role="tabpanel" aria-labelledby="headingTwo2" class="panel-collapse collapse">
-                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ullam?</div>
+            </div>
+            <div class="accordion inverse">
+                <div role="tab" id="headingAssistenza">
+                    <a class="title-accordion icon-arrows collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseAssistenza" aria-expanded="false" aria-controls="collapseThree">
+                        Assistenza
+                    </a>
+                </div>
+                <div id="collapseAssistenza" class="collapse" role="tabpanel" aria-labelledby="headingAssistenza">
+                    <div class="body-accordion">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
                     </div>
                 </div>
             </div>
-            <div class="languages title-bottom-nav">
-                <p>Lingua</p>
-                <ul class="flags-list">
-                    <li><a href="#"><img src="images/flags/english.png" alt="flag1"></a></li>
-                    <li><a href="#"><img src="images/flags/Francese.png" alt="flag1"></a></li>
-                    <li><a href="#"><img src="images/flags/Italienne.png" alt="flag1"></a></li>
-                </ul>
+            <div class="accordion inverse">
+                <div role="tab" id="headingPagamenti">
+                    <a class="title-accordion icon-arrows collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsePagamenti" aria-expanded="false" aria-controls="collapseThree">
+                        Pagamenti
+                    </a>
+                </div>
+                <div id="collapsePagamenti" class="collapse" role="tabpanel" aria-labelledby="headingPagamenti">
+                    <div class="body-accordion">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion inverse">
+                <div role="tab">
+                    <span href="#" class="title-accordion">
+                        Lingua
+                        <ul class="flags-list">
+                            <li><a href="#"><img src="images/flags/english.png" alt="flag1"></a></li>
+                            <li><a href="#"><img src="images/flags/Francese.png" alt="flag1"></a></li>
+                            <li><a href="#"><img src="images/flags/Italienne.png" alt="flag1"></a></li>
+                        </ul>
+                    </span>
+                </div>
             </div>
         </section>
         <div class="contacts">
