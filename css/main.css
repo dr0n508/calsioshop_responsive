@@ -124,7 +124,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     color: #da2620; }
 
 .benefit-bar {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000066+0,000066+29,054182+29,054182+100 */
   background: #000066;
   /* Old browsers */
   background: -moz-linear-gradient(left, #000066 0%, #000066 20%, #054182 20%, #054182 100%);
@@ -452,7 +451,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   .mobile-menu .basket-button.active .number-goods {
     color: white; }
 
-/********subs-menu*********/
 /*****home page slider*****/
 .home-page-slider .bx-wrapper .bx-viewport {
   box-shadow: none;
@@ -661,7 +659,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   #myModal .modal-dialog, #myModal2 .modal-dialog {
     margin: 0; }
 
-/********menu-equipment-categories*************/
 /****custom-checkbox-size***/
 #collapse-taglia .body-accordion, #collapse-taglia-mobile .body-accordion {
   overflow: hidden;
@@ -1080,7 +1077,6 @@ h3 {
   .visible-xs .panel-body p {
     padding-bottom: 20px; }
 
-/*****************************categories*******************************/
 /*****************************special-offer******************************/
 .special-offer .for-your-team {
   padding-right: 0;
@@ -1192,7 +1188,6 @@ h3 {
     padding: 6px 20px;
     margin: 0 0 0 4px; }
 
-/*********for mobile******/
 .bread-crumb {
   padding: 10px 0; }
   .bread-crumb ul li {
