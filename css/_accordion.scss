@@ -1,0 +1,134 @@
+/*************accordion*********/
+
+.accordion {
+  .title-accordion {
+    display: block;
+    padding: 10px 15px;
+    color: #054182;
+    border-bottom: solid 1px #e6e6e6;
+    background-color: #f3f3f3;
+    font-family: 'mohavebold', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .body-accordion {
+    font-family: "ralewayregular", sans-serif;
+    padding: 10px;
+  }
+  .footer-main-menu {
+    background-color: #e0e0e0;
+    border-bottom: solid 1px white;
+    color: #054182;
+    &:hover {
+      background-color: #cbd5e0;
+      text-decoration: none;
+    }
+  }
+  .outlet-red {
+    color: #da2620;
+    &:after, &:before {
+      color: #da2620;
+    }
+  }
+  .title-accordion.link {
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.icon-arrows:not([aria-expanded="false"]),
+.icon-arrows:not([aria-expanded="false"]) {
+  &:before {
+    display: none;
+  }
+}
+
+.icon-plus-minus, .icon-arrows {
+  position: relative;
+  &:after, &:before {
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 16px;
+    right: 10px;
+    top: 50%;
+    margin-top: -10px;
+    color: #054182;
+  }
+}
+
+.icon-plus-minus {
+  &:after {
+    content: '\f067'; //plus
+  }
+  &:before {
+    content: '\f068'; //minus
+  }
+}
+.icon-arrows {
+  &:after {
+    content: "\f054"; //arrow right
+  }
+  &:before {
+    content: "\f078"; //arrow down
+  }
+}
+
+.title-accordion[aria-expanded='true']{
+  background-color: #cbd5e0;
+  border-bottom: solid 1px white;
+}
+
+.icon-arrows[aria-expanded='false'],
+.icon-plus-minus[aria-expanded='false'] {
+  &:after {display: block;}
+  &:before {display: none;}
+}
+.icon-arrows[aria-expanded='true'],
+.icon-plus-minus[aria-expanded='true']{
+  &:after {display: none;}
+  &:before {display: block;}
+}
+
+.accordion.inverse {
+  .title-accordion {
+    color: #d7d7d7;
+    border-bottom: solid 1px #191c21;
+    background-color: #45474b;
+    font-family: "ralewayregular", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    &:after, &:before {
+      color: #031427;
+    }
+  }
+  .body-accordion {
+    font-family: "ralewayregular", sans-serif;
+    padding: 10px;
+  }
+}
+
+.menu-item {
+  font-family: "ralewayregular", sans-serif;
+  padding: 10px;
+  display: block;
+  border-bottom: solid 1px #e6e6e6;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.list-group-submenu .menu-item {
+  padding: 10px 15px 10px 35px;
+}
+
+.list-group-submenu .list-group-subsubmenu .menu-item {
+  padding: 10px 15px 10px 55px;
+}
+
+a.menu-item:focus,
+a.menu-item:hover {
+  font-weight: 600;
+}
+
+/*************accordion*end********/
