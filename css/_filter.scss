@@ -1,3 +1,19 @@
+.filter-category-boots {
+  color: #00366e;
+  .accordion .body-accordion {
+    padding: 0;
+    .list-categories {
+      li a {
+        display: block;
+        padding: 10px 5px;
+        color: #00366e;
+        border-bottom: solid 1px #e6e6e6;
+      }
+    }
+  }
+}
+
+
 /*****mobile***/
 
 .header-filter {
