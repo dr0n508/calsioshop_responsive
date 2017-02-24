@@ -112,11 +112,13 @@
   }
 }
 
+
 .menu-item {
   font-family: "ralewayregular", sans-serif;
   padding: 10px;
   display: block;
   border-bottom: solid 1px #e6e6e6;
+  background-color: $white-color;
   &:hover {
     text-decoration: none;
   }
