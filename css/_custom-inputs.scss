@@ -97,13 +97,13 @@
 }
 
 
+/****custom checkbox****/
+
 .custom-checkbox {
   position: relative;
-  //margin: 15px 0;
   padding: 10px 5px;
   border-bottom: solid 1px #e6e6e6;
   label {
-    //font-size: 12px !important;
     margin-left: 30px;
     position: relative;
   }
@@ -131,3 +131,104 @@
     line-height: 16px;
   }
 }
+
+
+/******custom-radio****/
+
+.custom-radio {
+  position: relative;
+  padding: 10px 5px;
+  border-bottom: solid 1px #e6e6e6;
+  label {
+    margin-left: 30px;
+    position: relative;
+  }
+  input[type=radio] {
+    display: none;
+  }
+  label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: absolute;
+    left: -28px;
+    border: solid 1px #dddddd;
+    background: #ffffff;
+  }
+  input[type=radio]:checked + label:after {
+    content: '';
+    position: absolute;
+    left: -23px;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    margin-top: -5px;
+    background-color: #054182;
+    border-radius: 50%;
+  }
+}
+
+
+
+
+//
+///****custom-color-checbox******/
+//.select-color-pers {
+//  padding: 10px 0 10px 10px;
+//  label {
+//    padding: 0 10px 10px 0;
+//    span {
+//      display: block;
+//      height: 42px;
+//      border: solid 1px #ddd;
+//    }
+//  }
+//  label[for="color-white"] span{
+//    background: #ffffff;
+//  }
+//  label[for="color-black"] span{
+//    background: #000000;
+//  }
+//  label[for="color-grey"] span{
+//    background: #c0c0c0;
+//  }
+//  label[for="color-yellow"] span{
+//    background: #fffc00;
+//  }
+//  label[for="color-orange"] span{
+//    background: #ff6501;
+//  }
+//  label[for="color-blue"] span{
+//    background: #53ccff;
+//  }
+//  label[for="color-darkblue"] span{
+//    background: #104caf;
+//  }
+//  label[for="color-dark"] span{
+//    background: #05102c;
+//  }
+//  label[for="color-purple"] span{
+//    background: #661620;
+//  }
+//  label[for="color-red"] span{
+//    background: #ea0001;
+//  }
+//  label[for="color-green"] span{
+//    background: #25b53a;
+//  }
+//  label[for="color-brown"] span{
+//    background: #d5b25e;
+//  }
+//  .checkbox22:not(checked) {
+//    position: absolute;
+//    opacity: 0;
+//    top: 50%;
+//    left: 50%;
+//  }
+//  .checkbox22:checked + label span {
+//    border: solid 3px #808080;
+//  }
+//}

@@ -745,6 +745,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
         top: 5px;
         left: 10px; }
 
+/****custom checkbox****/
 .custom-checkbox {
   position: relative;
   padding: 10px 5px;
@@ -772,6 +773,38 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     color: #054182;
     text-align: center;
     line-height: 16px; }
+
+/******custom-radio****/
+.custom-radio {
+  position: relative;
+  padding: 10px 5px;
+  border-bottom: solid 1px #e6e6e6; }
+  .custom-radio label {
+    margin-left: 30px;
+    position: relative; }
+  .custom-radio input[type=radio] {
+    display: none; }
+  .custom-radio label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: absolute;
+    left: -28px;
+    border: solid 1px #dddddd;
+    background: #ffffff; }
+  .custom-radio input[type=radio]:checked + label:after {
+    content: '';
+    position: absolute;
+    left: -23px;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    margin-top: -5px;
+    background-color: #054182;
+    border-radius: 50%; }
 
 .tabs-thumbnail-product {
   width: 55px;
