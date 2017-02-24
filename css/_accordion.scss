@@ -24,6 +24,9 @@
       text-decoration: none;
     }
   }
+  .sub-title-menu {
+    font-weight: 600;
+  }
   .outlet-red {
     color: #da2620;
     &:after, &:before {
@@ -105,6 +108,7 @@
   .body-accordion {
     font-family: "ralewayregular", sans-serif;
     padding: 10px;
+    background-color: white;
   }
 }
 

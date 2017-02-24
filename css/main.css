@@ -835,6 +835,8 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   .accordion .footer-main-menu:hover {
     background-color: #cbd5e0;
     text-decoration: none; }
+.accordion .sub-title-menu {
+  font-weight: 600; }
 .accordion .outlet-red {
   color: #da2620; }
   .accordion .outlet-red:after, .accordion .outlet-red:before {
@@ -896,7 +898,8 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     color: #031427; }
 .accordion.inverse .body-accordion {
   font-family: "ralewayregular", sans-serif;
-  padding: 10px; }
+  padding: 10px;
+  background-color: white; }
 
 .menu-item {
   font-family: "ralewayregular", sans-serif;
