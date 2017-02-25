@@ -1,0 +1,38 @@
+#collapse-taglia, #collapse-taglia-mobile  {
+  .checkbox-size {
+    overflow: hidden;
+    padding: 10px 0 10px 10px;
+    position: relative;
+    label {
+      width: 20%;
+      text-align: center;
+      float: left;
+    }
+  }
+}
+
+#collapse-Colore, #collapse-Colore-mobile {
+  .checkbox-color {
+    overflow: hidden;
+    padding: 10px 0 10px 10px;
+    position: relative;
+    label {
+      width: 16.66%;
+      float: left;
+      span {
+        height: 35px;
+      }
+    }
+  }
+}
+
+/*****category-teamware****/
+.form-for-you-team {
+  background: url("../images/category-teamware/bg-welcome-screen-desktop.png") 100% 100% no-repeat, #f3f3f3;
+  padding: 10px 300px 10px 10px;
+}
+
+.form-for-you-team-mobile {
+  background: url("../images/category-teamware/bg-welcome-screen.png") 100% 100% no-repeat, #f3f3f3;
+
+}

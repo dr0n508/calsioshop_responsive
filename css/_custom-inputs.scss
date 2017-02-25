@@ -81,39 +81,6 @@
   }
 }
 
-#collapse-taglia, #collapse-taglia-mobile  {
-  .checkbox-size {
-    overflow: hidden;
-    padding: 10px 0 10px 10px;
-    position: relative;
-    label {
-      width: 20%;
-      text-align: center;
-      float: left;
-    }
-  }
-}
-
-#collapse-Colore, #collapse-Colore-mobile {
-  .checkbox-color {
-    overflow: hidden;
-    padding: 10px 0 10px 10px;
-    position: relative;
-    label {
-      width: 16.66%;
-      //height: 25px;
-      float: left;
-      //margin-bottom: 10px;
-
-      span {
-        height: 35px;
-      }
-
-    }
-  }
-}
-
-
 
 /******price-slider*/
 
@@ -181,7 +148,6 @@
 /****custom checkbox****/
 
 .custom-checkbox {
-  //display: inline-block;
   position: relative;
   padding: 10px 5px;
   label {
@@ -213,14 +179,11 @@
   }
 }
 
-
 /******custom-radio****/
 
 .custom-radio {
-  //display: inline-block;
   position: relative;
   padding: 10px 5px;
-  //border-bottom: solid 1px #e6e6e6;
   label {
     margin-left: 30px;
     position: relative;
@@ -278,16 +241,7 @@
   background-image: url("../images/arrow-downt.png");
   background-position: 98% 50%;
   background-repeat: no-repeat;
-
-
-
-
 }
-
-
-
-
-
 
 /****select2***/
 
@@ -350,11 +304,7 @@ display: none;
 
 }
 
-
-
 /****radio number players********/
-
-
 .number-players-mobile {
   label {
     width: 33.33%;
@@ -389,8 +339,3 @@ display: none;
     }
   }
 }
-
-
-
-
-

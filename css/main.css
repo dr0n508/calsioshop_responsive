@@ -727,25 +727,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     color: #ffffff;
     background: #054180; }
 
-#collapse-taglia .checkbox-size, #collapse-taglia-mobile .checkbox-size {
-  overflow: hidden;
-  padding: 10px 0 10px 10px;
-  position: relative; }
-  #collapse-taglia .checkbox-size label, #collapse-taglia-mobile .checkbox-size label {
-    width: 20%;
-    text-align: center;
-    float: left; }
-
-#collapse-Colore .checkbox-color, #collapse-Colore-mobile .checkbox-color {
-  overflow: hidden;
-  padding: 10px 0 10px 10px;
-  position: relative; }
-  #collapse-Colore .checkbox-color label, #collapse-Colore-mobile .checkbox-color label {
-    width: 16.66%;
-    float: left; }
-    #collapse-Colore .checkbox-color label span, #collapse-Colore-mobile .checkbox-color label span {
-      height: 35px; }
-
 /******price-slider*/
 .wrap-slider {
   padding: 20px 25px 20px 20px; }
@@ -1102,6 +1083,33 @@ a.menu-item:hover {
   font-weight: 600; }
 
 /*************accordion*end********/
+#collapse-taglia .checkbox-size, #collapse-taglia-mobile .checkbox-size {
+  overflow: hidden;
+  padding: 10px 0 10px 10px;
+  position: relative; }
+  #collapse-taglia .checkbox-size label, #collapse-taglia-mobile .checkbox-size label {
+    width: 20%;
+    text-align: center;
+    float: left; }
+
+#collapse-Colore .checkbox-color, #collapse-Colore-mobile .checkbox-color {
+  overflow: hidden;
+  padding: 10px 0 10px 10px;
+  position: relative; }
+  #collapse-Colore .checkbox-color label, #collapse-Colore-mobile .checkbox-color label {
+    width: 16.66%;
+    float: left; }
+    #collapse-Colore .checkbox-color label span, #collapse-Colore-mobile .checkbox-color label span {
+      height: 35px; }
+
+/*****category-teamware****/
+.form-for-you-team {
+  background: url("../images/category-teamware/bg-welcome-screen-desktop.png") 100% 100% no-repeat, #f3f3f3;
+  padding: 10px 300px 10px 10px; }
+
+.form-for-you-team-mobile {
+  background: url("../images/category-teamware/bg-welcome-screen.png") 100% 100% no-repeat, #f3f3f3; }
+
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
   -webkit-transition: all .15s;
@@ -1517,10 +1525,5 @@ h3 {
     .pagination-goods {
       float: none;
       text-align: center; } }
-
-/*****category *teamware***/
-.form-for-you-team {
-  background: url("../images/category-teamware/bg-welcome-screen-desktop.png") 100% 100% no-repeat, #f3f3f3;
-  padding: 10px 300px 10px 10px; }
 
 /*# sourceMappingURL=main.css.map */
