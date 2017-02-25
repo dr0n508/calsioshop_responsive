@@ -16,6 +16,8 @@
 @import "_tabs.scss";
 @import "_accordion.scss";
 
+@import "_page-index.scss";
+
 @import "_page-category.scss";
 
 
@@ -63,148 +65,12 @@ h3 {
   color: $light-black-text-color;
 }
 
-/*******************************main-offer*************************************/
-.main-offer {
-  background: url("../images/bg-for-main-offer.png") 37% 50% no-repeat;
-  padding: 20px 0;
-  @media only screen and (max-width: 1200px) {
-    background-position: 30% 50%;
-  }
-  @media only screen and (max-width: 1200px) {
-    background-position: 30% 50%;
-  }
-  @media only screen and (max-width: 992px) {
-    background-position: 15% 50%;
-  }
-  .h1-home-page {
-    font-size: 48px;
-    span {
-      color: #054182;
-      font-family: inherit;
-    }
-  }
-  h2 {
-    font-family: ralewayregular, sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: $blue-text-color;
-    font-weight: 600;
-    letter-spacing: .7px;
-    margin-bottom: 10px;
 
-  }
-  ul {
-    padding: 5px 5px 5px 20px;
-    li {
-      font-family: Raleway-Medium;
-      list-style-image: url("../images/ico-list-style.png");
-      margin-bottom: 5px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-      font-size: 16px;
-      @media only screen and (max-width: 768px) {
-        font-size: 14px;
-      }
-    }
-  }
-}
 
-/*****************************main-offer-mobile*******************************/
-.main-offer.visible-xs {
-  padding: 0;
-  background: #f3f3f3;
-  ul {
-    padding: 5px 5px 5px 30px;
-  }
-  h1 {
-    font-family: "mohavebold", sans-serif;
-    font-size: 29px;
-    color: #000066;
-    background: white;
-    padding: 10px;
-    line-height: 32px;
-  }
-  h2 {
-    font-size: 15px;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 10px 0;
-    border-bottom: solid 1px white;
-    color: #000066;
-  }
-}
+
 
 /*****************************categories*******************************/
-.categories {
-  padding: 20px 0;
-  @media only screen and (max-width: 768px) {
-    padding: 0;
-  }
-}
-.category {
-  .link-category {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: 7;
-    &:after {
-      @extend .transition;
-      content: '';
-      position: absolute;
-      opacity: 1;
-      display: block;
-      background: rgba(0,19,40,.3);
-      width: 100%;
-      height: 100%;
-      top:0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 6;
-    }
-    &:hover::after {
-      opacity: 0;
-    }
-    &:hover .btn-advert {
-      color: white;
-      background-color: $red-color;
-    }
-  }
-  padding-left: 0;
-  padding-right: 0;
-  position: relative;
 
-
-  .btn-advert {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border: none;
-    outline: none;
-    transform: translate(-50%, -50%);
-    font-size: 18px;
-    color: $blue-color;
-    background: white;
-    z-index: 7;
-    @extend .transition;
-    @media only screen and (max-width: 500px) {
-      padding: 5px;
-      font-size: 16px;
-    }
-    &:hover {
-      color: white;
-      background-color: $red-color;
-    }
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-    float: left;
-  }
-}
 
 
 .visible-xs {
@@ -230,61 +96,7 @@ h3 {
   }
 }
 
-/*****************************special-offer******************************/
 
-.special-offer {
-  .for-your-team {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .sell {
-    background: rgb(173, 190, 198);
-    background: -moz-linear-gradient(45deg, rgba(173, 190, 198, 1) 0%, rgba(198, 213, 220, 1) 50%, rgba(234, 241, 247, 1) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(173, 190, 198, 1) 0%, rgba(198, 213, 220, 1) 50%, rgba(234, 241, 247, 1) 100%);
-    background: linear-gradient(45deg, rgba(173, 190, 198, 1) 0%, rgba(198, 213, 220, 1) 50%, rgba(234, 241, 247, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#adbec6', endColorstr='#eaf1f7',GradientType=1 );
-    &:after {
-      position: absolute;
-      content: "%";
-      font-family: 'ralewaybold', sans-serif;
-      font-size: 250px;
-      color: #cddae0;
-      right: 20px;
-      top: 50%;
-      margin-top: -175px;
-      z-index: 0;
-    }
-  }
-  .for-your-team {
-    background: url("../images/for-you-team.jpg") 50% 50% no-repeat;
-    background-size: cover;
-    h2, p {
-      color: white;
-    }
-  }
-  .sell, .for-your-team {
-    padding: 100px 0;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    h2 {
-      font-size: 29px;
-      z-index: 99;
-      position: relative;
-    }
-    p {
-      font-family: ralewaybold, sans-serif;
-      position: relative;
-      z-index: 99;
-      margin: 10px 0;
-    }
-    .btn-advert {
-      position: relative;
-      font-size: 20px;
-      z-index: 99;
-    }
-  }
-}
 
 /*****************************articles-blog******************************/
 .articles-blog {
@@ -397,33 +209,7 @@ h3 {
 
 }
 
-.welcome-screen.category-footwear {
-  background: url("../images/category_boots/bg-welcome.png") no-repeat right -100%;
-}
-.welcome-screen {
-  padding: 0 10px 10px;
-  margin-left: -15px;
-  margin-right: -15px;
-  @media only screen and (max-width: 768px ) {
-    border-bottom: solid 1px #e6e6e6;
-  }
-  .sub-title {
-    font-family: "ralewayregular", sans-serif;
-    margin-bottom: 20px;
-  }
-  .filter-settings {
-    font-size: 12px;
-    a {
-      color: #5a5a5a;
-      display: inline-block;
-      margin-left: 10px;
-      .fa {
-        margin-right: 5px;
-        color: #2862a2;
-      }
-    }
-  }
-}
+
 
 .list-filtered-goods {
   border-bottom: 1px solid #e4e4e4;
@@ -516,27 +302,6 @@ h3 {
   }
 }
 
-.pagination-goods {
-  float: right;
-  ul li {
-    display: inline-block;
-    a {
-      padding: 0 5px;
-      color: #054182;
-    }
-    &:last-child a {
-      padding-right: 0;
-      font-family: MohaveBold, sans-serif;
-    }
-  }
-  ul li.current a {
-    color: #1e1e1e;
-    font-family: ralewaybold, sans-serif;
-  }
-  @media only screen and (max-width: 768px) {
-    float: none;
-    text-align: center;
-  }
-}
+
 
 
