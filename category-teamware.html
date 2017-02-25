@@ -982,9 +982,8 @@
                                 <div id="collapseCategorie" class="collapse in" role="tabpanel" aria-labelledby="headingCategorie">
                                     <div class="body-accordion">
                                         <ul class="list-categories">
-                                            <li><a href="#">SCARPE CALCIO</a></li>
-                                            <li><a href="#">SCARPE CALCETTO</a></li>
-                                            <li><a href="#">SCARPE URBAN</a></li>
+                                            <li><a href="#">MANICA CORTA</a></li>
+                                            <li><a href="#">MANICA LUNGA</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1042,6 +1041,33 @@
                             </div>
 
                             <div class="accordion">
+                                <div role="tab" id="headingQuantita">
+                                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseQuantita" aria-expanded="true" aria-controls="collapseQuantita">
+                                        QUANTITÀ
+                                        <ul data-selected-items>
+                                            <!--insert here selected items from filter-->
+                                        </ul>
+                                    </a>
+                                </div>
+                                <div id="collapseQuantita" class="collapse in" role="tabpanel" aria-labelledby="headingQuantita">
+                                    <div class="body-accordion">
+                                        <div class="custom-radio">
+                                            <input id="di10" name="Quantita" type="radio">
+                                            <label for="di10">DI 10+</label>
+                                        </div>
+                                        <div class="custom-radio">
+                                            <input id="di20" name="Quantita" type="radio">
+                                            <label for="di20">DI 20+</label>
+                                        </div>
+                                        <div class="custom-radio">
+                                            <input id="di50" name="Quantita" type="radio">
+                                            <label for="di50">DI 50+</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion">
                                 <div role="tab" id="heading-taglia">
                                     <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-taglia" aria-expanded="true" aria-controls="collapse-taglia">
                                         Taglia
@@ -1049,77 +1075,112 @@
                                 </div>
                                 <div id="collapse-taglia" class="collapse in" role="tabpanel" aria-labelledby="heading-taglia">
                                     <div class="body-accordion checkbox-size">
-                                        <input class="checkbox22" id="27" value="27" type="checkbox"/>
-                                        <label for="27"><span>27</span></label>
+                                        <input class="checkbox22" id="3XS" value="3XS" type="checkbox"/>
+                                        <label for="3XS"><span>3XS</span></label>
 
-                                        <input class="checkbox22" id="28" value="28" type="checkbox"/>
-                                        <label for="28"><span>28</span></label>
+                                        <input class="checkbox22" id="YS" value="YS" type="checkbox"/>
+                                        <label for="YS"><span>YS</span></label>
 
-                                        <input class="checkbox22" id="29" value="29" type="checkbox"/>
-                                        <label for="29"><span>29</span></label>
+                                        <input class="checkbox22" id="XXS" value="XXS" type="checkbox"/>
+                                        <label for="XXS"><span>XXS</span></label>
 
-                                        <input class="checkbox22" id="30" value="30" type="checkbox"/>
-                                        <label for="30"><span>30</span></label>
+                                        <input class="checkbox22" id="XS" value="XS" type="checkbox"/>
+                                        <label for="XS"><span>XS</span></label>
 
-                                        <input class="checkbox22" id="31" value="31" type="checkbox"/>
-                                        <label for="31"><span>31</span></label>
+                                        <input class="checkbox22" id="S" value="S" type="checkbox"/>
+                                        <label for="S"><span>S</span></label>
 
-                                        <input class="checkbox22" id="32"  value="32" type="checkbox"/>
-                                        <label for="32"><span>32</span></label>
+                                        <input class="checkbox22" id="M"  value="M" type="checkbox"/>
+                                        <label for="M"><span>M</span></label>
 
-                                        <input class="checkbox22" id="33" value="33" type="checkbox"/>
-                                        <label for="33"><span>33</span></label>
+                                        <input class="checkbox22" id="L" value="L" type="checkbox"/>
+                                        <label for="L"><span>L</span></label>
 
-                                        <input class="checkbox22" id="34" value="34" type="checkbox"/>
-                                        <label for="34"><span>34</span></label>
+                                        <input class="checkbox22" id="XL" value="XL" type="checkbox"/>
+                                        <label for="XL"><span>XL</span></label>
 
-                                        <input class="checkbox22" id="35" value="35" type="checkbox"/>
-                                        <label for="35"><span>35</span></label>
+                                        <input class="checkbox22" id="XXL" value="XXL" type="checkbox"/>
+                                        <label for="XXL"><span>XXL</span></label>
 
-                                        <input class="checkbox22" id="36" value="36" type="checkbox"/>
-                                        <label for="36"><span>36</span></label>
-
-                                        <input class="checkbox22" id="37" value="37" type="checkbox"/>
-                                        <label for="37"><span>37</span></label>
-
-                                        <input class="checkbox22" id="38" value="38" type="checkbox"/>
-                                        <label for="38"><span>38</span></label>
-
-                                        <input class="checkbox22" id="39" value="39" type="checkbox"/>
-                                        <label for="39"><span>39</span></label>
-
-                                        <input class="checkbox22" id="40" value="40" type="checkbox"/>
-                                        <label for="40"><span>40</span></label>
-
-                                        <input class="checkbox22" id="41" value="41" type="checkbox"/>
-                                        <label for="41"><span>41</span></label>
-
-                                        <input class="checkbox22" id="42" value="42" type="checkbox"/>
-                                        <label for="42"><span>42</span></label>
-
-                                        <input class="checkbox22" id="43" value="43" type="checkbox"/>
-                                        <label for="43"><span>43</span></label>
-
-                                        <input class="checkbox22" id="44" value="44" type="checkbox"/>
-                                        <label for="44"><span>44</span></label>
-
-                                        <input class="checkbox22" id="45" value="45" type="checkbox"/>
-                                        <label for="45"><span>45</span></label>
-
-                                        <input class="checkbox22" id="46" value="46" type="checkbox"/>
-                                        <label for="46"><span>46</span></label>
-
-                                        <input class="checkbox22" id="47" value="47" type="checkbox"/>
-                                        <label for="47"><span>47</span></label>
-
-                                        <input class="checkbox22" id="48" value="48" type="checkbox"/>
-                                        <label for="48"><span>48</span></label>
-
-                                        <input class="checkbox22" id="50" value="50" type="checkbox"/>
-                                        <label for="50"><span>50</span></label>
+                                        <input class="checkbox22" id="3XL" value="3XL" type="checkbox"/>
+                                        <label for="3XL"><span>3XL</span></label>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="accordion">
+                                <div role="tab" id="heading-Colore">
+                                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-Colore" aria-expanded="true" aria-controls="collapse-Colore">
+                                        Colore
+                                    </a>
+                                </div>
+                                <div id="collapse-Colore" class="collapse in" role="tabpanel" aria-labelledby="heading-Colore">
+                                    <div class="body-accordion checkbox-color">
+                                        <input class="checkbox22" id="color-white" type="checkbox">
+                                        <label for="color-white">
+                                            <span></span>
+                                        </label>
+
+                                        <input class="checkbox22" id="color-black" type="checkbox">
+                                        <label for="color-black">
+                                            <span></span>
+                                        </label>
+
+                                        <input class="checkbox22" id="color-grey" type="checkbox">
+                                        <label for="color-grey">
+                                            <span></span>
+                                        </label>
+
+                                        <input class="checkbox22" id="color-yellow" type="checkbox">
+                                        <label for="color-yellow">
+                                            <span></span>
+                                        </label>
+
+                                        <input class="checkbox22" id="color-orange" type="checkbox">
+                                        <label for="color-orange">
+                                            <span></span>
+                                        </label>
+
+                                        <input class="checkbox22" id="color-blue" type="checkbox">
+                                        <label for="color-blue">
+                                            <span></span>
+                                        </label>
+
+                                        <input class="checkbox22" id="color-darkblue" type="checkbox">
+                                        <label for="color-darkblue">
+                                            <span></span>
+                                        </label>
+
+                                        <input class="checkbox22" id="color-dark" type="checkbox">
+                                        <label for="color-dark">
+                                            <span></span>
+                                        </label>
+
+                                        <input class="checkbox22" id="color-purple" type="checkbox">
+                                        <label for="color-purple">
+                                            <span></span>
+                                        </label>
+
+                                        <input class="checkbox22" id="color-red" type="checkbox">
+                                        <label for="color-red">
+                                            <span></span>
+                                        </label>
+
+                                        <input class="checkbox22" id="color-green" type="checkbox">
+                                        <label for="color-green">
+                                            <span></span>
+                                        </label>
+
+                                        <input class="checkbox22" id="color-brown" type="checkbox">
+                                        <label for="color-brown">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
 
                             <div class="accordion">
                                 <div role="tab" id="heading-collezione">
@@ -1141,31 +1202,6 @@
                                             <input id="Hypervenom" type="checkbox"/>
                                             <label for="Hypervenom">Hypervenom (44)</label>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion">
-                                <div role="tab" id="heading-edizione">
-                                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-edizione" aria-expanded="true" aria-controls="collapse-edizione">
-                                        edizione
-                                    </a>
-                                </div>
-                                <div id="collapse-edizione" class="collapse in" role="tabpanel" aria-labelledby="heading-edizione">
-                                    <div class="body-accordion">
-                                        <div class="custom-checkbox">
-                                            <input id="Limited-Edition" type="checkbox"/>
-                                            <label for="Limited-Edition">Limited Edition (44)</label>
-                                        </div>
-                                        <div class="custom-checkbox">
-                                            <input id="Nike-Liquid-Chrome" type="checkbox"/>
-                                            <label for="Nike-Liquid-Chrome">Nike Liquid Chrome (44)</label>
-                                        </div>
-                                        <div class="custom-checkbox">
-                                            <input id="Adidas-BW" type="checkbox"/>
-                                            <label for="Adidas-BW">Adidas Black & White (44)</label>
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>

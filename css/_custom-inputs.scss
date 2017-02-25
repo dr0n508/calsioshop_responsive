@@ -4,6 +4,9 @@
     span {
       display: block;
       border: solid 3px transparent;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      padding: 10px 0;
     }
   }
   input[type=checkbox] {
@@ -78,7 +81,7 @@
   }
 }
 
-#collapse-taglia, #collapse-taglia-mobile {
+#collapse-taglia, #collapse-taglia-mobile  {
   .checkbox-size {
     overflow: hidden;
     padding: 10px 0 10px 10px;
@@ -90,6 +93,27 @@
     }
   }
 }
+
+#collapse-Colore, #collapse-taglia-mobile {
+  .checkbox-color {
+    overflow: hidden;
+    padding: 10px 0 10px 10px;
+    position: relative;
+    label {
+      width: 16.66%;
+      //height: 25px;
+      float: left;
+      //margin-bottom: 10px;
+
+      span {
+        height: 35px;
+      }
+
+    }
+  }
+}
+
+
 
 /******price-slider*/
 

@@ -672,7 +672,10 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 /****custom-checkbox-size-color***/
 .checkbox-color label span {
   display: block;
-  border: solid 3px transparent; }
+  border: solid 3px transparent;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px 0; }
 .checkbox-color input[type=checkbox] {
   display: none; }
 .checkbox-color label[for="color-white"] span {
@@ -732,6 +735,16 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     width: 20%;
     text-align: center;
     float: left; }
+
+#collapse-Colore .checkbox-color, #collapse-taglia-mobile .checkbox-color {
+  overflow: hidden;
+  padding: 10px 0 10px 10px;
+  position: relative; }
+  #collapse-Colore .checkbox-color label, #collapse-taglia-mobile .checkbox-color label {
+    width: 16.66%;
+    float: left; }
+    #collapse-Colore .checkbox-color label span, #collapse-taglia-mobile .checkbox-color label span {
+      height: 35px; }
 
 /******price-slider*/
 .wrap-slider {
@@ -961,8 +974,12 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 .accordion .body-accordion {
   font-family: "ralewayregular", sans-serif;
   padding: 10px; }
-  .accordion .body-accordion .custom-checkbox {
+  .accordion .body-accordion .custom-checkbox, .accordion .body-accordion .custom-radio {
     border-bottom: solid 1px #e6e6e6; }
+.accordion .body-accordion.checkbox-color {
+  background-color: #cbd5e0;
+  padding-bottom: 0;
+  margin-bottom: 10px; }
 .accordion .footer-main-menu {
   background-color: #e0e0e0;
   border-bottom: solid 1px white;

@@ -14,9 +14,14 @@
   .body-accordion {
     font-family: "ralewayregular", sans-serif;
     padding: 10px;
-    .custom-checkbox {
+    .custom-checkbox, .custom-radio {
       border-bottom: solid 1px #e6e6e6;
     }
+  }
+  .body-accordion.checkbox-color {
+    background-color: #cbd5e0;
+    padding-bottom: 0;
+    margin-bottom: 10px;
   }
   .footer-main-menu {
     background-color: #e0e0e0;
