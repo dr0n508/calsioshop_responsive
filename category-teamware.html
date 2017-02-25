@@ -1179,9 +1179,6 @@
                                 </div>
                             </div>
 
-
-
-
                             <div class="accordion">
                                 <div role="tab" id="heading-collezione">
                                     <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-collezione" aria-expanded="true" aria-controls="collapse-collezione">
@@ -1858,16 +1855,15 @@
         <div id="filterAccordion-mobile" role="tablist" aria-multiselectable="true" class="panel-group">
             <div class="accordion">
                 <div role="tab" id="headingCategorie-mobile">
-                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseCategorie-mobile" aria-controls="collapseCategorie-mobile">
+                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseCategorie-mobile" aria-expanded="true" aria-controls="collapseCategorie-mobile">
                         categorie
                     </a>
                 </div>
-                <div id="collapseCategorie-mobile" class="collapse" role="tabpanel" aria-labelledby="headingCategorie-mobile">
+                <div id="collapseCategorie-mobile" class="collapse in" role="tabpanel" aria-labelledby="headingCategorie-mobile">
                     <div class="body-accordion">
                         <ul class="list-categories">
-                            <li><a href="#">SCARPE CALCIO</a></li>
-                            <li><a href="#">SCARPE CALCETTO</a></li>
-                            <li><a href="#">SCARPE URBAN</a></li>
+                            <li><a href="#">MANICA CORTA</a></li>
+                            <li><a href="#">MANICA LUNGA</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1875,14 +1871,14 @@
 
             <div class="accordion">
                 <div role="tab" id="headingMarca-mobile">
-                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMarca-mobile" aria-controls="collapseMarca-mobile">
+                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMarca-mobile" aria-expanded="true" aria-controls="collapseMarca-mobile">
                         Marca
                         <ul data-selected-items>
                             <!--insert here selected items from filter-->
                         </ul>
                     </a>
                 </div>
-                <div id="collapseMarca-mobile" class="collapse" role="tabpanel" aria-labelledby="headingMarca-mobile">
+                <div id="collapseMarca-mobile" class="collapse in" role="tabpanel" aria-labelledby="headingMarca-mobile">
                     <div class="body-accordion">
                         <div class="custom-checkbox">
                             <input id="Asics-mobile" type="checkbox"/>
@@ -1925,92 +1921,151 @@
             </div>
 
             <div class="accordion">
+                <div role="tab" id="headingQuantita-mobile">
+                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseQuantita-mobile" aria-expanded="true" aria-controls="collapseQuantita-mobile">
+                        QUANTITÀ
+                        <ul data-selected-items>
+                            <!--insert here selected items from filter-->
+                        </ul>
+                    </a>
+                </div>
+                <div id="collapseQuantita-mobile" class="collapse in" role="tabpanel" aria-labelledby="headingQuantita-mobile">
+                    <div class="body-accordion">
+                        <div class="custom-radio">
+                            <input id="di10-mobile" name="Quantita" type="radio">
+                            <label for="di10-mobile">DI 10+</label>
+                        </div>
+                        <div class="custom-radio">
+                            <input id="di20-mobile" name="Quantita" type="radio">
+                            <label for="di20-mobile">DI 20+</label>
+                        </div>
+                        <div class="custom-radio">
+                            <input id="di50-mobile" name="Quantita" type="radio">
+                            <label for="di50-mobile">DI 50+</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion">
                 <div role="tab" id="heading-taglia-mobile">
-                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-taglia-mobile" aria-controls="collapse-taglia-mobile">
+                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-taglia-mobile" aria-expanded="true" aria-controls="collapse-taglia-mobile">
                         Taglia
                     </a>
                 </div>
-                <div id="collapse-taglia-mobile" class="collapse" role="tabpanel" aria-labelledby="heading-taglia-mobile">
+                <div id="collapse-taglia-mobile" class="collapse in" role="tabpanel" aria-labelledby="heading-taglia-mobile">
                     <div class="body-accordion checkbox-size">
-                        <input class="checkbox22" id="27-mobile" value="27" type="checkbox"/>
-                        <label for="27-mobile"><span>27</span></label>
+                        <input class="checkbox22" id="3XS-mobile" value="3XS" type="checkbox"/>
+                        <label for="3XS-mobile"><span>3XS</span></label>
 
-                        <input class="checkbox22" id="28-mobile" value="28" type="checkbox"/>
-                        <label for="28-mobile"><span>28</span></label>
+                        <input class="checkbox22" id="YS-mobile" value="YS" type="checkbox"/>
+                        <label for="YS-mobile"><span>YS</span></label>
 
-                        <input class="checkbox22" id="29-mobile" value="29" type="checkbox"/>
-                        <label for="29-mobile"><span>29</span></label>
+                        <input class="checkbox22" id="XXS-mobile" value="XXS" type="checkbox"/>
+                        <label for="XXS-mobile"><span>XXS</span></label>
 
-                        <input class="checkbox22" id="30-mobile" value="30" type="checkbox"/>
-                        <label for="30-mobile"><span>30</span></label>
+                        <input class="checkbox22" id="XS-mobile" value="XS" type="checkbox"/>
+                        <label for="XS-mobile"><span>XS</span></label>
 
-                        <input class="checkbox22" id="31-mobile" value="31" type="checkbox"/>
-                        <label for="31-mobile"><span>31</span></label>
+                        <input class="checkbox22" id="S-mobile" value="S" type="checkbox"/>
+                        <label for="S-mobile"><span>S</span></label>
 
-                        <input class="checkbox22" id="32-mobile"  value="32" type="checkbox"/>
-                        <label for="32-mobile"><span>32</span></label>
+                        <input class="checkbox22" id="M-mobile"  value="M" type="checkbox"/>
+                        <label for="M-mobile"><span>M</span></label>
 
-                        <input class="checkbox22" id="33-mobile" value="33" type="checkbox"/>
-                        <label for="33-mobile"><span>33</span></label>
+                        <input class="checkbox22" id="L-mobile" value="L" type="checkbox"/>
+                        <label for="L-mobile"><span>L</span></label>
 
-                        <input class="checkbox22" id="34-mobile" value="34" type="checkbox"/>
-                        <label for="34-mobile"><span>34</span></label>
+                        <input class="checkbox22" id="XL-mobile" value="XL" type="checkbox"/>
+                        <label for="XL-mobile"><span>XL</span></label>
 
-                        <input class="checkbox22" id="35-mobile" value="35" type="checkbox"/>
-                        <label for="35-mobile"><span>35</span></label>
+                        <input class="checkbox22" id="XXL-mobile" value="XXL" type="checkbox"/>
+                        <label for="XXL-mobile"><span>XXL</span></label>
 
-                        <input class="checkbox22" id="36-mobile" value="36" type="checkbox"/>
-                        <label for="36-mobile"><span>36</span></label>
+                        <input class="checkbox22" id="3XL-mobile" value="3XL" type="checkbox"/>
+                        <label for="3XL-mobile"><span>3XL</span></label>
+                    </div>
+                </div>
+            </div>
 
-                        <input class="checkbox22" id="37-mobile" value="37" type="checkbox"/>
-                        <label for="37-mobile"><span>37</span></label>
+            <div class="accordion">
+                <div role="tab" id="heading-Colore-mobile">
+                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-Colore-mobile" aria-expanded="true" aria-controls="collapse-Colore-mobile">
+                        Colore
+                    </a>
+                </div>
+                <div id="collapse-Colore-mobile" class="collapse in" role="tabpanel" aria-labelledby="heading-Colore-mobile">
+                    <div class="body-accordion checkbox-color">
+                        <input class="checkbox22" id="color-white" type="checkbox">
+                        <label for="color-white">
+                            <span></span>
+                        </label>
 
-                        <input class="checkbox22" id="38-mobile" value="38" type="checkbox"/>
-                        <label for="38-mobile"><span>38</span></label>
+                        <input class="checkbox22" id="color-black" type="checkbox">
+                        <label for="color-black">
+                            <span></span>
+                        </label>
 
-                        <input class="checkbox22" id="39-mobile" value="39" type="checkbox"/>
-                        <label for="39-mobile"><span>39</span></label>
+                        <input class="checkbox22" id="color-grey" type="checkbox">
+                        <label for="color-grey">
+                            <span></span>
+                        </label>
 
-                        <input class="checkbox22" id="40-mobile" value="40" type="checkbox"/>
-                        <label for="40-mobile"><span>40</span></label>
+                        <input class="checkbox22" id="color-yellow" type="checkbox">
+                        <label for="color-yellow">
+                            <span></span>
+                        </label>
 
-                        <input class="checkbox22" id="41-mobile" value="41" type="checkbox"/>
-                        <label for="41-mobile"><span>41</span></label>
+                        <input class="checkbox22" id="color-orange" type="checkbox">
+                        <label for="color-orange">
+                            <span></span>
+                        </label>
 
-                        <input class="checkbox22" id="42-mobile" value="42" type="checkbox"/>
-                        <label for="42-mobile"><span>42</span></label>
+                        <input class="checkbox22" id="color-blue" type="checkbox">
+                        <label for="color-blue">
+                            <span></span>
+                        </label>
 
-                        <input class="checkbox22" id="43-mobile" value="43" type="checkbox"/>
-                        <label for="43-mobile"><span>43</span></label>
+                        <input class="checkbox22" id="color-darkblue" type="checkbox">
+                        <label for="color-darkblue">
+                            <span></span>
+                        </label>
 
-                        <input class="checkbox22" id="44-mobile" value="44" type="checkbox"/>
-                        <label for="44-mobile"><span>44</span></label>
+                        <input class="checkbox22" id="color-dark" type="checkbox">
+                        <label for="color-dark">
+                            <span></span>
+                        </label>
 
-                        <input class="checkbox22" id="45-mobile" value="45" type="checkbox"/>
-                        <label for="45-mobile"><span>45</span></label>
+                        <input class="checkbox22" id="color-purple" type="checkbox">
+                        <label for="color-purple">
+                            <span></span>
+                        </label>
 
-                        <input class="checkbox22" id="46-mobile" value="46" type="checkbox"/>
-                        <label for="46-mobile"><span>46</span></label>
+                        <input class="checkbox22" id="color-red" type="checkbox">
+                        <label for="color-red">
+                            <span></span>
+                        </label>
 
-                        <input class="checkbox22" id="47-mobile" value="47" type="checkbox"/>
-                        <label for="47-mobile"><span>47</span></label>
+                        <input class="checkbox22" id="color-green" type="checkbox">
+                        <label for="color-green">
+                            <span></span>
+                        </label>
 
-                        <input class="checkbox22" id="48-mobile" value="48" type="checkbox"/>
-                        <label for="48-mobile"><span>48</span></label>
-
-                        <input class="checkbox22" id="50-mobile" value="50" type="checkbox"/>
-                        <label for="50-mobile"><span>50</span></label>
+                        <input class="checkbox22" id="color-brown" type="checkbox">
+                        <label for="color-brown">
+                            <span></span>
+                        </label>
                     </div>
                 </div>
             </div>
 
             <div class="accordion">
                 <div role="tab" id="heading-collezione-mobile">
-                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-collezione-mobile" aria-controls="collapse-collezione-mobile">
+                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-collezione-mobile" aria-expanded="true" aria-controls="collapse-collezione">
                         collezione
                     </a>
                 </div>
-                <div id="collapse-collezione-mobile" class="collapse" role="tabpanel" aria-labelledby="heading-collezione-mobile">
+                <div id="collapse-collezione-mobile" class="collapse in" role="tabpanel" aria-labelledby="heading-collezione-mobile">
                     <div class="body-accordion">
                         <div class="custom-checkbox">
                             <input id="Magista-mobile" type="checkbox"/>
@@ -2029,49 +2084,24 @@
             </div>
 
             <div class="accordion">
-                <div role="tab" id="heading-edizione-mobile">
-                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-edizione-mobile" aria-controls="collapse-edizione-mobile">
-                        edizione
-                    </a>
-                </div>
-                <div id="collapse-edizione-mobile" class="collapse" role="tabpanel" aria-labelledby="heading-edizione-mobile">
-                    <div class="body-accordion">
-                        <div class="custom-checkbox">
-                            <input id="Limited-Edition-mobile" type="checkbox"/>
-                            <label for="Limited-Edition-mobile">Limited Edition (44)</label>
-                        </div>
-                        <div class="custom-checkbox">
-                            <input id="Nike-Liquid-Chrome-mobile" type="checkbox"/>
-                            <label for="Nike-Liquid-Chrome-mobile">Nike Liquid Chrome (44)</label>
-                        </div>
-                        <div class="custom-checkbox">
-                            <input id="Adidas-BW-mobile" type="checkbox"/>
-                            <label for="Adidas-BW-mobile">Adidas Black & White (44)</label>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion">
                 <div role="tab" id="heading-prezo-mobile">
-                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-prezo-mobile" aria-controls="collapse-prezo-mobile">
+                    <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-prezo-mobile" aria-expanded="true" aria-controls="collapse-prezo-mobile">
                         prezo
                     </a>
                 </div>
-                <div id="collapse-prezo-mobile" class="collapse" role="tabpanel" aria-labelledby="heading-prezo-mobile">
+                <div id="collapse-prezo-mobile" class="collapse in" role="tabpanel" aria-labelledby="heading-prezo">
                     <div class="body-accordion">
                         <!--price-slider-->
                         <div class="wrap-slider">
                             <div id="slider-mobile"></div>
                             <div id="slider-range-mobile" class="slider-range">
-                                <label for="minCost">Min
+                                <label for="minCost-mobile">Min
                                     <div class="wrap-input">
                                         <input type="text" id="minCost-mobile" value="0"/>
                                     </div>
                                 </label>
 
-                                <label for="maxCost">Max
+                                <label for="maxCost-mobile">Max
                                     <div class="wrap-input">
                                         <input type="text" id="maxCost-mobile" value="1000"/>
                                     </div>
@@ -2081,7 +2111,8 @@
 
                     </div>
                 </div>
-
+            </div>
+        </div>
 
         <div class="header-filter clearfix visible-xs">
             <p class="number-of-filters">Filtra (0)</p>
