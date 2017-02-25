@@ -1300,44 +1300,64 @@
                 </section>
             </aside>
             <div class="content col-md-9 col-sm-8">
-                <div class="wwwwwwwwwwww">
 
 
 
 
-                    <!--<div class="custom-radio">-->
-                        <!--<input id="dd" name="ddd" type="radio">-->
-                        <!--<label for="dd">radio</label>-->
-                    <!--</div>-->
-                    <!--<div class="custom-radio">-->
-                        <!--<input id="ss" name="ddd" type="radio">-->
-                        <!--<label for="ss">rassdio</label>-->
-                    <!--</div>-->
-                    <!--<div class="custom-checkbox">-->
-                        <!--<input id="ff" type="checkbox">-->
-                        <!--<label for="ff">checkbox</label>-->
-                    <!--</div>-->
+                <form action="" class="hidden-xs">
+                    <h2>Trova il miglior completo per la tua squadra:</h2>
+                    <p>Quale è il colore del tuo team?</p>
+                    <select class="select2 form-control" name="color" required id="color">
+                        <option></option>
+                        <option value="#1702B5">Red</option>
+                        <option value="#FFFE93">Green</option>
+                        <option value="#96FF00">Yellow</option>
+                    </select>
 
-                    <!--<select class="custom-select" name="state-client" id="state-client" placeholder="Dropdown">-->
-                        <!--<option disabled selected>Seleziona una taglia</option>-->
-                        <!--<option value="state1">state1</option>-->
-                        <!--<option value="state1">state1</option>-->
-                        <!--<option value="state1">state1</option>-->
-                    <!--</select>-->
+                    <section class="filter-personal-prefer">
+                        <div class="number-players clearfix">
+                            <p>Quanti siete?</p>
+                            <input id="under10" class="radio-number-players" type="radio" name="sum" required value="5-10"/>
+                            <label for="under10"><span>Da 5 a10</span></label>
+                            <input id="from10to20" class="radio-number-players" type="radio" name="sum" required value="10-20"/>
+                            <label for="from10to20"><span>Da 10 a 20</span></label>
+                            <input id="more20" class="radio-number-players" type="radio" name="sum" required value="20+"/>
+                            <label for="more20"><span>Più di 20</span></label>
+                        </div>
 
-                    <!--<input class="custom-input" type="text" placeholder="asldfsafjasd">-->
+                        <p>Qual'ė la taglia più usata?</p>
+                        <select class="custom-select" name="size" required id="size">
+                            <option selected disabled>Seleziona una taglia</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
 
-                    <!--<p>Quale è il colore del tuo team?</p>-->
-                    <!--<select class="select2 form-control" name="color" required id="color">-->
-                        <!--<option></option>-->
-                        <!--<option value="#1702B5">Red</option>-->
-                        <!--<option value="#FFFE93">Green</option>-->
-                        <!--<option value="#96FF00">Yellow</option>-->
-                    <!--</select>-->
 
 
 
-                </div>
+                    </section>
+
+                    <div class="sub-title-teamware">
+
+                        <p>Quale ė il tuo marchio preferito?</p>
+                        <div>
+                            <select class="custom-select" name="brand" required id="">
+                                <option selected disabled>Seleziona una marca</option>
+                                <option value="adidas">Joma</option>
+                                <option value="nike">Nike</option>
+                                <option value="reebok">Reebok</option>
+                                <option value="adidas">Adidas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-interface">Inizia la Ricerca</button>
+
+
+                </form>
+
 
 
                 <div class="order-filter clearfix">
