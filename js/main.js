@@ -38,17 +38,37 @@ $(document).ready(function () {
         $list.css("height", height);
     }
 
+    /****select2color****/
 
-    /*****select2****/
+    function formatColor (state) {
+        if (!state.id) { return state.text; }
+        var cssStyles = ' style=width:22px;height:22px;display:inline-block;vertical-align:middle;background-color:' + state.id;
+        var $state = $(
+            '<p style="width:100px;padding:5px;"><span' + cssStyles + '></span><span>' + state.text + '</span></p>'
+        );
+        return $state;
+    }
+    $('.select2').select2({
+        templateResult: formatColor,
+        templateSelection: formatColor,
+        minimumResultsForSearch: Infinity,
+        placeholder: "Seleziona un colore"
 
-    $(".select2-select").select2({
-        minimumResultsForSearch: -1,
-        placeholder: "Seleziona una marca"
-    }).on("change", function(e) {
-        $('.filter-personal-prefer').addClass("db");
     });
 
-    $('.select2-selection__arrow').append('<i class="fa fa-chevron-down"></i>');
+
+
+
+    // /*****select2****/
+    //
+    // $(".select2-select").select2({
+    //     minimumResultsForSearch: -1,
+    //     placeholder: "Seleziona una marca"
+    // }).on("change", function(e) {
+    //     $('.filter-personal-prefer').addClass("db");
+    // });
+
+    // $('.select2-selection__arrow').append('<i class="fa fa-chevron-down"></i>');
 
 
     /****drop-down-languages******/
