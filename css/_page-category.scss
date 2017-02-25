@@ -82,8 +82,18 @@
 
 /*****category-teamware****/
 .form-for-you-team {
+  margin-top: 15px;
   background: url("../images/category-teamware/bg-welcome-screen-desktop.png") 100% 100% no-repeat, #f3f3f3;
   padding: 10px 280px 10px 10px;
+  h2 {
+    padding: 10px 0 20px;
+    text-align: right;
+  }
+  .btn-interface {
+    width: 100%;
+    display: block;
+
+  }
 }
 
 .form-for-you-team-mobile {
