@@ -855,6 +855,9 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   background-image: url("../images/arrow-downt.png");
   background-position: 98% 50%;
   background-repeat: no-repeat; }
+  @media only screen and (max-width: 1200px) {
+    .custom-select {
+      background-position: 95% 50%; } }
 
 /****select2***/
 .select2-results__option {
