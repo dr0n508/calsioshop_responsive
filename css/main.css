@@ -1330,7 +1330,12 @@ a.menu-item:hover {
       background-image: none; } }
 
 .form-for-you-team-mobile {
-  background: url("../images/category-teamware/bg-welcome-screen.png") 100% 100% no-repeat, #f3f3f3; }
+  background: url("../images/category-teamware/bg-welcome-screen.png") 100% 100% no-repeat, #f3f3f3;
+  margin-right: -10px;
+  margin-left: -10px;
+  padding: 10px; }
+  .form-for-you-team-mobile .btn-interface {
+    display: block; }
 
 .rowww {
   display: flex;
