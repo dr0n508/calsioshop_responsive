@@ -395,11 +395,11 @@ h3 {
 
 }
 
-
-.welcome-screen {
+.welcome-screen.category-footwear {
   background: url("../images/category_boots/bg-welcome.png") no-repeat right -100%;
+}
+.welcome-screen {
   padding: 0 10px 10px;
-
   margin-left: -15px;
   margin-right: -15px;
   @media only screen and (max-width: 768px ) {
