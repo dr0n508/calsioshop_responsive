@@ -83,7 +83,10 @@
 /*****category-teamware****/
 .form-for-you-team {
   margin-top: 15px;
-  background: url("../images/category-teamware/bg-welcome-screen-desktop.png") 100% 100% no-repeat, #f3f3f3;
+  background-image: url("../images/category-teamware/bg-welcome-screen-desktop.png");
+  background-position: 100% 100%;
+  background-color: #f3f3f3;
+  background-repeat: no-repeat;
   padding: 10px 280px 10px 10px;
   h2 {
     padding: 10px 0 20px;
@@ -92,7 +95,13 @@
   .btn-interface {
     width: 100%;
     display: block;
-
+  }
+  @media only screen and (max-width: 1200px) {
+    padding: 10px 170px 10px 10px;
+  }
+  @media only screen and (max-width: 992px) {
+    padding: 10px;
+    background-image: none;
   }
 }
 
@@ -104,6 +113,9 @@
 .rowww {
   display: flex;
   align-items: center;
+  @media only screen and (max-width: 992px) {
+    flex-direction: column;
+  }
 
 }
 
@@ -114,6 +126,13 @@
   padding-right: 10px;
   margin-bottom: 10px;
   //padding-top: 10px;
+  @media only screen and (max-width: 1200px) {
+    width: 35%;
+  }
+  @media only screen and (max-width: 992px) {
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .block-answer {
@@ -138,6 +157,13 @@
       border: solid 2px #808080;
 
     }
+  }
+  @media only screen and (max-width: 1200px) {
+    width: 65%;
+  }
+  @media only screen and (max-width: 992px) {
+    width: 100%;
+    text-align: left;
   }
 }
 
