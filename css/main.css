@@ -785,8 +785,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 /****custom checkbox****/
 .custom-checkbox {
   position: relative;
-  padding: 10px 5px;
-  border-bottom: solid 1px #e6e6e6; }
+  padding: 10px 5px; }
   .custom-checkbox label {
     margin-left: 30px;
     position: relative; }
@@ -814,8 +813,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 /******custom-radio****/
 .custom-radio {
   position: relative;
-  padding: 10px 5px;
-  border-bottom: solid 1px #e6e6e6; }
+  padding: 10px 5px; }
   .custom-radio label {
     margin-left: 30px;
     position: relative; }
@@ -918,6 +916,8 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 .accordion .body-accordion {
   font-family: "ralewayregular", sans-serif;
   padding: 10px; }
+  .accordion .body-accordion .custom-checkbox {
+    border-bottom: solid 1px #e6e6e6; }
 .accordion .footer-main-menu {
   background-color: #e0e0e0;
   border-bottom: solid 1px white;
