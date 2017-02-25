@@ -946,21 +946,72 @@
                         </div>
                     </div>
                 </div>
-
-
                 <section class="welcome-screen category-teamware">
                     <h1 class="h1-category">VESTI IL TUO TEAM</h1>
-                    <!--<div class="sub-title visible-xs">-->
-                        <!--<p>Scegli la tua scarpa.</p>-->
-                        <!--<p>Il ricamo ė gratuito</p>-->
-                    <!--</div>-->
+
+
+                    <form action="" class="visible-xs">
+                        <div class="sub-title-teamware">
+
+                            <p>Quale ė il tuo marchio preferito?</p>
+                            <div>
+                                <select class="custom-select" name="brand" required id="">
+                                    <option selected disabled>Seleziona una marca</option>
+                                    <option value="adidas">Joma</option>
+                                    <option value="nike">Nike</option>
+                                    <option value="reebok">Reebok</option>
+                                    <option value="adidas">Adidas</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <section class="filter-personal-prefer">
+                            <div class="number-players clearfix">
+                                <p>Quanti siete?</p>
+                                <input id="under10" class="radio-number-players" type="radio" name="sum" required value="5-10"/>
+                                <label for="under10"><span>Da 5 a10</span></label>
+                                <input id="from10to20" class="radio-number-players" type="radio" name="sum" required value="10-20"/>
+                                <label for="from10to20"><span>Da 10 a 20</span></label>
+                                <input id="more20" class="radio-number-players" type="radio" name="sum" required value="20+"/>
+                                <label for="more20"><span>Più di 20</span></label>
+                            </div>
+
+                            <p>Qual'ė la taglia più usata?</p>
+                            <select class="custom-select" name="size" required id="size">
+                                <option selected disabled>Seleziona una taglia</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+
+                            <p>Quale è il colore del tuo team?</p>
+                            <select class="select2 form-control" name="color" required id="color">
+                                <option></option>
+                                <option value="#1702B5">Red</option>
+                                <option value="#FFFE93">Green</option>
+                                <option value="#96FF00">Yellow</option>
+                            </select>
+
+                            <button type="submit" class="btn-interface">Inizia la Ricerca</button>
+                        </section>
+                    </form>
+
+
+
+
+
+
+
+
+
+
 
                     <a href="#" data-toggle="modal" data-target="#myModal2" class="visible-xs btn-interface">Acquista ScarpE CALCICO per CATEGORIE</a>
                     <a href="#" data-toggle="modal" data-target="#myModal" class="visible-xs btn-interface">Filtra</a>
 
-                    <!--<div class="filter-settings">-->
-                    <!--<div>Filtrare per:<a href="#" class="brand-filter"><span class="fa fa-times"></span><span>Marca: Nike</span></a><a href="#" class="size-filter"><span class="fa fa-times"></span><span>Taglia: 42</span></a></div>-->
-                    <!--</div>-->
+
                     <ul data-global-filter-settings class="filter-settings visible-xs">
                         Filtrare per:
                         <!--insert here selected items from filter-->

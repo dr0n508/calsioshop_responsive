@@ -919,6 +919,32 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     top: 0;
     right: 0; }
 
+/****radio number players********/
+.number-players label {
+  width: 33.33%;
+  font-size: 14px;
+  padding: 6px 0;
+  float: left; }
+  .number-players label span {
+    border: solid 1px #dddddd;
+    text-align: center;
+    display: block;
+    padding: 5px;
+    margin-right: 10px; }
+.number-players .radio-number-players:not(checked) {
+  position: absolute;
+  opacity: 0; }
+.number-players .radio-number-players:not(checked) + label {
+  color: #093d75;
+  font-weight: 400; }
+  .number-players .radio-number-players:not(checked) + label span {
+    background: #ffffff; }
+.number-players .radio-number-players:checked + label {
+  color: #000000;
+  font-weight: 600; }
+  .number-players .radio-number-players:checked + label span {
+    background: #f3f3f3; }
+
 .tabs-thumbnail-product {
   width: 55px;
   float: left; }

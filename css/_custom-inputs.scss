@@ -346,5 +346,43 @@ display: none;
 
 
 
+/****radio number players********/
+.number-players {
+  label {
+    width: 33.33%;
+    font-size: 14px;
+    padding: 6px 0;
+    float: left;
+    span {
+      border: solid 1px #dddddd;
+      text-align: center;
+      display: block;
+      padding: 5px;
+      margin-right: 10px;
+    }
+
+  }
+  .radio-number-players:not(checked) {
+    position: absolute;
+    opacity: 0;
+  }
+  .radio-number-players:not(checked) + label {
+    color: #093d75;
+    font-weight: 400;
+    span {
+      background: #ffffff;
+    }
+  }
+  .radio-number-players:checked + label {
+    color: #000000;
+    font-weight: 600;
+    span {
+      background: #f3f3f3;
+    }
+  }
+}
+
+
+
 
 
