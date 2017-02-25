@@ -856,6 +856,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 
 .custom-input, .custom-select {
   position: relative;
+  background-color: white;
   width: 100%;
   padding: 7px 10px;
   border: solid 1px #dddddd;
@@ -871,7 +872,9 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   /* for IE */
   -ms-appearance: none;
   appearance: none !important;
-  background: url("../images/arrow-downt.png") 98% 50% no-repeat; }
+  background-image: url("../images/arrow-downt.png");
+  background-position: 98% 50%;
+  background-repeat: no-repeat; }
 
 /****select2***/
 .select2-results__option {
@@ -1514,5 +1517,10 @@ h3 {
     .pagination-goods {
       float: none;
       text-align: center; } }
+
+/*****category *teamware***/
+.form-for-you-team {
+  background: url("../images/category-teamware/bg-welcome-screen-desktop.png") 100% 100% no-repeat, #f3f3f3;
+  padding: 10px 300px 10px 10px; }
 
 /*# sourceMappingURL=main.css.map */
