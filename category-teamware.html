@@ -966,14 +966,14 @@
                         </div>
 
                         <section class="filter-personal-prefer">
-                            <div class="number-players clearfix">
+                            <div class="number-players-mobile clearfix">
                                 <p>Quanti siete?</p>
-                                <input id="under10" class="radio-number-players" type="radio" name="sum" required value="5-10"/>
-                                <label for="under10"><span>Da 5 a10</span></label>
-                                <input id="from10to20" class="radio-number-players" type="radio" name="sum" required value="10-20"/>
-                                <label for="from10to20"><span>Da 10 a 20</span></label>
-                                <input id="more20" class="radio-number-players" type="radio" name="sum" required value="20+"/>
-                                <label for="more20"><span>Più di 20</span></label>
+                                <input id="under10-mobile" class="radio-number-players" type="radio" name="sum" required value="5-10"/>
+                                <label for="under10-mobile"><span>Da 5 a10</span></label>
+                                <input id="from10to20-mobile" class="radio-number-players" type="radio" name="sum" required value="10-20"/>
+                                <label for="from10to20-mobile"><span>Da 10 a 20</span></label>
+                                <input id="more20-mobile" class="radio-number-players" type="radio" name="sum" required value="20+"/>
+                                <label for="more20-mobile"><span>Più di 20</span></label>
                             </div>
 
                             <p>Qual'ė la taglia più usata?</p>
@@ -1306,23 +1306,97 @@
 
                 <form action="" class="form-for-you-team hidden-xs">
                     <h2>Trova il miglior completo per la tua squadra:</h2>
+
+
+
+
+
                     <p>Quale è il colore del tuo team?</p>
-                    <select class="select2 form-control" name="color" required id="color">
-                        <option></option>
-                        <option value="#1702B5">Red</option>
-                        <option value="#FFFE93">Green</option>
-                        <option value="#96FF00">Yellow</option>
-                    </select>
+                    <div class="checkbox-color">
+                        <input class="checkbox22" id="color-white-team" type="checkbox">
+                        <label for="color-white-team">
+                            <span></span>
+                        </label>
+
+                        <input class="checkbox22" id="color-black-team" type="checkbox">
+                        <label for="color-black-team">
+                            <span></span>
+                        </label>
+
+                        <input class="checkbox22" id="color-grey-team" type="checkbox">
+                        <label for="color-grey-team">
+                            <span></span>
+                        </label>
+
+                        <input class="checkbox22" id="color-yellow-team" type="checkbox">
+                        <label for="color-yellow-team">
+                            <span></span>
+                        </label>
+
+                        <input class="checkbox22" id="color-orange-team" type="checkbox">
+                        <label for="color-orange-team">
+                            <span></span>
+                        </label>
+
+                        <input class="checkbox22" id="color-blue-team" type="checkbox">
+                        <label for="color-blue-team">
+                            <span></span>
+                        </label>
+
+                        <input class="checkbox22" id="color-darkblue-team" type="checkbox">
+                        <label for="color-darkblue-team">
+                            <span></span>
+                        </label>
+
+                        <input class="checkbox22" id="color-dark-team" type="checkbox">
+                        <label for="color-dark-team">
+                            <span></span>
+                        </label>
+
+                        <input class="checkbox22" id="color-purple-team" type="checkbox">
+                        <label for="color-purple-team">
+                            <span></span>
+                        </label>
+
+                        <input class="checkbox22" id="color-red-team" type="checkbox">
+                        <label for="color-red-team">
+                            <span></span>
+                        </label>
+
+                        <input class="checkbox22" id="color-green-team" type="checkbox">
+                        <label for="color-green-team">
+                            <span></span>
+                        </label>
+
+                        <input class="checkbox22" id="color-brown-team" type="checkbox">
+                        <label for="color-brown-team">
+                            <span></span>
+                        </label>
+                    </div>
 
                     <section class="filter-personal-prefer">
                         <div class="number-players clearfix">
                             <p>Quanti siete?</p>
-                            <input id="under10" class="radio-number-players" type="radio" name="sum" required value="5-10"/>
-                            <label for="under10"><span>Da 5 a10</span></label>
-                            <input id="from10to20" class="radio-number-players" type="radio" name="sum" required value="10-20"/>
-                            <label for="from10to20"><span>Da 10 a 20</span></label>
-                            <input id="more20" class="radio-number-players" type="radio" name="sum" required value="20+"/>
-                            <label for="more20"><span>Più di 20</span></label>
+                            <div class="custom-radio">
+                                <input id="under10" name="sum" type="radio">
+                                <label for="under10">Da 5 a10</label>
+                            </div>
+                            <div class="custom-radio">
+                                <input id="di10-from10to20" name="sum" type="radio">
+                                <label for="di10-from10to20">Da 10 a 20</label>
+                            </div>
+                            <div class="custom-radio">
+                                <input id="more20" name="sum" type="radio">
+                                <label for="more20">Più di 20</label>
+                            </div>
+
+
+                            <!--<input id="under10" class="radio-number-players" type="radio" name="sum" required value="5-10"/>-->
+                            <!--<label for="under10"><span>Da 5 a10</span></label>-->
+                            <!--<input id="from10to20" class="radio-number-players" type="radio" name="sum" required value="10-20"/>-->
+                            <!--<label for="from10to20"><span>Da 10 a 20</span></label>-->
+                            <!--<input id="more20" class="radio-number-players" type="radio" name="sum" required value="20+"/>-->
+                            <!--<label for="more20"><span>Più di 20</span></label>-->
                         </div>
 
                         <p>Qual'ė la taglia più usata?</p>

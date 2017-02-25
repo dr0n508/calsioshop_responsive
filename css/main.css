@@ -678,29 +678,29 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   padding: 10px 0; }
 .checkbox-color input[type=checkbox] {
   display: none; }
-.checkbox-color label[for="color-white"] span {
+.checkbox-color label[for^="color-white"] span {
   background: #ffffff; }
-.checkbox-color label[for="color-black"] span {
+.checkbox-color label[for^="color-black"] span {
   background: #000000; }
-.checkbox-color label[for="color-grey"] span {
+.checkbox-color label[for^="color-grey"] span {
   background: #c0c0c0; }
-.checkbox-color label[for="color-yellow"] span {
+.checkbox-color label[for^="color-yellow"] span {
   background: #fffc00; }
-.checkbox-color label[for="color-orange"] span {
+.checkbox-color label[for^="color-orange"] span {
   background: #ff6501; }
-.checkbox-color label[for="color-blue"] span {
+.checkbox-color label[for^="color-blue"] span {
   background: #53ccff; }
-.checkbox-color label[for="color-darkblue"] span {
+.checkbox-color label[for^="color-darkblue"] span {
   background: #104caf; }
-.checkbox-color label[for="color-dark"] span {
+.checkbox-color label[for^="color-dark"] span {
   background: #05102c; }
-.checkbox-color label[for="color-purple"] span {
+.checkbox-color label[for^="color-purple"] span {
   background: #661620; }
-.checkbox-color label[for="color-red"] span {
+.checkbox-color label[for^="color-red"] span {
   background: #ea0001; }
-.checkbox-color label[for="color-green"] span {
+.checkbox-color label[for^="color-green"] span {
   background: #25b53a; }
-.checkbox-color label[for="color-brown"] span {
+.checkbox-color label[for^="color-brown"] span {
   background: #d5b25e; }
 .checkbox-color .checkbox22:checked + label span {
   border: solid 3px #808080; }
@@ -923,29 +923,29 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     right: 0; }
 
 /****radio number players********/
-.number-players label {
+.number-players-mobile label {
   width: 33.33%;
   font-size: 14px;
   padding: 6px 0;
   float: left; }
-  .number-players label span {
+  .number-players-mobile label span {
     border: solid 1px #dddddd;
     text-align: center;
     display: block;
     padding: 5px;
     margin-right: 10px; }
-.number-players .radio-number-players:not(checked) {
+.number-players-mobile .radio-number-players:not(checked) {
   position: absolute;
   opacity: 0; }
-.number-players .radio-number-players:not(checked) + label {
+.number-players-mobile .radio-number-players:not(checked) + label {
   color: #093d75;
   font-weight: 400; }
-  .number-players .radio-number-players:not(checked) + label span {
+  .number-players-mobile .radio-number-players:not(checked) + label span {
     background: #ffffff; }
-.number-players .radio-number-players:checked + label {
+.number-players-mobile .radio-number-players:checked + label {
   color: #000000;
   font-weight: 600; }
-  .number-players .radio-number-players:checked + label span {
+  .number-players-mobile .radio-number-players:checked + label span {
     background: #f3f3f3; }
 
 .tabs-thumbnail-product {

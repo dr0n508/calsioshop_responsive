@@ -12,40 +12,40 @@
   input[type=checkbox] {
     display: none;
   }
-  label[for="color-white"] span{
+  label[for^="color-white"] span{
     background: #ffffff;
   }
-  label[for="color-black"] span{
+  label[for^="color-black"] span{
     background: #000000;
   }
-  label[for="color-grey"] span{
+  label[for^="color-grey"] span{
     background: #c0c0c0;
   }
-  label[for="color-yellow"] span{
+  label[for^="color-yellow"] span{
     background: #fffc00;
   }
-  label[for="color-orange"] span{
+  label[for^="color-orange"] span{
     background: #ff6501;
   }
-  label[for="color-blue"] span{
+  label[for^="color-blue"] span{
     background: #53ccff;
   }
-  label[for="color-darkblue"] span{
+  label[for^="color-darkblue"] span{
     background: #104caf;
   }
-  label[for="color-dark"] span{
+  label[for^="color-dark"] span{
     background: #05102c;
   }
-  label[for="color-purple"] span{
+  label[for^="color-purple"] span{
     background: #661620;
   }
-  label[for="color-red"] span{
+  label[for^="color-red"] span{
     background: #ea0001;
   }
-  label[for="color-green"] span{
+  label[for^="color-green"] span{
     background: #25b53a;
   }
-  label[for="color-brown"] span{
+  label[for^="color-brown"] span{
     background: #d5b25e;
   }
   .checkbox22:checked + label span {
@@ -353,7 +353,9 @@ display: none;
 
 
 /****radio number players********/
-.number-players {
+
+
+.number-players-mobile {
   label {
     width: 33.33%;
     font-size: 14px;
