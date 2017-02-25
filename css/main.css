@@ -674,8 +674,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   display: block;
   border: solid 3px transparent;
   margin-right: 10px;
-  margin-bottom: 10px;
-  padding: 10px 0; }
+  margin-bottom: 10px; }
 .checkbox-color input[type=checkbox] {
   display: none; }
 .checkbox-color label[for^="color-white"] span {
@@ -1308,10 +1307,33 @@ a.menu-item:hover {
 /*****category-teamware****/
 .form-for-you-team {
   background: url("../images/category-teamware/bg-welcome-screen-desktop.png") 100% 100% no-repeat, #f3f3f3;
-  padding: 10px 300px 10px 10px; }
+  padding: 10px 280px 10px 10px; }
 
 .form-for-you-team-mobile {
   background: url("../images/category-teamware/bg-welcome-screen.png") 100% 100% no-repeat, #f3f3f3; }
+
+.block-question {
+  width: 45%;
+  float: left;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 10px; }
+
+.block-answer {
+  width: 55%;
+  float: left; }
+  .block-answer .custom-radio {
+    display: inline-block; }
+  .block-answer .checkbox-color label {
+    width: calc((100% - 60px)/12);
+    float: left;
+    margin-right: 5px; }
+    .block-answer .checkbox-color label span {
+      width: 100%;
+      height: 20px;
+      border: solid 2px transparent; }
+  .block-answer .checkbox-color .checkbox22:checked + label span {
+    border: solid 2px #808080; }
 
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
