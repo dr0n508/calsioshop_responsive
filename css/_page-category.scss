@@ -91,21 +91,27 @@
 
 }
 
+.rowww {
+  display: flex;
+  align-items: center;
 
+}
 
 .block-question   {
   width: 45%;
-  float: left;
+  //float: left;
   text-align: right;
   padding-right: 10px;
-  padding-top: 10px;
+  margin-bottom: 10px;
+  //padding-top: 10px;
 }
 
 .block-answer {
   width: 55%;
-  float: left;
+  //float: left;
   .custom-radio {
     display: inline-block;
+    margin-bottom: 10px;
   }
   .checkbox-color {
     label {

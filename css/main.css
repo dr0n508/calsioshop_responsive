@@ -1312,18 +1312,21 @@ a.menu-item:hover {
 .form-for-you-team-mobile {
   background: url("../images/category-teamware/bg-welcome-screen.png") 100% 100% no-repeat, #f3f3f3; }
 
+.rowww {
+  display: flex;
+  align-items: center; }
+
 .block-question {
   width: 45%;
-  float: left;
   text-align: right;
   padding-right: 10px;
-  padding-top: 10px; }
+  margin-bottom: 10px; }
 
 .block-answer {
-  width: 55%;
-  float: left; }
+  width: 55%; }
   .block-answer .custom-radio {
-    display: inline-block; }
+    display: inline-block;
+    margin-bottom: 10px; }
   .block-answer .checkbox-color label {
     width: calc((100% - 60px)/12);
     float: left;
