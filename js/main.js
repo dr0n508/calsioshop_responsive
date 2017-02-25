@@ -39,6 +39,18 @@ $(document).ready(function () {
     }
 
 
+    /*****select2****/
+
+    $(".select2-select").select2({
+        minimumResultsForSearch: -1,
+        placeholder: "Seleziona una marca"
+    }).on("change", function(e) {
+        $('.filter-personal-prefer').addClass("db");
+    });
+
+    $('.select2-selection__arrow').append('<i class="fa fa-chevron-down"></i>');
+
+
     /****drop-down-languages******/
     function formatState (state) {
         if (!state.id) { return state.text; }

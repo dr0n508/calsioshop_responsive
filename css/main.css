@@ -843,6 +843,26 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     background-color: #054182;
     border-radius: 50%; }
 
+.custom-input, .custom-select {
+  position: relative;
+  width: 100%;
+  padding: 7px 10px;
+  border: solid 1px #dddddd;
+  color: #054182;
+  margin-bottom: 10px; }
+
+.custom-select {
+  -webkit-appearance: none;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none !important;
+  background: url("../images/arrow-downt.png") 98% 50% no-repeat; }
+
+/****select2***/
 .tabs-thumbnail-product {
   width: 55px;
   float: left; }

@@ -231,6 +231,72 @@
 }
 
 
+.custom-input {
+  position: relative;
+  width: 100%;
+  padding: 7px 10px;
+  border: solid 1px #dddddd;
+  color: #054182;
+  margin-bottom: 10px;
+}
+
+.custom-select {
+  @extend .custom-input;
+  -webkit-appearance: none;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+  background: url("../images/arrow-downt.png") 98% 50% no-repeat;
+
+
+}
+
+
+
+
+
+
+/****select2***/
+
+//.select2-select {
+//
+//}
+//.select2-select + .select2-container--default {
+//  width: 100% !important;
+//}
+//
+//.select2-select + .select2-container--default .select2-selection--single {
+//
+//  border-radius: 0!important;
+//  height: 35px !important;
+//  border: 1px solid #dddddd !important;
+//}
+//
+//.select2-select + .select2-container--default .select2-selection--single .select2-selection__arrow b{
+//display: none;
+//}
+//
+//.select2-select + .select2-container--default .select2-selection--single .select2-selection__rendered {
+//  line-height: 35px !important;
+//  color: #054182 !important;
+//}
+//
+//.select2-select + .select2-selection__arrow {
+//  position: relative;
+//  .fa {
+//    position: absolute;
+//    padding: 9px;
+//    top: 0;
+//    right: 0;
+//  }
+//
+//}
+
+
 
 
 
