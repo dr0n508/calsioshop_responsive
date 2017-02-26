@@ -119,11 +119,38 @@
     .logo-personalize {
       position: absolute;
       right: 0;
-      bottom: 50px;
+      bottom: 35px;
+
     }
 
   }
 }
+
+.personalisation-tab {
+  .title-personalisation {
+    a {
+      font-family: MohaveBold, sans-serif;
+      font-size: 18px;
+
+      color: $black-text-color;
+      padding: 10px 0;
+      display: block;
+      position: relative;
+      &:after {
+        content: "\f00d";
+        position: absolute;
+        color: #054182;
+        font-family: FontAwesome;
+        right: 0;
+      }
+    }
+  }
+  .offer-calsioshop {
+    padding: 10px 0;
+  }
+}
+
+
 
 
 

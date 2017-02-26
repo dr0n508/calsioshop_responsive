@@ -1056,9 +1056,38 @@
                     <a data-toggle="modal" data-target=".descriptionSizes" class="link-modal" href="">Guida alla scelta della taglia giusta</a>
                 </section>
 
+
+                <div id="collapse-personalisation" class="collapse in" role="tabpanel" aria-labelledby="heading-personalisation">
+                    <div class="personalisation-tab">
+
+                        <h3 class="title-personalisation"><a role="button" data-toggle="collapse" href="#collapse-personalisation" href="#persBoots" aria-expanded="true" aria-controls="persBoots">
+                            Personalizzare il prodotto
+                        </a></h3>
+                        <section class="offer-calsioshop">
+                            <p>Brilla in campo con STARiD,
+                                la personalizzazione professionale che rende uniche le tue scarpe proprio.</p>
+                        </section>
+                        <form action="">
+                            <div class="input-personalization">
+                                <label for="name">NOME max 8 caratteri </label>
+                                <input class="custom-input" id="name" type="text" maxlength="8" placeholder="Nome">
+                            </div>
+                            <div class="input-personalization">
+                                <label for="select-flag">BANDIERA (+10€)</label>
+                                <select class="custom-select" name="select-flag" id="select-flag">
+                                    <option disabled selected>Seleziona country</option>
+                                    <option value="it">italy</option>
+                                    <option value="us">us</option>
+                                    <option value="uk">uk</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
                 <div class="footer-card-product-desktop">
                     <div class="wrap-btn">
-                        <a href="#" class="btn-secondary-cta">
+                        <a role="button" data-toggle="collapse" href="#collapse-personalisation" aria-expanded="true" aria-controls="collapse-personalisation" class="btn-secondary-cta">
                             Personalizza il prodotto
                             <span class="descript-text">
                                 GRATIS
@@ -1069,6 +1098,7 @@
                             Aggiungi al carrello
                         </a>
                     </div>
+                    <a href="#">Finalizzare e aggiungi al carrello »</a>
                     <p class="code-product">Codice: 20456 L0412 # </p>
                     <p class="logo-personalize">
                         <img src="images/logo-personalize.png" alt="logo-personalize">

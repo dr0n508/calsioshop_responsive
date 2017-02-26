@@ -56,7 +56,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   padding: 5px 15px;
   margin: 5px 0;
   text-decoration: none; }
-  .button:hover, .btn-primary-cta:hover, .btn-secondary-cta:hover, .btn-advert:hover, .btn-interface:hover, .btn-interface-secondary:hover {
+  .button:hover, .btn-primary-cta:hover, .btn-secondary-cta:hover, .btn-advert:hover, .btn-interface:hover, .btn-interface-secondary:hover, .button:focus, .btn-primary-cta:focus, .btn-secondary-cta:focus, .btn-advert:focus, .btn-interface:focus, .btn-interface-secondary:focus {
     text-decoration: none;
     color: white; }
 
@@ -1549,7 +1549,23 @@ a.menu-item:hover {
     .card-product-desktop .footer-card-product-desktop .logo-personalize {
       position: absolute;
       right: 0;
-      bottom: 50px; }
+      bottom: 35px; }
+
+.personalisation-tab .title-personalisation a {
+  font-family: MohaveBold, sans-serif;
+  font-size: 18px;
+  color: #0e0e0e;
+  padding: 10px 0;
+  display: block;
+  position: relative; }
+  .personalisation-tab .title-personalisation a:after {
+    content: "\f00d";
+    position: absolute;
+    color: #054182;
+    font-family: FontAwesome;
+    right: 0; }
+.personalisation-tab .offer-calsioshop {
+  padding: 10px 0; }
 
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
