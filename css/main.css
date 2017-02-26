@@ -1498,6 +1498,9 @@ a.menu-item:hover {
     font-size: 29px;
     font-family: "mohavebold";
     padding: 10px; }
+  .card-product-desktop .complectation-product {
+    padding: 10px;
+    font-weight: 600; }
   .card-product-desktop .price-rating {
     border-top: solid 1px #ffffff;
     border-bottom: solid 1px #ffffff;
@@ -1536,11 +1539,15 @@ a.menu-item:hover {
       .card-product-desktop .price-rating .rating .number-review {
         color: #151515; }
     .card-product-desktop .price-rating .deliveri-info {
+      text-align: left;
+      padding: 0;
       font-size: 13px;
       margin-bottom: 10px; }
-      .card-product-desktop .price-rating .deliveri-info span {
-        font-weight: 600;
-        color: #148f00; }
+      .card-product-desktop .price-rating .deliveri-info .quick-delivery {
+        color: #148f00;
+        font-weight: 600; }
+      .card-product-desktop .price-rating .deliveri-info .preorder {
+        font-weight: 600; }
   .card-product-desktop .select-size {
     padding: 10px 0;
     display: flex;
@@ -1556,6 +1563,29 @@ a.menu-item:hover {
       width: 45%;
       font-size: 13px;
       color: #003874; }
+  .card-product-desktop .select-size-teamwear {
+    padding: 10px;
+    border-bottom: solid 1px white; }
+    .card-product-desktop .select-size-teamwear .dropdown-brand {
+      margin-bottom: 0 !important; }
+    .card-product-desktop .select-size-teamwear ul {
+      margin-left: 2px;
+      border-bottom: solid 1px #e6e6e6; }
+      .card-product-desktop .select-size-teamwear ul li {
+        font-size: 11px;
+        display: inline-block;
+        padding: 3px 5px; }
+        .card-product-desktop .select-size-teamwear ul li:first-child {
+          border-top: solid 1px #e6e6e6;
+          border-right: solid 1px #e6e6e6;
+          border-left: solid 1px #e6e6e6; }
+    .card-product-desktop .select-size-teamwear .sizes-teamware {
+      margin-top: 10px;
+      display: flex;
+      align-items: center; }
+      .card-product-desktop .select-size-teamwear .sizes-teamware .custom-select {
+        margin: 0 20px 0 5px;
+        width: 75px; }
   .card-product-desktop .footer-card-product-desktop {
     padding: 10px 0;
     position: relative; }
