@@ -1427,6 +1427,77 @@ a.menu-item:hover {
       width: 100%;
       text-align: left; } }
 
+.new-ico, .free-delivery-ico {
+  position: absolute;
+  border-radius: 50%;
+  font-family: MohaveBold, sans-serif;
+  width: 28px;
+  height: 28px;
+  color: white;
+  top: 5px;
+  right: 5px;
+  text-align: center; }
+
+.new-ico {
+  background-color: #ff0054;
+  padding: 6px 0;
+  font-size: 12px; }
+
+.free-delivery-ico {
+  padding: 2px 0;
+  font-size: 10px;
+  background-color: #22ce9b;
+  line-height: 10px; }
+  .free-delivery-ico .fa {
+    font-size: 14px; }
+
+.sub-content {
+  padding: 30px 0; }
+
+.card-good-desktop {
+  background: #f3f3f3; }
+  .card-good-desktop .name-product {
+    background: #f3f3f3;
+    font-size: 29px;
+    font-family: "mohavebold";
+    padding: 10px; }
+  .card-good-desktop .price-rating {
+    border-top: solid 1px #ffffff;
+    border-bottom: solid 1px #ffffff;
+    padding: 5px 10px;
+    position: relative; }
+    .card-good-desktop .price-rating .price-discount {
+      float: left; }
+      .card-good-desktop .price-rating .price-discount .old-price {
+        float: left;
+        color: gray;
+        font-family: "MohaveBoldItalic", sans-serif;
+        font-size: 16px;
+        margin-right: 5px;
+        text-decoration: line-through; }
+      .card-good-desktop .price-rating .price-discount .sale {
+        float: left;
+        color: gray;
+        font-family: "MohaveBold", sans-serif;
+        font-size: 16px;
+        margin-right: 10px; }
+      .card-good-desktop .price-rating .price-discount .current-price {
+        float: left;
+        color: #da2620;
+        font-family: "mohavebold", sans-serif;
+        font-size: 25px;
+        margin-right: 5px; }
+    .card-good-desktop .price-rating .rating {
+      margin-top: 15px;
+      float: left;
+      color: #da2620;
+      line-height: 20px; }
+      .card-good-desktop .price-rating .rating span {
+        float: left;
+        margin-left: 2px; }
+      .card-good-desktop .price-rating .rating .number-review {
+        color: #151515; }
+
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
   -webkit-transition: all .15s;
@@ -1595,26 +1666,6 @@ h3 {
         .list-filtered-goods .goods-information a .img-wrapper img {
           width: 100%;
           height: auto; }
-        .list-filtered-goods .goods-information a .img-wrapper .new-ico, .list-filtered-goods .goods-information a .img-wrapper .free-delivery-ico {
-          position: absolute;
-          border-radius: 50%;
-          font-family: MohaveBold, sans-serif;
-          width: 28px;
-          height: 28px;
-          color: white;
-          top: 5px;
-          right: 5px; }
-        .list-filtered-goods .goods-information a .img-wrapper .new-ico {
-          background-color: #ff0054;
-          padding: 6px 0;
-          font-size: 12px; }
-        .list-filtered-goods .goods-information a .img-wrapper .free-delivery-ico {
-          padding: 2px 0;
-          font-size: 10px;
-          background-color: #22ce9b;
-          line-height: 10px; }
-          .list-filtered-goods .goods-information a .img-wrapper .free-delivery-ico .fa {
-            font-size: 14px; }
       .list-filtered-goods .goods-information a .name-goods {
         font-size: 14px;
         color: #054182;

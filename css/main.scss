@@ -20,6 +20,8 @@
 
 @import "_page-category.scss";
 
+@import "_page-product.scss";
+
 
 
 .transition {
@@ -243,30 +245,6 @@ h3 {
         img {
           width: 100%;
           height: auto;
-        }
-        .new-ico, .free-delivery-ico {
-          position: absolute;
-          border-radius: 50%;
-          font-family: MohaveBold, sans-serif;
-          width: 28px;
-          height: 28px;
-          color: $white-color;
-          top: 5px;
-          right: 5px;
-        }
-        .new-ico {
-          background-color: #ff0054;
-          padding: 6px 0;
-          font-size: 12px;
-        }
-        .free-delivery-ico {
-          padding: 2px 0;
-          font-size: 10px;
-          background-color: #22ce9b;
-          line-height: 10px;
-          .fa {
-            font-size: 14px;
-          }
         }
       }
       .name-goods {

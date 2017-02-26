@@ -1,0 +1,65 @@
+.sub-content {
+  padding: 30px 0;
+}
+
+.card-good-desktop {
+  background: #f3f3f3;
+  .name-product {
+    background:   #f3f3f3;
+    font-size: 29px;
+    font-family: "mohavebold";
+    padding: 10px;
+    //span {
+    //  font-size: 12px;
+    //  display: block;
+    //}
+  }
+
+  .price-rating {
+    border-top: solid 1px #ffffff;
+    border-bottom: solid 1px #ffffff;
+    padding: 5px 10px;
+    position: relative;
+    .price-discount {
+      float: left;
+      .old-price {
+        float: left;
+        color: gray;
+        font-family: "MohaveBoldItalic", sans-serif;
+        font-size: 16px;
+        margin-right: 5px;
+        text-decoration: line-through;
+      }
+      .sale {
+        float: left;
+        color: gray;
+        font-family: "MohaveBold", sans-serif;
+        font-size: 16px;
+        margin-right: 10px;
+      }
+      .current-price {
+        float: left;
+        color: #da2620;
+        font-family: "mohavebold", sans-serif;
+        font-size: 25px;
+        margin-right: 5px;
+      }
+    }
+    .rating {
+      margin-top: 15px;
+      float: left;
+      color: #da2620;
+      line-height: 20px;
+      span {
+        float: left;
+        margin-left: 2px;
+      }
+      .number-review {
+        color: #151515;
+      }
+    }
+  }
+}
+
+
+
