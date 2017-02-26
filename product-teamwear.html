@@ -947,17 +947,16 @@
 <!---------------------------------------------------start-moble-part------------------------------------->
 <section class="slider-product visible-xs">
     <ul class="bxslider">
+        <li><img src="images/teamwaer-for-slider.png" /></li>
         <li><img src="images/img-for-slider.png" /></li>
+        <li><img src="images/teamwaer-for-slider.png" /></li>
         <li><img src="images/img-for-slider.png" /></li>
-        <li><img src="images/img-for-slider.png" /></li>
-        <li><img src="images/img-for-slider.png" /></li>
-        <li><img src="images/img-for-slider.png" /></li>
+        <li><img src="images/teamwaer-for-slider.png" /></li>
     </ul>
 </section>
 <h1 class="name-product visible-xs">
-    Nike - Mercurial Superfly
-    LTHR FG Tech Craft
-    Collection
+    Nike - Striker IV Nero MC
+    <span>Maglia + Pantaloncino</span>
 </h1>
 <div class="price-rating clearfix visible-xs">
     <div class="price-discount">
@@ -983,72 +982,46 @@
             <li>UK</li>
             <li>CM</li>
         </ul>
-        <div class="dropdown-brand clearfix">
-            <select class="custom-select" required name="brand" id="">
-                <option selected disabled value="">Selectiziona una taglia</option>
-                <option disabled value="nike">40 (out of stock)</option>
-                <option disabled value="nike">41 (out of stock)</option>
-                <option value="nike">42</option>
-                <option value="adidas">43</option>
-                <option value="adidas">41</option>
-                <option value="nike">42</option>
-                <option value="adidas">43</option>
-                <option value="adidas">41</option>
-            </select>
-            <!--<span class="fa fa-chevron-down"></span>-->
-        </div>
+        <div class="sizes-teamware-mobile clearfix">
+            <div class="wrap">
+                <p class="">Taglia M</p>
+                <div class="dropdown-brand clearfix">
+                    <select class="custom-select" name="brand">
+                        <option value="nike">2</option>
+                        <option disabled value="nike">4</option>
+                        <option disabled value="nike">8</option>
+                        <option value="nike">16</option>
+                        <option value="adidas">32</option>
+                    </select>
 
-
-
-
-    </div>
-    <div class="deliveri-info">
-        <p><span>Consegna in 24-48</span> ore escluso prodotti personalizzati</p>
-        <p>Consegna gratuita per questo prodotto</p>
-    </div>
-
-
-
-    <div class="panel-group personalization-boots" id="personalizationBoots" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default">
-            <div id="persBoots" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-personalization">
-                <div class="panel-body">
-
-                    <h3 class="title-personalisation">
-                        <a role="button" data-toggle="collapse" data-parent="#personalizationBoots" href="#persBoots" aria-expanded="true" aria-controls="persBoots">Personalizzare il prodotto </a>
-
-                    </h3>
-
-                    <section class="offer-calsioshop inner">
-                        <p>Brilla in campo con STARiD,
-                            la personalizzazione professionale che rende uniche le tue scarpe proprio.</p>
-                    </section>
-                    <form action="">
-                        <div class="input-personalization">
-                            <label for="name">NOME max 8 caratteri </label>
-                            <input class="custom-input" id="name" type="text" maxlength="8" placeholder="Nome">
-                        </div>
-                        <div class="input-personalization">
-                            <label for="select-flag">BANDIERA (+10€)</label>
-                            <select class="custom-select" required name="select-flag" id="select-flag">
-                                <option disabled selected value="">Seleziona country</option>
-                                <option value="it">italy</option>
-                                <option value="us">us</option>
-                                <option value="uk">uk</option>
-                            </select>
-                        </div>
-                    </form>
                 </div>
             </div>
-            <div class="panel-heading" role="tab" id="heading-personalization">
-                <a class="btn-secondary-cta" role="button" data-toggle="collapse" data-parent="#personalizationBoots" href="#persBoots" aria-expanded="true" aria-controls="persBoots" >
-                    Personalizza il prodotto
-                    <span class="descript-text">NOME max 8 caratteri <span>GRATUITO</span></span>
-                </a>
+            <div class="wrap">
+                <p class="">Taglia L</p>
+                <div class="dropdown-brand clearfix">
+                    <select class="custom-select" name="brand">
+                        <option value="nike">2</option>
+                        <option disabled value="nike">4</option>
+                        <option disabled value="nike">8</option>
+                        <option value="nike">16</option>
+                        <option value="adidas">32</option>
+                    </select>
+
+                </div>
             </div>
         </div>
+
+        <div class="deliveri-info">
+            <p><span>Consegna in 24-48</span> ore escluso prodotti personalizzati</p>
+
+        </div>
+
+        <a href="product-teamware-pers.html" class="personalize-btn btn-secondary-cta">
+            Personalizza il prodotto
+            <span class="descript-text">Num, nome, logo e sponsor del tuo team</span>
+        </a>
+        <a href="#" class="btn-primary-cta">Aggiungi al carrello</a>
     </div>
-    <a href="#" class="btn-primary-cta">Aggiungi al carrello</a>
 </section>
 
 
@@ -1094,8 +1067,6 @@
 </section>
 
 
-
-
 <section class="offer-calsioshop visible-xs">
     <h2>
         <span>Solo Su Calcioshop  Puoi Personalizzare</span>
@@ -1105,43 +1076,46 @@
     <p>Prezzi vantaggiosi e risparmio garantito.</p>
 </section>
 
+
+
 <section class="sliders-recently-popular visible-xs">
 
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#slider01" aria-controls="slider01" role="tab" data-toggle="tab">Visti di recente</a></li>
-        <li role="presentation"><a href="#slider02" id="tabSlider" aria-controls="slider02" role="tab" data-toggle="tab">outlet abbigliamento</a></li>
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Visti di recente</a></li>
+        <li role="presentation"><a href="#profile" id="tabSlider" aria-controls="profile" role="tab" data-toggle="tab">outlet abbigliamento</a></li>
 
     </ul>
 
     <!-- Tab panes -->
     <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="slider01">
+        <div role="tabpanel" class="tab-pane active" id="home">
             <div class="slider-recently-viewed">
                 <div class="slide">
-                    <img src="images/category-teamware/slide-boots-01.jpg">
-                    <p>Adidas - Ace 16.3 FG Primemesh  €49.90</p>
+                    <img src="images/category-teamware/slide01.jpg">
+                    <p>Adidas - Ace 16.3 FG Primemesh  <span>€49.90</span></p>
                 </div>
                 <div class="slide">
-                    <img src="images/category-teamware/slide-boots-02.jpg">
-                    <p>Adidas - Ace 16.3 FG Primemesh  €49.90</p>
+                    <img src="images/category-teamware/slide02.jpg">
+                    <p>Adidas - Ace 16.3 FG Primemesh  <span>€49.90</span></p>
                 </div>
                 <div class="slide">
-                    <img src="images/category-teamware/slide-boots-01.jpg">
-                    <p>Adidas - Ace 16.3 FG Primemesh  €49.90</p>
+                    <img src="images/category-teamware/slide01.jpg">
+                    <p>Adidas - Ace 16.3 FG Primemesh  <span>€49.90</span></p>
                 </div>
                 <div class="slide">
-                    <img src="images/category-teamware/slide-boots-02.jpg">
-                    <p>Adidas - Ace 16.3 FG Primemesh  €49.90</p>
+                    <img src="images/category-teamware/slide02.jpg">
+                    <p>Adidas - Ace 16.3 FG Primemesh  <span>€49.90</span></p>
                 </div>
                 <div class="slide">
-                    <img src="images/category-teamware/slide-boots-01.jpg">
-                    <p>Adidas - Ace 16.3 FG Primemesh  €49.90</p>
+                    <img src="images/category-teamware/slide01.jpg">
+                    <p>Adidas - Ace 16.3 FG Primemesh  <span>€49.90</span></p>
                 </div>
                 <div class="slide">
-                    <img src="images/category-teamware/slide-boots-02.jpg">
-                    <p>Adidas - Ace 16.3 FG Primemesh  €49.90</p>
+                    <img src="images/category-teamware/slide02.jpg">
+                    <p>Adidas - Ace 16.3 FG Primemesh  <span>€49.90</span></p>
                 </div>
+
             </div>
             <div class="outside">
                 <p class="clearfix">
@@ -1150,31 +1124,30 @@
                 </p>
             </div>
         </div>
-
-        <div role="tabpanel" class="tab-pane" id="slider02">
+        <div role="tabpanel" class="tab-pane" id="profile">
             <div class="slider-popular">
                 <div class="slide">
-                    <img src="images/category-teamware/slide-boots-01.jpg">
+                    <img src="images/category-teamware/slide01.jpg">
                     <p>Adidas - Ace 16.3 FG Primemesh  €49.90</p>
                 </div>
                 <div class="slide">
-                    <img src="images/category-teamware/slide-boots-02.jpg">
+                    <img src="images/category-teamware/slide02.jpg">
                     <p>Adidas - Ace 16.3 FG Primemesh  €49.90</p>
                 </div>
                 <div class="slide">
-                    <img src="images/category-teamware/slide-boots-01.jpg">
+                    <img src="images/category-teamware/slide01.jpg">
                     <p>Adidas - Ace 16.3 FG Primemesh  €49.90</p>
                 </div>
                 <div class="slide">
-                    <img src="images/category-teamware/slide-boots-02.jpg">
+                    <img src="images/category-teamware/slide02.jpg">
                     <p>Adidas - Ace 16.3 FG Primemesh  €49.90</p>
                 </div>
                 <div class="slide">
-                    <img src="images/category-teamware/slide-boots-01.jpg">
+                    <img src="images/category-teamware/slide01.jpg">
                     <p>Adidas - Ace 16.3 FG Primemesh  €49.90</p>
                 </div>
                 <div class="slide">
-                    <img src="images/category-teamware/slide-boots-02.jpg">
+                    <img src="images/category-teamware/slide02.jpg">
                     <p>Adidas - Ace 16.3 FG Primemesh  €49.90</p>
                 </div>
             </div>

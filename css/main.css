@@ -1904,6 +1904,19 @@ a.menu-item:hover {
     background: #f3f3f3;
     padding-left: 10px; }
 
+.sizes-teamware-mobile {
+  display: flex; }
+  .sizes-teamware-mobile .wrap {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .sizes-teamware-mobile .wrap .dropdown-brand {
+      min-width: 70px;
+      margin-left: 10px; }
+      .sizes-teamware-mobile .wrap .dropdown-brand .custom-select {
+        margin-bottom: 0; }
+
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
   -webkit-transition: all .15s;

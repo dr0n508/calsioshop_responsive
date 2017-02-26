@@ -288,3 +288,21 @@
     }
   }
 }
+
+
+
+.sizes-teamware-mobile {
+  display: flex;
+
+  .wrap {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .dropdown-brand {
+      min-width: 70px;
+      margin-left: 10px;
+      .custom-select { margin-bottom: 0}
+    }
+  }
+}
