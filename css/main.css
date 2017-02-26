@@ -973,6 +973,53 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       width: 100%;
       height: auto; }
 
+/*****tab-horizontal***/
+.tab-horisontal .nav li {
+  width: 25%; }
+  .tab-horisontal .nav li a {
+    font-family: "mohavebold", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    color: #054182;
+    text-align: center;
+    margin: 0; }
+.tab-horisontal .nav-tabs > li.active > a, .tab-horisontal .nav-tabs > li.active > a:focus, .tab-horisontal .nav-tabs > li.active > a:hover {
+  background: #f3f3f3; }
+.tab-horisontal .nav-tabs > li > a {
+  border-radius: 0; }
+.tab-horisontal .tab-content > .active {
+  padding: 20px 0; }
+.tab-horisontal .tab-content p {
+  padding: 10px 0; }
+.tab-horisontal .tab-content .logo-compato {
+  display: block;
+  margin: 0 auto; }
+.tab-horisontal .tab-content h3 {
+  padding: 10px 0; }
+.tab-horisontal .tab-content .placeholder-video {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block; }
+  .tab-horisontal .tab-content .placeholder-video img {
+    width: 100%;
+    height: auto; }
+  .tab-horisontal .tab-content .placeholder-video .fa {
+    position: absolute;
+    color: #da2620;
+    font-size: 80px;
+    top: 50%;
+    margin-left: -32px;
+    margin-top: -32px;
+    left: 50%;
+    background-color: white;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    line-height: 67px; }
+  .tab-horisontal .tab-content .placeholder-video:hover .fa {
+    color: #f6241f; }
+
 /*************accordion*********/
 .accordion .title-accordion {
   display: block;
