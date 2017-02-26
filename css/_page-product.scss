@@ -195,13 +195,18 @@ position: relative;
 .title-personalisation {
   font-family: MohaveBold, sans-serif;
   font-size: 18px;
-  color: $black-text-color;
+  color: #054182;
   padding: 10px 0;
   display: block;
+}
+.title-personalisation.active {
+  color: black;
 }
 .offer-calsioshop {
   padding: 10px 0;
 }
+
+
 
 
 
