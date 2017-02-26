@@ -232,15 +232,15 @@
 
 .offer-calsioshop.inner {
   background: none;
-  padding: 10px 250px 10px 10px !important;
+  padding: 10px 120px 10px 10px !important;
   margin-left: -10px;
   margin-right: -10px;
   &:after, &:before  {
-    width: 40%;
+    width: 110px;
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 10px 100px 10px 10px !important;
+    padding: 10px 90px 10px 10px !important;
   }
   p {
     color: #000000;
