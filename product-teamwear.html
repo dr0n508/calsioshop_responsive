@@ -1301,7 +1301,7 @@
                     <div class="sizes-teamware clearfix">
                         <p class="">Taglia M</p>
                         <div class="dropdown-brand clearfix">
-                            <select class="custom-select" name="brand" id="">
+                            <select class="custom-select" name="brand">
                                 <option value="nike">2</option>
                                 <option disabled value="nike">4</option>
                                 <option disabled value="nike">8</option>
@@ -1311,7 +1311,7 @@
                         </div>
                         <p class="">Taglia L</p>
                         <div class="dropdown-brand clearfix">
-                            <select class="custom-select" name="brand" id="">
+                            <select class="custom-select" name="brand">
                                 <option value="nike">2</option>
                                 <option disabled value="nike">4</option>
                                 <option disabled value="nike">8</option>
@@ -1323,20 +1323,9 @@
                 </div>
                 <div id="collapse-personalisation" class="collapse in" role="tabpanel" aria-labelledby="heading-personalisation">
                     <div class="personalisation-tab">
-
-
-
-
                         <a role="button" data-toggle="collapse" href="#collapse-personalisation" href="#persBoots" aria-expanded="true" aria-controls="persBoots" class="cloze-personalisation">
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </a>
-
-                        <!--<h3 class="title-personalisation"><a role="button" data-toggle="collapse" href="#collapse-personalisation" href="#persBoots" aria-expanded="true" aria-controls="persBoots">-->
-                            
-                        </a></h3>
-
-
-
                         <div class="tabs-personalisation">
 
                             <!-- Nav tabs -->
@@ -1348,10 +1337,146 @@
                                     <a class="title-personalisation" href="#personalisation-front" aria-controls="profile" role="tab" data-toggle="tab">Personalizzazione fronte</a>
                                 </li>
                             </ul>
-
                             <!-- Tab panes -->
                             <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane active" id="personalisation-back">1</div>
+                                <div role="tabpanel" class="tab-pane active" id="personalisation-back">
+                                    <form action="#">
+
+
+
+
+
+                                        <section class="pers-section select-color-pers clearfix">
+                                            <h3>01. Scelta Colore Personalizzazione
+                                                (per tutte le maglie)</h3>
+
+
+
+                                            <div class="checkbox-color">
+                                                <input class="checkbox22" id="color-white-team" type="checkbox">
+                                                <label for="color-white-team">
+                                                    <span></span>
+                                                </label>
+
+                                                <input class="checkbox22" id="color-black-team" type="checkbox">
+                                                <label for="color-black-team">
+                                                    <span></span>
+                                                </label>
+
+                                                <input class="checkbox22" id="color-grey-team" type="checkbox">
+                                                <label for="color-grey-team">
+                                                    <span></span>
+                                                </label>
+
+                                                <input class="checkbox22" id="color-yellow-team" type="checkbox">
+                                                <label for="color-yellow-team">
+                                                    <span></span>
+                                                </label>
+
+                                                <input class="checkbox22" id="color-orange-team" type="checkbox">
+                                                <label for="color-orange-team">
+                                                    <span></span>
+                                                </label>
+
+                                                <input class="checkbox22" id="color-blue-team" type="checkbox">
+                                                <label for="color-blue-team">
+                                                    <span></span>
+                                                </label>
+
+                                                <input class="checkbox22" id="color-darkblue-team" type="checkbox">
+                                                <label for="color-darkblue-team">
+                                                    <span></span>
+                                                </label>
+
+                                                <input class="checkbox22" id="color-dark-team" type="checkbox">
+                                                <label for="color-dark-team">
+                                                    <span></span>
+                                                </label>
+
+                                                <input class="checkbox22" id="color-purple-team" type="checkbox">
+                                                <label for="color-purple-team">
+                                                    <span></span>
+                                                </label>
+
+                                                <input class="checkbox22" id="color-red-team" type="checkbox">
+                                                <label for="color-red-team">
+                                                    <span></span>
+                                                </label>
+
+                                                <input class="checkbox22" id="color-green-team" type="checkbox">
+                                                <label for="color-green-team">
+                                                    <span></span>
+                                                </label>
+
+                                                <input class="checkbox22" id="color-brown-team" type="checkbox">
+                                                <label for="color-brown-team">
+                                                    <span></span>
+                                                </label>
+                                            </div>
+
+
+                                        </section>
+                                        <section class="pers-section select-symbol">
+                                            <h3>02. Scelta del Carattere (per tutte le maglie)</h3>
+                                            <select class="select2-size" name="select-symbol">
+                                                <option value="Gunplay">Gunplay</option>
+                                                <option value="symbol2">symbol2</option>
+                                                <option value="symbol3">symbol3</option>
+                                            </select>
+                                        </section>
+
+
+
+
+                                        <section class="pers-section select-number-name">
+                                            <h3>03. Inserisci Nomi e Numeri</h3>
+                                            <div class="header-table clearfix">
+                                                <p class="header-size-pers">Taglia</p>
+                                                <p class="header-number-pers">Num. +3€</p>
+                                                <p class="header-name-pers">Nome +3€</p>
+                                            </div>
+                                            <ul>
+                                                <li class="clearfix">
+                                                    <div class="size-pers">M</div>
+                                                    <div class="number-pers">
+                                                        <input type="number" placeholder="Num."/>
+                                                    </div>
+                                                    <div class="name-pers">
+                                                        <input type="text" maxlength="10" placeholder="Nome max 10 caratteri"/>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <div class="size-pers">M</div>
+                                                    <div class="number-pers">
+                                                        <input type="number" placeholder="Num."/>
+                                                    </div>
+                                                    <div class="name-pers">
+                                                        <input type="text" maxlength="10" placeholder="Nome max 10 caratteri"/>
+                                                    </div>
+                                                </li>
+                                                <li class="clearfix">
+                                                    <div class="size-pers">L</div>
+                                                    <div class="number-pers">
+                                                        <input type="number" placeholder="Num."/>
+                                                    </div>
+                                                    <div class="name-pers">
+                                                        <input type="text" maxlength="10" placeholder="Nome max 10 caratteri"/>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                        <section class="footer-back-personalisation">
+                                            <p>Costo Personalizzazione: <span class="sum-personalisation-back">43.2€</span></p>
+                                            <a href="#">Sconto quantità personalizzazione</a>
+                                            <a href="#" class="big-btn">
+                                                Salvare & personalizzare fronte
+                                                <span>Opzionale</span>
+                                            </a>
+                                            <a href="#">Finalizzare e aggiungi al carrello »</a>
+                                        </section>
+                                    </form>
+
+                                </div>
                                 <div role="tabpanel" class="tab-pane" id="personalisation-front">2</div>
                             </div>
 
