@@ -984,8 +984,8 @@
             <li>CM</li>
         </ul>
         <div class="dropdown-brand clearfix">
-            <select class="select2-size form-control" name="brand" id="">
-                <option></option>
+            <select class="custom-select" name="brand" id="">
+                <option selected disabled>Selectiziona una taglia</option>
                 <option disabled value="nike">40 (out of stock)</option>
                 <option disabled value="nike">41 (out of stock)</option>
                 <option value="nike">42</option>
@@ -1020,19 +1020,13 @@
                     </section>
                     <form action="">
                         <div class="input-personalization">
-                            <div class="label-input clearfix">
-                                <label for="name">NOME max 8 caratteri </label>
-                                <span>GRATUITO</span>
-                            </div>
-                            <input type="text" id="name" maxlength="8" placeholder="Nome"/>
+                            <label for="name">NOME max 8 caratteri </label>
+                            <input class="custom-input" id="name" type="text" maxlength="8" placeholder="Nome">
                         </div>
                         <div class="input-personalization">
-                            <div class="label-input clearfix">
-                                <label for="select-flag">BANDIERA (+10€)</label>
-                                <span>( opzionale )</span>
-                            </div>
-                            <select class="select2-size" name="select-flag" id="select-flag">
-                                <option value=""></option>
+                            <label for="select-flag">BANDIERA (+10€)</label>
+                            <select class="custom-select" name="select-flag" id="select-flag">
+                                <option disabled selected>Seleziona country</option>
                                 <option value="it">italy</option>
                                 <option value="us">us</option>
                                 <option value="uk">uk</option>
