@@ -17,7 +17,9 @@
     border-style: solid;
     border-width: 30px 30px 30px 0;
     border-color: transparent #f3f3f3 transparent transparent;
-
+    @media only screen and (max-width: 992px) {
+      display: none;
+    }
   }
   .name-product {
     background:   #f3f3f3;

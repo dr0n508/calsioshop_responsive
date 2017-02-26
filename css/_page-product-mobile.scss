@@ -150,6 +150,9 @@
   }
 }
 
+
+
+
 .offer-calsioshop {
   padding: 10px 50px 10px 10px !important;
   background: #05407e;
@@ -194,6 +197,31 @@
   p {
     font-size: 12px;
     color: #ffffff;
+  }
+}
+
+
+.offer-calsioshop.inner {
+  background: none;
+  padding: 10px 250px 10px 10px !important;
+  &:after, &:before  {
+    width: 40%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 10px 100px 10px 10px !important;
+  }
+  p {
+    color: #000000;
+    font-size: 14px;
+  }
+}
+.label-input {
+  label {
+    float: left;
+  }
+  span {
+    float: right;
   }
 }
 

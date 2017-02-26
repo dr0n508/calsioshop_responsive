@@ -1486,6 +1486,9 @@ a.menu-item:hover {
     border-style: solid;
     border-width: 30px 30px 30px 0;
     border-color: transparent #f3f3f3 transparent transparent; }
+    @media only screen and (max-width: 992px) {
+      .card-product-desktop:before {
+        display: none; } }
   .card-product-desktop .name-product {
     background: #f3f3f3;
     font-size: 29px;
@@ -1735,6 +1738,23 @@ a.menu-item:hover {
   .offer-calsioshop p {
     font-size: 12px;
     color: #ffffff; }
+
+.offer-calsioshop.inner {
+  background: none;
+  padding: 10px 250px 10px 10px !important; }
+  .offer-calsioshop.inner:after, .offer-calsioshop.inner:before {
+    width: 40%; }
+  @media only screen and (max-width: 768px) {
+    .offer-calsioshop.inner {
+      padding: 10px 100px 10px 10px !important; } }
+  .offer-calsioshop.inner p {
+    color: #000000;
+    font-size: 14px; }
+
+.label-input label {
+  float: left; }
+.label-input span {
+  float: right; }
 
 .sliders-recently-popular .slide p span {
   font-weight: 600; }
