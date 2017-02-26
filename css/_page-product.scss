@@ -228,6 +228,70 @@ position: relative;
 
 
 
+/*****personalisation-teamwear-back****/
+.tabs-personalisation {
+  .nav-tabs>li.active>a {
+    background-color: #f3f3f3;
+    color: $black-text-color;
+  }
+  h3 {
+    color: #054182;
+    padding: 10px 0;
+  }
+}
+
+.footer-back-personalisation {
+  .btn-primary-cta {
+    width: 55%;
+    display: block;
+  }
+}
+
+
+
+.select-number-name {
+  ul li {
+    margin-bottom: 5px;
+  }
+  .header-table {
+    padding-bottom: 10px;
+  }
+  .size-pers, .header-size-pers  {
+    width: 20%;
+    float: left;
+    text-align: center;
+    font-weight: 600;
+  }
+  .size-pers {
+    line-height: 35px;
+  }
+
+  .number-pers, .header-number-pers{
+    width: 25%;
+    float: left;
+    input {
+      width: 100%;
+      padding: 5px;
+      border: solid 1px #dddddd;
+    }
+  }
+  .name-pers, .header-name-pers{
+    width: 50%;
+    float: left;
+    input {
+      width: 100%;
+      padding: 5px;
+      margin: 0 10px;
+      border: solid 1px #dddddd;
+    }
+  }
+  .header-name-pers {
+    padding: 0 10px;
+  }
+}
+
+
+
 
 
 

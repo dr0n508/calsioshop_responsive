@@ -1038,10 +1038,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     color: #f6241f; }
 
 /*****tabs-personalisation*****/
-.tabs-personalisation .nav-tabs > li.active > a {
-  background-color: #f3f3f3;
-  color: #0e0e0e; }
-
 /*************accordion*********/
 .accordion .title-accordion {
   display: block;
@@ -1651,6 +1647,47 @@ a.menu-item:hover {
   .tabs-personalisation .checkbox-color .checkbox22:checked + label span {
     border: solid 2px #808080; }
 
+/*****personalisation-teamwear-back****/
+.tabs-personalisation .nav-tabs > li.active > a {
+  background-color: #f3f3f3;
+  color: #0e0e0e; }
+.tabs-personalisation h3 {
+  color: #054182;
+  padding: 10px 0; }
+
+.footer-back-personalisation .btn-primary-cta {
+  width: 55%;
+  display: block; }
+
+.select-number-name ul li {
+  margin-bottom: 5px; }
+.select-number-name .header-table {
+  padding-bottom: 10px; }
+.select-number-name .size-pers, .select-number-name .header-size-pers {
+  width: 20%;
+  float: left;
+  text-align: center;
+  font-weight: 600; }
+.select-number-name .size-pers {
+  line-height: 35px; }
+.select-number-name .number-pers, .select-number-name .header-number-pers {
+  width: 25%;
+  float: left; }
+  .select-number-name .number-pers input, .select-number-name .header-number-pers input {
+    width: 100%;
+    padding: 5px;
+    border: solid 1px #dddddd; }
+.select-number-name .name-pers, .select-number-name .header-name-pers {
+  width: 50%;
+  float: left; }
+  .select-number-name .name-pers input, .select-number-name .header-name-pers input {
+    width: 100%;
+    padding: 5px;
+    margin: 0 10px;
+    border: solid 1px #dddddd; }
+.select-number-name .header-name-pers {
+  padding: 0 10px; }
+
 /*****slider-product*****/
 .slider-product .bxslider li img {
   margin: 0 auto; }
@@ -1898,6 +1935,9 @@ h3 {
   font-family: MohaveBold, sans-serif;
   font-size: 16px;
   color: #222222; }
+
+.db {
+  display: block; }
 
 /*****************************categories*******************************/
 .visible-xs .panel-group .panel {
