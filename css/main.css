@@ -1688,6 +1688,10 @@ a.menu-item:hover {
 .select-number-name .header-name-pers {
   padding: 0 10px; }
 
+/*****personalisation-teamwear-front****/
+.upload-logo .custom-input, .upload-logo .custom-select {
+  width: 70%; }
+
 /*****slider-product*****/
 .slider-product .bxslider li img {
   margin: 0 auto; }
