@@ -48,11 +48,26 @@
 .tab-content-product {
   width: calc(100% - 55px);
   float: right;
+
+  margin-bottom: 10px;
   .tab-pane {
     padding: 0 40px 0 20px;
+
     img {
       width: 100%;
       height: auto;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    height: 400px;
+    text-align: center;
+    .tab-pane {
+      height: 100%;
+      text-align: center;
+      img {
+        height: 100%;
+        width: auto;
+      }
     }
   }
 }
@@ -61,6 +76,12 @@
 .tab-horisontal {
   .nav li {
     width: 25%;
+    @media only screen and (max-width: 992px) {
+      width: auto;
+      a {
+        padding: 10px 20px;
+      }
+    }
     a {
       font-family: "mohavebold", sans-serif;
       font-size: 16px;
