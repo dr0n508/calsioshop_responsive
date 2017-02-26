@@ -1637,6 +1637,20 @@ a.menu-item:hover {
 .offer-calsioshop {
   padding: 10px 0; }
 
+.tabs-personalisation .checkbox-color {
+  margin: 10px 0; }
+  .tabs-personalisation .checkbox-color label {
+    width: calc((100% - 120px)/12);
+    float: left;
+    margin-right: 10px; }
+    .tabs-personalisation .checkbox-color label span {
+      width: 100%;
+      height: 30px; }
+  .tabs-personalisation .checkbox-color .checkbox22 + label span {
+    border: solid 2px transparent; }
+  .tabs-personalisation .checkbox-color .checkbox22:checked + label span {
+    border: solid 2px #808080; }
+
 /*****slider-product*****/
 .slider-product .bxslider li img {
   margin: 0 auto; }
