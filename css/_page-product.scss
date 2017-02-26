@@ -46,7 +46,8 @@
       }
     }
     .rating {
-      margin-top: 15px;
+      margin-top: 5px;
+      margin-left: 20px;
       float: left;
       color: #da2620;
       line-height: 20px;
@@ -57,6 +58,34 @@
       .number-review {
         color: #151515;
       }
+    }
+    .deliveri-info {
+      font-size: 13px;
+      margin-bottom: 10px;
+      span {
+        font-weight: 600;
+        color: #148f00;
+      }
+    }
+  }
+  .select-size {
+    padding: 10px 0;
+    display: flex;
+    //justify-content: space-between;
+    align-items: center;
+    .dropdown-brand {
+      width: 50%;
+      .custom-select {
+        margin-bottom: 0;
+      }
+    }
+    .link-modal {
+      text-decoration: underline;
+      text-align: center;
+      width: 50%;
+      font-size: 13px;
+      color: $link-color;
+
     }
   }
 }

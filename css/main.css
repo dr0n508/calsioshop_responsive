@@ -1488,7 +1488,8 @@ a.menu-item:hover {
         font-size: 25px;
         margin-right: 5px; }
     .card-good-desktop .price-rating .rating {
-      margin-top: 15px;
+      margin-top: 5px;
+      margin-left: 20px;
       float: left;
       color: #da2620;
       line-height: 20px; }
@@ -1497,6 +1498,26 @@ a.menu-item:hover {
         margin-left: 2px; }
       .card-good-desktop .price-rating .rating .number-review {
         color: #151515; }
+    .card-good-desktop .price-rating .deliveri-info {
+      font-size: 13px;
+      margin-bottom: 10px; }
+      .card-good-desktop .price-rating .deliveri-info span {
+        font-weight: 600;
+        color: #148f00; }
+  .card-good-desktop .select-size {
+    padding: 10px 0;
+    display: flex;
+    align-items: center; }
+    .card-good-desktop .select-size .dropdown-brand {
+      width: 50%; }
+      .card-good-desktop .select-size .dropdown-brand .custom-select {
+        margin-bottom: 0; }
+    .card-good-desktop .select-size .link-modal {
+      text-decoration: underline;
+      text-align: center;
+      width: 50%;
+      font-size: 13px;
+      color: #003874; }
 
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
