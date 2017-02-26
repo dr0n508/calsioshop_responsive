@@ -1,4 +1,5 @@
 .button {
+  display: inline-block;
   font-family: "mohavebold", sans-serif;
   font-size: 16px;
   text-align: center;
@@ -21,17 +22,20 @@
   padding: 15px 0;
   background: $red-color;
   border-bottom: solid 2px $dark-red-color;
+
 }
 
 .btn-secondary-cta {
   @extend .button;
-  padding: 7px 0;
+  padding: 8px 0;
   background: $blue-color;
   border-bottom: solid 2px $dark-blue-color;
   .descript-text {
     display: block;
     font: 12px ralewayregular, sans-serif;
+
   }
+
 }
 
 .btn-advert {

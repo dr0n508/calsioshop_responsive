@@ -47,6 +47,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   font-weight: normal;
   font-style: normal; }
 .button, .btn-primary-cta, .btn-secondary-cta, .btn-advert, .btn-interface, .btn-interface-secondary {
+  display: inline-block;
   font-family: "mohavebold", sans-serif;
   font-size: 16px;
   text-align: center;
@@ -65,7 +66,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   border-bottom: solid 2px #a20500; }
 
 .btn-secondary-cta {
-  padding: 7px 0;
+  padding: 8px 0;
   background: #054180;
   border-bottom: solid 2px #001e3e; }
   .btn-secondary-cta .descript-text {
@@ -968,7 +969,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   width: calc(100% - 55px);
   float: right; }
   .tab-content-product .tab-pane {
-    padding: 0 20px; }
+    padding: 0 40px 0 20px; }
     .tab-content-product .tab-pane img {
       width: 100%;
       height: auto; }
@@ -1454,70 +1455,101 @@ a.menu-item:hover {
 .sub-content {
   padding: 30px 0; }
 
-.card-good-desktop {
-  background: #f3f3f3; }
-  .card-good-desktop .name-product {
+.card-product-desktop {
+  background: #f3f3f3;
+  padding-bottom: 10px;
+  border-bottom: solid 3px #dedede; }
+  .card-product-desktop:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 80px;
+    left: -30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 30px 30px 0;
+    border-color: transparent #f3f3f3 transparent transparent; }
+  .card-product-desktop .name-product {
     background: #f3f3f3;
     font-size: 29px;
     font-family: "mohavebold";
     padding: 10px; }
-  .card-good-desktop .price-rating {
+  .card-product-desktop .price-rating {
     border-top: solid 1px #ffffff;
     border-bottom: solid 1px #ffffff;
     padding: 5px 10px;
     position: relative; }
-    .card-good-desktop .price-rating .price-discount {
+    .card-product-desktop .price-rating .price-discount {
       float: left; }
-      .card-good-desktop .price-rating .price-discount .old-price {
+      .card-product-desktop .price-rating .price-discount .old-price {
         float: left;
         color: gray;
         font-family: "MohaveBoldItalic", sans-serif;
         font-size: 16px;
         margin-right: 5px;
         text-decoration: line-through; }
-      .card-good-desktop .price-rating .price-discount .sale {
+      .card-product-desktop .price-rating .price-discount .sale {
         float: left;
         color: gray;
         font-family: "MohaveBold", sans-serif;
         font-size: 16px;
         margin-right: 10px; }
-      .card-good-desktop .price-rating .price-discount .current-price {
+      .card-product-desktop .price-rating .price-discount .current-price {
         float: left;
         color: #da2620;
         font-family: "mohavebold", sans-serif;
         font-size: 25px;
         margin-right: 5px; }
-    .card-good-desktop .price-rating .rating {
+    .card-product-desktop .price-rating .rating {
       margin-top: 5px;
       margin-left: 20px;
       float: left;
       color: #da2620;
       line-height: 20px; }
-      .card-good-desktop .price-rating .rating span {
+      .card-product-desktop .price-rating .rating span {
         float: left;
         margin-left: 2px; }
-      .card-good-desktop .price-rating .rating .number-review {
+      .card-product-desktop .price-rating .rating .number-review {
         color: #151515; }
-    .card-good-desktop .price-rating .deliveri-info {
+    .card-product-desktop .price-rating .deliveri-info {
       font-size: 13px;
       margin-bottom: 10px; }
-      .card-good-desktop .price-rating .deliveri-info span {
+      .card-product-desktop .price-rating .deliveri-info span {
         font-weight: 600;
         color: #148f00; }
-  .card-good-desktop .select-size {
+  .card-product-desktop .select-size {
     padding: 10px 0;
     display: flex;
-    align-items: center; }
-    .card-good-desktop .select-size .dropdown-brand {
-      width: 50%; }
-      .card-good-desktop .select-size .dropdown-brand .custom-select {
+    align-items: center;
+    border-bottom: solid 1px white; }
+    .card-product-desktop .select-size .dropdown-brand {
+      width: 55%; }
+      .card-product-desktop .select-size .dropdown-brand .custom-select {
         margin-bottom: 0; }
-    .card-good-desktop .select-size .link-modal {
+    .card-product-desktop .select-size .link-modal {
       text-decoration: underline;
       text-align: center;
-      width: 50%;
+      width: 45%;
       font-size: 13px;
       color: #003874; }
+  .card-product-desktop .footer-card-product-desktop {
+    padding: 10px 0;
+    position: relative; }
+    .card-product-desktop .footer-card-product-desktop .wrap-btn {
+      width: 55%; }
+    .card-product-desktop .footer-card-product-desktop .btn-primary-cta, .card-product-desktop .footer-card-product-desktop .btn-secondary-cta {
+      width: 100%; }
+    .card-product-desktop .footer-card-product-desktop .btn-secondary-cta {
+      background-color: #da2620; }
+    .card-product-desktop .footer-card-product-desktop .code-product {
+      position: absolute;
+      right: 0;
+      bottom: 10px; }
+    .card-product-desktop .footer-card-product-desktop .logo-personalize {
+      position: absolute;
+      right: 0;
+      bottom: 50px; }
 
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
