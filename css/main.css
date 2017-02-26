@@ -1693,55 +1693,56 @@ h3 {
 .list-filtered-goods {
   border-bottom: 1px solid #e4e4e4;
   border-top: 1px solid #e4e4e4; }
-  .list-filtered-goods .goods-information {
-    padding-bottom: 10px; }
+
+.goods-information {
+  padding-bottom: 10px; }
+  @media only screen and (max-width: 768px) {
+    .goods-information {
+      padding-left: 5px;
+      padding-right: 5px; } }
+  .goods-information a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    border: solid 1px transparent;
+    text-align: center; }
+    .goods-information a:hover {
+      border: solid 1px #e4e4e4;
+      box-shadow: 0 0 10px #e4e4e4; }
+      .goods-information a:hover .name-goods {
+        text-decoration: underline; }
     @media only screen and (max-width: 768px) {
-      .list-filtered-goods .goods-information {
-        padding-left: 5px;
-        padding-right: 5px; } }
-    .list-filtered-goods .goods-information a {
-      display: block;
-      text-decoration: none;
-      padding: 10px;
-      border: solid 1px transparent;
-      text-align: center; }
-      .list-filtered-goods .goods-information a:hover {
-        border: solid 1px #e4e4e4;
-        box-shadow: 0 0 10px #e4e4e4; }
-        .list-filtered-goods .goods-information a:hover .name-goods {
-          text-decoration: underline; }
-      @media only screen and (max-width: 768px) {
-        .list-filtered-goods .goods-information a {
-          padding: 5px; } }
-      .list-filtered-goods .goods-information a .img-wrapper {
-        text-align: center;
-        position: relative; }
-        .list-filtered-goods .goods-information a .img-wrapper img {
-          width: 100%;
-          height: auto; }
-      .list-filtered-goods .goods-information a .name-goods {
+      .goods-information a {
+        padding: 5px; } }
+    .goods-information a .img-wrapper {
+      text-align: center;
+      position: relative; }
+      .goods-information a .img-wrapper img {
+        width: 100%;
+        height: auto; }
+    .goods-information a .name-goods {
+      font-size: 14px;
+      color: #054182;
+      font-family: "ralewaybold", sans-serif;
+      padding-top: 5px; }
+    .goods-information a .price-goods {
+      padding: 5px 0; }
+      .goods-information a .price-goods .old-price {
+        color: gray;
+        font-family: "MohaveBoldItalic", sans-serif;
         font-size: 14px;
-        color: #054182;
-        font-family: "ralewaybold", sans-serif;
-        padding-top: 5px; }
-      .list-filtered-goods .goods-information a .price-goods {
-        padding: 5px 0; }
-        .list-filtered-goods .goods-information a .price-goods .old-price {
-          color: gray;
-          font-family: "MohaveBoldItalic", sans-serif;
-          font-size: 14px;
-          margin-right: 10px;
-          text-decoration: line-through; }
-        .list-filtered-goods .goods-information a .price-goods .current-price {
-          color: red;
-          font-family: "mohavebold", sans-serif;
-          font-size: 16px; }
-      .list-filtered-goods .goods-information a .size-goods {
-        color: #5a5a5a;
-        font-size: 12px !important;
-        min-height: 51px;
-        padding-bottom: 5px; }
-        .list-filtered-goods .goods-information a .size-goods .sizes-list li {
-          display: inline-block; }
+        margin-right: 10px;
+        text-decoration: line-through; }
+      .goods-information a .price-goods .current-price {
+        color: red;
+        font-family: "mohavebold", sans-serif;
+        font-size: 16px; }
+    .goods-information a .size-goods {
+      color: #5a5a5a;
+      font-size: 12px !important;
+      min-height: 51px;
+      padding-bottom: 5px; }
+      .goods-information a .size-goods .sizes-list li {
+        display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */
