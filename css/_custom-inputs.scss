@@ -241,8 +241,17 @@
   background-image: url("../images/arrow-downt.png");
   background-position: 98% 50%;
   background-repeat: no-repeat;
-  @media only screen and (max-width: 1200px) {
-    //background-position: 95% 50%;
+  &:invalid {
+    color: gray;
+  }
+  option {
+    color: #054182;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  option[disabled] {
+    color: gray;
   }
 }
 

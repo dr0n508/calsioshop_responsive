@@ -856,6 +856,14 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   background-image: url("../images/arrow-downt.png");
   background-position: 98% 50%;
   background-repeat: no-repeat; }
+  .custom-select:invalid {
+    color: gray; }
+  .custom-select option {
+    color: #054182; }
+  .custom-select option[value=""][disabled] {
+    display: none; }
+  .custom-select option[disabled] {
+    color: gray; }
 
 /****select2***/
 .form-for-you-team-mobile .select2-results__option {
