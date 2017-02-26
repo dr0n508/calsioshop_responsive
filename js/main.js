@@ -88,7 +88,7 @@ $(document).ready(function () {
 
     function formatColor (state) {
         if (!state.id) { return state.text; }
-        var cssStyles = ' style=width:22px;height:22px;display:inline-block;vertical-align:middle;background-color:' + state.id;
+        var cssStyles = ' style=width:22px;margin-right:5px;height:22px;display:inline-block;vertical-align:middle;background-color:' + state.id;
         var $state = $(
             '<p style="width:100px;padding:5px;"><span' + cssStyles + '></span><span>' + state.text + '</span></p>'
         );

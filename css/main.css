@@ -113,7 +113,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     .header-top .language-site select {
       width: 50px; }
     .header-top .language-site .select2-selection {
-      border: none; }
+      border: none !important; }
   .header-top .basket {
     margin-left: 80px; }
     .header-top .basket a {
@@ -861,30 +861,27 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       background-position: 95% 50%; } }
 
 /****select2***/
-.select2-results__option {
+.form-for-you-team-mobile .select2-results__option {
   padding: 0 !important; }
-
-.select2-container--default {
+  .form-for-you-team-mobile .select2-results__option p span {
+    margin-left: 5px !important; }
+.form-for-you-team-mobile .select2-container--default {
   width: 100% !important; }
-
-.select2-container--default .select2-selection--single {
+.form-for-you-team-mobile .select2-container--default .select2-selection--single {
   border-radius: 0 !important;
   height: 35px !important;
   border: 1px solid #dddddd !important; }
-
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
+.form-for-you-team-mobile .select2-container--default .select2-selection--single .select2-selection__arrow b {
   display: none; }
-
-.select2-container--default .select2-selection--single .select2-selection__rendered {
+.form-for-you-team-mobile .select2-container--default .select2-selection--single .select2-selection__rendered {
   line-height: 22px !important; }
-  .select2-container--default .select2-selection--single .select2-selection__rendered span {
-    margin-right: 5px; }
-
-.select2-container--default .select2-selection--single {
+  .form-for-you-team-mobile .select2-container--default .select2-selection--single .select2-selection__rendered span {
+    margin-left: 5px; }
+.form-for-you-team-mobile .select2-container--default .select2-selection--single {
   line-height: 25px !important;
   color: #054182 !important;
   position: relative; }
-  .select2-container--default .select2-selection--single:after {
+  .form-for-you-team-mobile .select2-container--default .select2-selection--single:after {
     content: '';
     position: absolute;
     right: 2%;
@@ -894,13 +891,11 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     height: 9px;
     display: block;
     background: url("../images/arrow-downt.png") no-repeat 50% 50%; }
-
-.select2-container--default .select2-selection--single .select2-selection__placeholder {
+.form-for-you-team-mobile .select2-container--default .select2-selection--single .select2-selection__placeholder {
   line-height: 35px; }
-
-.select2-selection__arrow {
+.form-for-you-team-mobile .select2-selection__arrow {
   position: relative; }
-  .select2-selection__arrow .fa {
+  .form-for-you-team-mobile .select2-selection__arrow .fa {
     position: absolute;
     padding: 9px;
     top: 0;
