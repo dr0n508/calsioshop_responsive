@@ -141,8 +141,13 @@
 }
 
 .bg-gray {
-  //  padding: 10px;
   background: #f3f3f3;
+  .btn-primary-cta {
+    width: 100%;
+  }
+  .btn-secondary-cta {
+    width: 100%;
+  }
 }
 
 .offer-calsioshop {

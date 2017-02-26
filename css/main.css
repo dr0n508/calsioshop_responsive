@@ -1567,20 +1567,21 @@ a.menu-item:hover {
       right: 0;
       bottom: 35px; }
 
-.personalisation-tab .title-personalisation a {
+.title-personalisation a {
   font-family: MohaveBold, sans-serif;
   font-size: 18px;
   color: #0e0e0e;
   padding: 10px 0;
   display: block;
   position: relative; }
-  .personalisation-tab .title-personalisation a:after {
+  .title-personalisation a:after {
     content: "\f00d";
     position: absolute;
     color: #054182;
     font-family: FontAwesome;
     right: 0; }
-.personalisation-tab .offer-calsioshop {
+
+.offer-calsioshop {
   padding: 10px 0; }
 
 /*****slider-product*****/
@@ -1689,6 +1690,10 @@ a.menu-item:hover {
 
 .bg-gray {
   background: #f3f3f3; }
+  .bg-gray .btn-primary-cta {
+    width: 100%; }
+  .bg-gray .btn-secondary-cta {
+    width: 100%; }
 
 .offer-calsioshop {
   padding: 10px 50px 10px 10px !important;
