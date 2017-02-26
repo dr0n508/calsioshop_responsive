@@ -1604,19 +1604,27 @@ a.menu-item:hover {
       right: 0;
       bottom: 35px; }
 
-.title-personalisation a {
+.personalisation-tab {
+  position: relative; }
+
+.cloze-personalisation {
+  text-align: center;
+  position: absolute;
+  color: #054182;
+  right: 0;
+  font-size: 16px; }
+  .cloze-personalisation:hover {
+    text-decoration: none; }
+  .cloze-personalisation i {
+    padding: 5px;
+    display: block; }
+
+.title-personalisation {
   font-family: MohaveBold, sans-serif;
   font-size: 18px;
   color: #0e0e0e;
   padding: 10px 0;
-  display: block;
-  position: relative; }
-  .title-personalisation a:after {
-    content: "\f00d";
-    position: absolute;
-    color: #054182;
-    font-family: FontAwesome;
-    right: 0; }
+  display: block; }
 
 .offer-calsioshop {
   padding: 10px 0; }

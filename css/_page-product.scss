@@ -174,26 +174,30 @@
 }
 
 .personalisation-tab {
+position: relative;
+}
 
+.cloze-personalisation {
+  text-align: center;
+  position: absolute;
+  color: #054182;
+  right: 0;
+  font-size: 16px;
+  &:hover {
+    text-decoration: none;
+  }
+  i {
+    padding: 5px;
+    display: block;
+  }
 }
 
 .title-personalisation {
-  a {
-    font-family: MohaveBold, sans-serif;
-    font-size: 18px;
-
-    color: $black-text-color;
-    padding: 10px 0;
-    display: block;
-    position: relative;
-    &:after {
-      content: "\f00d";
-      position: absolute;
-      color: #054182;
-      font-family: FontAwesome;
-      right: 0;
-    }
-  }
+  font-family: MohaveBold, sans-serif;
+  font-size: 18px;
+  color: $black-text-color;
+  padding: 10px 0;
+  display: block;
 }
 .offer-calsioshop {
   padding: 10px 0;
