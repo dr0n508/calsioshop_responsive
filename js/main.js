@@ -72,7 +72,7 @@ $(document).ready(function () {
 
     /****SameHeight*categories******/
 
-    // maintainSameHeight($('.goods-information a'));
+    // maintainSameHeight($('.goods-information a '));
     // function maintainSameHeight($list) {
     //     var height = 0;
     //     $list.each(function () {
