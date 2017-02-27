@@ -1221,6 +1221,7 @@ a.menu-item:hover {
   padding-right: 0;
   position: relative; }
   .category .link-category {
+    overflow: hidden;
     position: relative;
     display: block;
     width: 100%;
@@ -2083,12 +2084,14 @@ h3 {
         padding: 5px; } }
     .goods-information a .img-wrapper {
       text-align: center;
-      position: relative; }
+      position: relative;
+      min-height: 200px; }
       .goods-information a .img-wrapper img {
         width: 100%;
         height: auto; }
     .goods-information a .name-goods {
       font-size: 14px;
+      min-height: 35px;
       color: #054182;
       font-family: "ralewaybold", sans-serif;
       padding-top: 5px; }
@@ -2107,7 +2110,7 @@ h3 {
     .goods-information a .size-goods {
       color: #5a5a5a;
       font-size: 12px !important;
-      min-height: 51px;
+      min-height: 56px;
       padding-bottom: 5px; }
       .goods-information a .size-goods .sizes-list li {
         display: inline-block; }

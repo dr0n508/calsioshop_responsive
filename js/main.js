@@ -58,31 +58,31 @@ $(document).ready(function () {
 
     /****SameHeight*categories******/
 
-    maintainSameHeight($('[data-same-height="category"]'));
-    function maintainSameHeight($list) {
-        var height = 0;
-        $list.each(function () {
-            var $this = $(this);
-            if ($this.outerHeight() > height) {
-                height = $this.outerHeight();
-            }
-        });
-        $list.css("height", height);
-    }
+    // maintainSameHeight($('[data-same-height="category"]'));
+    // function maintainSameHeight($list) {
+    //     var height = 0;
+    //     $list.each(function () {
+    //         var $this = $(this);
+    //         if ($this.outerHeight() > height) {
+    //             height = $this.outerHeight();
+    //         }
+    //     });
+    //     $list.css("height", height);
+    // }
 
     /****SameHeight*categories******/
 
-    maintainSameHeight($('.goods-information a'));
-    function maintainSameHeight($list) {
-        var height = 0;
-        $list.each(function () {
-            var $this = $(this);
-            if ($this.outerHeight() > height) {
-                height = $this.outerHeight();
-            }
-        });
-        $list.css("height", height);
-    }
+    // maintainSameHeight($('.goods-information a'));
+    // function maintainSameHeight($list) {
+    //     var height = 0;
+    //     $list.each(function () {
+    //         var $this = $(this);
+    //         if ($this.outerHeight() > height) {
+    //             height = $this.outerHeight();
+    //         }
+    //     });
+    //     $list.css("height", height);
+    // }
 
     /****select2color****/
 

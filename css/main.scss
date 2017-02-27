@@ -248,6 +248,7 @@ h3 {
     .img-wrapper {
       text-align: center;
       position: relative;
+      min-height: 200px;
       img {
         width: 100%;
         height: auto;
@@ -255,6 +256,7 @@ h3 {
     }
     .name-goods {
       font-size: 14px;
+      min-height: 35px;
       color: #054182;
       font-family: "ralewaybold", sans-serif;
       padding-top: 5px;
@@ -277,7 +279,7 @@ h3 {
     .size-goods {
       color: #5a5a5a;
       font-size: 12px !important;
-      min-height: 51px;
+      min-height: 56px;
       padding-bottom: 5px;
       .sizes-list li { display: inline-block;
       }
