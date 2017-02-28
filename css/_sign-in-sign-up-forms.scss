@@ -3,6 +3,11 @@
 
 }
 
+.form-registration {
+  //padding-right: 0;
+  //padding-left: 0;
+}
+
 
 .wrap-form-signin-signup {
   padding: 20px;
@@ -64,6 +69,9 @@ fieldset  {
 
 .group-checkbox {
   padding: 0 0 0 90px;
+  .custom-checkbox {
+    padding: 10px 0;
+  }
 }
 .inline-checkbox {
   .custom-checkbox {
