@@ -2072,6 +2072,46 @@ a.menu-item:hover {
   .form-registration .btn-primary-cta, .form-registration .btn-primary-cta-dsc {
     width: 100%; } }
 
+/*****checkout****/
+.wrap-checkout-menu {
+  background-color: #054182;
+  border-top: solid 1px #e6e6e6;
+  border-bottom: solid 1px #e6e6e6; }
+
+.checkout-menu {
+  overflow: hidden;
+  position: relative;
+  margin-right: -30px; }
+  .checkout-menu li {
+    position: relative;
+    left: -50px;
+    float: left;
+    border-right: solid 1px #f3f3f3;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    transform: skew(-30deg); }
+    .checkout-menu li:first-child a span {
+      padding: 10px 25px 10px 80px; }
+    .checkout-menu li:last-child {
+      border-right: none; }
+    .checkout-menu li a {
+      text-align: center;
+      text-decoration: none; }
+      .checkout-menu li a span {
+        padding: 10px 25px;
+        font-size: 12px;
+        color: #ffffff;
+        display: block;
+        -webkit-transform: skew(30deg);
+        -moz-transform: skew(30deg);
+        -o-transform: skew(30deg);
+        transform: skew(30deg); }
+  .checkout-menu .active {
+    background: #ffffff; }
+    .checkout-menu .active a span {
+      color: #000000; }
+
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
   -webkit-transition: all .15s;
