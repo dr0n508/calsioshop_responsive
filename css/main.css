@@ -1631,6 +1631,13 @@ a.menu-item:hover {
 .title-personalisation.active {
   color: black; }
 
+.sub-title-personalisation {
+  font-family: MohaveBold, sans-serif;
+  font-size: 16px;
+  color: #054182;
+  padding: 10px 0;
+  display: block; }
+
 .offer-calsioshop {
   padding: 10px 0; }
 
@@ -1652,9 +1659,6 @@ a.menu-item:hover {
 .tabs-personalisation .nav-tabs > li.active > a {
   background-color: #f3f3f3;
   color: #0e0e0e; }
-.tabs-personalisation h3 {
-  color: #054182;
-  padding: 10px 0; }
 
 .footer-back-personalisation .btn-primary-cta {
   width: 55%;
