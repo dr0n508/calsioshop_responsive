@@ -2112,6 +2112,14 @@ a.menu-item:hover {
     .checkout-menu .active a span {
       color: #000000; }
 
+.wrap-form-payment-data {
+  padding-right: 0;
+  padding-left: 0; }
+  .wrap-form-payment-data form {
+    margin: 20px 0;
+    background-color: #f3f3f3;
+    padding: 20px; }
+
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
   -webkit-transition: all .15s;
