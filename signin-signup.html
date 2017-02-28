@@ -944,17 +944,21 @@
 <section class="forms-login-registration">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <div class="form-login">
                     <h1 class="header-form h1-category">ACCESSO CLIENTI</h1>
-                    <div class="wrap-form-signin-signup">
+                    <div class="wrap-form-signin-signup clearfix">
                         <div class="rowwwwww">
                             <label for="email-existing-user">E-Mail*</label>
                             <input class="custom-input" id="email-existing-user" type="text">
+                        </div>
 
+                        <div class="rowwwwww">
                             <label for="password-existing-user">Password*</label>
                             <input class="custom-input" id="password-existing-user" type="password">
+                        </div>
 
+                        <div class="wrap-btn">
                             <a href="#" class="btn-primary-cta">Invia</a>
                             <p>Hai dimenticato la password? <a href="#">Clicca qui</a>.</p>
                         </div>
@@ -962,53 +966,71 @@
 
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-sm-8">
                 <div class="form-registration">
                     <h1 class="header-form h1-category">Crea profilo</h1>
                     <div class="wrap-form-signin-signup">
                         <p>La seguente form consente di creare un profilo utente necessario per acquistare dal nostro store. Inserisci con cura le informazioni richieste perchè necessarie per la corretta evasione degli ordini . </p>
                         <fieldset>
                             <h2>Informazioni personali</h2>
-                            <label for="first-name-new-user">Nome*</label>
-                            <input class="custom-input" id="first-name-new-user" type="text">
+                            <div class="row-form">
+                                <label for="first-name-new-user">Nome*</label>
+                                <input class="custom-input" id="first-name-new-user" type="text">
+                            </div>
 
-                            <label for="last-name-new-user">Cognome*</label>
-                            <input class="custom-input" id="last-name-new-user" type="text">
+                            <div class="row-form">
+                                <label for="last-name-new-user">Cognome*</label>
+                                <input class="custom-input" id="last-name-new-user" type="text">
+                            </div>
 
-                            <label for="mobile-phone-new-user">Cellulare*</label>
-                            <input class="custom-input" id="mobile-phone-new-user" type="tel">
+                            <div class="row-form">
+                                <label for="mobile-phone-new-user">Cellulare*</label>
+                                <input class="custom-input" id="mobile-phone-new-user" type="tel">
+                            </div>
+
                         </fieldset>
 
                         <fieldset>
                             <h2>Informazioni Account</h2>
-                            <label for="email-new-user">E-mail*</label>
-                            <input class="custom-input" id="email-new-user" type="text">
+                            <div class="row-form">
+                                <label for="email-new-user">E-mail*</label>
+                                <input class="custom-input" id="email-new-user" type="text">
+                            </div>
+                            <div class="row-form">
+                                <label for="password-new-user">Password*</label>
+                                <input class="custom-input" id="password-new-user" type="password">
+                            </div>
 
-                            <label for="password-new-user">Password*</label>
-                            <input class="custom-input" id="password-new-user" type="password">
-
-                            <label for="confirm-password-new-user">Conferma Password*</label>
-                            <input class="custom-input" id="confirm-password-new-user" type="password">
+                            <div class="row-form">
+                                <label for="confirm-password-new-user">Conferma Password*</label>
+                                <input class="custom-input" id="confirm-password-new-user" type="password">
+                            </div>
                         </fieldset>
 
                         <fieldset>
                             <h2>Newsletter</h2>
                             <p>Se vuoi ricevere la newsletter Calcioshop.it, seleziona la voce qui sotto</p>
-                            <div class="custom-checkbox">
-                                <input id="subscribe-newsletter" type="checkbox"/>
-                                <label for="subscribe-newsletter">Newsletter calcioshop.it</label>
+                            <div class="row-form">
+                                <div class="custom-checkbox">
+                                    <input id="subscribe-newsletter" type="checkbox"/>
+                                    <label for="subscribe-newsletter">Newsletter calcioshop.it</label>
+                                    <p>Sconti riservati, promozioni in anteprima e informazioni commerciali</p>
+                                </div>
                             </div>
-                            <p>Sconti riservati, promozioni in anteprima e informazioni commerciali</p>
+
+
                         </fieldset>
                         <fieldset>
                             <h2>Dati Aggiuntivi</h2>
                             <p>Per garantirti un servizio migliore che soddisfi ogni tua esigenza, ti chiediamo gentilmente di compilare i campi qui sotto:  Compilando questa sezione il tuo buono sconto sarà del valore di &euro 5,00.</p>
-                            <label for="sex-user">Sesso</label>
-                            <select class="custom-select" id="sex-user" name="sex-user" required>
-                                <option selected disabled value="">Scegli</option>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                            </select>
+                            <div class="row-form">
+                                <label for="sex-user">Sesso</label>
+                                <select class="custom-select" id="sex-user" name="sex-user" required>
+                                    <option selected disabled value="">Scegli</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
                             <p>Categoria (Scelta multipla)</p>
 
                             <div class="group-checkbox">
@@ -1052,8 +1074,11 @@
 
 
                         </fieldset>
-                        <p>Cliccando sul pulsante "Invia" accetti incondizionatamente i nostri <a href="#">"Termini & Condizioni"</a></p>
-                        <a class="btn-primary-cta" href="#">Invia</a>
+                        <div class="footer-form">
+                            <p>Cliccando sul pulsante "Invia" accetti incondizionatamente i nostri <a href="#">"Termini & Condizioni"</a></p>
+                            <a class="btn-primary-cta" href="#">Invia</a>
+                        </div>
+
                     </div>
                 </div>
             </div>

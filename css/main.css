@@ -1992,7 +1992,40 @@ a.menu-item:hover {
   padding: 20px;
   background-color: #f3f3f3; }
   .wrap-form-signin-signup p {
+    margin-bottom: 10px;
+    font-size: 14px; }
+  .wrap-form-signin-signup .custom-input, .wrap-form-signin-signup .custom-select {
+    max-width: 240px;
+    margin-bottom: 0; }
+  .wrap-form-signin-signup label {
+    font-size: 14px;
+    margin-right: 10px; }
+  .wrap-form-signin-signup .rowwwwww {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     margin-bottom: 10px; }
+    @media only screen and (max-width: 992px) {
+      .wrap-form-signin-signup .rowwwwww {
+        flex-direction: column;
+        align-items: flex-start; } }
+  .wrap-form-signin-signup .wrap-btn {
+    width: 240px;
+    float: right; }
+    .wrap-form-signin-signup .wrap-btn p {
+      font-size: 13px;
+      text-align: center; }
+  .wrap-form-signin-signup .row-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; }
+    .wrap-form-signin-signup .row-form label {
+      width: 85px;
+      text-align: right; }
+    .wrap-form-signin-signup .row-form .custom-checkbox {
+      margin-left: 90px; }
+      .wrap-form-signin-signup .row-form .custom-checkbox label {
+        width: auto; }
 
 fieldset {
   padding: 20px 0; }
@@ -2001,10 +2034,19 @@ fieldset {
     margin-bottom: 10px; }
 
 .group-checkbox {
-  padding: 0 0 0 100px; }
+  padding: 0 0 0 90px; }
 
 .inline-checkbox .custom-checkbox {
   display: inline-block; }
+
+.wrap-form-signin-signup .btn-primary-cta, .wrap-form-signin-signup .btn-primary-cta-dsc {
+  width: 240px; }
+
+.footer-form {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 15px 15px 0 15px;
+  border-top: solid 1px white; }
 
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
