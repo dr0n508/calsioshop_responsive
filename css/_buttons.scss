@@ -23,7 +23,16 @@
   padding: 15px 0;
   background: $red-color;
   border-bottom: solid 2px $dark-red-color;
+}
 
+.btn-primary-cta-dsc {
+  @extend .btn-primary-cta;
+  padding: 8px 0;
+  .descript-text {
+    display: block;
+    font: 12px ralewayregular, sans-serif;
+
+  }
 }
 
 .btn-secondary-cta {

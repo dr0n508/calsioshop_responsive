@@ -46,7 +46,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   src: url("../fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway-Medium.ttf") format("truetype"), url("../fonts/Raleway-Medium.svg#Raleway-Medium") format("svg");
   font-weight: normal;
   font-style: normal; }
-.button, .btn-primary-cta, .btn-secondary-cta, .btn-advert, .btn-interface, .btn-interface-secondary {
+.button, .btn-primary-cta, .btn-primary-cta-dsc, .btn-secondary-cta, .btn-advert, .btn-interface, .btn-interface-secondary {
   display: inline-block;
   font-family: "mohavebold", sans-serif;
   font-size: 16px;
@@ -56,15 +56,21 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   padding: 5px 15px;
   margin: 5px 0;
   text-decoration: none; }
-  .button:hover, .btn-primary-cta:hover, .btn-secondary-cta:hover, .btn-advert:hover, .btn-interface:hover, .btn-interface-secondary:hover, .button:focus, .btn-primary-cta:focus, .btn-secondary-cta:focus, .btn-advert:focus, .btn-interface:focus, .btn-interface-secondary:focus {
+  .button:hover, .btn-primary-cta:hover, .btn-primary-cta-dsc:hover, .btn-secondary-cta:hover, .btn-advert:hover, .btn-interface:hover, .btn-interface-secondary:hover, .button:focus, .btn-primary-cta:focus, .btn-primary-cta-dsc:focus, .btn-secondary-cta:focus, .btn-advert:focus, .btn-interface:focus, .btn-interface-secondary:focus {
     text-decoration: none;
     color: white; }
 
-.btn-primary-cta {
+.btn-primary-cta, .btn-primary-cta-dsc {
   display: block;
   padding: 15px 0;
   background: #da2620;
   border-bottom: solid 2px #a20500; }
+
+.btn-primary-cta-dsc {
+  padding: 8px 0; }
+  .btn-primary-cta-dsc .descript-text {
+    display: block;
+    font: 12px ralewayregular, sans-serif; }
 
 .btn-secondary-cta {
   display: block;
@@ -1596,7 +1602,7 @@ a.menu-item:hover {
     position: relative; }
     .card-product-desktop .footer-card-product-desktop .wrap-btn {
       width: 55%; }
-    .card-product-desktop .footer-card-product-desktop .btn-primary-cta, .card-product-desktop .footer-card-product-desktop .btn-secondary-cta {
+    .card-product-desktop .footer-card-product-desktop .btn-primary-cta, .card-product-desktop .footer-card-product-desktop .btn-primary-cta-dsc, .card-product-desktop .footer-card-product-desktop .btn-secondary-cta {
       width: 100%; }
     .card-product-desktop .footer-card-product-desktop .btn-secondary-cta {
       background-color: #da2620; }
@@ -1663,11 +1669,11 @@ a.menu-item:hover {
   background-color: #f3f3f3;
   color: #0e0e0e; }
 
-.footer-back-personalisation .btn-primary-cta {
+.footer-back-personalisation .btn-primary-cta, .footer-back-personalisation .btn-primary-cta-dsc {
   width: 55%;
   display: block; }
   @media only screen and (max-width: 768px) {
-    .footer-back-personalisation .btn-primary-cta {
+    .footer-back-personalisation .btn-primary-cta, .footer-back-personalisation .btn-primary-cta-dsc {
       width: 100%; } }
 
 .select-number-name ul li {
@@ -1844,7 +1850,7 @@ a.menu-item:hover {
 
 .bg-gray {
   background: #f3f3f3; }
-  .bg-gray .btn-primary-cta {
+  .bg-gray .btn-primary-cta, .bg-gray .btn-primary-cta-dsc {
     width: 100%; }
   .bg-gray .btn-secondary-cta {
     width: 100%; }
