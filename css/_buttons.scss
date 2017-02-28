@@ -19,6 +19,7 @@
 
 .btn-primary-cta {
   @extend .button;
+  display: block;
   padding: 15px 0;
   background: $red-color;
   border-bottom: solid 2px $dark-red-color;
@@ -27,6 +28,7 @@
 
 .btn-secondary-cta {
   @extend .button;
+  display: block;
   padding: 8px 0;
   background: $blue-color;
   border-bottom: solid 2px $dark-blue-color;
@@ -45,6 +47,7 @@
 
 .btn-interface {
   @extend .button;
+  display: block;
   background-color: $blue-color;
   text-decoration: none;
   &:visited, &:hover, &:active, &:focus {

@@ -61,11 +61,13 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     color: white; }
 
 .btn-primary-cta {
+  display: block;
   padding: 15px 0;
   background: #da2620;
   border-bottom: solid 2px #a20500; }
 
 .btn-secondary-cta {
+  display: block;
   padding: 8px 0;
   background: #054180;
   border-bottom: solid 2px #001e3e; }
@@ -77,6 +79,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   background: #da2620; }
 
 .btn-interface {
+  display: block;
   background-color: #054180;
   text-decoration: none; }
   .btn-interface:visited, .btn-interface:hover, .btn-interface:active, .btn-interface:focus {
@@ -1663,6 +1666,9 @@ a.menu-item:hover {
 .footer-back-personalisation .btn-primary-cta {
   width: 55%;
   display: block; }
+  @media only screen and (max-width: 768px) {
+    .footer-back-personalisation .btn-primary-cta {
+      width: 100%; } }
 
 .select-number-name ul li {
   margin-bottom: 5px; }
