@@ -1967,6 +1967,24 @@ a.menu-item:hover {
       .sizes-teamware-mobile .wrap .dropdown-brand .custom-select {
         margin-bottom: 0; }
 
+.FAQ {
+  padding: 20px 0; }
+  @media only screen and (max-width: 768px) {
+    .FAQ {
+      padding: 20px 30px; } }
+  .FAQ .list-FAQ-question li {
+    list-style: decimal;
+    padding-bottom: 5px;
+    color: #003874; }
+    .FAQ .list-FAQ-question li a {
+      color: #003874; }
+  .FAQ h2 {
+    margin: 40px 0 10px; }
+  .FAQ p {
+    margin-top: 10px; }
+    .FAQ p:last-child {
+      margin-top: 0; }
+
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
   -webkit-transition: all .15s;

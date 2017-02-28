@@ -1,0 +1,25 @@
+.FAQ {
+  padding: 20px 0;
+  @media only screen and (max-width: 768px) {
+    padding: 20px 30px;
+  }
+  .list-FAQ-question {
+    li {
+      list-style: decimal;
+      padding-bottom: 5px;
+      color: $link-color;
+      a {
+        color: $link-color;
+      }
+    }
+  }
+  h2 {
+    margin: 40px 0 10px;
+  }
+  p {
+    margin-top: 10px;
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+}
