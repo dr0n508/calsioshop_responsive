@@ -1985,6 +1985,24 @@ a.menu-item:hover {
     .FAQ p:last-child {
       margin-top: 0; }
 
+.wrap-form {
+  padding: 20px;
+  background-color: #f3f3f3; }
+  .wrap-form p {
+    margin-bottom: 10px; }
+
+fieldset {
+  padding: 20px 0; }
+  fieldset h2 {
+    font-size: 18px;
+    margin-bottom: 10px; }
+
+.group-checkbox {
+  padding: 0 0 0 100px; }
+
+.inline-checkbox .custom-checkbox {
+  display: inline-block; }
+
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
   -webkit-transition: all .15s;
