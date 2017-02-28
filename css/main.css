@@ -1985,10 +1985,13 @@ a.menu-item:hover {
     .FAQ p:last-child {
       margin-top: 0; }
 
-.wrap-form {
+.forms-login-registration {
+  padding: 20px 0 50px; }
+
+.wrap-form-signin-signup {
   padding: 20px;
   background-color: #f3f3f3; }
-  .wrap-form p {
+  .wrap-form-signin-signup p {
     margin-bottom: 10px; }
 
 fieldset {
