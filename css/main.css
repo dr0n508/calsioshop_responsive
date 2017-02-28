@@ -1997,20 +1997,13 @@ a.menu-item:hover {
     margin-bottom: 10px;
     font-size: 14px; }
   .wrap-form-signin-signup .custom-input, .wrap-form-signin-signup .custom-select {
-    max-width: 240px;
+    width: 240px;
     margin-bottom: 0; }
   .wrap-form-signin-signup label {
     font-size: 14px;
     margin-right: 10px; }
-  .wrap-form-signin-signup .rowwwwww {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 10px; }
-    @media only screen and (max-width: 992px) {
-      .wrap-form-signin-signup .rowwwwww {
-        flex-direction: column;
-        align-items: flex-start; } }
+  .wrap-form-signin-signup .btn-primary-cta, .wrap-form-signin-signup .btn-primary-cta-dsc {
+    width: 240px; }
   .wrap-form-signin-signup .wrap-btn {
     width: 240px;
     float: right; }
@@ -2028,29 +2021,56 @@ a.menu-item:hover {
       margin-left: 90px; }
       .wrap-form-signin-signup .row-form .custom-checkbox label {
         width: auto; }
-
-fieldset {
-  padding: 20px 0; }
-  fieldset h2 {
-    font-size: 18px;
-    margin-bottom: 10px; }
-
-.group-checkbox {
-  padding: 0 0 0 90px; }
-  .group-checkbox .custom-checkbox {
-    padding: 10px 0; }
+  .wrap-form-signin-signup fieldset {
+    padding: 20px 0; }
+    .wrap-form-signin-signup fieldset h2 {
+      font-size: 18px;
+      margin-bottom: 10px; }
+  .wrap-form-signin-signup .group-checkbox {
+    padding: 0 0 0 90px; }
+    .wrap-form-signin-signup .group-checkbox .custom-checkbox {
+      padding: 10px 0; }
 
 .inline-checkbox .custom-checkbox {
   display: inline-block; }
-
-.wrap-form-signin-signup .btn-primary-cta, .wrap-form-signin-signup .btn-primary-cta-dsc {
-  width: 240px; }
 
 .footer-form {
   margin-left: -15px;
   margin-right: -15px;
   padding: 15px 15px 0 15px;
   border-top: solid 1px white; }
+
+@media only screen and (max-width: 1200px) {
+  .form-login .row-form {
+    flex-direction: column;
+    align-items: flex-start; }
+    .form-login .row-form .custom-input, .form-login .row-form .custom-select {
+      width: 100%; }
+    .form-login .row-form label {
+      width: auto; }
+  .form-login .wrap-btn {
+    width: 100%; }
+    .form-login .wrap-btn .btn-primary-cta, .form-login .wrap-btn .btn-primary-cta-dsc {
+      width: 100%; } }
+
+@media only screen and (max-width: 1200px) {
+  .form-registration .group-checkbox {
+    padding: 0; } }
+@media only screen and (max-width: 992px) {
+  .form-registration .group-checkbox .custom-checkbox {
+    display: block; } }
+@media only screen and (max-width: 768px) {
+  .form-registration .row-form {
+    flex-direction: column;
+    align-items: flex-start; }
+    .form-registration .row-form input, .form-registration .row-form .custom-select {
+      width: 100%; }
+    .form-registration .row-form label {
+      width: auto; }
+    .form-registration .row-form .custom-checkbox {
+      margin: 0; }
+  .form-registration .btn-primary-cta, .form-registration .btn-primary-cta-dsc {
+    width: 100%; } }
 
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;

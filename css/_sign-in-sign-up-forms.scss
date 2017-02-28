@@ -3,12 +3,6 @@
 
 }
 
-.form-registration {
-  //padding-right: 0;
-  //padding-left: 0;
-}
-
-
 .wrap-form-signin-signup {
   padding: 20px;
   background-color: #f3f3f3;
@@ -17,7 +11,7 @@
     font-size: 14px;
   }
   .custom-input {
-    max-width: 240px;
+    width: 240px;
     margin-bottom: 0;
 
   }
@@ -25,16 +19,8 @@
     font-size: 14px;
     margin-right: 10px;
   }
-  .rowwwwww {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 10px;
-
-    @media only screen and (max-width: 992px) {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+  .btn-primary-cta {
+    width: 240px;
   }
   .wrap-btn {
     width: 240px;
@@ -56,32 +42,24 @@
       }
     }
   }
-}
-
-
-fieldset  {
-  padding: 20px 0;
-  h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
+  fieldset  {
+    padding: 20px 0;
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+  .group-checkbox {
+    padding: 0 0 0 90px;
+    .custom-checkbox {
+      padding: 10px 0;
+    }
   }
 }
 
-.group-checkbox {
-  padding: 0 0 0 90px;
-  .custom-checkbox {
-    padding: 10px 0;
-  }
-}
 .inline-checkbox {
   .custom-checkbox {
     display: inline-block;
-  }
-}
-
-.wrap-form-signin-signup {
-  .btn-primary-cta {
-    width: 240px;
   }
 }
 
@@ -90,4 +68,44 @@ fieldset  {
   margin-right: -15px;
   padding: 15px 15px 0 15px;
   border-top: solid 1px white;
+}
+
+.form-login {
+  @media only screen and (max-width: 1200px) {
+    .row-form {
+      flex-direction: column;
+      align-items: flex-start;
+      .custom-input  {
+        width: 100%;
+      }
+      label {
+        width: auto;
+      }
+    }
+    .wrap-btn {
+      width: 100%;
+      .btn-primary-cta { width: 100%}
+    }
+  }
+}
+
+.form-registration {
+  @media only screen and (max-width: 1200px) {
+   .group-checkbox { padding: 0}
+  }
+  @media only screen and (max-width: 992px) {
+    .group-checkbox .custom-checkbox{ display: block }
+  }
+  @media only screen and (max-width: 768px) {
+    .row-form {
+      flex-direction: column;
+      align-items: flex-start;
+      input, .custom-select { width: 100%}
+      label { width: auto}
+      .custom-checkbox {
+        margin: 0;
+      }
+    }
+    .btn-primary-cta { width: 100%}
+  }
 }
