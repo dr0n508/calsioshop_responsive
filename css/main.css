@@ -1725,6 +1725,16 @@ a.menu-item:hover {
   border-right: solid 1px #ffffff;
   float: left; }
 
+.checkbox-color.mobile-personalisation {
+  overflow: hidden;
+  padding: 10px 0 10px 10px;
+  position: relative; }
+  .checkbox-color.mobile-personalisation label {
+    width: 16.66%;
+    float: left; }
+    .checkbox-color.mobile-personalisation label span {
+      height: 40px; }
+
 /*****slider-product*****/
 .slider-product .bxslider li img {
   margin: 0 auto; }
