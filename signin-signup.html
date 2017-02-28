@@ -945,46 +945,46 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
-                <div class="form-login">
+                <form class="form-login">
                     <h1 class="header-form h1-category">ACCESSO CLIENTI</h1>
                     <div class="wrap-form-signin-signup clearfix">
                         <div class="rowwwwww">
                             <label for="email-existing-user">E-Mail*</label>
-                            <input class="custom-input" id="email-existing-user" type="text">
+                            <input class="custom-input" id="email-existing-user" name="email-existing-user" type="text">
                         </div>
 
                         <div class="rowwwwww">
                             <label for="password-existing-user">Password*</label>
-                            <input class="custom-input" id="password-existing-user" type="password">
+                            <input class="custom-input" id="password-existing-user" name="password-existing-user" type="password">
                         </div>
 
                         <div class="wrap-btn">
-                            <a href="#" class="btn-primary-cta">Invia</a>
+                            <button type="submit" class="btn-primary-cta">Invia</button>
                             <p>Hai dimenticato la password? <a href="#">Clicca qui</a>.</p>
                         </div>
                     </div>
 
-                </div>
+                </form>
             </div>
             <div class="col-sm-8 form-registration">
                 <h1 class="header-form h1-category">Crea profilo</h1>
-                <div class="wrap-form-signin-signup">
+                <form class="wrap-form-signin-signup">
                     <p>La seguente form consente di creare un profilo utente necessario per acquistare dal nostro store. Inserisci con cura le informazioni richieste perchè necessarie per la corretta evasione degli ordini . </p>
                     <fieldset>
                         <h2>Informazioni personali</h2>
                         <div class="row-form">
                             <label for="first-name-new-user">Nome*</label>
-                            <input class="custom-input" id="first-name-new-user" type="text">
+                            <input class="custom-input" id="first-name-new-user" name="first-name-new-user" type="text">
                         </div>
 
                         <div class="row-form">
                             <label for="last-name-new-user">Cognome*</label>
-                            <input class="custom-input" id="last-name-new-user" type="text">
+                            <input class="custom-input" id="last-name-new-user" name="last-name-new-user" type="text">
                         </div>
 
                         <div class="row-form">
                             <label for="mobile-phone-new-user">Cellulare*</label>
-                            <input class="custom-input" id="mobile-phone-new-user" type="tel">
+                            <input class="custom-input" id="mobile-phone-new-user" name="mobile-phone-new-user" type="tel">
                         </div>
 
                     </fieldset>
@@ -993,16 +993,16 @@
                         <h2>Informazioni Account</h2>
                         <div class="row-form">
                             <label for="email-new-user">E-mail*</label>
-                            <input class="custom-input" id="email-new-user" type="text">
+                            <input class="custom-input" id="email-new-user" name="email-new-user" type="text">
                         </div>
                         <div class="row-form">
                             <label for="password-new-user">Password*</label>
-                            <input class="custom-input" id="password-new-user" type="password">
+                            <input class="custom-input" id="password-new-user" name="password-new-user" type="password">
                         </div>
 
                         <div class="row-form">
                             <label for="confirm-password-new-user">Conferma Password*</label>
-                            <input class="custom-input" id="confirm-password-new-user" type="password">
+                            <input class="custom-input" id="confirm-password-new-user" name="confirm-password-new-user" type="password">
                         </div>
                     </fieldset>
 
@@ -1011,7 +1011,7 @@
                         <p>Se vuoi ricevere la newsletter Calcioshop.it, seleziona la voce qui sotto</p>
                         <div class="row-form">
                             <div class="custom-checkbox">
-                                <input id="subscribe-newsletter" type="checkbox"/>
+                                <input id="subscribe-newsletter" name="subscribe-newsletter" type="checkbox"/>
                                 <label for="subscribe-newsletter">Newsletter calcioshop.it</label>
                                 <p>Sconti riservati, promozioni in anteprima e informazioni commerciali</p>
                             </div>
@@ -1035,38 +1035,38 @@
                         <div class="group-checkbox">
                             <div class="inline-checkbox">
                                 <div class="custom-checkbox">
-                                    <input id="fan" type="checkbox"/>
+                                    <input id="fan" name="fan" type="checkbox"/>
                                     <label for="fan">Tifoso</label>
                                 </div>
 
                                 <div class="custom-checkbox">
-                                    <input id="football-player" type="checkbox"/>
+                                    <input id="football-player" name="football-player" type="checkbox"/>
                                     <label for="football-player">Giocatore calcio</label>
                                 </div>
 
                                 <div class="custom-checkbox">
-                                    <input id="football-player2" type="checkbox"/>
+                                    <input id="football-player2" name="football-player2" type="checkbox"/>
                                     <label for="football-player2">Giocatore calcetto  </label>
                                 </div>
 
                                 <div class="custom-checkbox">
-                                    <input id="manager" type="checkbox"/>
+                                    <input id="manager" name="manager" type="checkbox"/>
                                     <label for="manager">Allenatore</label>
                                 </div>
 
                                 <div class="custom-checkbox">
-                                    <input id="director" type="checkbox"/>
+                                    <input id="director" name="director" type="checkbox"/>
                                     <label for="director">Dirigente</label>
                                 </div>
                             </div>
 
                             <div class="custom-checkbox">
-                                <input id="masseur" type="checkbox"/>
+                                <input id="masseur" name="masseur" type="checkbox"/>
                                 <label for="masseur">Massaggiatore</label>
                             </div>
 
                             <div class="custom-checkbox">
-                                <input id="Referee" type="checkbox"/>
+                                <input id="Referee" name="Referee" type="checkbox"/>
                                 <label for="Referee">Arbitro</label>
                             </div>
                         </div>
@@ -1075,10 +1075,10 @@
                     </fieldset>
                     <div class="footer-form">
                         <p>Cliccando sul pulsante "Invia" accetti incondizionatamente i nostri <a href="#">"Termini & Condizioni"</a></p>
-                        <a class="btn-primary-cta" href="#">Invia</a>
+                        <button class="btn-primary-cta" type="submit" href="#">Invia</button>
                     </div>
 
-                </div>
+                </form>
             </div>
         </div>
     </div>
