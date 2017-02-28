@@ -1703,6 +1703,22 @@ a.menu-item:hover {
 .upload-logo .custom-input, .upload-logo .custom-select {
   width: 70%; }
 
+.title-accordion-pers-back {
+  float: right;
+  width: 80%; }
+
+.btn-personalization-back {
+  width: 20%;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "mohavebold", sans-serif;
+  color: #054182;
+  background-color: #cbd5e0;
+  border-right: solid 1px #ffffff;
+  float: left; }
+
 /*****slider-product*****/
 .slider-product .bxslider li img {
   margin: 0 auto; }
