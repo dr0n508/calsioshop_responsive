@@ -4,7 +4,17 @@ $(document).ready(function () {
     /******slider-product-mobile****/
 
     $('.bxslider').bxSlider();
+
+
     var frontePers = $('.bxslider-fronte').bxSlider();
+
+
+    $('#collapse-fronte-pers').on('shown.bs.collapse', function () {
+        console.log('SHOW #collapse-fronte-pers');
+        frontePers.reloadSlider();
+    });
+
+
 
     /******slider-recently-viewed-mobile*****/
 
