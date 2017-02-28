@@ -1735,6 +1735,13 @@ a.menu-item:hover {
     .checkbox-color.mobile-personalisation label span {
       height: 40px; }
 
+.persolanisation-teamware-mobile .body-accordion {
+  padding: 0; }
+.persolanisation-teamware-mobile .pers-section {
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #ddd; }
+
 /*****slider-product*****/
 .slider-product .bxslider li img {
   margin: 0 auto; }
