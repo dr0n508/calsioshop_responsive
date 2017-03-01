@@ -245,12 +245,12 @@
   overflow: hidden;
   .wrap-advantages-footer {
     border-bottom: solid 1px #dddddd;
-    //overflow: hidden;
     display: flex;
     align-items: stretch;
     min-height: 100px;
-    .advantage-1, .advantage-3 {
-      width: 33%;
+    .advantage-1,
+    .advantage-2,
+    .advantage-3 {
       position: relative;
       display: flex;
       align-items: center;
@@ -258,7 +258,11 @@
       p {
         font-size: 12px;
         padding: 0 20px 0 75px;
-        &:before {
+      }
+    }
+    .advantage-1, .advantage-3 {
+      width: 33%;
+      p::before {
           position: absolute;
           content: "";
           width: 34px;
@@ -268,7 +272,6 @@
           top: 50%;
           margin-top: -20px;
           left: 10px;
-        }
       }
     }
     .advantage-3 {
@@ -276,7 +279,6 @@
     }
     .advantage-2 {
       background: #e6e6e6;
-      position: relative;
       border-left: solid 1px #dddddd;
       width: 33%;
       left: 25px;
@@ -284,12 +286,7 @@
       -moz-transform: skew(-30deg);
       -o-transform: skew(-30deg);
       transform: skew(-30deg);
-      display: flex;
-      align-items: center;
-      justify-content: center;
       p {
-        font-size: 12px;
-        padding: 0 20px 0 75px;
         -webkit-transform: skew(30deg);
         -moz-transform: skew(30deg);
         -o-transform: skew(30deg);

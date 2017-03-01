@@ -2258,43 +2258,42 @@ a.menu-item:hover {
     display: flex;
     align-items: stretch;
     min-height: 100px; }
-    .advantages-footer .wrap-advantages-footer .advantage-1, .advantages-footer .wrap-advantages-footer .advantage-3 {
-      width: 33%;
+    .advantages-footer .wrap-advantages-footer .advantage-1,
+    .advantages-footer .wrap-advantages-footer .advantage-2,
+    .advantages-footer .wrap-advantages-footer .advantage-3 {
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center; }
-      .advantages-footer .wrap-advantages-footer .advantage-1 p, .advantages-footer .wrap-advantages-footer .advantage-3 p {
+      .advantages-footer .wrap-advantages-footer .advantage-1 p,
+      .advantages-footer .wrap-advantages-footer .advantage-2 p,
+      .advantages-footer .wrap-advantages-footer .advantage-3 p {
         font-size: 12px;
         padding: 0 20px 0 75px; }
-        .advantages-footer .wrap-advantages-footer .advantage-1 p:before, .advantages-footer .wrap-advantages-footer .advantage-3 p:before {
-          position: absolute;
-          content: "";
-          width: 34px;
-          height: 39px;
-          display: block;
-          background: url("../images/ico-lock.png") no-repeat 50% 50%;
-          top: 50%;
-          margin-top: -20px;
-          left: 10px; }
+    .advantages-footer .wrap-advantages-footer .advantage-1, .advantages-footer .wrap-advantages-footer .advantage-3 {
+      width: 33%; }
+      .advantages-footer .wrap-advantages-footer .advantage-1 p::before, .advantages-footer .wrap-advantages-footer .advantage-3 p::before {
+        position: absolute;
+        content: "";
+        width: 34px;
+        height: 39px;
+        display: block;
+        background: url("../images/ico-lock.png") no-repeat 50% 50%;
+        top: 50%;
+        margin-top: -20px;
+        left: 10px; }
     .advantages-footer .wrap-advantages-footer .advantage-3 p:before {
       display: none; }
     .advantages-footer .wrap-advantages-footer .advantage-2 {
       background: #e6e6e6;
-      position: relative;
       border-left: solid 1px #dddddd;
       width: 33%;
       left: 25px;
       -webkit-transform: skew(-30deg);
       -moz-transform: skew(-30deg);
       -o-transform: skew(-30deg);
-      transform: skew(-30deg);
-      display: flex;
-      align-items: center;
-      justify-content: center; }
+      transform: skew(-30deg); }
       .advantages-footer .wrap-advantages-footer .advantage-2 p {
-        font-size: 12px;
-        padding: 0 20px 0 75px;
         -webkit-transform: skew(30deg);
         -moz-transform: skew(30deg);
         -o-transform: skew(30deg);
