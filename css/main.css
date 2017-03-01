@@ -2257,12 +2257,15 @@ a.menu-item:hover {
     overflow: hidden; }
     .advantages-footer .wrap-advantages-footer .safe-deal {
       padding: 10px 5px 10px 50px;
-      width: 42%;
+      width: 33%;
       float: left;
       position: relative; }
       .advantages-footer .wrap-advantages-footer .safe-deal p {
         font-size: 12px;
-        min-height: 70px; }
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
         .advantages-footer .wrap-advantages-footer .safe-deal p:before {
           position: absolute;
           content: "";
@@ -2270,14 +2273,15 @@ a.menu-item:hover {
           height: 39px;
           display: block;
           background: url("../images/ico-lock.png") no-repeat 50% 50%;
-          top: 20px;
+          top: 50%;
+          margin-top: -20px;
           left: 10px; }
     .advantages-footer .wrap-advantages-footer .experience {
       background: #e6e6e6;
       position: relative;
       border-left: solid 1px #dddddd;
       padding: 10px 10px 10px 50px;
-      width: 58%;
+      width: 33%;
       float: left;
       left: 25px;
       -webkit-transform: skew(-30deg);
@@ -2291,7 +2295,10 @@ a.menu-item:hover {
         -webkit-transform: skew(30deg);
         -moz-transform: skew(30deg);
         -o-transform: skew(30deg);
-        transform: skew(30deg); }
+        transform: skew(30deg);
+        display: flex;
+        align-items: center;
+        justify-content: center; }
         .advantages-footer .wrap-advantages-footer .experience p:before {
           position: absolute;
           content: "";
