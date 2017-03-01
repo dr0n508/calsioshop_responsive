@@ -2158,6 +2158,8 @@ a.menu-item:hover {
         .wrap-form-payment-data form .wrap-checkbox,
         .wrap-form-payment-data form .wrap-btn-submit {
           margin-left: 0 !important; } }
+    .wrap-form-payment-data form h2 {
+      margin-bottom: 20px; }
     .wrap-form-payment-data form .custom-input, .wrap-form-payment-data form .custom-select, .wrap-form-payment-data form .custom-select {
       width: calc(100% - 110px); }
     .wrap-form-payment-data form label {
@@ -2277,6 +2279,7 @@ a.menu-item:hover {
 h2 {
   font-family: MohaveBold, sans-serif;
   font-size: 25px;
+  margin-bottom: 10px;
   color: #222222; }
 
 h3 {
