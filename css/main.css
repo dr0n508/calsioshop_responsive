@@ -2251,21 +2251,23 @@ a.menu-item:hover {
       float: right; }
 
 .advantages-footer {
-  background: #f3f3f3; }
+  background: #f3f3f3;
+  overflow: hidden; }
   .advantages-footer .wrap-advantages-footer {
     border-bottom: solid 1px #dddddd;
-    overflow: hidden; }
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    min-height: 70px; }
     .advantages-footer .wrap-advantages-footer .safe-deal {
-      padding: 10px 5px 10px 50px;
       width: 33%;
-      float: left;
-      position: relative; }
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
       .advantages-footer .wrap-advantages-footer .safe-deal p {
         font-size: 12px;
-        min-height: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
+        padding: 0 20px 0 75px; }
         .advantages-footer .wrap-advantages-footer .safe-deal p:before {
           position: absolute;
           content: "";
@@ -2280,25 +2282,22 @@ a.menu-item:hover {
       background: #e6e6e6;
       position: relative;
       border-left: solid 1px #dddddd;
-      padding: 10px 10px 10px 50px;
       width: 33%;
-      float: left;
       left: 25px;
       -webkit-transform: skew(-30deg);
       -moz-transform: skew(-30deg);
       -o-transform: skew(-30deg);
-      transform: skew(-30deg); }
+      transform: skew(-30deg);
+      display: flex;
+      align-items: center;
+      justify-content: center; }
       .advantages-footer .wrap-advantages-footer .experience p {
         font-size: 12px;
-        min-height: 70px;
-        padding: 0 15px;
+        padding: 0 20px 0 75px;
         -webkit-transform: skew(30deg);
         -moz-transform: skew(30deg);
         -o-transform: skew(30deg);
-        transform: skew(30deg);
-        display: flex;
-        align-items: center;
-        justify-content: center; }
+        transform: skew(30deg); }
         .advantages-footer .wrap-advantages-footer .experience p:before {
           position: absolute;
           content: "";
@@ -2306,8 +2305,20 @@ a.menu-item:hover {
           height: 39px;
           display: block;
           background: url("../images/ico-custom-order.png") no-repeat 50% 50%;
-          top: 10px;
-          left: -28px; }
+          top: 50%;
+          margin-top: -20px;
+          left: 30px; }
+    @media only screen and (max-width: 768px) {
+      .advantages-footer .wrap-advantages-footer {
+        margin-right: -20px; }
+        .advantages-footer .wrap-advantages-footer .safe-deal {
+          width: 35%; }
+          .advantages-footer .wrap-advantages-footer .safe-deal p {
+            padding: 10px 0 10px 75px; }
+        .advantages-footer .wrap-advantages-footer .experience {
+          width: 65%; }
+          .advantages-footer .wrap-advantages-footer .experience p {
+            padding: 10px 75px 10px 75px; } }
   .advantages-footer .review {
     padding: 10px;
     overflow: hidden; }

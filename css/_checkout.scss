@@ -242,20 +242,26 @@
 
 .advantages-footer {
   background: #f3f3f3;
+  overflow: hidden;
   .wrap-advantages-footer {
     border-bottom: solid 1px #dddddd;
     overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    min-height: 70px;
     .safe-deal {
-      padding: 10px 5px 10px 50px;
       width: 33%;
-      float: left;
+      //padding: 10px 5px 10px 50px;
+      //width: 33%;
+      //float: left;
       position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       p {
         font-size: 12px;
-        min-height: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: 0 20px 0 75px;
+
         &:before {
           position: absolute;
           content: "";
@@ -275,25 +281,23 @@
       background: #e6e6e6;
       position: relative;
       border-left: solid 1px #dddddd;
-      padding: 10px 10px 10px 50px;
       width: 33%;
-      float: left;
+      //float: left;
       left: 25px;
       -webkit-transform: skew(-30deg);
       -moz-transform: skew(-30deg);
       -o-transform: skew(-30deg);
       transform: skew(-30deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       p {
         font-size: 12px;
-        min-height: 70px;
-        padding: 0 15px;
+        padding: 0 20px 0 75px;
         -webkit-transform: skew(30deg);
         -moz-transform: skew(30deg);
         -o-transform: skew(30deg);
         transform: skew(30deg);
-        display: flex;
-        align-items: center;
-        justify-content: center;
         &:before {
           position: absolute;
           content: "";
@@ -301,8 +305,24 @@
           height: 39px;
           display: block;
           background: url("../images/ico-custom-order.png") no-repeat 50% 50%;
-          top: 10px;
-          left: -28px;
+          top: 50%;
+          margin-top: -20px;
+          left: 30px;
+        }
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      margin-right: -20px;
+      .safe-deal {
+        width: 35%;
+        p {
+          padding: 10px 0 10px 75px;
+        }
+      }
+      .experience {
+        width: 65%;
+        p {
+          padding: 10px 75px 10px 75px;
         }
       }
     }
