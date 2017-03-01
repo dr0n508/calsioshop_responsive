@@ -3,12 +3,12 @@
   background-color: #054182;
   border-top: solid 1px #e6e6e6;
   border-bottom: solid 1px #e6e6e6;
+  overflow: hidden;
 }
 
 .checkout-menu {
   overflow: hidden;
   position: relative;
-  margin-right: -30px;
   li {
     position: relative;
     left: -50px;
@@ -47,6 +47,45 @@
       color: #000000;
     }
   }
+  @media only screen and (max-width: 620px) {
+    li {
+      height: 45px;
+      a {
+        display: flex;
+        align-content: center;
+        height: 100%;
+        text-align: center;
+        span {
+          padding: 5px 0 5px 12px;
+          //padding: 5px 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+      &:first-child {
+        a span {
+          padding: 5px 5px 5px 55px;
+        }
+      }
+    }
+    .your-data {
+      width: 30%;
+    }
+    .delivery-pay {
+      width: 32%;
+    }
+    .order {
+      width: 30%;
+    }
+    .confirmation {
+      width: 8%;
+      a span {
+        padding-right: 5px;
+        padding-left: 15px;
+      }
+    }
+  }
 }
 
 .wrap-form-payment-data {
@@ -77,7 +116,6 @@
         .custom-select, .custom-input { width: 100%}
         label {
           width:  auto;
-
         }
       }
     }

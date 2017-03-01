@@ -2076,12 +2076,12 @@ a.menu-item:hover {
 .wrap-checkout-menu {
   background-color: #054182;
   border-top: solid 1px #e6e6e6;
-  border-bottom: solid 1px #e6e6e6; }
+  border-bottom: solid 1px #e6e6e6;
+  overflow: hidden; }
 
 .checkout-menu {
   overflow: hidden;
-  position: relative;
-  margin-right: -30px; }
+  position: relative; }
   .checkout-menu li {
     position: relative;
     left: -50px;
@@ -2111,6 +2111,32 @@ a.menu-item:hover {
     background: #ffffff; }
     .checkout-menu .active a span {
       color: #000000; }
+  @media only screen and (max-width: 620px) {
+    .checkout-menu li {
+      height: 45px; }
+      .checkout-menu li a {
+        display: flex;
+        align-content: center;
+        height: 100%;
+        text-align: center; }
+        .checkout-menu li a span {
+          padding: 5px 0 5px 12px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+      .checkout-menu li:first-child a span {
+        padding: 5px 5px 5px 55px; }
+    .checkout-menu .your-data {
+      width: 30%; }
+    .checkout-menu .delivery-pay {
+      width: 32%; }
+    .checkout-menu .order {
+      width: 30%; }
+    .checkout-menu .confirmation {
+      width: 8%; }
+      .checkout-menu .confirmation a span {
+        padding-right: 5px;
+        padding-left: 15px; } }
 
 .wrap-form-payment-data {
   padding-right: 0;
