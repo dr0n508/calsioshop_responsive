@@ -129,7 +129,6 @@
     padding-left: 0;
   }
   .wrap-img {
-    //padding-left: 0;
     padding-right: 0;
     img {
       width: 100%;
@@ -153,12 +152,8 @@
       align-items: center;
       p {
         width: 50%;
+        display: inline-block;
       }
-    }
-    p {
-      display: inline-block;
-
-
     }
     .value-price-quantity {
       font-size: 14px;
@@ -167,7 +162,24 @@
     .small {
       font-size: 13px;
     }
+    @media only screen and (max-width: 768px) {
+      ul li {
+        width: 25%;
+        display: block;
+        float: left;
+
+      }
+
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .wrap-img, .name-goods {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
   }
 }
+
+
 
 

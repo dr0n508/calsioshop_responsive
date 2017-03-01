@@ -2167,7 +2167,7 @@ a.menu-item:hover {
           .wrap-form-payment-data form .row-form label {
             width: auto; } }
 
-.information-goods .wrap2 {
+.information-goods .wrap2col {
   padding-right: 0;
   padding-left: 0; }
 .information-goods .wrap-img {
@@ -2188,14 +2188,22 @@ a.menu-item:hover {
     justify-content: space-between;
     align-items: center; }
     .information-goods .price-quantity li p {
-      width: 50%; }
-  .information-goods .price-quantity p {
-    display: inline-block; }
+      width: 50%;
+      display: inline-block; }
   .information-goods .price-quantity .value-price-quantity {
     font-size: 14px;
     font-weight: 800; }
   .information-goods .price-quantity .small {
     font-size: 13px; }
+  @media only screen and (max-width: 768px) {
+    .information-goods .price-quantity ul li {
+      width: 25%;
+      display: block;
+      float: left; } }
+@media only screen and (max-width: 768px) {
+  .information-goods .wrap-img, .information-goods .name-goods {
+    padding-right: 5px;
+    padding-left: 5px; } }
 
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
