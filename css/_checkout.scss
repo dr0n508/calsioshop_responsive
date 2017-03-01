@@ -245,15 +245,12 @@
   overflow: hidden;
   .wrap-advantages-footer {
     border-bottom: solid 1px #dddddd;
-    overflow: hidden;
+    //overflow: hidden;
     display: flex;
     align-items: stretch;
-    min-height: 70px;
-    .safe-deal {
+    min-height: 100px;
+    .advantage-1, .advantage-3 {
       width: 33%;
-      //padding: 10px 5px 10px 50px;
-      //width: 33%;
-      //float: left;
       position: relative;
       display: flex;
       align-items: center;
@@ -261,7 +258,6 @@
       p {
         font-size: 12px;
         padding: 0 20px 0 75px;
-
         &:before {
           position: absolute;
           content: "";
@@ -271,18 +267,18 @@
           background: url("../images/ico-lock.png") no-repeat 50% 50%;
           top: 50%;
           margin-top: -20px;
-
           left: 10px;
         }
       }
-
     }
-    .experience {
+    .advantage-3 {
+      p:before { display: none}
+    }
+    .advantage-2 {
       background: #e6e6e6;
       position: relative;
       border-left: solid 1px #dddddd;
       width: 33%;
-      //float: left;
       left: 25px;
       -webkit-transform: skew(-30deg);
       -moz-transform: skew(-30deg);
@@ -313,13 +309,13 @@
     }
     @media only screen and (max-width: 768px) {
       margin-right: -20px;
-      .safe-deal {
+      .advantage-1 {
         width: 35%;
         p {
-          padding: 10px 0 10px 75px;
+          padding: 10px 0 10px 60px;
         }
       }
-      .experience {
+      .advantage-2 {
         width: 65%;
         p {
           padding: 10px 75px 10px 75px;

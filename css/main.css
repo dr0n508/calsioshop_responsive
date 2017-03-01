@@ -2255,20 +2255,19 @@ a.menu-item:hover {
   overflow: hidden; }
   .advantages-footer .wrap-advantages-footer {
     border-bottom: solid 1px #dddddd;
-    overflow: hidden;
     display: flex;
     align-items: stretch;
-    min-height: 70px; }
-    .advantages-footer .wrap-advantages-footer .safe-deal {
+    min-height: 100px; }
+    .advantages-footer .wrap-advantages-footer .advantage-1, .advantages-footer .wrap-advantages-footer .advantage-3 {
       width: 33%;
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center; }
-      .advantages-footer .wrap-advantages-footer .safe-deal p {
+      .advantages-footer .wrap-advantages-footer .advantage-1 p, .advantages-footer .wrap-advantages-footer .advantage-3 p {
         font-size: 12px;
         padding: 0 20px 0 75px; }
-        .advantages-footer .wrap-advantages-footer .safe-deal p:before {
+        .advantages-footer .wrap-advantages-footer .advantage-1 p:before, .advantages-footer .wrap-advantages-footer .advantage-3 p:before {
           position: absolute;
           content: "";
           width: 34px;
@@ -2278,7 +2277,9 @@ a.menu-item:hover {
           top: 50%;
           margin-top: -20px;
           left: 10px; }
-    .advantages-footer .wrap-advantages-footer .experience {
+    .advantages-footer .wrap-advantages-footer .advantage-3 p:before {
+      display: none; }
+    .advantages-footer .wrap-advantages-footer .advantage-2 {
       background: #e6e6e6;
       position: relative;
       border-left: solid 1px #dddddd;
@@ -2291,14 +2292,14 @@ a.menu-item:hover {
       display: flex;
       align-items: center;
       justify-content: center; }
-      .advantages-footer .wrap-advantages-footer .experience p {
+      .advantages-footer .wrap-advantages-footer .advantage-2 p {
         font-size: 12px;
         padding: 0 20px 0 75px;
         -webkit-transform: skew(30deg);
         -moz-transform: skew(30deg);
         -o-transform: skew(30deg);
         transform: skew(30deg); }
-        .advantages-footer .wrap-advantages-footer .experience p:before {
+        .advantages-footer .wrap-advantages-footer .advantage-2 p:before {
           position: absolute;
           content: "";
           width: 34px;
@@ -2311,13 +2312,13 @@ a.menu-item:hover {
     @media only screen and (max-width: 768px) {
       .advantages-footer .wrap-advantages-footer {
         margin-right: -20px; }
-        .advantages-footer .wrap-advantages-footer .safe-deal {
+        .advantages-footer .wrap-advantages-footer .advantage-1 {
           width: 35%; }
-          .advantages-footer .wrap-advantages-footer .safe-deal p {
-            padding: 10px 0 10px 75px; }
-        .advantages-footer .wrap-advantages-footer .experience {
+          .advantages-footer .wrap-advantages-footer .advantage-1 p {
+            padding: 10px 0 10px 60px; }
+        .advantages-footer .wrap-advantages-footer .advantage-2 {
           width: 65%; }
-          .advantages-footer .wrap-advantages-footer .experience p {
+          .advantages-footer .wrap-advantages-footer .advantage-2 p {
             padding: 10px 75px 10px 75px; } }
   .advantages-footer .review {
     padding: 10px;
