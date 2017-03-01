@@ -112,39 +112,41 @@
     h3 {
       padding: 10px 0;
     }
-    .placeholder-video {
+  }
+}
+
+.pop-up-video {
+  .placeholder-video {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    img {
       width: 100%;
       height: auto;
-      position: relative;
-      display: block;
-      img {
-        width: 100%;
-        height: auto;
-      }
-      .fa {
-        position: absolute;
-        color: $red-color;
-        font-size: 80px;
-        top: 50%;
-        margin-left: -32px;
-        margin-top: -32px;
-        left: 50%;
-        background-color: $white-color;
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        line-height: 67px;
+    }
+    .fa {
+      position: absolute;
+      color: $red-color;
+      font-size: 80px;
+      top: 50%;
+      margin-left: -32px;
+      margin-top: -32px;
+      left: 50%;
+      background-color: $white-color;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      line-height: 67px;
 
-      }
-      &:hover {
-        .fa {
-          color: #f6241f;
-        }
+    }
+    &:hover {
+      .fa {
+        color: #f6241f;
       }
     }
   }
 }
-
 /*****tabs-personalisation*****/
 
 

@@ -1024,15 +1024,16 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   margin: 0 auto; }
 .tab-horisontal .tab-content h3 {
   padding: 10px 0; }
-.tab-horisontal .tab-content .placeholder-video {
+
+.pop-up-video .placeholder-video {
   width: 100%;
   height: auto;
   position: relative;
   display: block; }
-  .tab-horisontal .tab-content .placeholder-video img {
+  .pop-up-video .placeholder-video img {
     width: 100%;
     height: auto; }
-  .tab-horisontal .tab-content .placeholder-video .fa {
+  .pop-up-video .placeholder-video .fa {
     position: absolute;
     color: #da2620;
     font-size: 80px;
@@ -1045,7 +1046,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     height: 64px;
     border-radius: 50%;
     line-height: 67px; }
-  .tab-horisontal .tab-content .placeholder-video:hover .fa {
+  .pop-up-video .placeholder-video:hover .fa {
     color: #f6241f; }
 
 /*****tabs-personalisation*****/
