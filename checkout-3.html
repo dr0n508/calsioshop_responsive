@@ -220,75 +220,26 @@
 
 
 
-<section class="payment-data checkout">
+<section class="checkout">
     <div class="container">
         <div class="row">
             <h1 class="h1-category">Modalità di spedizione</h1>
-            <div class="col-md-6 wrap-form-delivery-info">
-                <form class="form-delivery-info" action="#">
-                    <section>
-                        <h2>Spediremo la merce a questo indirizzo</h2>
-                        <p class="deliveri-adress">Giovanni Doe </p>
-                        <p class="deliveri-adress">Piazzale Carlo Magno 1</p>
-                        <p class="deliveri-adress">20149, Milan, Italy</p>
-                        <p class="info-text">Se l'indirizzo di consegna non ė corretto modificalo <a href="#">cliccando qui</a></p>
-                    </section>
-                    <section class="delivery-method checkout classic-section">
-                        <h2>Modalità di spedizione</h2>
-                        <p class="label-section">Scegli il tuo corriere preferito:</p>
+            <div class="col-md-6">
 
-                        <div class="custom-radio">
-                            <input type="radio" name="delivery-method" value="SDA" id="SDA" checked/>
-                            <label for="SDA">SDA Express Courier ($6.90)</label>
-                        </div>
+                <section>
+                    <h2>Indirizzo di spedizione <a href="#">Modifica</a></h2>
+                    <p class="deliveri-adress">Giovanni Doe </p>
+                    <p class="deliveri-adress">Piazzale Carlo Magno 1</p>
+                    <p class="deliveri-adress">20149, Milan, Italy</p>
 
-                        <div class="custom-radio">
-                            <input type="radio" name="delivery-method" value="TNT" id="TNT"/>
-                            <label for="TNT">TNT Global Express (€ 6.90)</label>
-                        </div>
 
-                        <div class="custom-radio">
-                            <input type="radio" name="delivery-method" value="BRT" id="BRT"/>
-                            <label for="BRT">BRT Corriere Espresso (€ 6.90)</label>
-                        </div>
-                    </section>
-                    <section class="payment-method checkout classic-section">
-                        <h2>Modalità di pagamento</h2>
-                        <p class="label-section">Scegli una modalità di pagamento:</p>
-                        <div class="custom-radio">
-                            <input type="radio" name="payment-method" value="Contrassegno" id="Contrassegno"/>
-                            <label for="Contrassegno">Contrassegno</label>
-                        </div>
+                    <h2>Modalità di spedizione <a href="#">Modifica</a></h2>
+                    <p>SDA Express Courier ($6.90)</p>
 
-                        <div class="custom-radio">
-                            <input type="radio" name="payment-method" value="Paypal" id="Paypal"/>
-                            <label for="Paypal">Paypal</label>
-                        </div>
+                    <h2>Modalità di pagamento <a href="#">Modifica</a></h2>
+                    <p>Bonifico</p>
 
-                        <div class="custom-radio">
-                            <input type="radio" name="payment-method" value="credit-card" id="credit-card"/>
-                            <label for="credit-card">Carta di credito</label>
-                        </div>
-
-                        <div class="custom-radio">
-                            <input type="radio" name="payment-method" value="Transfer" id="Transfer"/>
-                            <label for="Transfer">Bonifico</label>
-                        </div>
-
-                        <div class="custom-radio">
-                            <input type="radio" name="payment-method" value="bank-transfer" id="bank-transfer"/>
-                            <label for="bank-transfer">Bonifico bancario diretto (Sofort)</label>
-                        </div>
-                    </section>
-                    <div class="wrap-btn-submit">
-                        <button class="btn-primary-cta" type="submit">
-                            Proseguire a Riepilogo Ordine »
-                        </button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0 hidden-xs">
-                <h2>TUO ORDINE</h2>
+                </section>
 
                 <section class="information-order checkout row">
                     <div class="clearfix col-sm-8 wrap-image-name-order">
@@ -360,13 +311,13 @@
                     </div>
                 </section>
 
+                <div class="sale-section clearfix">
+                    <p class="info-text"><span>Applica buono sconto</span>
+                        Se possiedi un buono sconto valido
+                        inserisci qui e ricalcola il totale.</p>
+                    <a href="#" class="small">Inserirlo qui</a>
+                </div>
 
-                <!--<div class="sale-section clearfix">-->
-                    <!--<p class="info-text"><span>Applica buono sconto</span>-->
-                        <!--Se possiedi un buono sconto valido-->
-                        <!--inserisci qui e ricalcola il totale.</p>-->
-                    <!--<a href="#" class="small">Inserirlo qui</a>-->
-                <!--</div>-->
                 <section class="total-order-price">
                     <div>
                         <p>Totale Prodotti: <span><strong>299.90€</strong></span></p>
@@ -377,6 +328,19 @@
                     <p class="total-price">Total ordine: €200</p>
 
                 </section>
+
+
+
+                <div class="wrap-btn-submit">
+                    <p>Confermando l'ordine verrai redirezionato sul sito sicuro Banca Intesa San Paolo per completare il pagamento</p>
+                    <button class="btn-primary-cta" type="submit">
+                        Proseguire a Riepilogo Ordine »
+                    </button>
+                </div>
+
+            </div>
+            <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0 hidden-xs">
+
                 <section class="row">
                     <div class="col-sm-4">
                         <img src="images/trust-pilot-white.png" alt="trust pilot">
