@@ -94,15 +94,25 @@
   form {
     margin: 20px 0;
     background-color: #f3f3f3;
-    padding: 20px;
+    padding: 20px 80px;
+    @media only screen and (max-width: 1200px) {
+      padding: 20px 30px;
+    }
+    @media only screen and (max-width: 992px) {
+      padding: 20px 80px;
+    }
+    @media only screen and (max-width: 768px) {
+      padding: 20px;
+      .wrap-checkbox,
+      .wrap-btn-submit { margin-left: 0 !important;}
+    }
     .custom-input, .custom-select {
-      width: 290px;
+      width: calc(100% - 110px);
     }
     label {
-      width: 130px;
+      width: 110px;
       text-align: right;
       padding-right: 5px;
-
     }
     .row-form {
       margin-bottom: 10px;
@@ -119,6 +129,23 @@
         }
       }
     }
+    .wrap-checkbox {
+      margin-left: 110px;
+      .custom-checkbox {
+        padding: 10px 0;
+      }
+      label {
+        width:  auto;
+        text-align: left;
+      }
+    }
+    .wrap-btn-submit {
+      margin-left: 110px;
+      .btn-primary-cta-dsc {
+        width: 100%;
+      }
+    }
+
   }
 }
 
