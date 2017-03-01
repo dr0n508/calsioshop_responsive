@@ -2167,6 +2167,31 @@ a.menu-item:hover {
           .wrap-form-payment-data form .row-form label {
             width: auto; } }
 
+.information-goods .wrap2row {
+  padding-right: 0;
+  padding-left: 0; }
+.information-goods .wrap-img {
+  padding-left: 0;
+  padding-right: 0; }
+  .information-goods .wrap-img img {
+    width: 100%;
+    height: auto; }
+.information-goods .price-quantity {
+  padding-right: 0; }
+  .information-goods .price-quantity li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .information-goods .price-quantity li p {
+      width: 50%; }
+  .information-goods .price-quantity p {
+    display: inline-block; }
+  .information-goods .price-quantity .value-price-quantity {
+    font-size: 14px;
+    font-weight: 800; }
+  .information-goods .price-quantity .small {
+    font-size: 13px; }
+
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
   -webkit-transition: all .15s;

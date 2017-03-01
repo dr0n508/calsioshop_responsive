@@ -122,3 +122,44 @@
   }
 }
 
+
+.information-goods {
+  .wrap2row {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .wrap-img {
+    padding-left: 0;
+    padding-right: 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .price-quantity {
+    padding-right: 0;
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        width: 50%;
+      }
+    }
+    p {
+      display: inline-block;
+
+
+    }
+    .value-price-quantity {
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .small {
+      font-size: 13px;
+    }
+  }
+}
+
+
