@@ -2341,6 +2341,10 @@ a.menu-item:hover {
         max-width: 100%;
         height: auto; }
 
+.wrap-form-delivery-info {
+  padding-right: 0;
+  padding-left: 0; }
+
 .form-delivery-info {
   background-color: #f3f3f3;
   font-size: 13px; }
@@ -2363,6 +2367,11 @@ a.menu-item:hover {
     font-size: 14px; }
   .form-delivery-info .custom-radio {
     padding-bottom: 0; }
+  @media only screen and (max-width: 768px) {
+    .form-delivery-info section {
+      padding: 20px 10px 10px; }
+    .form-delivery-info .wrap-btn-submit {
+      padding: 20px 10px; } }
 
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
