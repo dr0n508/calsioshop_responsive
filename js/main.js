@@ -94,6 +94,21 @@ $(document).ready(function () {
     //     $list.css("height", height);
     // }
 
+
+    /****SameHeight*test******/
+
+    maintainSameHeight($('[data-same-height="name-price-product"]'));
+    function maintainSameHeight($list) {
+        var height = 0;
+        $list.each(function () {
+            var $this = $(this);
+            if ($this.outerHeight() > height) {
+                height = $this.outerHeight();
+            }
+        });
+        $list.css("height", height);
+    }
+
     /****select2color****/
 
     function formatColor (state) {

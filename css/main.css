@@ -2167,15 +2167,20 @@ a.menu-item:hover {
           .wrap-form-payment-data form .row-form label {
             width: auto; } }
 
-.information-goods .wrap2row {
+.information-goods .wrap2 {
   padding-right: 0;
   padding-left: 0; }
 .information-goods .wrap-img {
-  padding-left: 0;
   padding-right: 0; }
   .information-goods .wrap-img img {
     width: 100%;
     height: auto; }
+.information-goods .name-goods {
+  font-size: 13px; }
+  .information-goods .name-goods .name {
+    color: #00366e; }
+  .information-goods .name-goods p {
+    padding: 1px 0; }
 .information-goods .price-quantity {
   padding-right: 0; }
   .information-goods .price-quantity li {
