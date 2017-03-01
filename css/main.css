@@ -2139,6 +2139,10 @@ a.menu-item:hover {
         padding-right: 5px;
         padding-left: 15px; } }
 
+.payment-data h1 {
+  padding-left: 10px;
+  padding-right: 10px; }
+
 .wrap-form-payment-data {
   padding-right: 0;
   padding-left: 0; }
