@@ -2341,6 +2341,29 @@ a.menu-item:hover {
         max-width: 100%;
         height: auto; }
 
+.form-delivery-info {
+  background-color: #f3f3f3;
+  font-size: 13px; }
+  .form-delivery-info h2 {
+    font-size: 20px; }
+  .form-delivery-info section {
+    border-bottom: solid 1px #e6e6e6;
+    padding: 20px 80px 10px; }
+  .form-delivery-info .info-text {
+    margin-top: 10px; }
+  .form-delivery-info .wrap-btn-submit {
+    padding: 20px 80px; }
+    .form-delivery-info .wrap-btn-submit .btn-primary-cta, .form-delivery-info .wrap-btn-submit .btn-primary-cta-dsc {
+      width: 100%; }
+  .form-delivery-info .label-section {
+    font-size: 14px;
+    font-weight: 800; }
+  .form-delivery-info label {
+    font-weight: 400;
+    font-size: 14px; }
+  .form-delivery-info .custom-radio {
+    padding-bottom: 0; }
+
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
   -webkit-transition: all .15s;

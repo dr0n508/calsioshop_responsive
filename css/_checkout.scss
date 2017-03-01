@@ -352,5 +352,40 @@
 }
 
 
+.form-delivery-info {
+  background-color: #f3f3f3;
+  font-size: 13px;
+  h2 {
+    font-size: 20px;
+  }
+  section {
+    border-bottom: solid 1px #e6e6e6;
+    padding: 20px 80px 10px;
+  }
+
+  .info-text {
+    margin-top: 10px;
+  }
+  .wrap-btn-submit {
+    padding: 20px 80px;
+    .btn-primary-cta {
+      width: 100%;
+    }
+  }
+  .label-section {
+    font-size: 14px;
+    font-weight: 800;
+  }
+  label {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .custom-radio {
+    padding-bottom: 0;
+
+  }
+}
+
+
 
 

@@ -940,7 +940,7 @@
                         <span>Tuo Dati</span>
                     </a>
                 </li>
-                <li class="delivery-pay">
+                <li class="delivery-pay active">
                     <a href="#">
                         <span>Spedizione e Pagamento</span>
                     </a>
@@ -968,20 +968,19 @@
 <section class="payment-data checkout">
     <div class="container">
         <div class="row">
-            <h1 class="h1-category">TUO DATI</h1>
+            <h1 class="h1-category">Modalità di spedizione</h1>
             <div class="col-md-6">
-
-                <section class="delivery-data checkout classic-section">
-                    <h2>Spediremo la merce a questo indirizzo</h2>
-                    <p class="deliveri-adress">Giovanni Doe </p>
-                    <p class="deliveri-adress">Piazzale Carlo Magno 1</p>
-                    <p class="deliveri-adress">20149, Milan, Italy</p>
-                    <p class="info-text">Se l'indirizzo di consegna non ė corretto modificalo <a href="#">cliccando qui</a></p>
-                </section>
-                <form action="#">
+                <form class="form-delivery-info" action="#">
+                    <section>
+                        <h2>Spediremo la merce a questo indirizzo</h2>
+                        <p class="deliveri-adress">Giovanni Doe </p>
+                        <p class="deliveri-adress">Piazzale Carlo Magno 1</p>
+                        <p class="deliveri-adress">20149, Milan, Italy</p>
+                        <p class="info-text">Se l'indirizzo di consegna non ė corretto modificalo <a href="#">cliccando qui</a></p>
+                    </section>
                     <section class="delivery-method checkout classic-section">
                         <h2>Modalità di spedizione</h2>
-                        <p>Scegli il tuo corriere preferito:</p>
+                        <p class="label-section">Scegli il tuo corriere preferito:</p>
 
                         <div class="custom-radio">
                             <input type="radio" name="delivery-method" value="SDA" id="SDA" checked/>
@@ -1000,7 +999,7 @@
                     </section>
                     <section class="payment-method checkout classic-section">
                         <h2>Modalità di pagamento</h2>
-                        <p>Scegli una modalità di pagamento:</p>
+                        <p class="label-section">Scegli una modalità di pagamento:</p>
                         <div class="custom-radio">
                             <input type="radio" name="payment-method" value="Contrassegno" id="Contrassegno"/>
                             <label for="Contrassegno">Contrassegno</label>
@@ -1027,13 +1026,11 @@
                         </div>
                     </section>
                     <div class="wrap-btn-submit">
-                        <button class="btn-primary-cta-dsc" type="submit">
-                            Conferma e Procedi »
-                            <span class="descript-text">(potrai modificare i dati più avanti)</span>
+                        <button class="btn-primary-cta" type="submit">
+                            Proseguire a Riepilogo Ordine »
                         </button>
                     </div>
                 </form>
-
             </div>
             <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0 hidden-xs">
                 <h2>TUO ORDINE</h2>
