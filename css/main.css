@@ -2525,7 +2525,9 @@ a.menu-item:hover {
     margin-top: 20px;
     border-top: solid 1px #e6e6e6;
     position: relative;
-    padding: 20px 10px 20px 40px; }
+    padding: 20px 10px 20px 40px;
+    color: #22ce9b;
+    font-weight: 800; }
     .shoping-cart .free-delivery .free-delivery-ico {
       left: 0;
       top: 50%;
@@ -2627,7 +2629,8 @@ a.menu-item:hover {
         padding: 5px 15px; } }
 
 .green {
-  color: #00af35; }
+  color: #22ce9b;
+  font-weight: 800; }
 
 /****mobile**/
 .to-basket-section {
