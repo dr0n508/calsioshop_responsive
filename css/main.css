@@ -2373,6 +2373,39 @@ a.menu-item:hover {
     .form-delivery-info .wrap-btn-submit {
       padding: 20px 10px; } }
 
+.checkout3 {
+  background-color: #f3f3f3;
+  margin-bottom: 50px; }
+  .checkout3 section {
+    padding: 20px 80px;
+    border-top: solid 1px #e6e6e6; }
+    .checkout3 section:first-child {
+      border-top: none; }
+  .checkout3 .header-checkout-3 h2 {
+    margin: 10px 0; }
+  .checkout3 .header-checkout-3 a {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #003874; }
+  .checkout3 .wrap-btn-submit {
+    padding: 20px 120px;
+    text-align: center; }
+    .checkout3 .wrap-btn-submit p {
+      padding: 0 30px; }
+    .checkout3 .wrap-btn-submit .btn-primary-cta, .checkout3 .wrap-btn-submit .btn-primary-cta-dsc {
+      width: 100%; }
+  .checkout3 .wrap-img-product {
+    padding-left: 0; }
+  .checkout3 .total-order-price {
+    margin-bottom: 0;
+    display: block; }
+    .checkout3 .total-order-price .total-price {
+      width: 50%;
+      font-size: 25px; }
+      .checkout3 .total-order-price .total-price span {
+        float: right;
+        font-family: inherit; }
+
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
   -webkit-transition: all .15s;
