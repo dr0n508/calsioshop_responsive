@@ -1,3 +1,8 @@
+.shoping-cart {
+  padding-bottom: 50px;
+
+}
+
 .add-basket-message {
   background-color: #f3f3f3;
   position: relative;
@@ -36,5 +41,28 @@
       float: left;
       text-align: center;
     }
+  }
+}
+
+.total-info {
+  span {
+    font-weight: 800;
+    float: right;
+    margin-right: 40px;
+  }
+  .total-price {
+    padding: 5px 0;
+    font-family: MohaveBold, sans-serif;
+    font-size: 25px;
+    span {
+      font-family: inherit;
+    }
+  }
+}
+
+.list-payment-method {
+  text-align: center;
+  p {
+    color: #636363;
   }
 }

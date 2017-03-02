@@ -2505,6 +2505,9 @@ a.menu-item:hover {
   padding: 10px 0;
   border-top: solid 1px #e6e6e6; }
 
+.shoping-cart {
+  padding-bottom: 50px; }
+
 .add-basket-message {
   background-color: #f3f3f3;
   position: relative;
@@ -2533,6 +2536,22 @@ a.menu-item:hover {
   width: 25%;
   float: left;
   text-align: center; }
+
+.total-info span {
+  font-weight: 800;
+  float: right;
+  margin-right: 40px; }
+.total-info .total-price {
+  padding: 5px 0;
+  font-family: MohaveBold, sans-serif;
+  font-size: 25px; }
+  .total-info .total-price span {
+    font-family: inherit; }
+
+.list-payment-method {
+  text-align: center; }
+  .list-payment-method p {
+    color: #636363; }
 
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
