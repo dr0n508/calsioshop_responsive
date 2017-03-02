@@ -2521,6 +2521,15 @@ a.menu-item:hover {
     padding: 5px; }
   .shoping-cart .price-quantity {
     margin-top: 10px; }
+  .shoping-cart .free-delivery {
+    margin-top: 20px;
+    border-top: solid 1px #e6e6e6;
+    position: relative;
+    padding: 20px 10px 20px 40px; }
+    .shoping-cart .free-delivery .free-delivery-ico {
+      left: 0;
+      top: 50%;
+      margin-top: -14px; }
 
 .wrap-item-product {
   display: flex;
@@ -2582,7 +2591,8 @@ a.menu-item:hover {
     color: #636363; }
 
 .section-shopping-card {
-  margin-top: 10px; }
+  margin-top: 10px;
+  border-bottom: solid 1px #e6e6e6; }
 
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
