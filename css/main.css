@@ -2467,6 +2467,19 @@ a.menu-item:hover {
 @media only screen and (max-width: 400px) {
   .checkout4 .information-order {
     font-size: 13px; } }
+.checkout4 .total-price {
+  font-family: MohaveBold, sans-serif;
+  font-size: 20px; }
+  .checkout4 .total-price span {
+    font-family: inherit; }
+.checkout4 .footer-checkout4 {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between; }
+  .checkout4 .footer-checkout4 p {
+    font-family: MohaveBold, sans-serif;
+    font-size: 20px; }
 
 .wrap-product-checkout4 {
   padding: 10px 0;

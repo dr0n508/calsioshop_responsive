@@ -528,6 +528,25 @@
       font-size: 13px;
     }
   }
+  .total-price {
+    font-family: MohaveBold, sans-serif;
+    font-size: 20px;
+    span { font-family: inherit}
+  }
+  .footer-checkout4 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    p {
+      font-family: MohaveBold, sans-serif;
+      font-size: 20px;
+      //float: left;
+    }
+    a {
+      //float: right;
+    }
+  }
 }
 
 
