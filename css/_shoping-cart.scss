@@ -1,5 +1,17 @@
 .shoping-cart {
   padding-bottom: 50px;
+  .image-goods {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .wrap-specifications {
+    .name-goods {
+      color: #00366e;
+      font-weight: 800;
+    }
+  }
 
 }
 

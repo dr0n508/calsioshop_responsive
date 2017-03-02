@@ -2507,6 +2507,12 @@ a.menu-item:hover {
 
 .shoping-cart {
   padding-bottom: 50px; }
+  .shoping-cart .image-goods img {
+    width: 100%;
+    height: auto; }
+  .shoping-cart .wrap-specifications .name-goods {
+    color: #00366e;
+    font-weight: 800; }
 
 .add-basket-message {
   background-color: #f3f3f3;
