@@ -184,6 +184,10 @@
     p {
       padding: 1px 0;
     }
+    a {
+      text-decoration: underline;
+      //color: $link-color;
+    }
   }
   .wrap-price-quantity {
     padding-right: 0;
@@ -408,6 +412,12 @@
     &:first-child {
       border-top: none;
     }
+    @media only screen and (max-width: 1200px) {
+      padding: 20px 30px;
+    }
+    @media only screen and (max-width: 968px) {
+      padding: 20px 80px;
+    }
   }
   .header-checkout-3 {
     h2 {
@@ -416,7 +426,7 @@
     a {
       font-size: 12px;
       text-decoration: underline;
-      color: $link-color;
+      //color: $link-color;
     }
   }
   .wrap-btn-submit {
@@ -429,11 +439,24 @@
     .btn-primary-cta {
       width: 100%;
     }
+    @media only screen and (max-width: 1200px) {
+      padding: 20px 60px;
+    }
+    @media only screen and (max-width: 968px) {
+      padding: 20px 120px;
+    }
+  }
+  .info-text span {
+    font-weight: 800;
   }
   .wrap-img-product {
     padding-left: 0;
   }
+  .name-product-order {
+    padding-right: 0;
+  }
   .total-order-price {
+    font-weight: 800;
     margin-bottom: 0;
     display: block;
     .total-price {
