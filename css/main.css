@@ -2080,6 +2080,9 @@ a.menu-item:hover {
   border-bottom: solid 1px #e6e6e6;
   overflow: hidden; }
 
+.wrap-checkout-menu.without-bg {
+  background: none; }
+
 .checkout-menu {
   overflow: hidden;
   position: relative; }
@@ -2470,7 +2473,7 @@ a.menu-item:hover {
   color: #0e0e0e; }
   @media only screen and (max-width: 768px) {
     .h1-category {
-      padding: 10px 10px; } }
+      padding: 10px 10px 20px; } }
 
 .h1-subpage {
   font-family: MohaveBold, sans-serif;
