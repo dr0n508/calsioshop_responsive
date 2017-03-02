@@ -2531,11 +2531,13 @@ a.menu-item:hover {
   float: right;
   width: 300px; }
 
-.title-column-shoping-cart ul li {
-  display: inline-block;
-  width: 25%;
-  float: left;
-  text-align: center; }
+.title-column-shoping-cart {
+  padding-right: 0;
+  padding-left: 0; }
+  .title-column-shoping-cart ul li {
+    display: inline-block;
+    width: 25%;
+    float: left; }
 
 .total-info span {
   font-weight: 800;
