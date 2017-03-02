@@ -2530,6 +2530,9 @@ a.menu-item:hover {
       left: 0;
       top: 50%;
       margin-top: -14px; }
+  @media only screen and (max-width: 768px) {
+    .shoping-cart {
+      padding-bottom: 0; } }
 
 .wrap-item-product {
   border-top: solid 1px #e6e6e6;
@@ -2622,6 +2625,9 @@ a.menu-item:hover {
         border-bottom: solid 1px #e6e6e6; }
       .section-shopping-card .total-info {
         padding: 5px 15px; } }
+
+.green {
+  color: #00af35; }
 
 /****mobile**/
 .to-basket-section {

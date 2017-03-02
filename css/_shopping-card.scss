@@ -37,6 +37,9 @@
       margin-top: -14px;
     }
   }
+  @media only screen and (max-width: 768px) {
+    padding-bottom: 0;
+  }
 }
 
 .wrap-item-product {
@@ -163,6 +166,9 @@
   }
 }
 
+.green {
+  color: #00af35;
+}
 
 /****mobile**/
 .to-basket-section {
