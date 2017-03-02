@@ -2468,6 +2468,9 @@ a.menu-item:hover {
   font-size: 35px;
   padding: 10px 0 20px;
   color: #0e0e0e; }
+  @media only screen and (max-width: 768px) {
+    .h1-category {
+      padding: 10px 10px; } }
 
 .h1-subpage {
   font-family: MohaveBold, sans-serif;
