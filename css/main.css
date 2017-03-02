@@ -2451,13 +2451,25 @@ a.menu-item:hover {
       .checkout3 .total-order-price .total-price {
         width: 100%; } }
 
+.checkout4 .h1-category {
+  color: #067d00; }
 .checkout4 h2 {
   font-size: 20px; }
+.checkout4 .text-description-checkout {
+  margin-bottom: 10px; }
+.checkout4 .header-with-link {
+  padding-left: 15px; }
+  .checkout4 .header-with-link a {
+    float: right;
+    font-size: 13px;
+    text-decoration: underline; }
 .checkout4 section {
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top: solid 1px #e6e6e6;
-  border-bottom: solid 1px #e6e6e6; }
+  border-top: solid 1px #e6e6e6; }
+  .checkout4 section p span {
+    font-weight: 800;
+    margin-left: 5px; }
 .checkout4 .information-order li {
   display: flex;
   justify-content: space-between;
@@ -2472,11 +2484,19 @@ a.menu-item:hover {
   font-size: 20px; }
   .checkout4 .total-price span {
     font-family: inherit; }
+.checkout4 .customer-comments {
+  border-top: solid 1px #e6e6e6;
+  border-bottom: solid 1px #e6e6e6; }
+  .checkout4 .customer-comments input {
+    border: none;
+    outline: none;
+    padding: 20px 0; }
 .checkout4 .footer-checkout4 {
   display: flex;
   align-items: center;
   align-content: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 50px 0; }
   .checkout4 .footer-checkout4 p {
     font-family: MohaveBold, sans-serif;
     font-size: 20px; }
