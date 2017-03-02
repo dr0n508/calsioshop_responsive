@@ -2579,6 +2579,9 @@ a.menu-item:hover {
   .list-payment-method p {
     color: #636363; }
 
+.section-shopping-card {
+  margin-top: 10px; }
+
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
   -webkit-transition: all .15s;
