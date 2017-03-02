@@ -2541,6 +2541,19 @@ a.menu-item:hover {
     padding-left: 0;
     padding-right: 0;
     margin-top: 25px; }
+  @media only screen and (max-width: 768px) {
+    .wrap-item-product .image-goods {
+      padding-right: 0;
+      padding-left: 0; }
+    .wrap-item-product .product-specifications {
+      margin-top: 10px;
+      margin-bottom: 20px; }
+      .wrap-item-product .product-specifications .name-goods {
+        font-family: "MohaveBold", sans-serif;
+        font-size: 16px;
+        color: #222222; }
+    .wrap-item-product .remove-product {
+      margin-top: 10px; } }
 
 .add-basket-message {
   background-color: #f3f3f3;
@@ -2596,6 +2609,16 @@ a.menu-item:hover {
 .section-shopping-card {
   margin-top: 10px;
   border-bottom: solid 1px #e6e6e6; }
+
+/****mobile**/
+.to-basket-section {
+  margin: 10px 0; }
+  .to-basket-section .total-price {
+    font-family: MohaveBold, sans-serif;
+    font-size: 16px; }
+    .to-basket-section .total-price span {
+      font-family: inherit;
+      font-size: 25px; }
 
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
