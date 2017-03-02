@@ -2528,6 +2528,8 @@ a.menu-item:hover {
   border-top: solid 1px #e6e6e6;
   background-color: #f3f3f3;
   padding: 10px 0; }
+  .wrap-item-product a {
+    text-decoration: underline; }
 
 .add-basket-message {
   background-color: #f3f3f3;

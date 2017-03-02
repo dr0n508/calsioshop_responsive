@@ -1,4 +1,5 @@
 .shoping-cart {
+
   padding-bottom: 50px;
   .image-goods {
     img {
@@ -33,6 +34,9 @@
   border-top: solid 1px #e6e6e6;
   background-color: #f3f3f3;
   padding: 10px 0;
+  a {
+    text-decoration: underline;
+  }
 }
 
 .add-basket-message {
