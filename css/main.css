@@ -2428,8 +2428,6 @@ a.menu-item:hover {
     @media only screen and (max-width: 768px) {
       .checkout3 .wrap-btn-submit {
         padding: 15px; } }
-  .checkout3 .info-text span {
-    font-weight: 800; }
   .checkout3 .wrap-img-product {
     padding-left: 0; }
   .checkout3 .name-product-order {
@@ -2444,6 +2442,11 @@ a.menu-item:hover {
       .checkout3 .total-order-price .total-price span {
         float: right;
         font-family: inherit; }
+    @media only screen and (max-width: 768px) {
+      .checkout3 .total-order-price div {
+        width: 100%; }
+      .checkout3 .total-order-price .total-price {
+        width: 100%; } }
 
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
