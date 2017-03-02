@@ -506,8 +506,37 @@
 }
 
 .checkout4 {
-  
+  h2 {
+    font-size: 20px;
+  }
+  section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: solid 1px #e6e6e6;
+    border-bottom: solid 1px #e6e6e6;
+  }
+  .information-order {
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .value-price-quantity {
+        font-weight: 800;
+      }
+    }
+    @media only screen and (max-width: 400px) {
+      font-size: 13px;
+    }
+  }
 }
+
+
+.wrap-product-checkout4 {
+  padding: 10px 0;
+  border-top: solid 1px #e6e6e6;
+}
+
+
 
 
 

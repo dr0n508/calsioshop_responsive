@@ -2451,6 +2451,27 @@ a.menu-item:hover {
       .checkout3 .total-order-price .total-price {
         width: 100%; } }
 
+.checkout4 h2 {
+  font-size: 20px; }
+.checkout4 section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: solid 1px #e6e6e6;
+  border-bottom: solid 1px #e6e6e6; }
+.checkout4 .information-order li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .checkout4 .information-order li .value-price-quantity {
+    font-weight: 800; }
+@media only screen and (max-width: 400px) {
+  .checkout4 .information-order {
+    font-size: 13px; } }
+
+.wrap-product-checkout4 {
+  padding: 10px 0;
+  border-top: solid 1px #e6e6e6; }
+
 .transition, .category .link-category:after, .category .btn-advert {
   -moz-transition: all .15s;
   -webkit-transition: all .15s;
