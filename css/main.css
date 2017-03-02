@@ -2240,7 +2240,22 @@ a.menu-item:hover {
   @media only screen and (max-width: 768px) {
     .information-order .wrap-img-product, .information-order .name-product-order {
       padding-right: 5px;
-      padding-left: 5px; } }
+      padding-left: 5px; }
+    .information-order .name strong {
+      font-size: 14px;
+      color: black; }
+    .information-order .name-product-order {
+      font-size: 12px; }
+    .information-order .wrap-img-product img {
+      width: 160px; }
+    .information-order .wrap-price-quantity {
+      margin-top: 10px; }
+      .information-order .wrap-price-quantity .value-price-quantity {
+        font-family: MohaveBold, sans-serif;
+        font-size: 16px; } }
+  @media only screen and (max-width: 450px) {
+    .information-order .wrap-img-product img {
+      width: 100%; } }
 
 .total-order-price {
   padding: 10px 0;
@@ -2386,9 +2401,12 @@ a.menu-item:hover {
     @media only screen and (max-width: 1200px) {
       .checkout3 section {
         padding: 20px 30px; } }
-    @media only screen and (max-width: 968px) {
+    @media only screen and (max-width: 992px) {
       .checkout3 section {
         padding: 20px 80px; } }
+    @media only screen and (max-width: 768px) {
+      .checkout3 section {
+        padding: 15px; } }
   .checkout3 .header-checkout-3 h2 {
     margin: 10px 0; }
   .checkout3 .header-checkout-3 a {
@@ -2407,6 +2425,9 @@ a.menu-item:hover {
     @media only screen and (max-width: 968px) {
       .checkout3 .wrap-btn-submit {
         padding: 20px 120px; } }
+    @media only screen and (max-width: 768px) {
+      .checkout3 .wrap-btn-submit {
+        padding: 15px; } }
   .checkout3 .info-text span {
     font-weight: 800; }
   .checkout3 .wrap-img-product {
