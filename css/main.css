@@ -2557,12 +2557,6 @@ a.menu-item:hover {
     top: 50%;
     margin-top: -8px; }
 
-.header-shoping-cart h1 {
-  float: left; }
-.header-shoping-cart .btn-primary-cta, .header-shoping-cart .btn-primary-cta-dsc {
-  float: right;
-  width: 300px; }
-
 .title-column-shoping-cart {
   padding-top: 5px;
   padding-bottom: 5px;
