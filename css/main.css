@@ -1325,6 +1325,9 @@ a.menu-item:hover {
     font-size: 20px;
     z-index: 99; }
 
+.content {
+  padding-bottom: 50px; }
+
 .welcome-screen.category-footwear {
   background: url("../images/category_boots/bg-welcome.png") no-repeat right -100%; }
 
