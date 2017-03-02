@@ -2513,6 +2513,21 @@ a.menu-item:hover {
   .shoping-cart .wrap-specifications .name-goods {
     color: #00366e;
     font-weight: 800; }
+  .shoping-cart .information-goods .value-price-quantity {
+    font-family: MohaveBold, sans-serif;
+    font-size: 18px; }
+  .shoping-cart .information-goods .custom-input, .shoping-cart .information-goods .custom-select {
+    margin-bottom: 0;
+    padding: 5px; }
+  .shoping-cart .price-quantity {
+    margin-top: 10px; }
+
+.wrap-item-product {
+  display: flex;
+  align-items: center;
+  border-top: solid 1px #e6e6e6;
+  background-color: #f3f3f3;
+  padding: 10px 0; }
 
 .add-basket-message {
   background-color: #f3f3f3;
@@ -2538,12 +2553,15 @@ a.menu-item:hover {
   width: 300px; }
 
 .title-column-shoping-cart {
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-right: 0;
   padding-left: 0; }
   .title-column-shoping-cart ul li {
     display: inline-block;
     width: 25%;
-    float: left; }
+    float: left;
+    font-size: 13px; }
 
 .total-info span {
   font-weight: 800;

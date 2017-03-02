@@ -12,7 +12,27 @@
       font-weight: 800;
     }
   }
+  .information-goods {
+    .value-price-quantity {
+      font-family: MohaveBold, sans-serif;
+      font-size: 18px;
+    }
+    .custom-input {
+      margin-bottom: 0;
+      padding: 5px;
+    }
+  }
+  .price-quantity {
+    margin-top: 10px;
+  }
+}
 
+.wrap-item-product {
+  display: flex;
+  align-items: center;
+  border-top: solid 1px #e6e6e6;
+  background-color: #f3f3f3;
+  padding: 10px 0;
 }
 
 .add-basket-message {
@@ -46,6 +66,8 @@
 }
 
 .title-column-shoping-cart {
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-right: 0;
   padding-left: 0;
   ul {
@@ -53,6 +75,7 @@
       display: inline-block;
       width: 25%;
       float: left;
+      font-size: 13px;
       //text-align: center;
     }
   }
