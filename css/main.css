@@ -1356,6 +1356,7 @@ a.menu-item:hover {
   margin-right: 10px; }
 
 .pagination-goods {
+  padding: 5px 0;
   float: right; }
   .pagination-goods ul li {
     display: inline-block; }
