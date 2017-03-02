@@ -2532,8 +2532,6 @@ a.menu-item:hover {
       margin-top: -14px; }
 
 .wrap-item-product {
-  display: flex;
-  align-items: center;
   border-top: solid 1px #e6e6e6;
   background-color: #f3f3f3;
   padding: 10px 0; }
@@ -2572,6 +2570,9 @@ a.menu-item:hover {
   font-weight: 800;
   float: right;
   margin-right: 40px; }
+  @media only screen and (max-width: 992px) {
+    .total-info span {
+      margin-right: 0; } }
 .total-info .total-price {
   padding: 5px 0;
   font-family: MohaveBold, sans-serif;

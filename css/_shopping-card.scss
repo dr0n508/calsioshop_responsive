@@ -40,8 +40,8 @@
 }
 
 .wrap-item-product {
-  display: flex;
-  align-items: center;
+  //display: flex;
+  //align-items: center;
   border-top: solid 1px #e6e6e6;
   background-color: #f3f3f3;
   padding: 10px 0;
@@ -91,6 +91,10 @@
     font-weight: 800;
     float: right;
     margin-right: 40px;
+    @media only screen and (max-width: 992px) {
+      margin-right: 0;
+    }
+
   }
   .total-price {
     padding: 5px 0;
