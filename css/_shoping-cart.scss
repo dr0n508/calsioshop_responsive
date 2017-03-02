@@ -1,0 +1,40 @@
+.add-basket-message {
+  background-color: #f3f3f3;
+  position: relative;
+  padding: 10px 10px 10px 30px;
+  a {
+    text-decoration: underline;
+  }
+  &:before {
+    content: "";
+    background: url("../images/check-arrow-green.png") 50% 50% no-repeat;
+    width: 20px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -8px;
+  }
+}
+
+.header-shoping-cart {
+  h1 {
+    float: left;
+  }
+  .btn-primary-cta {
+    float: right;
+    width: 300px;
+  }
+}
+
+.title-column-shoping-cart {
+  ul {
+    li {
+      display: inline-block;
+      width: 25%;
+      float: left;
+      text-align: center;
+    }
+  }
+}
