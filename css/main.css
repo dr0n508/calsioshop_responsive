@@ -2567,17 +2567,6 @@ a.menu-item:hover {
     padding: 5px; }
   .wrap-item-product .price-quantity {
     margin-top: 20px; }
-  .wrap-item-product .free-delivery {
-    margin-top: 20px;
-    border-top: solid 1px #e6e6e6;
-    position: relative;
-    padding: 20px 10px 20px 40px;
-    color: #22ce9b;
-    font-weight: 800; }
-    .wrap-item-product .free-delivery .free-delivery-ico {
-      left: 0;
-      top: 50%;
-      margin-top: -14px; }
   @media only screen and (max-width: 768px) {
     .wrap-item-product .image-goods {
       padding-right: 0;
@@ -2591,6 +2580,18 @@ a.menu-item:hover {
     .wrap-item-product .remove-product {
       margin-top: 10px;
       font-size: 12px; } }
+
+.free-delivery {
+  margin-top: 20px;
+  border-top: solid 1px #e6e6e6;
+  position: relative;
+  padding: 20px 10px 20px 40px;
+  color: #22ce9b;
+  font-weight: 800; }
+  .free-delivery .free-delivery-ico {
+    left: 0;
+    top: 50%;
+    margin-top: -14px; }
 
 .total-info span {
   font-weight: 800;

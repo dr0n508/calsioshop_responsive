@@ -77,19 +77,6 @@
   .price-quantity {
     margin-top: 20px;
   }
-  .free-delivery {
-    margin-top: 20px;
-    border-top: solid 1px #e6e6e6;
-    position: relative;
-    padding: 20px 10px 20px 40px;
-    color: #22ce9b;
-    font-weight: 800;
-    .free-delivery-ico {
-      left: 0;
-      top: 50%;
-      margin-top: -14px;
-    }
-  }
   @media only screen and (max-width: 768px) {
     .image-goods {
       padding-right: 0;
@@ -107,6 +94,20 @@
       margin-top: 10px;
       font-size: 12px;
     }
+  }
+}
+
+.free-delivery {
+  margin-top: 20px;
+  border-top: solid 1px #e6e6e6;
+  position: relative;
+  padding: 20px 10px 20px 40px;
+  color: #22ce9b;
+  font-weight: 800;
+  .free-delivery-ico {
+    left: 0;
+    top: 50%;
+    margin-top: -14px;
   }
 }
 
