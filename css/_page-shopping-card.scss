@@ -1,83 +1,8 @@
 .shoping-cart {
-
   padding-bottom: 50px;
-  .image-goods {
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-  .wrap-specifications {
-    .name-goods {
-      color: #00366e;
-      font-weight: 800;
-    }
-  }
-  .information-goods {
-    .value-price-quantity {
-      font-family: MohaveBold, sans-serif;
-      font-size: 18px;
-    }
-    .custom-input {
-      margin-bottom: 0;
-      padding: 5px;
-    }
-  }
-  .price-quantity {
-    margin-top: 20px;
-  }
-  .free-delivery {
-    margin-top: 20px;
-    border-top: solid 1px #e6e6e6;
-    position: relative;
-    padding: 20px 10px 20px 40px;
-    color: #22ce9b;
-    font-weight: 800;
-    .free-delivery-ico {
-      left: 0;
-      top: 50%;
-      margin-top: -14px;
-    }
-  }
   @media only screen and (max-width: 768px) {
     padding-bottom: 0;
   }
-}
-
-.wrap-item-product {
-  border-top: solid 1px #e6e6e6;
-  background-color: #f3f3f3;
-  padding: 10px 0;
-  a {
-    text-decoration: underline;
-  }
-  .remove-product {
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 25px;
-  }
-  @media only screen and (max-width: 768px) {
-    .image-goods {
-      padding-right: 0;
-      padding-left: 0;
-    }
-    .product-specifications {
-      margin-top: 10px;
-      //margin-bottom: 20px;
-      .name-goods {
-        font-family: "MohaveBold", sans-serif;
-        font-size: 16px;
-        color: #222222;
-      }
-    }
-    .remove-product {
-      margin-top: 10px;
-      font-size: 12px;
-    }
-  }
-
-
-
 }
 
 .add-basket-message {
@@ -111,7 +36,76 @@
       width: 25%;
       float: left;
       font-size: 13px;
-      //text-align: center;
+    }
+  }
+}
+
+.wrap-item-product {
+  border-top: solid 1px #e6e6e6;
+  background-color: #f3f3f3;
+  padding: 10px 0;
+  .image-goods {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .wrap-specifications {
+    .name-goods {
+      color: #00366e;
+      font-weight: 800;
+    }
+  }
+  a {
+    text-decoration: underline;
+  }
+  .remove-product {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 25px;
+  }
+  .information-goods {
+    .value-price-quantity {
+      font-family: MohaveBold, sans-serif;
+      font-size: 18px;
+    }
+    .custom-input {
+      margin-bottom: 0;
+      padding: 5px;
+    }
+  }
+  .price-quantity {
+    margin-top: 20px;
+  }
+  .free-delivery {
+    margin-top: 20px;
+    border-top: solid 1px #e6e6e6;
+    position: relative;
+    padding: 20px 10px 20px 40px;
+    color: #22ce9b;
+    font-weight: 800;
+    .free-delivery-ico {
+      left: 0;
+      top: 50%;
+      margin-top: -14px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .image-goods {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .product-specifications {
+      margin-top: 10px;
+      .name-goods {
+        font-family: "MohaveBold", sans-serif;
+        font-size: 16px;
+        color: #222222;
+      }
+    }
+    .remove-product {
+      margin-top: 10px;
+      font-size: 12px;
     }
   }
 }
@@ -124,7 +118,6 @@
     @media only screen and (max-width: 992px) {
       margin-right: 0;
     }
-
   }
   .total-price {
     padding: 5px 0;
@@ -163,7 +156,6 @@
     }
     .total-info {
       padding: 5px 15px;
-
     }
   }
 }
@@ -173,7 +165,6 @@
   font-weight: 800;
 }
 
-/****mobile**/
 .to-basket-section {
   margin: 10px 0;
   .total-price {
