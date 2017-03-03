@@ -1884,7 +1884,8 @@ a.menu-item:hover {
   .bg-gray .btn-primary-cta, .bg-gray .btn-primary-cta-dsc {
     width: 100%; }
   .bg-gray .btn-secondary-cta {
-    width: 100%; }
+    width: 100%;
+    display: block; }
 
 .offer-calsioshop {
   padding: 10px 50px 10px 10px !important;
