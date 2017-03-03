@@ -1612,7 +1612,11 @@ a.menu-item:hover {
     .card-product-desktop .footer-card-product-desktop .btn-primary-cta, .card-product-desktop .footer-card-product-desktop .btn-primary-cta-dsc, .card-product-desktop .footer-card-product-desktop .btn-secondary-cta {
       width: 100%; }
     .card-product-desktop .footer-card-product-desktop .btn-secondary-cta {
-      background-color: #da2620; }
+      background-color: #da2620;
+      border-bottom: solid 2px #a20500;
+      display: none; }
+    .card-product-desktop .footer-card-product-desktop .btn-secondary-cta.collapsed {
+      display: block; }
     .card-product-desktop .footer-card-product-desktop .code-product {
       position: absolute;
       right: 0;
@@ -1621,6 +1625,9 @@ a.menu-item:hover {
       position: absolute;
       right: 0;
       bottom: 35px; }
+
+#link-finalise-add2basket {
+  display: none; }
 
 .personalisation-tab {
   position: relative; }

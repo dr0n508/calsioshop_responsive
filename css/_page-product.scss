@@ -157,6 +157,11 @@
     }
     .btn-secondary-cta {
       background-color: $red-color;
+      border-bottom: solid 2px $dark-red-color;
+      display: none;
+    }
+    .btn-secondary-cta.collapsed {
+      display: block;
     }
     .code-product {
       position: absolute;
@@ -171,6 +176,10 @@
     }
 
   }
+}
+
+#link-finalise-add2basket {
+  display: none;
 }
 
 .personalisation-tab {
