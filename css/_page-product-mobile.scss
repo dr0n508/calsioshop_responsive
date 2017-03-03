@@ -176,6 +176,9 @@
   }
   .btn-secondary-cta {
     width: 100%;
+    display: none;
+  }
+  .btn-secondary-cta.collapsed{
     display: block;
   }
 }

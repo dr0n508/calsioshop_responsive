@@ -1885,6 +1885,8 @@ a.menu-item:hover {
     width: 100%; }
   .bg-gray .btn-secondary-cta {
     width: 100%;
+    display: none; }
+  .bg-gray .btn-secondary-cta.collapsed {
     display: block; }
 
 .offer-calsioshop {
