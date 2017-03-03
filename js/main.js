@@ -130,6 +130,8 @@ $(document).ready(function () {
 
 
 
+
+
     // /*****select2****/
     //
     // $(".select2-select").select2({
@@ -140,6 +142,18 @@ $(document).ready(function () {
     // });
 
     // $('.select2-selection__arrow').append('<i class="fa fa-chevron-down"></i>');
+
+
+
+    /**
+     * Open filter personal prefer on the mobile
+     * get value of clicked inputs
+     */
+
+    $( "#select-brand-prefer" ).change(function() {
+        $('.filter-personal-prefer').css({'display' : 'block'});
+    });
+
 
 
     /****drop-down-languages******/

@@ -1415,6 +1415,9 @@ a.menu-item:hover {
       padding: 10px;
       background-image: none; } }
 
+.filter-personal-prefer {
+  display: none; }
+
 .form-for-you-team-mobile {
   background: url("../images/category-teamware/bg-welcome-screen.png") 100% 100% no-repeat, #f3f3f3;
   margin-right: -10px;
