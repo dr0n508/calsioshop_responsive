@@ -1611,10 +1611,14 @@ a.menu-item:hover {
       width: 55%; }
     .card-product-desktop .footer-card-product-desktop .btn-primary-cta, .card-product-desktop .footer-card-product-desktop .btn-primary-cta-dsc, .card-product-desktop .footer-card-product-desktop .btn-secondary-cta {
       width: 100%; }
+    .card-product-desktop .footer-card-product-desktop .btn-primary-cta, .card-product-desktop .footer-card-product-desktop .btn-primary-cta-dsc {
+      display: none; }
     .card-product-desktop .footer-card-product-desktop .btn-secondary-cta {
       background-color: #da2620;
       border-bottom: solid 2px #a20500;
       display: none; }
+    .card-product-desktop .footer-card-product-desktop .btn-primary-cta.collapsed, .card-product-desktop .footer-card-product-desktop .collapsed.btn-primary-cta-dsc {
+      display: block; }
     .card-product-desktop .footer-card-product-desktop .btn-secondary-cta.collapsed {
       display: block; }
     .card-product-desktop .footer-card-product-desktop .code-product {

@@ -155,10 +155,16 @@
     .btn-primary-cta, .btn-secondary-cta {
       width: 100%;
     }
+    .btn-primary-cta {
+      display: none;
+    }
     .btn-secondary-cta {
       background-color: $red-color;
       border-bottom: solid 2px $dark-red-color;
       display: none;
+    }
+    .btn-primary-cta.collapsed {
+      display: block;
     }
     .btn-secondary-cta.collapsed {
       display: block;

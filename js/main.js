@@ -254,9 +254,16 @@ $(document).ready(function () {
 
     $('#collapse-personalisation').on('shown.bs.collapse', function () {
         $('#link-finalise-add2basket').css({'display' : 'block'});
+        $('#btn-add2basket').css({'display' : 'none'});
     });
     $('#collapse-personalisation').on('hidden.bs.collapse', function () {
         $('#link-finalise-add2basket').css({'display' : 'none'});
+        $('#btn-add2basket').css({'display' : 'block'});
     })
+
+
+    // save-and-go2front
+    $('#someTab').tab('show')
+
 
 });

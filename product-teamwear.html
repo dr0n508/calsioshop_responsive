@@ -1294,7 +1294,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="collapse-personalisation" class="collapse in" role="tabpanel" aria-labelledby="heading-personalisation">
+                <div id="collapse-personalisation" class="collapse" role="tabpanel" aria-labelledby="heading-personalisation">
                     <div class="personalisation-tab">
                         <a role="button" data-toggle="collapse" href="#collapse-personalisation" href="#persBoots" aria-expanded="true" aria-controls="persBoots" class="cloze-personalisation">
                             <i class="fa fa-times" aria-hidden="true"></i>
@@ -1433,7 +1433,9 @@
                                             <p>Costo Personalizzazione: <span class="sum-personalisation-back">43.2€</span></p>
                                             <a href="#" class="db">Sconto quantità personalizzazione</a>
 
-                                            <a href="#" class="btn-primary-cta">Salvare & personalizzare fronte</a>
+                                            <a id="save-and-go2front" class="btn-primary-cta"
+                                               href="#personalisation-front" aria-controls="profile" role="tab"
+                                               data-toggle="tab">Salvare & personalizzare fronte</a>
                                             <a href="#" class="db">Finalizzare e aggiungi al carrello »</a>
                                         </section>
                                     </form>
@@ -1567,11 +1569,12 @@
                 </div>
                 <div class="footer-card-product-desktop">
                     <div class="wrap-btn">
-                        <a role="button" data-toggle="collapse" href="#collapse-personalisation" aria-expanded="true" aria-controls="collapse-personalisation" class="btn-primary-cta">
+                        <a role="button" data-toggle="collapse" href="#collapse-personalisation" aria-expanded="true"
+                           aria-controls="collapse-personalisation" class="btn-primary-cta collapsed">
                             Personalizza il prodotto
                         </a>
 
-                        <a href="#" class="btn-primary-cta">
+                        <a href="#" id="btn-add2basket" class="btn-primary-cta collapsed">
                             Aggiungi al carrello
                         </a>
                     </div>
