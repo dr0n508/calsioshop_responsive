@@ -24,7 +24,7 @@
   .name-product {
     background:   #f3f3f3;
     font-size: 29px;
-    font-family: "mohavebold";
+    font-family: "mohavebold", sans-serif;
     padding: 10px;
   }
   .complectation-product {
@@ -34,7 +34,7 @@
   .price-rating {
     border-top: solid 1px #ffffff;
     border-bottom: solid 1px #ffffff;
-    padding: 5px 10px;
+    padding: 10px 10px 5px;
     position: relative;
     .price-discount {
       float: left;
@@ -95,7 +95,7 @@
     padding: 10px 0;
     display: flex;
     align-items: center;
-    border-bottom: solid 1px white;
+    //border-bottom: solid 1px white;
     .dropdown-brand {
       width: 55%;
       .custom-select {
@@ -161,7 +161,7 @@
     }
     .btn-primary-cta[aria-expanded] {
       display: none;
-      
+
     }
     .btn-secondary-cta {
       background-color: $red-color;

@@ -1016,7 +1016,8 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     text-align: center;
     margin: 0; }
 .tab-horisontal .nav-tabs > li.active > a, .tab-horisontal .nav-tabs > li.active > a:focus, .tab-horisontal .nav-tabs > li.active > a:hover {
-  background: #f3f3f3; }
+  background: #f3f3f3;
+  color: #054182; }
 .tab-horisontal .nav-tabs > li > a {
   border-radius: 0; }
 .tab-horisontal .tab-content > .active {
@@ -1535,7 +1536,7 @@ ul[data-selected-items] li {
   .card-product-desktop .name-product {
     background: #f3f3f3;
     font-size: 29px;
-    font-family: "mohavebold";
+    font-family: "mohavebold", sans-serif;
     padding: 10px; }
   .card-product-desktop .complectation-product {
     padding: 10px;
@@ -1543,7 +1544,7 @@ ul[data-selected-items] li {
   .card-product-desktop .price-rating {
     border-top: solid 1px #ffffff;
     border-bottom: solid 1px #ffffff;
-    padding: 5px 10px;
+    padding: 10px 10px 5px;
     position: relative; }
     .card-product-desktop .price-rating .price-discount {
       float: left; }
@@ -1592,8 +1593,7 @@ ul[data-selected-items] li {
   .card-product-desktop .select-size {
     padding: 10px 0;
     display: flex;
-    align-items: center;
-    border-bottom: solid 1px white; }
+    align-items: center; }
     .card-product-desktop .select-size .dropdown-brand {
       width: 55%; }
       .card-product-desktop .select-size .dropdown-brand .custom-select {
