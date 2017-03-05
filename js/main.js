@@ -340,6 +340,16 @@ $(document).ready(function () {
         $('.number-of-filters').html('Filtra (' + $( "input:checked" ).length + ')');
     });
 
+    /**
+     * Reset filter
+     */
+    $('[data-filter-reset]').click(function (e) {
+        $('[data-selected-items]').empty();
+        $('[data-global-filter-settings]').text('Filtrare per: ');
+        $('.number-of-filters').html('Filtra (0)');
+        // $(document).trigger('testEvent', [1011]);
+    });
+
 
 
 
