@@ -177,20 +177,24 @@ $(document).ready(function () {
      * jQuery UI slider widget
      * Drag a handle to select a numeric value.
      */
-    $("#slider").slider({
-        min: 0,
-        max: 1000,
-        values: [0, 1000],
-        range: true,
-        stop: function(event, ui) {
-            $("input#minCost").val($("#slider").slider("values",0));
-            $("input#maxCost").val($("#slider").slider("values",1));
-        },
-        slide: function(event, ui){
-            $("input#minCost").val($("#slider").slider("values",0));
-            $("input#maxCost").val($("#slider").slider("values",1));
-        }
-    });
+
+    if ($("#slider").length > 0) {
+        $("#slider").slider({
+            min: 0,
+            max: 1000,
+            values: [0, 1000],
+            range: true,
+            stop: function(event, ui) {
+                $("input#minCost").val($("#slider").slider("values",0));
+                $("input#maxCost").val($("#slider").slider("values",1));
+            },
+            slide: function(event, ui){
+                $("input#minCost").val($("#slider").slider("values",0));
+                $("input#maxCost").val($("#slider").slider("values",1));
+            }
+        });
+    }
+
 
     $("input#minCost").change(function(){
         var value1=$("input#minCost").val();
@@ -222,20 +226,24 @@ $(document).ready(function () {
      * jQuery UI slider widget
      * Drag a handle to select a numeric value.
      */
-    $("#slider-mobile").slider({
-        min: 0,
-        max: 1000,
-        values: [0, 1000],
-        range: true,
-        stop: function(event, ui) {
-            $("input#minCost-mobile").val($("#slider-mobile").slider("values",0));
-            $("input#maxCost-mobile").val($("#slider-mobile").slider("values",1));
-        },
-        slide: function(event, ui){
-            $("input#minCost-mobile").val($("#slider-mobile").slider("values",0));
-            $("input#maxCost-mobile").val($("#slider-mobile").slider("values",1));
-        }
-    });
+
+
+    if ($("#slider-mobile").length > 0) {
+        $("#slider-mobile").slider({
+            min: 0,
+            max: 1000,
+            values: [0, 1000],
+            range: true,
+            stop: function(event, ui) {
+                $("input#minCost-mobile").val($("#slider-mobile").slider("values",0));
+                $("input#maxCost-mobile").val($("#slider-mobile").slider("values",1));
+            },
+            slide: function(event, ui){
+                $("input#minCost-mobile").val($("#slider-mobile").slider("values",0));
+                $("input#maxCost-mobile").val($("#slider-mobile").slider("values",1));
+            }
+        });
+    }
 
     $("input#minCost-mobile").change(function(){
         var value1=$("input#minCost-mobile").val();
@@ -269,10 +277,12 @@ $(document).ready(function () {
     $('#collapse-personalisation').on('shown.bs.collapse', function () {
         $('#link-finalise-add2basket').css({'display' : 'block'});
         $('#btn-add2basket').css({'display' : 'none'});
+        $('.footer-card-product-desktop').css({'borderTop' : 'none'});
     });
     $('#collapse-personalisation').on('hidden.bs.collapse', function () {
         $('#link-finalise-add2basket').css({'display' : 'none'});
         $('#btn-add2basket').css({'display' : 'block'});
+        $('.footer-card-product-desktop').css({'borderTop' : 'solid 1px white'});
     });
 
 

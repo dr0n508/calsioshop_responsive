@@ -1561,7 +1561,8 @@ ul[data-selected-items] li {
         color: #da2620;
         font-family: "mohavebold", sans-serif;
         font-size: 25px;
-        margin-right: 5px; }
+        margin-right: 5px;
+        line-height: 28px; }
     .card-product-desktop .price-rating .rating {
       margin-top: 5px;
       margin-left: 20px;
@@ -1572,7 +1573,8 @@ ul[data-selected-items] li {
         float: left;
         margin-left: 2px; }
       .card-product-desktop .price-rating .rating .number-review {
-        color: #151515; }
+        color: #151515;
+        line-height: 10px; }
     .card-product-desktop .price-rating .deliveri-info {
       text-align: left;
       padding: 0;
@@ -1599,18 +1601,17 @@ ul[data-selected-items] li {
       font-size: 13px;
       color: #003874; }
   .card-product-desktop .select-size-teamwear {
-    padding: 10px;
-    border-bottom: solid 1px white; }
+    padding: 10px 0; }
     .card-product-desktop .select-size-teamwear .dropdown-brand {
       margin-bottom: 0 !important; }
     .card-product-desktop .select-size-teamwear ul {
-      margin-left: 2px;
       border-bottom: solid 1px #e6e6e6; }
       .card-product-desktop .select-size-teamwear ul li {
         font-size: 11px;
         display: inline-block;
         padding: 3px 5px; }
         .card-product-desktop .select-size-teamwear ul li:first-child {
+          margin-left: 10px;
           border-top: solid 1px #e6e6e6;
           border-right: solid 1px #e6e6e6;
           border-left: solid 1px #e6e6e6; }
@@ -1623,7 +1624,8 @@ ul[data-selected-items] li {
         width: 75px; }
   .card-product-desktop .footer-card-product-desktop {
     padding: 10px 0;
-    position: relative; }
+    position: relative;
+    border-top: solid 1px white; }
     .card-product-desktop .footer-card-product-desktop .wrap-btn {
       width: 55%; }
     .card-product-desktop .footer-card-product-desktop .btn-primary-cta, .card-product-desktop .footer-card-product-desktop .btn-primary-cta-dsc, .card-product-desktop .footer-card-product-desktop .btn-secondary-cta {
@@ -1665,6 +1667,9 @@ ul[data-selected-items] li {
     padding: 5px;
     display: block; }
 
+.gray-border {
+  border-top: solid 1px #e6e6e6; }
+
 .title-personalisation {
   font-family: MohaveBold, sans-serif;
   font-size: 18px;
@@ -1699,17 +1704,24 @@ ul[data-selected-items] li {
   .tabs-personalisation .checkbox-color .checkbox22:checked + label span {
     border: solid 2px #808080; }
 
+.sum-personalisation-back {
+  font-weight: 800;
+  margin-right: 10px; }
+
 /*****personalisation-teamwear-back****/
 .tabs-personalisation .nav-tabs > li.active > a {
   background-color: #f3f3f3;
-  color: #0e0e0e; }
+  color: #0e0e0e;
+  border-radius: 0; }
 
-.footer-back-personalisation .btn-primary-cta, .footer-back-personalisation .btn-primary-cta-dsc {
-  width: 55%;
-  display: block; }
-  @media only screen and (max-width: 768px) {
-    .footer-back-personalisation .btn-primary-cta, .footer-back-personalisation .btn-primary-cta-dsc {
-      width: 100%; } }
+.footer-back-personalisation {
+  padding: 5px 0; }
+  .footer-back-personalisation .btn-primary-cta, .footer-back-personalisation .btn-primary-cta-dsc {
+    width: 55%;
+    display: block; }
+    @media only screen and (max-width: 768px) {
+      .footer-back-personalisation .btn-primary-cta, .footer-back-personalisation .btn-primary-cta-dsc {
+        width: 100%; } }
 
 .select-number-name ul li {
   margin-bottom: 5px; }
@@ -1895,10 +1907,10 @@ ul[data-selected-items] li {
 .deliveri-info {
   padding: 10px;
   font-size: 11px;
-  text-align: center;
-  color: #595959; }
+  text-align: center; }
   .deliveri-info span {
-    font-family: "ralewaybold", sans-serif; }
+    font-family: "ralewaybold", sans-serif;
+    color: #148f00; }
 
 .bg-gray {
   background: #f3f3f3; }
