@@ -117,7 +117,7 @@
     }
     .current-price {
       float: left;
-      color: #da2620;
+      color: $red-color;
       font-family: "mohavebold", sans-serif;
       font-size: 25px;
       margin-right: 5px;
@@ -126,7 +126,7 @@
   .rating {
     margin-top: 15px;
     float: right;
-    color: #da2620;
+    color: $red-color;
     line-height: 20px;
     span {
       float: left;

@@ -36,9 +36,9 @@
     font-weight: 600;
   }
   .outlet-red {
-    color: #da2620;
+    color: $red-color;
     &:after, &:before {
-      color: #da2620;
+      color: $red-color;
     }
   }
   .title-accordion.link {
