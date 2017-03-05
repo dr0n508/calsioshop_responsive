@@ -1660,6 +1660,7 @@ ul[data-selected-items] li {
   position: absolute;
   color: #054182;
   right: 0;
+  top: 8px;
   font-size: 16px; }
   .cloze-personalisation:hover {
     text-decoration: none; }

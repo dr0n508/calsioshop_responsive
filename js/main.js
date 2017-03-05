@@ -277,12 +277,12 @@ $(document).ready(function () {
     $('#collapse-personalisation').on('shown.bs.collapse', function () {
         $('#link-finalise-add2basket').css({'display' : 'block'});
         $('#btn-add2basket').css({'display' : 'none'});
-        $('.footer-card-product-desktop').css({'borderTop' : 'none'});
+        $('.footer-card-product-desktop').css({'borderTop' : 'none', 'padding' : '0'});
     });
     $('#collapse-personalisation').on('hidden.bs.collapse', function () {
         $('#link-finalise-add2basket').css({'display' : 'none'});
         $('#btn-add2basket').css({'display' : 'block'});
-        $('.footer-card-product-desktop').css({'borderTop' : 'solid 1px white'});
+        $('.footer-card-product-desktop').css({'borderTop' : 'solid 1px white', 'padding' : '10px 0'});
     });
 
 
