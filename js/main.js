@@ -293,7 +293,7 @@ $(document).ready(function () {
             // add filter selected items fot global filter view
             if ($('[data-global-filter-settings] li[data-filter=' + filterName + ']').length === 0) {
                 $('[data-global-filter-settings]').append(
-                    '<li data-filter=' + filterName + '>' + filterName + '<a class="' + $(this).val() + '" href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+                    '<li data-filter=' + filterName + '>' + filterName + '&#58;' + '<a class="' + $(this).val() + '" href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
                     // '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
                 );
             } else {

@@ -1344,15 +1344,20 @@ a.menu-item:hover {
   .welcome-screen .sub-title {
     font-family: "ralewayregular", sans-serif;
     margin-bottom: 20px; }
-  .welcome-screen .filter-settings {
-    font-size: 12px; }
-    .welcome-screen .filter-settings a {
-      color: #5a5a5a;
-      display: inline-block;
-      margin-left: 10px; }
-      .welcome-screen .filter-settings a .fa {
-        margin-right: 5px;
-        color: #2862a2; }
+
+.filter-settings {
+  font-size: 12px; }
+  .filter-settings a {
+    color: #5a5a5a;
+    display: inline-block;
+    margin-left: 10px; }
+    .filter-settings a .fa {
+      margin-right: 5px;
+      color: #2862a2; }
+
+.filter-settings.desktop li {
+  display: inline-block;
+  margin-left: 5px; }
 
 .order-filter .dropdown-sorting {
   display: inline-block;
