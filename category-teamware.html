@@ -1032,47 +1032,44 @@
                                 <div role="tab" id="headingMarca">
                                     <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMarca" aria-expanded="true" aria-controls="collapseMarca">
                                         Marca
-                                        <ul data-selected-items>
-                                            <!--insert here selected items from filter-->
-                                        </ul>
                                     </a>
                                 </div>
-                                <div id="collapseMarca" class="collapse in" role="tabpanel" aria-labelledby="headingMarca">
+                                <div id="collapseMarca" filterName="Marca" class="collapse in" role="tabpanel" aria-labelledby="headingMarca">
                                     <div class="body-accordion">
                                         <div class="custom-checkbox">
-                                            <input id="Asics" type="checkbox"/>
+                                            <input value="Asics" id="Asics" type="checkbox"/>
                                             <label for="Asics">Asics (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Diadora" type="checkbox"/>
+                                            <input value="Diadora" id="Diadora" type="checkbox"/>
                                             <label for="Diadora">Diadora (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Lotto" type="checkbox"/>
+                                            <input value="Lotto" id="Lotto" type="checkbox"/>
                                             <label for="Lotto">Lotto (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Adidas" type="checkbox"/>
+                                            <input value="Adidas" id="Adidas" type="checkbox"/>
                                             <label for="Adidas">Adidas (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Gems" type="checkbox"/>
+                                            <input value="Gems" id="Gems" type="checkbox"/>
                                             <label for="Gems">Gems (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Mizuno" type="checkbox"/>
+                                            <input value="Mizuno" id="Mizuno" type="checkbox"/>
                                             <label for="Mizuno">Mizuno (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Nike " type="checkbox"/>
+                                            <input value="Nike" id="Nike " type="checkbox"/>
                                             <label for="Nike ">Nike  (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Pantofolo" type="checkbox"/>
+                                            <input id="Pantofolo" value="Pantofolo" type="checkbox"/>
                                             <label for="Pantofolo">Pantofolo D' Oro (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Puma" type="checkbox"/>
+                                            <input value="Puma" id="Puma" type="checkbox"/>
                                             <label for="Puma">Puma (44)</label>
                                         </div>
                                     </div>
@@ -1083,23 +1080,20 @@
                                 <div role="tab" id="headingQuantita">
                                     <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseQuantita" aria-expanded="true" aria-controls="collapseQuantita">
                                         QUANTITÀ
-                                        <ul data-selected-items>
-                                            <!--insert here selected items from filter-->
-                                        </ul>
                                     </a>
                                 </div>
-                                <div id="collapseQuantita" class="collapse in" role="tabpanel" aria-labelledby="headingQuantita">
+                                <div id="collapseQuantita" filterName="QUANTITÀ" class="collapse in" role="tabpanel" aria-labelledby="headingQuantita">
                                     <div class="body-accordion">
                                         <div class="custom-radio">
-                                            <input id="di10" name="Quantita" type="radio">
+                                            <input value="di10" id="di10" name="Quantita" type="radio">
                                             <label for="di10">DI 10+</label>
                                         </div>
                                         <div class="custom-radio">
-                                            <input id="di20" name="Quantita" type="radio">
+                                            <input value="di20" id="di20" name="Quantita" type="radio">
                                             <label for="di20">DI 20+</label>
                                         </div>
                                         <div class="custom-radio">
-                                            <input id="di50" name="Quantita" type="radio">
+                                            <input value="di50" id="di50" name="Quantita" type="radio">
                                             <label for="di50">DI 50+</label>
                                         </div>
                                     </div>
@@ -1112,7 +1106,7 @@
                                         Taglia
                                     </a>
                                 </div>
-                                <div id="collapse-taglia" class="collapse in" role="tabpanel" aria-labelledby="heading-taglia">
+                                <div id="collapse-taglia" filterName="Taglia" class="collapse in" role="tabpanel" aria-labelledby="heading-taglia">
                                     <div class="body-accordion checkbox-size">
                                         <input class="checkbox22" id="3XS" value="3XS" type="checkbox"/>
                                         <label for="3XS"><span>3XS</span></label>
@@ -1153,64 +1147,64 @@
                                         Colore
                                     </a>
                                 </div>
-                                <div id="collapse-Colore" class="collapse in" role="tabpanel" aria-labelledby="heading-Colore">
+                                <div id="collapse-Colore" filterName="Colore" class="collapse in" role="tabpanel" aria-labelledby="heading-Colore">
                                     <div class="body-accordion checkbox-color">
-                                        <input class="checkbox22" id="color-white" type="checkbox">
+                                        <input class="checkbox22" value="" id="color-white" type="checkbox">
                                         <label for="color-white">
                                             <span></span>
                                         </label>
 
-                                        <input class="checkbox22" id="color-black" type="checkbox">
+                                        <input class="checkbox22" value="color-black" id="color-black" type="checkbox">
                                         <label for="color-black">
                                             <span></span>
                                         </label>
 
-                                        <input class="checkbox22" id="color-grey" type="checkbox">
+                                        <input class="checkbox22" value="color-grey" id="color-grey" type="checkbox">
                                         <label for="color-grey">
                                             <span></span>
                                         </label>
 
-                                        <input class="checkbox22" id="color-yellow" type="checkbox">
+                                        <input class="checkbox22" value="color-yellow" id="color-yellow" type="checkbox">
                                         <label for="color-yellow">
                                             <span></span>
                                         </label>
 
-                                        <input class="checkbox22" id="color-orange" type="checkbox">
+                                        <input class="checkbox22" value="color-orange" id="color-orange" type="checkbox">
                                         <label for="color-orange">
                                             <span></span>
                                         </label>
 
-                                        <input class="checkbox22" id="color-blue" type="checkbox">
+                                        <input class="checkbox22" value="color-blue" id="color-blue" type="checkbox">
                                         <label for="color-blue">
                                             <span></span>
                                         </label>
 
-                                        <input class="checkbox22" id="color-darkblue" type="checkbox">
+                                        <input class="checkbox22" value="color-darkblue" id="color-darkblue" type="checkbox">
                                         <label for="color-darkblue">
                                             <span></span>
                                         </label>
 
-                                        <input class="checkbox22" id="color-dark" type="checkbox">
+                                        <input class="checkbox22" value="color-dark" id="color-dark" type="checkbox">
                                         <label for="color-dark">
                                             <span></span>
                                         </label>
 
-                                        <input class="checkbox22" id="color-purple" type="checkbox">
+                                        <input class="checkbox22" value="color-purple" id="color-purple" type="checkbox">
                                         <label for="color-purple">
                                             <span></span>
                                         </label>
 
-                                        <input class="checkbox22" id="color-red" type="checkbox">
+                                        <input class="checkbox22" value="color-red" id="color-red" type="checkbox">
                                         <label for="color-red">
                                             <span></span>
                                         </label>
 
-                                        <input class="checkbox22" id="color-green" type="checkbox">
+                                        <input class="checkbox22" value="color-green" id="color-green" type="checkbox">
                                         <label for="color-green">
                                             <span></span>
                                         </label>
 
-                                        <input class="checkbox22" id="color-brown" type="checkbox">
+                                        <input class="checkbox22" value="color-brown" id="color-brown" type="checkbox">
                                         <label for="color-brown">
                                             <span></span>
                                         </label>
@@ -1224,18 +1218,18 @@
                                         collezione
                                     </a>
                                 </div>
-                                <div id="collapse-collezione" class="collapse in" role="tabpanel" aria-labelledby="heading-collezione">
+                                <div id="collapse-collezione" filterName="Collezione" class="collapse in" role="tabpanel" aria-labelledby="heading-collezione">
                                     <div class="body-accordion">
                                         <div class="custom-checkbox">
-                                            <input id="Magista" type="checkbox"/>
+                                            <input id="Magista" value="Magista" type="checkbox"/>
                                             <label for="Magista">Magista (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Mercurol" type="checkbox"/>
+                                            <input id="Mercurol" value="Mercurol" type="checkbox"/>
                                             <label for="Mercurol">Mercurol (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Hypervenom" type="checkbox"/>
+                                            <input id="Hypervenom" value="Hypervenom" type="checkbox"/>
                                             <label for="Hypervenom">Hypervenom (44)</label>
                                         </div>
                                     </div>
@@ -1423,7 +1417,7 @@
                     </div>
                 </form>
 
-                <div class="order-filter clearfix">
+                <div class="order-filter clearfix hidden-xs">
                     <div class="dropdown dropdown-sorting"><a id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn-order-filter dropdown-toggle">Ordina per novità</a>
                         <ul aria-labelledby="dropdownMenu1" class="dropdown-menu">
                             <li><a href="#">Price: low to high</a></li>
@@ -1432,6 +1426,10 @@
                             <li><a href="#">Latest products</a></li>
                         </ul>
                     </div>
+                    <ul data-global-filter-settings="" class="filter-settings desktop">
+                        Filtrare per:
+                        <!--insert here selected items from filter-->
+                    </ul>
                     <span class="sum-goods">3029 prodotti</span>
                     <div class="pagination-goods hidden-xs">
                         <ul>
@@ -1995,42 +1993,42 @@
                         </ul>
                     </a>
                 </div>
-                <div id="collapseMarca-mobile" class="collapse" role="tabpanel" aria-labelledby="headingMarca-mobile">
+                <div id="collapseMarca-mobile" filterName="Marca" class="collapse" role="tabpanel" aria-labelledby="headingMarca-mobile">
                     <div class="body-accordion">
                         <div class="custom-checkbox">
-                            <input id="Asics-mobile" type="checkbox"/>
+                            <input value="Asics" id="Asics-mobile" type="checkbox"/>
                             <label for="Asics-mobile">Asics (44)</label>
                         </div>
                         <div class="custom-checkbox">
-                            <input id="Diadora-mobile" type="checkbox"/>
+                            <input value="Diadora" id="Diadora-mobile" type="checkbox"/>
                             <label for="Diadora-mobile">Diadora (44)</label>
                         </div>
                         <div class="custom-checkbox">
-                            <input id="Lotto-mobile" type="checkbox"/>
+                            <input value="Lotto" id="Lotto-mobile" type="checkbox"/>
                             <label for="Lotto-mobile">Lotto (44)</label>
                         </div>
                         <div class="custom-checkbox">
-                            <input id="Adidas-mobile" type="checkbox"/>
+                            <input value="Adidas" id="Adidas-mobile" type="checkbox"/>
                             <label for="Adidas-mobile">Adidas (44)</label>
                         </div>
                         <div class="custom-checkbox">
-                            <input id="Gems-mobile" type="checkbox"/>
+                            <input value="Gems" id="Gems-mobile" type="checkbox"/>
                             <label for="Gems-mobile">Gems (44)</label>
                         </div>
                         <div class="custom-checkbox">
-                            <input id="Mizuno-mobile" type="checkbox"/>
+                            <input value="Mizuno" id="Mizuno-mobile" type="checkbox"/>
                             <label for="Mizuno-mobile">Mizuno (44)</label>
                         </div>
                         <div class="custom-checkbox">
-                            <input id="Nike-mobile" type="checkbox"/>
+                            <input value="Nike" id="Nike-mobile" type="checkbox"/>
                             <label for="Nike-mobile">Nike  (44)</label>
                         </div>
                         <div class="custom-checkbox">
-                            <input id="Pantofolo-mobile" type="checkbox"/>
+                            <input value="Pantofolo" id="Pantofolo-mobile" type="checkbox"/>
                             <label for="Pantofolo-mobile">Pantofolo D' Oro (44)</label>
                         </div>
                         <div class="custom-checkbox">
-                            <input id="Puma-mobile" type="checkbox"/>
+                            <input value="Puma" id="Puma-mobile" type="checkbox"/>
                             <label for="Puma-mobile">Puma (44)</label>
                         </div>
                     </div>
@@ -2040,24 +2038,24 @@
             <div class="accordion">
                 <div role="tab" id="headingQuantita-mobile">
                     <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseQuantita-mobile" aria-expanded="true" aria-controls="collapseQuantita-mobile">
-                        QUANTITÀ
+                        QUANTITA
                         <ul data-selected-items>
                             <!--insert here selected items from filter-->
                         </ul>
                     </a>
                 </div>
-                <div id="collapseQuantita-mobile" class="collapse" role="tabpanel" aria-labelledby="headingQuantita-mobile">
+                <div id="collapseQuantita-mobile" filterName="QUANTITA" class="collapse" role="tabpanel" aria-labelledby="headingQuantita-mobile">
                     <div class="body-accordion">
                         <div class="custom-radio">
-                            <input id="di10-mobile" name="Quantita" type="radio">
+                            <input value="di10" id="di10-mobile" name="Quantita" type="radio">
                             <label for="di10-mobile">DI 10+</label>
                         </div>
                         <div class="custom-radio">
-                            <input id="di20-mobile" name="Quantita" type="radio">
+                            <input value="di20" id="di20-mobile" name="Quantita" type="radio">
                             <label for="di20-mobile">DI 20+</label>
                         </div>
                         <div class="custom-radio">
-                            <input id="di50-mobile" name="Quantita" type="radio">
+                            <input value="di50" id="di50-mobile" name="Quantita" type="radio">
                             <label for="di50-mobile">DI 50+</label>
                         </div>
                     </div>
@@ -2068,9 +2066,12 @@
                 <div role="tab" id="heading-taglia-mobile">
                     <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-taglia-mobile" aria-expanded="true" aria-controls="collapse-taglia-mobile">
                         Taglia
+                        <ul data-selected-items>
+                            <!--insert here selected items from filter-->
+                        </ul>
                     </a>
                 </div>
-                <div id="collapse-taglia-mobile" class="collapse" role="tabpanel" aria-labelledby="heading-taglia-mobile">
+                <div id="collapse-taglia-mobile" filterName="Taglia" class="collapse" role="tabpanel" aria-labelledby="heading-taglia-mobile">
                     <div class="body-accordion checkbox-size">
                         <input class="checkbox22" id="3XS-mobile" value="3XS" type="checkbox"/>
                         <label for="3XS-mobile"><span>3XS</span></label>
@@ -2109,66 +2110,69 @@
                 <div role="tab" id="heading-Colore-mobile">
                     <a class="title-accordion icon-plus-minus collapsed" rcolor-whiteole="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-Colore-mobile" aria-expanded="true" aria-controls="collapse-Colore-mobile">
                         Colore
+                        <ul data-selected-items>
+                            <!--insert here selected items from filter-->
+                        </ul>
                     </a>
                 </div>
-                <div id="collapse-Colore-mobile" class="collapse" role="tabpanel" aria-labelledby="heading-Colore-mobile">
+                <div id="collapse-Colore-mobile" filterName="Colore" class="collapse" role="tabpanel" aria-labelledby="heading-Colore-mobile">
                     <div class="body-accordion checkbox-color">
-                        <input class="checkbox22" id="color-white-modal" type="checkbox">
+                        <input class="checkbox22" id="color-white-modal" value="" type="checkbox">
                         <label for="color-white-modal">
                             <span></span>
                         </label>
 
-                        <input class="checkbox22" id="color-black-modal" type="checkbox">
+                        <input class="checkbox22" id="color-black-modal" value="color-black" type="checkbox">
                         <label for="color-black-modal">
                             <span></span>
                         </label>
 
-                        <input class="checkbox22" id="color-grey-modal" type="checkbox">
+                        <input class="checkbox22" id="color-grey-modal" value="color-grey" type="checkbox">
                         <label for="color-grey-modal">
                             <span></span>
                         </label>
 
-                        <input class="checkbox22" id="color-yellow-modal" type="checkbox">
+                        <input class="checkbox22" id="color-yellow-modal" value="color-yellow" type="checkbox">
                         <label for="color-yellow-modal">
                             <span></span>
                         </label>
 
-                        <input class="checkbox22" id="color-orange-modal" type="checkbox">
+                        <input class="checkbox22" id="color-orange-modal" value="color-orange" type="checkbox">
                         <label for="color-orange-modal">
                             <span></span>
                         </label>
 
-                        <input class="checkbox22" id="color-blue-modal" type="checkbox">
+                        <input class="checkbox22" id="color-blue-modal" value="color-blue" type="checkbox">
                         <label for="color-blue-modal">
                             <span></span>
                         </label>
 
-                        <input class="checkbox22" id="color-darkblue-modal" type="checkbox">
+                        <input class="checkbox22" id="color-darkblue-modal" value="color-darkblue" type="checkbox">
                         <label for="color-darkblue-modal">
                             <span></span>
                         </label>
 
-                        <input class="checkbox22" id="color-dark-modal" type="checkbox">
+                        <input class="checkbox22" id="color-dark-modal" value="color-dark" type="checkbox">
                         <label for="color-dark-modal">
                             <span></span>
                         </label>
 
-                        <input class="checkbox22" id="color-purple-modal" type="checkbox">
+                        <input class="checkbox22" id="color-purple-modal" value="color-purple" type="checkbox">
                         <label for="color-purple-modal">
                             <span></span>
                         </label>
 
-                        <input class="checkbox22" id="color-red-modal" type="checkbox">
+                        <input class="checkbox22" id="color-red-modal" value="color-red" type="checkbox">
                         <label for="color-red-modal">
                             <span></span>
                         </label>
 
-                        <input class="checkbox22" id="color-green-modal" type="checkbox">
+                        <input class="checkbox22" id="color-green-modal" value="color-green" type="checkbox">
                         <label for="color-green-modal">
                             <span></span>
                         </label>
 
-                        <input class="checkbox22" id="color-brown-modal" type="checkbox">
+                        <input class="checkbox22" id="color-brown-modal" value="color-brown" type="checkbox">
                         <label for="color-brown-modal">
                             <span></span>
                         </label>
@@ -2180,20 +2184,23 @@
                 <div role="tab" id="heading-collezione-mobile">
                     <a class="title-accordion icon-plus-minus collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-collezione-mobile" aria-expanded="true" aria-controls="collapse-collezione">
                         collezione
+                        <ul data-selected-items>
+                            <!--insert here selected items from filter-->
+                        </ul>
                     </a>
                 </div>
-                <div id="collapse-collezione-mobile" class="collapse" role="tabpanel" aria-labelledby="heading-collezione-mobile">
+                <div id="collapse-collezione-mobile" filterName="collezione" class="collapse" role="tabpanel" aria-labelledby="heading-collezione-mobile">
                     <div class="body-accordion">
                         <div class="custom-checkbox">
-                            <input id="Magista-mobile" type="checkbox"/>
+                            <input id="Magista-mobile" value="Magista" type="checkbox"/>
                             <label for="Magista-mobile">Magista (44)</label>
                         </div>
                         <div class="custom-checkbox">
-                            <input id="Mercurol-mobile" type="checkbox"/>
+                            <input id="Mercurol-mobile" value="Mercurol" type="checkbox"/>
                             <label for="Mercurol-mobile">Mercurol (44)</label>
                         </div>
                         <div class="custom-checkbox">
-                            <input id="Hypervenom-mobile" type="checkbox"/>
+                            <input id="Hypervenom-mobile" value="Hypervenom" type="checkbox"/>
                             <label for="Hypervenom-mobile">Hypervenom (44)</label>
                         </div>
                     </div>
