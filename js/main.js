@@ -276,5 +276,71 @@ $(document).ready(function () {
     });
 
 
+    /**
+     * Custom filter selection
+     * get value of clicked inputs
+     */
+    $('.filter input').click(function (e) {
+        var str = $(this).closest('[filterName]');
+        var filterName = str.attr('filterName');
+        console.log(filterName);
+        $('.number-of-filters').html('Filtra (' + $( "input:checked" ).length + ')');
+        if ($(this).is(':checked')) {
+            // add filter selected items fot appropriate filter
+            $( e.target ).closest('.accordion').find('[data-selected-items]').append(
+                '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+            );
+            // add filter selected items fot global filter view
+            if ($('[data-global-filter-settings] li[data-filter=' + filterName + ']').length === 0) {
+                $('[data-global-filter-settings]').append(
+                    '<li data-filter=' + filterName + '>' + filterName + '<a class="' + $(this).val() + '" href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+                    // '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+                );
+            } else {
+                $('[data-global-filter-settings]  li[data-filter=' + filterName + ']').append(
+                    // '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+                    '<a class="' + $(this).val() + '" href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a>'
+                );
+            }
+
+        } else {
+            // remove filter selected items for appropriate filter
+            $( e.target ).closest('.accordion').find('[data-selected-items]').find('.' + $(this).val()).remove();
+            // remove filter selected items fot global filter view
+            $('[data-global-filter-settings]').find('.' + $(this).val()).remove();
+        }
+    });
+
+
+    /**
+     * Remove selected filter options
+     * and uncheck inputs at filter options
+     */
+    $('[data-selected-items]').click(function (e) {
+        var clickedLiClass = $(e.target).closest('li').attr('class');
+        console.log('++++++++++');
+        console.log(clickedLiClass);
+        //remove filter option from global filter list
+        $('[data-global-filter-settings]').find('.' + clickedLiClass).remove();
+        // remove filter option from filter option list
+        $(e.target).closest('li').remove();
+        // uncheck filter option
+        $(this).parent().next().find('#' + clickedLiClass).attr('checked', false);
+        $('.number-of-filters').html('Filtra (' + $( "input:checked" ).length + ')');
+    });
+
+    $('[data-global-filter-settings]').click(function (e) {
+        var clickedLiClass = $(e.target).closest('a').attr('class');
+        if ($(e.target).closest('li').children().length === 1) {
+            $(e.target).closest('li').remove();
+        }
+        $('#filterAccordion').find('[data-selected-items]').find('.' + clickedLiClass).remove();
+        $('[data-global-filter-settings]').find('.' + clickedLiClass).remove();
+        $('#filterAccordion').find('input#' + clickedLiClass).attr('checked', false);
+        $('.number-of-filters').html('Filtra (' + $( "input:checked" ).length + ')');
+    });
+
+
+
 
 });

@@ -212,3 +212,14 @@
   }
 }
 
+
+ul[data-selected-items] {
+  li {
+    display: inline-block;
+    a {
+      font-size: 12px;
+      margin-right: 10px;
+    }
+  }
+}
+

@@ -1496,6 +1496,12 @@ a.menu-item:hover {
   .free-delivery-ico .fa {
     font-size: 14px; }
 
+ul[data-selected-items] li {
+  display: inline-block; }
+  ul[data-selected-items] li a {
+    font-size: 12px;
+    margin-right: 10px; }
+
 .sub-content {
   padding: 30px 0; }
 
