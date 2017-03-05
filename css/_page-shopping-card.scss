@@ -6,7 +6,7 @@
 }
 
 .add-basket-message {
-  background-color: #f3f3f3;
+  background-color: $bg-color;
   position: relative;
   padding: 10px 10px 10px 30px;
   a {
@@ -42,7 +42,7 @@
 
 .wrap-item-product {
   border-top: solid 1px $border-color;
-  background-color: #f3f3f3;
+  background-color: $bg-color;
   padding: 10px 0;
   .image-goods {
     img {
@@ -150,7 +150,7 @@
     .coupon {
       margin-left: -15px;
       margin-right: -15px;
-      background-color: #f3f3f3;
+      background-color: $bg-color;
       padding: 5px 15px;
       border-top: solid 1px $border-color;
       border-bottom: solid 1px $border-color;

@@ -3,7 +3,7 @@
 }
 
 .card-product-desktop {
-  background: #f3f3f3;
+  background: $bg-color;
   padding-bottom: 10px;
   border-bottom: solid 3px #dedede;
   &:before {
@@ -16,13 +16,13 @@
     height: 0;
     border-style: solid;
     border-width: 30px 30px 30px 0;
-    border-color: transparent #f3f3f3 transparent transparent;
+    border-color: transparent $bg-color transparent transparent;
     @media only screen and (max-width: 992px) {
       display: none;
     }
   }
   .name-product {
-    background:   #f3f3f3;
+    background:   $bg-color;
     font-size: 29px;
     font-family: "mohavebold", sans-serif;
     padding: 10px;
@@ -269,7 +269,7 @@ position: relative;
 /*****personalisation-teamwear-back****/
 .tabs-personalisation {
   .nav-tabs>li.active>a {
-    background-color: #f3f3f3;
+    background-color: $bg-color;
     color: $black-text-color;
     border-radius: 0;
   }
@@ -374,7 +374,7 @@ position: relative;
   }
   .pers-section {
     padding: 10px;
-    background-color: #f3f3f3;
+    background-color: $bg-color;
     border-bottom: 1px solid #ddd;
   }
 }

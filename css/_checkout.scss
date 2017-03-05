@@ -24,7 +24,7 @@
       border-right: none;
     }
     float: left;
-    border-right: solid 1px #f3f3f3;
+    border-right: solid 1px $bg-color;
     -webkit-transform: skew(-30deg);
     -moz-transform: skew(-30deg);
     -o-transform: skew(-30deg);
@@ -104,7 +104,7 @@
   padding-left: 0;
   form {
     margin: 20px 0;
-    background-color: #f3f3f3;
+    background-color: $bg-color;
     padding: 20px 80px;
     @media only screen and (max-width: 1200px) {
       padding: 20px 30px;
@@ -250,7 +250,7 @@
 
 
 .advantages-footer {
-  background: #f3f3f3;
+  background: $bg-color;
   overflow: hidden;
   .wrap-advantages-footer {
     border-bottom: solid 1px #dddddd;
@@ -351,7 +351,7 @@
   padding-left: 0;
 }
 .form-delivery-info {
-  background-color: #f3f3f3;
+  background-color: $bg-color;
   font-size: 13px;
   h2 { font-size: 20px; }
   section {
@@ -379,7 +379,7 @@
 }
 
 .checkout3 {
-  background-color: #f3f3f3;
+  background-color: $bg-color;
   margin-bottom: 50px;
   section {
     padding: 20px 80px;

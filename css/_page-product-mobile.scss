@@ -63,7 +63,7 @@
 }
 
 .outside p {
-  background: #f3f3f3;
+  background: $bg-color;
   border-top: solid 1px #ffffff;
 }
 .outside #slider-prev, .outside #slider-next, .outside #slider-prev2, .outside #slider-next2 {
@@ -83,7 +83,7 @@
 
 
 .name-product {
-  background:   #f3f3f3;
+  background:   $bg-color;
   font-size: 29px;
   font-family: "mohavebold";
   padding: 10px;
@@ -94,7 +94,7 @@
 }
 
 .price-rating {
-  background: #f3f3f3;
+  background: $bg-color;
   border-top: solid 1px #ffffff;
   border-bottom: solid 1px #ffffff;
   padding: 5px 10px;
@@ -170,7 +170,7 @@
 }
 
 .bg-gray {
-  background: #f3f3f3;
+  background: $bg-color;
   .btn-primary-cta {
     width: 100%;
   }
@@ -277,16 +277,16 @@
     }
   }
   .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    background: #f3f3f3;
+    background: $bg-color;
   }
   .nav-tabs>li>a {
     border-radius: 0;
     padding: 10px 0;
   }
   .tab-content {
-    background: #f3f3f3;
+    background: $bg-color;
     .bx-viewport {
-      background: #f3f3f3;
+      background: $bg-color;
       padding-left: 10px;
       //      position: static !important;
     }

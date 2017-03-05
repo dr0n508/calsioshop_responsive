@@ -102,7 +102,7 @@
   margin-top: 15px;
   background-image: url("../images/category-teamware/bg-welcome-screen-desktop.png");
   background-position: 100% 100%;
-  background-color: #f3f3f3;
+  background-color: $bg-color;
   background-repeat: no-repeat;
   padding: 10px 280px 10px 10px;
   h2 {
@@ -127,7 +127,7 @@
 }
 
 .form-for-you-team-mobile {
-  background: url("../images/category-teamware/bg-welcome-screen.png") 100% 100% no-repeat, #f3f3f3;
+  background: url("../images/category-teamware/bg-welcome-screen.png") 100% 100% no-repeat, $bg-color;
   margin-right: -10px;
   margin-left: -10px;
   padding: 10px;

@@ -52,7 +52,7 @@
   }
   .navbar-nav>li>.dropdown-menu {
     z-index: 999999;
-    background-color: #f3f3f3;
+    background-color: $bg-color;
     width: 90%;
     padding: 20px 0px;
     @media only screen and (max-width: 1200px) {
