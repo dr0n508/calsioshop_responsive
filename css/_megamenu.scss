@@ -13,7 +13,7 @@
     position: relative;
     font-family: MohaveBold, sans-serif;
     font-size: 17px;
-    color: #054182;
+    color: $blue-color;
     &:after, &:before {
       position: absolute;
       font-family: FontAwesome;
@@ -93,14 +93,14 @@
       padding: 0;
       font-family: MohaveBold, sans-serif;
       font-size: 16px;
-      color: #054182;
+      color: $blue-color;
     }
   }
   .mega-dropdown-menu .dropdown-header.main {
     a {
       display: inline-block;
       font-size: 20px;
-      border-bottom: solid 1px #054182;
+      border-bottom: solid 1px $blue-color;
       margin-bottom: 10px;
     }
   }
@@ -170,7 +170,7 @@
       float: right;
       font-size: 18px;
       text-decoration: none;
-      color: #054182;
+      color:$blue-color;
     }
   }
 }

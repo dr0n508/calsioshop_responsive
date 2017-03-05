@@ -198,7 +198,7 @@ position: relative;
 .cloze-personalisation {
   text-align: center;
   position: absolute;
-  color: #054182;
+  color: $blue-color;
   right: 0;
   top: 8px;
   font-size: 16px;
@@ -219,7 +219,7 @@ position: relative;
 .title-personalisation {
   font-family: MohaveBold, sans-serif;
   font-size: 18px;
-  color: #054182;
+  color: $blue-color;
   padding: 10px 0;
   display: block;
 }
@@ -230,7 +230,7 @@ position: relative;
 .sub-title-personalisation {
   font-family: MohaveBold, sans-serif;
   font-size: 16px;
-  color: #054182;
+  color: $blue-color;
   padding: 10px 0;
   display: block;
 }
@@ -347,7 +347,7 @@ position: relative;
   font-size: 16px;
   text-decoration: none;
   font-family: "mohavebold", sans-serif;
-  color: #054182;
+  color: $blue-color;
   background-color: #cbd5e0;
   border-right: solid 1px #ffffff;
   float: left;

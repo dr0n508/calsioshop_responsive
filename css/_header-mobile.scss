@@ -71,7 +71,7 @@
     }
   }
   .navbar-toggle.collapsed {
-    color: #054182;
+    color: $blue-color;
     -webkit-transform: skew(-30deg);
     -moz-transform: skew(-30deg);
     -o-transform: skew(-30deg);
@@ -113,7 +113,7 @@
         float: right;
         font-size: 18px;
         text-decoration: none;
-        color: #054182;
+        color: $blue-color;
       }
     }
   }

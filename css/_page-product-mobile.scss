@@ -43,7 +43,7 @@
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
-  background: #054182;
+  background: $blue-color;
 }
 
 .bx-wrapper img {
@@ -71,7 +71,7 @@
     font-family: "mohavebold", sans-serif;
     font-size: 16px;
     padding: 10px 0;
-    color: #054182;
+    color:$blue-color;
   }
 
   .bx-prev.disabled, .bx-next.disabled  {
@@ -271,7 +271,7 @@
       font-family: "mohavebold", sans-serif;
       font-size: 16px;
       padding: 10px;
-      color: #054182;
+      color: $blue-color;
       text-align: center;
       margin: 0;
     }

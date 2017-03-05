@@ -30,7 +30,7 @@
   }
   .basket {
     margin-left: 80px;
-    a {color: #054182; }
+    a {color: $blue-color; }
     .number-goods-in-basket {
       font-family: MohaveBold, sans-serif;
       font-size: 17px;
@@ -71,13 +71,13 @@
     }
   }
   a:last-child {
-    background: #054182;
+    background: $blue-color;
     padding-right: 0;
     float: right;
   }
   a:nth-child(2) {
     //padding: 0 20px;
-    background: #054182;
+    background: $blue-color;
     -webkit-transform: skew(-30deg);
     -moz-transform: skew(-30deg);
     -o-transform: skew(-30deg);

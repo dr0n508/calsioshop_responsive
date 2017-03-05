@@ -174,7 +174,7 @@
     content: "\f00c";
     font-family: FontAwesome;
     font-size: 16px;
-    color: #054182;
+    color: $blue-color;
     text-align: center;
     line-height: 16px;
   }
@@ -212,7 +212,7 @@
     height: 10px;
     top: 50%;
     margin-top: -5px;
-    background-color: #054182;
+    background-color: $blue-color;
     border-radius: 50%;
   }
 }
@@ -224,7 +224,7 @@
   width: 100%;
   padding: 7px 10px;
   border: solid 1px #dddddd;
-  color: #054182;
+  color: $blue-color;
   margin-bottom: 10px;
 
 }
@@ -246,7 +246,7 @@
     color: gray;
   }
   option {
-    color: #054182;
+    color: $blue-color;
   }
   option[value=""][disabled] {
     display: none;
@@ -294,7 +294,7 @@
 
   .select2-container--default .select2-selection--single {
     line-height: 25px !important;
-    color: #054182 !important;
+    color: $blue-color !important;
     position: relative;
     &:after {
       content: '';
