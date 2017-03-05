@@ -5,16 +5,12 @@ $(document).ready(function () {
 
     $('.bxslider').bxSlider();
 
-
     var frontePers = $('.bxslider-fronte').bxSlider();
-
 
     $('#collapse-fronte-pers').on('shown.bs.collapse', function () {
         console.log('SHOW #collapse-fronte-pers');
         frontePers.reloadSlider();
     });
-
-
 
     /******slider-recently-viewed-mobile*****/
 
@@ -65,50 +61,6 @@ $(document).ready(function () {
         pause: 3000
     });
 
-
-    /****SameHeight*categories******/
-
-    // maintainSameHeight($('[data-same-height="category"]'));
-    // function maintainSameHeight($list) {
-    //     var height = 0;
-    //     $list.each(function () {
-    //         var $this = $(this);
-    //         if ($this.outerHeight() > height) {
-    //             height = $this.outerHeight();
-    //         }
-    //     });
-    //     $list.css("height", height);
-    // }
-
-    /****SameHeight*categories******/
-
-    // maintainSameHeight($('.goods-information a '));
-    // function maintainSameHeight($list) {
-    //     var height = 0;
-    //     $list.each(function () {
-    //         var $this = $(this);
-    //         if ($this.outerHeight() > height) {
-    //             height = $this.outerHeight();
-    //         }
-    //     });
-    //     $list.css("height", height);
-    // }
-
-
-    /****SameHeight*test******/
-
-    // maintainSameHeight($('[data-same-height="name-price-product"]'));
-    // function maintainSameHeight($list) {
-    //     var height = 0;
-    //     $list.each(function () {
-    //         var $this = $(this);
-    //         if ($this.outerHeight() > height) {
-    //             height = $this.outerHeight();
-    //         }
-    //     });
-    //     $list.css("height", height);
-    // }
-
     /****select2color****/
 
     function formatColor (state) {
@@ -127,24 +79,6 @@ $(document).ready(function () {
 
     });
 
-
-
-
-
-
-    // /*****select2****/
-    //
-    // $(".select2-select").select2({
-    //     minimumResultsForSearch: -1,
-    //     placeholder: "Seleziona una marca"
-    // }).on("change", function(e) {
-    //     $('.filter-personal-prefer').addClass("db");
-    // });
-
-    // $('.select2-selection__arrow').append('<i class="fa fa-chevron-down"></i>');
-
-
-
     /**
      * Open filter personal prefer on the mobile
      * get value of clicked inputs
@@ -155,8 +89,10 @@ $(document).ready(function () {
     });
 
 
+    /**
+     * Drop-down-languages
+     */
 
-    /****drop-down-languages******/
     function formatState (state) {
         if (!state.id) { return state.text; }
         var $state = $(
@@ -171,11 +107,12 @@ $(document).ready(function () {
         templateResult: formatState
     });
 
-    /*****desktop*slider-price******/
+
 
     /**
      * jQuery UI slider widget
      * Drag a handle to select a numeric value.
+     * desktop
      */
 
     if ($("#slider").length > 0) {
@@ -220,11 +157,10 @@ $(document).ready(function () {
         $("#slider").slider("values",1,value2);
     });
 
-    /*****mobile*slider-price******/
-
     /**
      * jQuery UI slider widget
      * Drag a handle to select a numeric value.
+     * mobile
      */
 
 
@@ -328,8 +264,6 @@ $(document).ready(function () {
      */
     $('[data-selected-items]').click(function (e) {
         var clickedLiClass = $(e.target).closest('li').attr('class');
-        console.log('++++++++++');
-        console.log(clickedLiClass);
         //remove filter option from global filter list
         $('[data-global-filter-settings]').find('.' + clickedLiClass).remove();
         // remove filter option from filter option list
@@ -359,8 +293,6 @@ $(document).ready(function () {
         $('.number-of-filters').html('Filtra (0)');
         // $(document).trigger('testEvent', [1011]);
     });
-
-
 
 
 });

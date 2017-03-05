@@ -14,9 +14,6 @@
     text-decoration: none;
     color: $white-color;
   }
-  @media only screen and (max-width: 768px) {
-    //width: 100%;
-  }
 }
 
 .btn-primary-cta {
@@ -33,7 +30,6 @@
   .descript-text {
     display: block;
     font: 12px ralewayregular, sans-serif;
-
   }
 }
 
@@ -46,9 +42,7 @@
   .descript-text {
     display: block;
     font: 12px ralewayregular, sans-serif;
-
   }
-
 }
 
 .btn-advert {
