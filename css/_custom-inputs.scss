@@ -239,7 +239,7 @@
   -ms-appearance: none;
   appearance: none!important;
   background-image: url("../images/arrow-downt.png");
-  background-position: 98% 50%;
+  background-position: calc(100% - 5px) 50%;
   background-repeat: no-repeat;
   &:invalid {
     color: gray;
@@ -253,6 +253,10 @@
   option[disabled] {
     color: gray;
   }
+}
+
+.custom-select::-ms-expand {
+  display: none;
 }
 
 /****select2***/
