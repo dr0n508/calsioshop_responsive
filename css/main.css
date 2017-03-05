@@ -1634,7 +1634,7 @@ ul[data-selected-items] li {
       width: 55%; }
     .card-product-desktop .footer-card-product-desktop .btn-primary-cta, .card-product-desktop .footer-card-product-desktop .btn-primary-cta-dsc, .card-product-desktop .footer-card-product-desktop .btn-secondary-cta {
       width: 100%; }
-    .card-product-desktop .footer-card-product-desktop .btn-primary-cta, .card-product-desktop .footer-card-product-desktop .btn-primary-cta-dsc {
+    .card-product-desktop .footer-card-product-desktop .btn-primary-cta[aria-expanded], .card-product-desktop .footer-card-product-desktop [aria-expanded].btn-primary-cta-dsc {
       display: none; }
     .card-product-desktop .footer-card-product-desktop .btn-secondary-cta {
       background-color: #da2620;

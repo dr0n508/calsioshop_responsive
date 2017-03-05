@@ -159,8 +159,9 @@
     .btn-primary-cta, .btn-secondary-cta {
       width: 100%;
     }
-    .btn-primary-cta {
+    .btn-primary-cta[aria-expanded] {
       display: none;
+      
     }
     .btn-secondary-cta {
       background-color: $red-color;
