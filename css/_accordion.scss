@@ -5,7 +5,7 @@
     display: block;
     padding: 10px 15px;
     color: $blue-color;
-    border-bottom: solid 1px #e6e6e6;
+    border-bottom: solid 1px $border-color;
     background-color: #f3f3f3;
     font-family: 'mohavebold', sans-serif;
     font-size: 16px;
@@ -15,7 +15,7 @@
     font-family: "ralewayregular", sans-serif;
     padding: 10px;
     .custom-checkbox, .custom-radio {
-      border-bottom: solid 1px #e6e6e6;
+      border-bottom: solid 1px $border-color;
     }
   }
   .body-accordion.checkbox-color {
@@ -129,7 +129,7 @@
   font-family: "ralewayregular", sans-serif;
   padding: 10px;
   display: block;
-  border-bottom: solid 1px #e6e6e6;
+  border-bottom: solid 1px $border-color;
   background-color: $white-color;
   &:hover {
     text-decoration: none;

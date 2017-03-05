@@ -41,7 +41,7 @@
 }
 
 .wrap-item-product {
-  border-top: solid 1px #e6e6e6;
+  border-top: solid 1px $border-color;
   background-color: #f3f3f3;
   padding: 10px 0;
   .image-goods {
@@ -99,7 +99,7 @@
 
 .free-delivery {
   margin-top: 20px;
-  border-top: solid 1px #e6e6e6;
+  border-top: solid 1px $border-color;
   position: relative;
   padding: 20px 10px 20px 40px;
   color: #22ce9b;
@@ -144,7 +144,7 @@
 
 .section-shopping-card {
   margin-top: 10px;
-  border-bottom: solid 1px #e6e6e6;
+  border-bottom: solid 1px $border-color;
   @media only screen and (max-width: 768px) {
     margin-top: 0;
     .coupon {
@@ -152,8 +152,8 @@
       margin-right: -15px;
       background-color: #f3f3f3;
       padding: 5px 15px;
-      border-top: solid 1px #e6e6e6;
-      border-bottom: solid 1px #e6e6e6;
+      border-top: solid 1px $border-color;
+      border-bottom: solid 1px $border-color;
     }
     .total-info {
       padding: 5px 15px;

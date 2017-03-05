@@ -1,8 +1,8 @@
 /*****checkout****/
 .wrap-checkout-menu {
   background-color: $blue-color;
-  border-top: solid 1px #e6e6e6;
-  border-bottom: solid 1px #e6e6e6;
+  border-top: solid 1px $border-color;
+  border-bottom: solid 1px $border-color;
   overflow: hidden;
 }
 .wrap-checkout-menu.without-bg {
@@ -163,7 +163,7 @@
 }
 
 .information-order {
-  border-top: solid 1px #e6e6e6;
+  border-top: solid 1px $border-color;
   padding-top: 10px;
   .wrap-image-name-order {
     padding-right: 0;
@@ -236,8 +236,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: solid 1px #e6e6e6;
-  border-bottom: solid 1px #e6e6e6;
+  border-top: solid 1px $border-color;
+  border-bottom: solid 1px $border-color;
   .total-price {
     font-family: MohaveBold, sans-serif;
     font-size: 20px;
@@ -287,7 +287,7 @@
       p:before { display: none}
     }
     .advantage-2 {
-      background: #e6e6e6;
+      background: $border-color;
       border-left: solid 1px #dddddd;
       width: 33%;
       left: 25px;
@@ -355,7 +355,7 @@
   font-size: 13px;
   h2 { font-size: 20px; }
   section {
-    border-bottom: solid 1px #e6e6e6;
+    border-bottom: solid 1px $border-color;
     padding: 20px 80px 10px;
   }
   .info-text { margin-top: 10px; }
@@ -383,7 +383,7 @@
   margin-bottom: 50px;
   section {
     padding: 20px 80px;
-    border-top: solid 1px #e6e6e6;
+    border-top: solid 1px $border-color;
     &:first-child {
       border-top: none;
     }
@@ -457,7 +457,7 @@
   section {
     padding-top: 20px;
     padding-bottom: 20px;
-    border-top: solid 1px #e6e6e6;
+    border-top: solid 1px $border-color;
     p span {
       font-weight: 800;
       margin-left: 5px;
@@ -482,8 +482,8 @@
     span { font-family: inherit}
   }
   .customer-comments {
-    border-top: solid 1px #e6e6e6;
-    border-bottom: solid 1px #e6e6e6;
+    border-top: solid 1px $border-color;
+    border-bottom: solid 1px $border-color;
     input {
       border: none;
       outline: none;
@@ -505,5 +505,5 @@
 
 .wrap-product-checkout4 {
   padding: 10px 0;
-  border-top: solid 1px #e6e6e6;
+  border-top: solid 1px $border-color;
 }
