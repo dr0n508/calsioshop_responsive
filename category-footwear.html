@@ -994,42 +994,42 @@
                                         </ul>
                                     </a>
                                 </div>
-                                <div id="collapseMarca" class="collapse in" role="tabpanel" aria-labelledby="headingMarca">
+                                <div id="collapseMarca" filterName="Marca" class="collapse in" role="tabpanel" aria-labelledby="headingMarca">
                                     <div class="body-accordion">
                                         <div class="custom-checkbox">
-                                            <input id="Asics" type="checkbox"/>
+                                            <input value="Asics" id="Asics" type="checkbox"/>
                                             <label for="Asics">Asics (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Diadora" type="checkbox"/>
+                                            <input value="Diadora" id="Diadora" type="checkbox"/>
                                             <label for="Diadora">Diadora (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Lotto" type="checkbox"/>
+                                            <input value="Lotto" id="Lotto" type="checkbox"/>
                                             <label for="Lotto">Lotto (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Adidas" type="checkbox"/>
+                                            <input value="Adidas" id="Adidas" type="checkbox"/>
                                             <label for="Adidas">Adidas (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Gems" type="checkbox"/>
+                                            <input value="Gems" id="Gems" type="checkbox"/>
                                             <label for="Gems">Gems (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Mizuno" type="checkbox"/>
+                                            <input value="Mizuno" id="Mizuno" type="checkbox"/>
                                             <label for="Mizuno">Mizuno (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Nike " type="checkbox"/>
+                                            <input value="Nike" id="Nike " type="checkbox"/>
                                             <label for="Nike ">Nike  (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Pantofolo" type="checkbox"/>
+                                            <input value="Pantofolo" id="Pantofolo" type="checkbox"/>
                                             <label for="Pantofolo">Pantofolo D' Oro (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Puma" type="checkbox"/>
+                                            <input value="Puma" id="Puma" type="checkbox"/>
                                             <label for="Puma">Puma (44)</label>
                                         </div>
                                     </div>
@@ -1042,7 +1042,7 @@
                                         Taglia
                                     </a>
                                 </div>
-                                <div id="collapse-taglia" class="collapse in" role="tabpanel" aria-labelledby="heading-taglia">
+                                <div id="collapse-taglia" filterName="Taglia" class="collapse in" role="tabpanel" aria-labelledby="heading-taglia">
                                     <div class="body-accordion checkbox-size">
                                         <input class="checkbox22" id="27" value="27" type="checkbox"/>
                                         <label for="27"><span>27</span></label>
@@ -1122,18 +1122,18 @@
                                         collezione
                                     </a>
                                 </div>
-                                <div id="collapse-collezione" class="collapse in" role="tabpanel" aria-labelledby="heading-collezione">
+                                <div id="collapse-collezione" filterName="Collezione" class="collapse in" role="tabpanel" aria-labelledby="heading-collezione">
                                     <div class="body-accordion">
                                         <div class="custom-checkbox">
-                                            <input id="Magista" type="checkbox"/>
+                                            <input value="Magista" id="Magista" type="checkbox"/>
                                             <label for="Magista">Magista (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Mercurol" type="checkbox"/>
+                                            <input value="Mercurol" id="Mercurol" type="checkbox"/>
                                             <label for="Mercurol">Mercurol (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Hypervenom" type="checkbox"/>
+                                            <input value="Hypervenom" id="Hypervenom" type="checkbox"/>
                                             <label for="Hypervenom">Hypervenom (44)</label>
                                         </div>
                                     </div>
@@ -1146,18 +1146,18 @@
                                         edizione
                                     </a>
                                 </div>
-                                <div id="collapse-edizione" class="collapse in" role="tabpanel" aria-labelledby="heading-edizione">
+                                <div id="collapse-edizione" filterName="Edizione" class="collapse in" role="tabpanel" aria-labelledby="heading-edizione">
                                     <div class="body-accordion">
                                         <div class="custom-checkbox">
-                                            <input id="Limited-Edition" type="checkbox"/>
+                                            <input value="Limited-Edition" id="Limited-Edition" type="checkbox"/>
                                             <label for="Limited-Edition">Limited Edition (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Nike-Liquid-Chrome" type="checkbox"/>
+                                            <input value="Nike-Liquid-Chrome" id="Nike-Liquid-Chrome" type="checkbox"/>
                                             <label for="Nike-Liquid-Chrome">Nike Liquid Chrome (44)</label>
                                         </div>
                                         <div class="custom-checkbox">
-                                            <input id="Adidas-BW" type="checkbox"/>
+                                            <input value="Adidas-BW" id="Adidas-BW" type="checkbox"/>
                                             <label for="Adidas-BW">Adidas Black & White (44)</label>
                                         </div>
 
@@ -1220,6 +1220,10 @@
                             <li><a href="#">Latest products</a></li>
                         </ul>
                     </div>
+                    <ul data-global-filter-settings="" class="filter-settings">
+                        Filtrare per:
+                        <!--insert here selected items from filter-->
+                    </ul>
                     <span class="sum-goods">3029 prodotti</span>
                     <div class="pagination-goods hidden-xs">
                         <ul>
