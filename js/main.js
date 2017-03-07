@@ -265,16 +265,10 @@ $(document).ready(function () {
         $('.number-of-filters').html('Filtra (' + $( "input:checked" ).length + ')');
         if ($(this).is(':checked')) {
 
-            // моя модификация
-
             // remove filter selected items for appropriate filter
             $( e.target ).closest('.accordion').find('[data-selected-items]').empty();
             // remove filter selected items fot global filter view
             $('[data-global-filter-settings] [data-filter=' + filterName + ']').remove();
-
-
-            // конец
-
 
             // add filter selected items fot appropriate filter
             $( e.target ).closest('.accordion').find('[data-selected-items]').append(
