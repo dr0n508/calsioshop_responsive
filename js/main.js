@@ -226,18 +226,60 @@ $(document).ready(function () {
      * Custom filter selection
      * get value of clicked inputs
      */
+
+    // $('.filter input').click(function (e) {
+    //   var str = $(this).closest('[filterName]');
+    //   var filterName = str.attr('filterName');
+    //   console.log(filterName);
+    //   $('.number-of-filters').html('Filtra (' + $( "input:checked" ).length + ')');
+    //   if ($(this).is(':checked')) {
+    //     if (e.currentTarget.type === 'radio') {
+    //       // remove filter selected items for appropriate filter
+    //         $( e.target ).closest('.accordion').find('[data-selected-items]').empty();
+    //       // remove filter selected items fot global filter view
+    //         $('[data-global-filter-settings] [data-filter=' + filterName + ']').remove();
+    //     }
+    //     // add filter selected items fot appropriate filter
+    //     $( e.target ).closest('.accordion').find('[data-selected-items]').append(
+    //       '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+    //     );
+    //     // add filter selected items fot global filter view
+    //     if ($('[data-global-filter-settings] li[data-filter=' + filterName + ']').length === 0) {
+    //       $('[data-global-filter-settings]').append(
+    //         '<li data-filter=' + filterName + '>' + filterName + '&#58;' + '<a class="' + $(this).val() + '" href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+    //         // '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+    //       );
+    //     } else {
+    //       $('[data-global-filter-settings]  li[data-filter=' + filterName + ']').append(
+    //         // '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+    //         '<a class="' + $(this).val() + '" href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a>'
+    //       );
+    //     }
+    //
+    //   } else {
+    //     // remove filter selected items for appropriate filter
+    //     $( e.target ).closest('.accordion').find('[data-selected-items]').find('.' + $(this).val()).remove();
+    //     // remove filter selected items fot global filter view
+    //     $('[data-global-filter-settings]').find('.' + $(this).val()).remove();
+    //   }
+    // });
+    
     $('.filter input[type="checkbox"]').click(function (e) {
         var str = $(this).closest('[filterName]');
         var filterName = str.attr('filterName');
-        console.log(filterName);
+        var sameInputs = $('.filter').find('input[value=' + $(this).val() + ']');
         $('.number-of-filters').html('Filtra (' + $( "input:checked" ).length + ')');
         if ($(this).is(':checked')) {
+            sameInputs.each(function (index, val) {
+              $(val).attr('checked', true);
+            });
             // add filter selected items fot appropriate filter
             $( e.target ).closest('.accordion').find('[data-selected-items]').append(
                 '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
             );
             // add filter selected items fot global filter view
-            if ($('[data-global-filter-settings] li[data-filter=' + filterName + ']').length === 0) {
+          console.log($('[data-global-filter-settings] li[data-filter=' + filterName + ']').length);
+            if ($('[data-global-filter-settings] li[data-filter=' + filterName + ']').length < 2) {
                 $('[data-global-filter-settings]').append(
                     '<li data-filter=' + filterName + '>' + filterName + '&#58;' + '<a class="' + $(this).val() + '" href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
                     // '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
@@ -250,10 +292,17 @@ $(document).ready(function () {
             }
 
         } else {
+            sameInputs.each(function (index, val) {
+                $(val).attr('checked', false);
+            });
             // remove filter selected items for appropriate filter
             $( e.target ).closest('.accordion').find('[data-selected-items]').find('.' + $(this).val()).remove();
             // remove filter selected items fot global filter view
-            $('[data-global-filter-settings]').find('.' + $(this).val()).remove();
+            if ($('[data-global-filter-settings] li[data-filter=' + filterName + ']').length % 2 === 0) {
+              $('[data-global-filter-settings]').find('.' + $(this).val()).closest('li').remove();
+            } else {
+                $('[data-global-filter-settings]').find('.' + $(this).val()).remove();
+            }
         }
     });
 
@@ -310,11 +359,13 @@ $(document).ready(function () {
         $(this).parent().parent().next().find( 'input[id^='  + clickedLiClass + ']').attr('checked', false);
         $('.number-of-filters').html('Filtra (' + $( "input:checked" ).length + ')');
     });
+    
 
     $('[data-global-filter-settings]').click(function (e) {
         var clickedLiClass = $(e.target).closest('a').attr('class');
         if ($(e.target).closest('li').children().length === 1) {
-            $(e.target).closest('li').remove();
+            // $(e.target).closest('li').remove();
+          $('[data-global-filter-settings]').find('.' + clickedLiClass).parent().remove();
         }
         $("div[id^='filterAccordion']").find('[data-selected-items]').find('.' + clickedLiClass).remove();
         $('[data-global-filter-settings]').find('.' + clickedLiClass).remove();
