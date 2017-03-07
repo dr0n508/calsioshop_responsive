@@ -226,12 +226,56 @@ $(document).ready(function () {
      * Custom filter selection
      * get value of clicked inputs
      */
-    $('.filter input').click(function (e) {
+    // $('.filter input').click(function (e) {
+    //     var str = $(this).closest('[filterName]');
+    //     var filterName = str.attr('filterName');
+    //     console.log(filterName);
+    //     $('.number-of-filters').html('Filtra (' + $( "input:checked" ).length + ')');
+    //     if ($(this).is(':checked')) {
+    //         // add filter selected items fot appropriate filter
+    //         $( e.target ).closest('.accordion').find('[data-selected-items]').append(
+    //             '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+    //         );
+    //         // add filter selected items fot global filter view
+    //         if ($('[data-global-filter-settings] li[data-filter=' + filterName + ']').length === 0) {
+    //             $('[data-global-filter-settings]').append(
+    //                 '<li data-filter=' + filterName + '>' + filterName + '&#58;' + '<a class="' + $(this).val() + '" href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+    //                 // '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+    //             );
+    //         } else {
+    //             $('[data-global-filter-settings]  li[data-filter=' + filterName + ']').append(
+    //                 // '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
+    //                 '<a class="' + $(this).val() + '" href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a>'
+    //             );
+    //         }
+    //
+    //     } else {
+    //         // remove filter selected items for appropriate filter
+    //         $( e.target ).closest('.accordion').find('[data-selected-items]').find('.' + $(this).val()).remove();
+    //         // remove filter selected items fot global filter view
+    //         $('[data-global-filter-settings]').find('.' + $(this).val()).remove();
+    //     }
+    // });
+
+    $('.filter input[type="radio"]').click(function (e) {
         var str = $(this).closest('[filterName]');
         var filterName = str.attr('filterName');
+        console.log(str);
         console.log(filterName);
         $('.number-of-filters').html('Filtra (' + $( "input:checked" ).length + ')');
         if ($(this).is(':checked')) {
+
+            // моя модификация
+
+            // remove filter selected items for appropriate filter
+            $( e.target ).closest('.accordion').find('[data-selected-items]').empty();
+            // remove filter selected items fot global filter view
+            $('[data-global-filter-settings]').empty();
+
+
+            // конец
+
+
             // add filter selected items fot appropriate filter
             $( e.target ).closest('.accordion').find('[data-selected-items]').append(
                 '<li class="' + $(this).val() + '"><a href="#"><span class="fa fa-times"></span><span>' + $(this).val() + '</span></a></li>'
