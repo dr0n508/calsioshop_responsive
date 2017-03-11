@@ -266,15 +266,8 @@ $(document).ready(function () {
 
 /******new part******/
 
-    /* 2 функции одна - чекает/добавляет во всех нужных местах инфу, вторая - удаляет */
-    /* задача при клике на интупе или при удалении фильтра определить название фильтра и значение фильтра*/
-
-    // var filterName = 'Marca';
-    // var filterValue = 'Asics';
-
-    // checkValue(filterName, filterValue);
-
     function checkValue (filterName, filterValue) {
+        // add filter selected items fot global filter view
         if ($('[data-global-filter-settings] li[data-filter=' + filterName + ']').length < 2) {
             $('[data-global-filter-settings]').append(
                 '<li data-filter=' + filterName + '>' + filterName + '&#58;' + '<a class="' + filterValue + '" href="#"><span class="fa fa-times"></span><span>' + filterValue + '</span></a></li>'
@@ -284,11 +277,12 @@ $(document).ready(function () {
                 '<a class="' + filterValue + '" href="#"><span class="fa fa-times"></span><span>' + filterValue + '</span></a>'
             );
         }
-
+        // add filter selected items fot appropriate filter
         $('[filtername="' + filterName + '"]').find('[data-selected-items]').append(
             '<li class="' + filterValue + '"><a href="#"><span class="fa fa-times"></span><span>' + filterValue + '</span></a></li>'
         );
 
+        // checked input in mobile and desktop version
         $('[filtername="' + filterName + '"]').find('input[value=' + filterValue + ']').each(function (index, val) {
             $(val).attr('checked', true);
         });
@@ -297,14 +291,15 @@ $(document).ready(function () {
     }
 
     function uncheckValue (filterName, filterValue) {
+        // remove filter selected items fot global filter view
         if ($('[data-global-filter-settings] li[data-filter=' + filterName + '] a').length / 2 > 1) {
             $('[data-global-filter-settings]').find('.' + filterValue).remove();
         } else {
             $('[data-global-filter-settings]').find('.' + filterValue).closest('li').remove();
         }
-
+        // remove filter selected items fot appropriate filter
         $('[filtername="' + filterName + '"]').find('[data-selected-items]').find('.' + filterValue).remove();
-
+        // unchecked input in mobile and desktop version
         $('[filtername="' + filterName + '"]').find('input[value=' + filterValue + ']').each(function (index, val) {
             $(val).attr('checked', false);
         });
