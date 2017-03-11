@@ -264,7 +264,7 @@ $(document).ready(function () {
     //   }
     // });
 
-/******new part******/
+    /*FILTER*/
 
     function checkValue (filterName, filterValue) {
         // add filter selected items fot global filter view
@@ -339,12 +339,6 @@ $(document).ready(function () {
         $('.number-of-filters').html('Filtra (0)');
         $('.filter').find('input[checked]').attr('checked', false);
     });
-
-
-
-
-
-    /******end new part******/
     
     // $('.filter input[type="checkbox"]').click(function (e) {
     //     var str = $(this).closest('[filterName]');
