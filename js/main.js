@@ -292,6 +292,8 @@ $(document).ready(function () {
         $('[filtername="' + filterName + '"]').find('input[value=' + filterValue + ']').each(function (index, val) {
             $(val).attr('checked', true);
         });
+
+        $('.number-of-filters').html('Filtra (' + $( "input:checked" ).length / 2 + ')');
     }
 
     function uncheckValue (filterName, filterValue) {
@@ -306,6 +308,8 @@ $(document).ready(function () {
         $('[filtername="' + filterName + '"]').find('input[value=' + filterValue + ']').each(function (index, val) {
             $(val).attr('checked', false);
         });
+
+        $('.number-of-filters').html('Filtra (' + $( "input:checked" ).length / 2 + ')');
     }
 
     $('.filter input[type="checkbox"]').click(function () {
@@ -332,6 +336,13 @@ $(document).ready(function () {
         var filterValue = $(e.target).closest('a').attr('class');
 
         uncheckValue(filterName, filterValue);
+    });
+
+    $('[data-filter-reset]').click(function (e) {
+        $('[data-selected-items]').empty();
+        $('[data-global-filter-settings]').text('Filtrare per: ');
+        $('.number-of-filters').html('Filtra (0)');
+        $('.filter').find('input[checked]').attr('checked', false);
     });
 
 
@@ -452,12 +463,12 @@ $(document).ready(function () {
     /**
      * Reset filter
      */
-    $('[data-filter-reset]').click(function (e) {
-        $('[data-selected-items]').empty();
-        $('[data-global-filter-settings]').text('Filtrare per: ');
-        $('.number-of-filters').html('Filtra (0)');
-        // $(document).trigger('testEvent', [1011]);
-    });
+    // $('[data-filter-reset]').click(function (e) {
+    //     $('[data-selected-items]').empty();
+    //     $('[data-global-filter-settings]').text('Filtrare per: ');
+    //     $('.number-of-filters').html('Filtra (0)');
+    //     // $(document).trigger('testEvent', [1011]);
+    // });
 
 
 });
