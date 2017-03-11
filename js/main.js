@@ -263,6 +263,53 @@ $(document).ready(function () {
     //     $('[data-global-filter-settings]').find('.' + $(this).val()).remove();
     //   }
     // });
+
+/******new part******/
+
+    /* 2 функции одна - чекает/добавляет во всех нужных местах инфу, вторая - удаляет */
+    /* задача при клике на интупе или при удалении фильтра определить название фильтра и значение фильтра*/
+
+    var filterName = 'Marca';
+    var filterValue = 'Asics';
+
+    checkValue(filterName, filterValue);
+
+    function checkValue (filterName, filterValue) {
+        if ($('[data-global-filter-settings] li[data-filter=' + filterName + ']').length < 2) {
+            $('[data-global-filter-settings]').append(
+                '<li data-filter=' + filterName + '>' + filterName + '&#58;' + '<a class="' + filterValue + '" href="#"><span class="fa fa-times"></span><span>' + filterValue + '</span></a></li>'
+            );
+        } else {
+            $('[data-global-filter-settings]  li[data-filter=' + filterName + ']').append(
+                '<a class="' + filterValue + '" href="#"><span class="fa fa-times"></span><span>' + filterValue + '</span></a>'
+            );
+        }
+
+        $('[filtername="' + filterName + '"]').find('[data-selected-items]').append(
+            '<li class="' + filterValue + '"><a href="#"><span class="fa fa-times"></span><span>' + filterValue + '</span></a></li>'
+        );
+
+        $('[filtername="' + filterName + '"]').find('input[value=' + filterValue + ']').each(function (index, val) {
+            $(val).attr('checked', true);
+        });
+    }
+
+    function uncheckValue (filterName, filterValue) {
+        if ($('[data-global-filter-settings] li[data-filter=' + filterName + ']').length % 2 === 0) {
+            $('[data-global-filter-settings]').find('.' + filterValue).closest('li').remove();
+        } else {
+            $('[data-global-filter-settings]').find('.' + filterValue).remove();
+        }
+
+        $('[filtername="' + filterName + '"]').find('[data-selected-items]').find('.' + filterValue).remove();
+
+        $('[filtername="' + filterName + '"]').find('input[value=' + filterValue + ']').each(function (index, val) {
+            $(val).attr('checked', false);
+        });
+    }
+
+
+    /******end new part******/
     
     $('.filter input[type="checkbox"]').click(function (e) {
         var str = $(this).closest('[filterName]');
