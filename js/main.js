@@ -265,20 +265,27 @@ $(document).ready(function () {
     // });
 
     /*FILTER*/
+    function checkValue (filterName, filterValue, isRadio) {
+        var boxDataFilterGlobal = $('[data-global-filter-settings] li[data-filter=' + filterName + ']');
+        var boxDataFilterModal = $('[filtername="' + filterName + '"]').find('[data-selected-items]');
 
-    function checkValue (filterName, filterValue) {
+        if(isRadio) {
+            boxDataFilterGlobal.find('a').remove();
+            boxDataFilterModal.empty();
+        }
+
         // add filter selected items fot global filter view
-        if ($('[data-global-filter-settings] li[data-filter=' + filterName + ']').length < 2) {
+        if (boxDataFilterGlobal.length < 2) {
             $('[data-global-filter-settings]').append(
                 '<li data-filter=' + filterName + '>' + filterName + '&#58;' + '<a class="' + filterValue + '" href="#"><span class="fa fa-times"></span><span>' + filterValue + '</span></a></li>'
             );
         } else {
-            $('[data-global-filter-settings]  li[data-filter=' + filterName + ']').append(
+            boxDataFilterGlobal.append(
                 '<a class="' + filterValue + '" href="#"><span class="fa fa-times"></span><span>' + filterValue + '</span></a>'
             );
         }
         // add filter selected items fot appropriate filter
-        $('[filtername="' + filterName + '"]').find('[data-selected-items]').append(
+        boxDataFilterModal.append(
             '<li class="' + filterValue + '"><a href="#"><span class="fa fa-times"></span><span>' + filterValue + '</span></a></li>'
         );
 
@@ -307,15 +314,21 @@ $(document).ready(function () {
         $('.number-of-filters').html('Filtra (' + $( "input:checked" ).length / 2 + ')');
     }
 
-    $('.filter input[type="checkbox"]').click(function () {
+    $('.filter input').click(function () {
         var filterName = $(this).closest('[filterName]').attr('filterName');
         var filterValue = $(this).attr('value');
 
-        if ($(this).is(':checked')) {
-            checkValue(filterName, filterValue);
+        if($(this).attr('type') === 'radio') {
+            var isRadio = true;
+            checkValue(filterName, filterValue, isRadio);
         }
         else {
-            uncheckValue(filterName, filterValue);
+            if ($(this).is(':checked')) {
+                checkValue(filterName, filterValue);
+            }
+            else {
+                uncheckValue(filterName, filterValue);
+            }
         }
     });
 
